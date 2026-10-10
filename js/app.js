@@ -23,29 +23,29 @@ let state = {
 
 // Galería de fotos destacadas de BMX Racing disponibles en images/
 const HERO_BMX_GALLERY = [
-    { src: 'images/bmx1.png', label: 'Curva & Agresividad' },
-    { src: 'images/bmx2.png', label: 'Técnica en Salto' },
-    { src: 'images/bmx3.png', label: 'Ritmo & Velocidad' },
     { src: 'images/bmx-proconcept.png', label: 'Partidor UCI Pro' },
     { src: 'images/bmx-proconcept2.png', label: 'Sprint de Partida' },
     { src: 'images/bmx-proconcept3.png', label: 'Peralte Pro Concept' },
-    { src: 'images/bmx-proconcept4.png', label: 'Fuerza Explosiva' }
+    { src: 'images/bmx-proconcept4.png', label: 'Fuerza Explosiva' },
+    { src: 'images/bmx1.png', label: 'Curva & Agresividad' },
+    { src: 'images/bmx2.png', label: 'Técnica en Salto' },
+    { src: 'images/bmx3.png', label: 'Ritmo & Velocidad' }
 ];
 
 let currentHeroImageIndex = 0;
 
 /**
- * Selecciona aleatoriamente una foto de acción de la carpeta images/
- * garantizando que sea distinta a la última mostrada al actualizar o recargar el sitio.
+ * Inicializa el carrusel de fotos BMX:
+ * - Selecciona una foto inicial aleatoria (distinta a la de la última sesión si es posible).
+ * - Renderiza los indicadores / dots interactivos.
+ * - Registra controles gestuales (swipe táctil en móviles).
  */
-function initRandomHeroImage() {
+function initHeroCarousel() {
     const heroImgEl = document.getElementById('heroBmxImage');
     if (!heroImgEl || !HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
 
-    // Obtener la última foto mostrada para evitar repeticiones consecutivas
+    // Obtener la última foto mostrada para priorizar una diferente en cada recarga
     const lastSrc = sessionStorage.getItem('activerza_last_hero_src') || localStorage.getItem('activerza_last_hero_src');
-    
-    // Filtrar candidatos distintos a la última foto vista
     const candidates = HERO_BMX_GALLERY.filter(item => item.src !== lastSrc);
     const pool = candidates.length > 0 ? candidates : HERO_BMX_GALLERY;
 
@@ -53,45 +53,152 @@ function initRandomHeroImage() {
     currentHeroImageIndex = HERO_BMX_GALLERY.findIndex(item => item.src === selected.src);
     if (currentHeroImageIndex === -1) currentHeroImageIndex = 0;
 
-    applyHeroImage(selected.src, selected.label);
+    renderHeroCarouselDots();
+    updateHeroCarouselView(false);
 
-    // Guardar para la siguiente actualización
+    // Guardar para la próxima recarga
     sessionStorage.setItem('activerza_last_hero_src', selected.src);
     localStorage.setItem('activerza_last_hero_src', selected.src);
+
+    setupHeroCarouselTouch();
 }
 
 /**
- * Aplica una foto con transición suave al elemento Hero
+ * Renderiza los dots/indicadores de navegación del carrusel
  */
-function applyHeroImage(src, label) {
+function renderHeroCarouselDots() {
+    const dotsContainer = document.getElementById('heroCarouselDots');
+    if (!dotsContainer) return;
+
+    dotsContainer.innerHTML = HERO_BMX_GALLERY.map((item, idx) => `
+        <button type="button" 
+            onclick="goToHeroImage(${idx})"
+            class="hero-dot-btn transition-all duration-300 h-1.5 rounded-full ${idx === currentHeroImageIndex ? 'w-5 bg-red-500 shadow-sm' : 'w-1.5 bg-white/40 hover:bg-white/70'}"
+            aria-label="Ir a foto ${idx + 1} (${item.label})">
+        </button>
+    `).join('');
+}
+
+/**
+ * Actualiza la vista del carrusel (imagen, etiqueta, contador, dots activos)
+ */
+function updateHeroCarouselView(withFade = true) {
     const heroImgEl = document.getElementById('heroBmxImage');
     const heroTagEl = document.getElementById('heroImageTag');
-    if (!heroImgEl) return;
+    const counterEl = document.getElementById('heroCarouselCounter');
+    if (!heroImgEl || !HERO_BMX_GALLERY[currentHeroImageIndex]) return;
 
-    heroImgEl.style.opacity = '0.6';
-    heroImgEl.src = src;
-    heroImgEl.onload = () => {
+    const currentItem = HERO_BMX_GALLERY[currentHeroImageIndex];
+
+    if (withFade) {
+        heroImgEl.style.opacity = '0.4';
+        heroImgEl.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+            heroImgEl.src = currentItem.src;
+            heroImgEl.onload = () => {
+                heroImgEl.style.opacity = '1';
+                heroImgEl.style.transform = 'scale(1)';
+            };
+        }, 120);
+    } else {
+        heroImgEl.src = currentItem.src;
         heroImgEl.style.opacity = '1';
-    };
-    if (heroTagEl && label) {
-        heroTagEl.textContent = label;
+        heroImgEl.style.transform = 'scale(1)';
+    }
+
+    if (heroTagEl) {
+        heroTagEl.textContent = currentItem.label;
+    }
+
+    if (counterEl) {
+        counterEl.textContent = `${currentHeroImageIndex + 1} / ${HERO_BMX_GALLERY.length}`;
+    }
+
+    // Actualizar dots interactivos
+    const dotsContainer = document.getElementById('heroCarouselDots');
+    if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.hero-dot-btn');
+        dots.forEach((dot, idx) => {
+            if (idx === currentHeroImageIndex) {
+                dot.className = 'hero-dot-btn transition-all duration-300 h-1.5 rounded-full w-5 bg-red-500 shadow-sm';
+            } else {
+                dot.className = 'hero-dot-btn transition-all duration-300 h-1.5 rounded-full w-1.5 bg-white/40 hover:bg-white/70';
+            }
+        });
+    }
+
+    // Guardar estado actual
+    sessionStorage.setItem('activerza_last_hero_src', currentItem.src);
+    localStorage.setItem('activerza_last_hero_src', currentItem.src);
+}
+
+/**
+ * Adelanta a la siguiente imagen (Next)
+ */
+function nextHeroImage() {
+    if (!HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
+    currentHeroImageIndex = (currentHeroImageIndex + 1) % HERO_BMX_GALLERY.length;
+    updateHeroCarouselView(true);
+}
+
+/**
+ * Retrocede a la imagen anterior (Prev)
+ */
+function prevHeroImage() {
+    if (!HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
+    currentHeroImageIndex = (currentHeroImageIndex - 1 + HERO_BMX_GALLERY.length) % HERO_BMX_GALLERY.length;
+    updateHeroCarouselView(true);
+}
+
+/**
+ * Salta a un índice específico de imagen
+ */
+function goToHeroImage(index) {
+    if (index >= 0 && index < HERO_BMX_GALLERY.length && index !== currentHeroImageIndex) {
+        currentHeroImageIndex = index;
+        updateHeroCarouselView(true);
     }
 }
 
-/**
- * Cicla interactivamente a la siguiente imagen de la galería
- */
+// Mantener compatibilidad por si se llama cycleHeroImage
 function cycleHeroImage() {
-    if (!HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
-    currentHeroImageIndex = (currentHeroImageIndex + 1) % HERO_BMX_GALLERY.length;
-    const nextItem = HERO_BMX_GALLERY[currentHeroImageIndex];
-    applyHeroImage(nextItem.src, nextItem.label);
-    sessionStorage.setItem('activerza_last_hero_src', nextItem.src);
-    localStorage.setItem('activerza_last_hero_src', nextItem.src);
+    nextHeroImage();
+}
+
+/**
+ * Soporte gestual para swipe táctil en móvil
+ */
+function setupHeroCarouselTouch() {
+    const container = document.getElementById('heroCarouselContainer');
+    if (!container || container.dataset.touchBound) return;
+    container.dataset.touchBound = 'true';
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    container.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const diff = touchEndX - touchStartX;
+        if (Math.abs(diff) > 40) {
+            if (diff < 0) {
+                nextHeroImage(); // Swipe izquierda -> Siguiente
+            } else {
+                prevHeroImage(); // Swipe derecha -> Anterior
+            }
+        }
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    initRandomHeroImage();
+    initHeroCarousel();
     loadSavedState();
     if (typeof setupCalendarInputs === 'function') {
         setupCalendarInputs();

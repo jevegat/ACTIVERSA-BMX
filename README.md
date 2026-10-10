@@ -21,6 +21,11 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * **Controles Interactivos**: Pausar / Reanudar, retroceder, adelantar serie y botón de avanzar rápido si se completan las repeticiones antes de tiempo.
 * **Beeps de Partidor UCI**: Señales acústicas en los 3 segundos finales con bocina de salida mediante Web Audio API.
 
+### 2. 📸 Carrusel Interactivo de Fotos de Acción BMX & ProconceptBMX
+* **Rotación y Selección Aleatoria**: Cada vez que el usuario carga o recarga el sitio, se selecciona una foto de acción distinta sin repetir la sesión anterior.
+* **Navegación Completa**: Botones para adelantar (>) y atrasar (<) fotos, navegación rápida con dots indicadores y soporte táctil para deslizamiento (swipe) en dispositivos móviles.
+* **Fotografía Oficial ProconceptBMX**: Enlace directo y destacado en el carrusel al perfil oficial de Instagram de [**@bmxproconcept**](https://www.instagram.com/bmxproconcept/).
+
 ### 2. 🎥 Videoteca Técnica Biomecánica Verificada
 * 45 ejercicios auditados con videos demostrativos embebidos al 100% (sin caídas ni errores de disponibilidad).
 * Claves biomecánicas para la rigidez articular (*stiffness*), control excéntrico y transferencia al primer pedalazo en el partidor (*gate start*).
@@ -61,7 +66,6 @@ Arquitectura modular en Vanilla JavaScript (ES6+), HTML5 semántico y CSS3 con T
 ├── images/              # Galería de 7 fotos de acción y técnica BMX Racing (selección dinámica)
 │   ├── bmx1.png ... bmx3.png
 │   └── bmx-proconcept.png ... bmx-proconcept4.png
-├── hero_bmx.jpg         # Imagen complementaria BMX Racing
 ├── package.json         # Configuración del paquete
 └── .gitignore           # Exclusiones de Git
 ```
