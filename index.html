@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVERZA BMX RACING | Plataforma Oficial de Entrenamiento</title>
+    <meta name="description" content="Plataforma de entrenamiento biomecánico, nutricional y técnico para deportistas de BMX Racing de 3 a 17 años. Metodología oficial Activerza.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Confetti Canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom Modular CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 selection:bg-red-600 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-red-700 via-red-600 to-amber-600 text-white text-xs font-semibold py-1.5 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-md">
+        <i class="fa-solid fa-flag-checkered animate-bounce"></i>
+        <span>METODOLOGÍA OFICIAL ACTIVERZA BMX RACING • SEMANAS 1 Y 2 • PREPARACIÓN FÍSICA Y BIOMECÁNICA</span>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="bg-slate-900/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-between items-center gap-4">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-red-600 to-amber-500 p-0.5 flex items-center justify-center shadow-lg shadow-red-600/30">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-person-biking text-red-500 text-xl"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-2xl font-black tracking-tighter text-white font-heading">ACTIVERZA</span>
+                        <span class="text-xs bg-red-600 font-extrabold text-white px-1.5 py-0.5 rounded tracking-widest uppercase">BMX</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 font-medium tracking-wider">UNLEASH YOUR POWER • 3 A 17 AÑOS</p>
+                </div>
+            </div>
+
+            <!-- Global Action Controls -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <!-- Navigation Tabs -->
+                <div class="hidden md:flex bg-slate-800/80 p-1 rounded-xl border border-slate-700 text-xs font-bold">
+                    <button onclick="switchMainTab('training')" id="tabNavTraining" class="px-3 py-1.5 rounded-lg bg-red-600 text-white transition flex items-center gap-1.5 shadow-sm">
+                        <i class="fa-solid fa-dumbbell"></i> Rutinas
+                    </button>
+                    <button onclick="switchMainTab('calendar')" id="tabNavCalendar" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-calendar-alt"></i> Calendario
+                    </button>
+                    <button onclick="switchMainTab('timer')" id="tabNavTimer" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-stopwatch"></i> Cronómetro Pista
+                    </button>
+                    <button onclick="switchMainTab('nutrition')" id="tabNavNutrition" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-apple-whole"></i> Nutrición
+                    </button>
+                </div>
+
+                <!-- Athlete Profile Trigger -->
+                <button onclick="openProfileModal()" class="bg-gradient-to-r from-slate-800 to-slate-700 hover:from-slate-700 hover:to-slate-600 border border-slate-600 text-white text-xs sm:text-sm font-bold px-3.5 py-2 rounded-xl flex items-center gap-2.5 transition shadow-md group cursor-pointer">
+                    <div id="navAthleteAvatarBox" class="w-7 h-7 rounded-full bg-red-600 text-white flex items-center justify-center text-xs overflow-hidden flex-shrink-0 border border-red-400/40 shadow-inner">
+                        <img id="navAthleteAvatarImg" src="" alt="Foto" class="w-full h-full object-cover hidden">
+                        <i id="navAthleteAvatarIcon" class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="text-left">
+                        <span id="navAthleteName" class="block leading-none">Santiago Vega</span>
+                        <span id="navAthleteBadge" class="text-[10px] text-red-400 font-semibold leading-none">7 a 12 Años</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-white transition ml-1"></i>
+                </button>
+
+                <!-- Dark / Light Theme Toggle -->
+                <button onclick="toggleTheme()" id="themeToggleBtn" aria-label="Cambiar tema" class="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 hover:text-amber-300 transition shadow">
+                    <i id="themeToggleIcon" class="fa-solid fa-sun text-sm"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile sub-navigation bar -->
+        <div class="md:hidden flex overflow-x-auto px-4 py-2 border-t border-slate-800 gap-2 text-xs font-bold scrollbar-none">
+            <button onclick="switchMainTab('training')" id="tabNavMobTraining" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-red-600 text-white">
+                <i class="fa-solid fa-dumbbell mr-1"></i> Rutinas
+            </button>
+            <button onclick="switchMainTab('calendar')" id="tabNavMobCalendar" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
+                <i class="fa-solid fa-calendar-alt mr-1"></i> Calendario
+            </button>
+            <button onclick="switchMainTab('timer')" id="tabNavMobTimer" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
+                <i class="fa-solid fa-stopwatch mr-1"></i> Cronómetro
+            </button>
+            <button onclick="switchMainTab('nutrition')" id="tabNavMobNutrition" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
+                <i class="fa-solid fa-apple-whole mr-1"></i> Nutrición
+            </button>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+        <!-- ========================================== -->
+        <!-- VIEW 1: TRAINING ROUTINES (DEFAULT)       -->
+        <!-- ========================================== -->
+        <div id="viewTraining" class="space-y-6">
+
+            <!-- ATHLETE PROGRESS & QUICK STATS HERO -->
+            <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900 to-red-950/60 rounded-3xl p-6 border border-slate-800 shadow-2xl">
+                <div class="absolute -right-16 -top-16 w-64 h-64 bg-red-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-2.5 py-1 rounded-md text-[11px] font-extrabold bg-red-600/20 text-red-400 border border-red-500/30 tracking-wider uppercase">
+                                <i class="fa-solid fa-bolt mr-1"></i> Microciclo Activo
+                            </span>
+                            <span id="heroDateDisplay" class="text-xs text-slate-400 font-medium">
+                                <i class="fa-regular fa-calendar mr-1"></i> Semana activa programada
+                            </span>
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white font-heading">
+                            Plan Activerza: <span id="heroWeekTitle" class="text-red-500">Semana 1</span>
+                        </h2>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl" id="heroAgeDesc">
+                            Desarrollo de fuerza base, reflejo neuromuscular del partidor (gate start) y técnica motriz adaptada por grupo etario.
+                        </p>
+                        
+                        <!-- Progress Bar of the Current Day -->
+                        <div class="pt-2">
+                            <div class="flex justify-between items-center text-xs font-bold mb-1.5">
+                                <span class="text-slate-300 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-list-check text-red-500"></i> Progreso de la Sesión Actual
+                                </span>
+                                <span id="sessionProgressPct" class="text-red-400 font-extrabold">0% (0/0)</span>
+                            </div>
+                            <div class="w-full bg-slate-800/80 rounded-full h-3 p-0.5 border border-slate-700/80 overflow-hidden">
+                                <div id="sessionProgressBar" class="h-full bg-gradient-to-r from-red-600 via-red-500 to-amber-500 rounded-full transition-all duration-500 ease-out" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BMX Hero Action Card + Stats Badges -->
+                    <div class="lg:col-span-5 space-y-3">
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-lg group">
+                            <img src="hero_bmx.jpg" alt="BMX Racing Gate Start" class="w-full h-36 object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent flex items-end p-3">
+                                <div class="flex items-center justify-between w-full">
+                                    <span class="text-[11px] font-extrabold uppercase tracking-widest text-amber-300 bg-black/60 backdrop-blur-md px-2 py-0.5 rounded border border-amber-500/30">
+                                        <i class="fa-solid fa-flag-checkered mr-1"></i> Partidor & Técnica UCI
+                                    </span>
+                                    <span class="text-[10px] text-slate-300 font-semibold bg-red-600/80 px-2 py-0.5 rounded">
+                                        Pista & Casa
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                            <div class="bg-slate-800/70 backdrop-blur-sm p-3 rounded-2xl border border-slate-700/60 text-center">
+                                <i class="fa-solid fa-trophy text-amber-400 text-lg mb-0.5"></i>
+                                <div class="text-lg sm:text-xl font-black text-white" id="statCompletedTotal">0</div>
+                                <div class="text-[9px] text-slate-400 uppercase font-bold tracking-wider">Ejercicios</div>
+                            </div>
+                            <div class="bg-slate-800/70 backdrop-blur-sm p-3 rounded-2xl border border-slate-700/60 text-center">
+                                <i class="fa-solid fa-fire text-red-500 text-lg mb-0.5"></i>
+                                <div class="text-lg sm:text-xl font-black text-white" id="statStreakDays">0</div>
+                                <div class="text-[9px] text-slate-400 uppercase font-bold tracking-wider">Racha Días</div>
+                            </div>
+                            <div class="bg-slate-800/70 backdrop-blur-sm p-3 rounded-2xl border border-slate-700/60 text-center">
+                                <i class="fa-solid fa-stopwatch text-cyan-400 text-lg mb-0.5"></i>
+                                <div class="text-lg sm:text-xl font-black text-white">60'</div>
+                                <div class="text-[9px] text-slate-400 uppercase font-bold tracking-wider">Duración</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTROLS & SELECTORS BAR -->
+            <section class="bg-slate-900 dark:bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Selector Semana -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-calendar-week text-red-500"></i> Semana del Microciclo
+                    </label>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button onclick="setWeek(1)" id="btnWeek1" class="py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow">
+                            <i class="fa-solid fa-1"></i> Semana 1
+                        </button>
+                        <button onclick="setWeek(2)" id="btnWeek2" class="py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-2"></i> Semana 2
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Selector Grupo de Edad / Nivel -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-children text-red-500"></i> Grupo Etario / Nivel
+                    </label>
+                    <select id="selectAgeGroup" onchange="onAgeGroupChanged(this.value)" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-2.5 text-xs font-bold focus:ring-2 focus:ring-red-500 focus:outline-none">
+                        <option value="sub6">Menores de 6 años • Lúdico y Multimotor</option>
+                        <option value="7to12" selected>7 a 12 años • Aprendizaje Motor & Agilidad</option>
+                        <option value="13to17">13 a 17 años • Potencia Élite & Partidor</option>
+                    </select>
+                </div>
+
+                <!-- Selector Día de Entrenamiento -->
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <i class="fa-solid fa-dumbbell text-red-500"></i> Sesión Semanal (3 Días)
+                    </label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <button onclick="setDay(1)" id="btnDay1" class="py-2.5 px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition text-center shadow">
+                            Día 1
+                        </button>
+                        <button onclick="setDay(2)" id="btnDay2" class="py-2.5 px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition text-center">
+                            Día 2
+                        </button>
+                        <button onclick="setDay(3)" id="btnDay3" class="py-2.5 px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition text-center">
+                            Día 3
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DYNAMIC ROUTINE CONTENT INJECTOR -->
+            <div id="routineContainer" class="space-y-6">
+                <!-- Generado dinámicamente con JavaScript -->
+            </div>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- VIEW 2: CALENDAR SCHEDULER               -->
+        <!-- ========================================== -->
+        <div id="viewCalendar" class="hidden space-y-6">
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6">
+                    <div>
+                        <span class="text-xs font-extrabold text-red-400 uppercase tracking-widest bg-red-600/10 border border-red-500/20 px-2.5 py-1 rounded-md">
+                            <i class="fa-solid fa-calendar-check mr-1"></i> Planificación Deportiva
+                        </span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 font-heading">Calendarizador de Microciclos BMX</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                            Configura tu fecha de inicio y distribuye los 3 días semanales de entrenamiento para sincronizar tu progreso.
+                        </p>
+                    </div>
+                    <button onclick="saveCalendarSettings()" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-red-600/30 transition flex items-center gap-2">
+                        <i class="fa-solid fa-floppy-disk"></i> Guardar Calendario
+                    </button>
+                </div>
+
+                <!-- Calendar Setup Form -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+                    <!-- Fecha de inicio -->
+                    <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-slate-700/60 space-y-3">
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider">
+                            <i class="fa-regular fa-calendar-days text-red-500 mr-1.5"></i> Fecha de Inicio del Plan
+                        </label>
+                        <input type="date" id="calendarStartDate" onchange="renderCalendarSchedule()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-sm font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
+                        <p class="text-[11px] text-slate-400">
+                            A partir de esta fecha se calcularán automáticamente las fechas correspondientes para la Semana 1 y la Semana 2.
+                        </p>
+                    </div>
+
+                    <!-- Días de la semana preferidos -->
+                    <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-slate-700/60 space-y-3">
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider">
+                            <i class="fa-solid fa-clock-rotate-left text-red-500 mr-1.5"></i> Días de Entrenamiento (Selecciona 3)
+                        </label>
+                        <div class="grid grid-cols-7 gap-1.5" id="dayPickerContainer">
+                            <!-- Inyectado por JS: Lun, Mar, Mié, Jue, Vie, Sáb, Dom -->
+                        </div>
+                        <p class="text-[11px] text-slate-400" id="selectedDaysSummary">
+                            Seleccionados: Lunes (Día 1), Miércoles (Día 2), Viernes (Día 3).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visual Timeline of the 2 Weeks -->
+                <div class="mt-8 space-y-4">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-timeline text-amber-500"></i> Cronograma de Sesiones Planificadas
+                    </h3>
+                    <div id="calendarScheduleTimeline" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Inyectado con JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- VIEW 3: BMX TRACK WOD TIMER               -->
+        <!-- ========================================== -->
+        <div id="viewTimer" class="hidden space-y-6">
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto space-y-2 mb-8">
+                    <span class="text-xs font-extrabold text-red-400 uppercase tracking-widest bg-red-600/10 border border-red-500/20 px-3 py-1 rounded-md">
+                        <i class="fa-solid fa-stopwatch-20 mr-1"></i> Cronómetro de Pista y Descansos
+                    </span>
+                    <h2 class="text-3xl font-black text-white font-heading">Temporizador Biomecánico BMX</h2>
+                    <p class="text-xs sm:text-sm text-slate-400">
+                        Controla los tiempos estrictos de descanso (60s), protocolos de cardio BMX (20/20, 15/30, 40/20, Tabata 30/15 y EMOM 8 min) con beeps de audio de partidor.
+                    </p>
+                </div>
+
+                <!-- Timer Presets -->
+                <div class="flex flex-wrap justify-center gap-2 mb-8" id="timerPresetButtons">
+                    <button onclick="setTimerPreset('rest60')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-red-600 text-white transition shadow">
+                        Descanso Pliometría (60s)
+                    </button>
+                    <button onclick="setTimerPreset('interval20_20')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition">
+                        Intervalos 20/20 (8 Rondas)
+                    </button>
+                    <button onclick="setTimerPreset('interval15_30')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition">
+                        Protocolo 15/30 (10 Rondas)
+                    </button>
+                    <button onclick="setTimerPreset('tabata30_15')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition">
+                        Tabata BMX 30/15 (8 Rondas)
+                    </button>
+                    <button onclick="setTimerPreset('emom8')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition">
+                        BMX Track EMOM (8 Min)
+                    </button>
+                    <button onclick="setTimerPreset('lactic40_20')" class="timer-preset-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-slate-300 hover:text-white transition">
+                        Umbral Láctico 40/20 (6 Rondas)
+                    </button>
+                </div>
+
+                <!-- Large Digital Display -->
+                <div class="max-w-md mx-auto bg-slate-950 border-2 border-red-600/40 rounded-3xl p-8 text-center shadow-inner relative glow-active">
+                    <div id="timerPhaseBadge" class="inline-block text-xs font-extrabold uppercase tracking-widest px-3 py-1 rounded-full bg-red-600/20 text-red-400 mb-3 border border-red-500/30">
+                        LISTO PARA INICIAR
+                    </div>
+                    <div id="timerDisplay" class="text-6xl sm:text-7xl font-black text-white font-mono tracking-tight my-2">
+                        01:00
+                    </div>
+                    <div class="flex justify-between items-center text-xs font-bold text-slate-400 px-4 mt-2">
+                        <span>Ronda: <strong id="timerRoundDisplay" class="text-white">1 / 1</strong></span>
+                        <span>Fase: <strong id="timerPhaseName" class="text-white">Descanso</strong></span>
+                    </div>
+                </div>
+
+                <!-- Timer Controls -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <button onclick="startTimer()" id="btnStartTimer" class="bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm sm:text-base px-8 py-3.5 rounded-2xl shadow-xl shadow-red-600/40 transition flex items-center gap-2 transform active:scale-95">
+                        <i class="fa-solid fa-play"></i> Iniciar
+                    </button>
+                    <button onclick="pauseTimer()" id="btnPauseTimer" class="hidden bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-sm sm:text-base px-8 py-3.5 rounded-2xl shadow-xl shadow-amber-600/40 transition flex items-center gap-2 transform active:scale-95">
+                        <i class="fa-solid fa-pause"></i> Pausar
+                    </button>
+                    <button onclick="resetTimer()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-sm sm:text-base px-6 py-3.5 rounded-2xl border border-slate-700 transition flex items-center gap-2">
+                        <i class="fa-solid fa-rotate-left"></i> Reiniciar
+                    </button>
+                </div>
+
+                <!-- Sound FX Test Note -->
+                <div class="text-center mt-6">
+                    <button onclick="playGateBeeps()" class="text-xs text-slate-400 hover:text-red-400 transition underline flex items-center gap-1.5 mx-auto">
+                        <i class="fa-solid fa-volume-high"></i> Probar tono sonoro oficial de partidor (BEEP)
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- VIEW 4: PEDIATRIC & YOUTH NUTRITION GUIDE -->
+        <!-- ========================================== -->
+        <div id="viewNutrition" class="hidden space-y-6">
+            <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                <div>
+                    <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-2.5 py-1 rounded-md">
+                        <i class="fa-solid fa-apple-whole mr-1"></i> Guía Clínica y Nutricional
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 font-heading">Nutrición Pediátrica y Juvenil en BMX Racing</h2>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                        Pautas científicas de alimentación e hidratación documentadas en el método Activerza para optimizar la regeneración celular, la contracción explosiva y la salud ósea.
+                    </p>
+                </div>
+
+                <!-- CALCULADORA DE HIDRATACIÓN -->
+                <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 p-6 rounded-2xl border border-cyan-800/40 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-5 space-y-3">
+                        <h3 class="text-lg font-black text-cyan-300 flex items-center gap-2">
+                            <i class="fa-solid fa-droplet"></i> Calculadora de Hidratación Estructural
+                        </h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            El tejido conectivo (tendones y ligamentos) necesita agua para ser elástico y resistir los impactos. Calcula las tomas recomendadas según el peso del deportista:
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <input type="number" id="calcAthleteWeight" value="38" min="12" max="95" oninput="calculateHydration()" class="w-28 bg-slate-900 border border-cyan-700/60 rounded-xl p-2.5 text-center font-bold text-white text-lg">
+                            <span class="text-sm font-bold text-slate-300">kg de peso</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="bg-slate-900/80 p-4 rounded-xl border border-cyan-700/30 text-center">
+                            <div class="text-xs text-cyan-400 font-bold uppercase mb-1">Pre-Entreno (1-2h)</div>
+                            <div class="text-xl font-black text-white" id="hydraPreDisplay">380 ml</div>
+                            <div class="text-[10px] text-slate-400 mt-1">Agua pura para elasticidad tendinosa</div>
+                        </div>
+                        <div class="bg-slate-900/80 p-4 rounded-xl border border-cyan-700/30 text-center">
+                            <div class="text-xs text-cyan-400 font-bold uppercase mb-1">Durante (c/15 min)</div>
+                            <div class="text-xl font-black text-white" id="hydraDuringDisplay">100 - 150 ml</div>
+                            <div class="text-[10px] text-slate-400 mt-1">Sorbos cortos + pizca sal y limón</div>
+                        </div>
+                        <div class="bg-slate-900/80 p-4 rounded-xl border border-cyan-700/30 text-center">
+                            <div class="text-xs text-cyan-400 font-bold uppercase mb-1">Post-Entreno</div>
+                            <div class="text-xl font-black text-white" id="hydraPostDisplay">450 ml + Fruta</div>
+                            <div class="text-[10px] text-slate-400 mt-1">Sandía, naranja o mandarina</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARDS DE PILARES NUTRICIONALES -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- 1. Carbohidratos Complejos -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Combustible de Pista (Carbohidratos Complejos)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Priorizar avena, papa, plátano, arroz integral y tostadas con miel. <strong>Evitar azúcares refinados</strong> y gaseosas que causan picos de insulina y fatiga metabólica rápida.
+                        </p>
+                        <div class="text-[11px] text-amber-400 font-semibold bg-amber-950/30 p-2 rounded-lg border border-amber-800/40">
+                            Regla: Snack 30-45 min antes (banana con mantequilla de maní).
+                        </div>
+                    </div>
+
+                    <!-- 2. Proteína Natural -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-egg"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Proteína Natural vs Suplementos</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Huevo, pollo campesino, pescado, yogur griego y legumbres. En niños y adolescentes los suplementos son innecesarios: la comida real construye músculos y tendones más fuertes.
+                        </p>
+                        <div class="text-[11px] text-red-400 font-semibold bg-red-950/30 p-2 rounded-lg border border-red-800/40">
+                            Post-entreno (primeros 30 min): Vaso de leche o yogur con fruta.
+                        </div>
+                    </div>
+
+                    <!-- 3. Grasas Saludables & Mielinización -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Grasas Buenas y Reflejos Nerviosos</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            El sistema nervioso infantil está en desarrollo. Las grasas saludables (aguacate, nueces, almendras, aceite de oliva crudo) optimizan la velocidad de los impulsos para reaccionar al partidor.
+                        </p>
+                        <div class="text-[11px] text-emerald-400 font-semibold bg-emerald-950/30 p-2 rounded-lg border border-emerald-800/40">
+                            Impacto: Clave para el tiempo de reacción auditiva ("BEEP").
+                        </div>
+                    </div>
+
+                    <!-- 4. Hierro y Oxigenación -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Hierro + Vitamina C (Anti-Fatiga)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Para evitar fatiga anaeróbica en etapas de crecimiento. Carnes rojas magras, lentejas, espinacas y frijoles. Acompañar las lentejas con jugo de naranja o guayaba fresca para fijar el hierro.
+                        </p>
+                        <div class="text-[11px] text-rose-400 font-semibold bg-rose-950/30 p-2 rounded-lg border border-rose-800/40">
+                            Tip clínico: La Vitamina C multiplica la absorción vegetal.
+                        </div>
+                    </div>
+
+                    <!-- 5. Calcio y Vitamina D -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-bone"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Calcio y Vitamina D (El Chasis Óseo)</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            El BMX genera altos impactos en saltos y caídas. Los huesos responden haciéndose más densos. Respaldar con lácteos, brócoli, almendras y 15 minutos diarios de luz solar obligatorios.
+                        </p>
+                        <div class="text-[11px] text-blue-400 font-semibold bg-blue-950/30 p-2 rounded-lg border border-blue-800/40">
+                            Innegociable: El sol activa la Vitamina D fijadora de calcio.
+                        </div>
+                    </div>
+
+                    <!-- 6. Omega 3 & Carga Pre-Pista -->
+                    <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700/80 space-y-2.5">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-fish"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-base">Omega 3 & Supercompensación</h4>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Atún, salmón, semillas de linaza o chía reducen el dolor muscular tardío (DOMS). El viernes por la noche, aumentar la cena de carbohidratos (pasta, arroz) para rellenar glucógeno pre-carrera.
+                        </p>
+                        <div class="text-[11px] text-purple-400 font-semibold bg-purple-950/30 p-2 rounded-lg border border-purple-800/40">
+                            Viernes noche: Tanque de glucógeno lleno para el sábado.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- MODAL 1: EXPLANATORY VIDEO VIEWER          -->
+    <!-- ========================================== -->
+    <div id="videoModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 transition-all">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-3xl w-full p-6 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-start border-b border-slate-800 pb-3">
+                <div>
+                    <span id="modalVideoCategory" class="text-[10px] font-extrabold uppercase tracking-widest text-red-400 bg-red-600/10 px-2 py-0.5 rounded border border-red-500/20">EJERCICIO BMX</span>
+                    <h3 id="modalVideoTitle" class="text-xl sm:text-2xl font-black text-white mt-1">Título del Ejercicio</h3>
+                </div>
+                <button onclick="closeVideoModal()" aria-label="Cerrar video" class="text-slate-400 hover:text-white text-2xl font-bold p-1 transition">&times;</button>
+            </div>
+
+            <!-- YouTube Video Embed -->
+            <div class="w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-inner border border-slate-800">
+                <iframe id="modalVideoIframe" class="w-full h-full" src="" title="Video explicativo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Technical Instructions -->
+            <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700 space-y-2">
+                <h4 class="text-xs font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="fa-solid fa-circle-info"></i> Claves Técnicas y Biomecánica BMX
+                </h4>
+                <p id="modalVideoDescription" class="text-xs sm:text-sm text-slate-300 leading-relaxed"></p>
+                <div id="modalVideoTempoContainer" class="hidden text-xs bg-slate-900 p-2.5 rounded-xl border border-slate-700 text-slate-300 font-mono">
+                    <!-- Tempo guide -->
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-2">
+                <button onclick="closeVideoModal()" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-bold text-xs px-5 py-2.5 rounded-xl border border-slate-700 transition cursor-pointer">
+                    Cerrar Video
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL 2: ATHLETE PROFILE & PROGRESS MGMT   -->
+    <!-- ========================================== -->
+    <div id="profileModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4 transition-all">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-5">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-red-600/20 text-red-500 flex items-center justify-center">
+                        <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <div>
+                        <h3 id="modalProfileTitle" class="text-lg sm:text-xl font-black text-white font-heading">Perfil del Deportista</h3>
+                        <span id="modalProfileModeBadge" class="text-[10px] text-emerald-400 font-bold uppercase tracking-wider hidden"><i class="fa-solid fa-circle-plus mr-1"></i>Creando Nuevo Perfil</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button type="button" onclick="prepareNewAthleteForm()" id="btnHeaderNewProfile" class="bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 text-xs font-bold px-3 py-1.5 rounded-xl transition flex items-center gap-1.5 cursor-pointer shadow-sm">
+                        <i class="fa-solid fa-user-plus"></i> <span class="hidden sm:inline">Nuevo Perfil</span><span class="sm:hidden">Nuevo</span>
+                    </button>
+                    <button onclick="closeProfileModal()" aria-label="Cerrar perfil" class="text-slate-400 hover:text-white text-2xl font-bold p-1 transition">&times;</button>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- PHOTO UPLOAD & PREVIEW SECTION -->
+                <div class="flex items-center gap-4 bg-slate-800/60 p-3.5 rounded-2xl border border-slate-700/80">
+                    <div class="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-slate-800 border-2 border-red-500/40 overflow-hidden flex items-center justify-center flex-shrink-0 shadow-inner group">
+                        <img id="profilePhotoPreview" src="" alt="Foto del Deportista" class="w-full h-full object-cover hidden">
+                        <div id="profilePhotoPlaceholder" class="flex flex-col items-center justify-center text-slate-400">
+                            <i class="fa-solid fa-user text-2xl sm:text-3xl text-slate-500"></i>
+                        </div>
+                    </div>
+                    <div class="space-y-1.5 flex-1">
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider">Foto del Deportista</label>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <label class="cursor-pointer bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-3 py-1.5 rounded-xl transition flex items-center gap-1.5 shadow shadow-red-600/30">
+                                <i class="fa-solid fa-camera"></i> Cargar Foto
+                                <input type="file" id="inputProfilePhoto" accept="image/*" onchange="handleAthletePhotoUpload(event)" class="hidden">
+                            </label>
+                            <button type="button" id="btnRemoveProfilePhoto" onclick="removeAthletePhoto()" class="hidden bg-slate-750 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 font-bold text-xs px-2.5 py-1.5 rounded-xl transition cursor-pointer">
+                                <i class="fa-solid fa-xmark mr-1"></i> Quitar
+                            </button>
+                        </div>
+                        <p class="text-[10px] text-slate-400">Formatos JPG, PNG o WebP (auto-ajustado y guardado en local)</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Nombre del Deportista</label>
+                    <input type="text" id="inputProfileName" placeholder="Ej: Santiago Vega" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-sm text-white font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Grupo Etario</label>
+                        <select id="inputProfileAgeGroup" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-white font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
+                            <option value="sub6">Menores de 6 años</option>
+                            <option value="7to12">7 a 12 años</option>
+                            <option value="13to17">13 a 17 años</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Peso (kg - Opcional)</label>
+                        <input type="number" id="inputProfileWeight" placeholder="Ej: 42" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-sm text-white font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
+                    </div>
+                </div>
+
+                <!-- ACTIONS: SAVE & DELETE -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1">
+                    <button id="btnSaveAthleteProfile" onclick="saveCurrentAthleteProfile()" class="sm:col-span-2 bg-red-600 hover:bg-red-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg shadow-red-600/30 transition flex items-center justify-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-check"></i> Guardar y Aplicar
+                    </button>
+                    <button type="button" id="btnDeleteCurrentAthlete" onclick="deleteCurrentAthleteProfile()" class="bg-rose-950/40 hover:bg-rose-900/60 text-rose-400 hover:text-rose-200 border border-rose-800/50 font-bold text-xs py-3 rounded-xl transition flex items-center justify-center gap-1.5 cursor-pointer" title="Eliminar este deportista">
+                        <i class="fa-solid fa-trash-can"></i> Eliminar
+                    </button>
+                </div>
+
+                <!-- Athlete Profile Switcher -->
+                <div class="pt-3 border-t border-slate-800 space-y-2">
+                    <div class="flex justify-between items-center">
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider">Atletas Registrados:</label>
+                        <button type="button" onclick="prepareNewAthleteForm()" class="text-xs text-red-400 hover:text-red-300 font-bold transition flex items-center gap-1 cursor-pointer">
+                            <i class="fa-solid fa-plus text-[10px]"></i> Crear Nuevo Perfil
+                        </button>
+                    </div>
+                    <div id="athletesListPills" class="flex flex-wrap gap-2">
+                        <!-- Botones de atletas guardados -->
+                    </div>
+                </div>
+
+                <!-- Export / Import JSON Options -->
+                <div class="pt-3 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
+                    <button onclick="exportDataJSON()" class="hover:text-red-400 transition flex items-center gap-1">
+                        <i class="fa-solid fa-download"></i> Respaldar datos (JSON)
+                    </button>
+                    <label class="hover:text-red-400 transition flex items-center gap-1 cursor-pointer">
+                        <i class="fa-solid fa-upload"></i> Restaurar
+                        <input type="file" id="importJsonFileInput" onchange="importDataJSON(event)" class="hidden" accept=".json">
+                    </label>
+                </div>
+            </div>
+
+            <div class="flex justify-end pt-2">
+                <button onclick="closeProfileModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-4 py-2 rounded-xl transition">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL 3: GUIDED WORKOUT TRACKER (WOD PLAYER)-->
+    <!-- ========================================== -->
+    <div id="guidedWorkoutModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-xl z-50 flex items-center justify-center p-2 sm:p-4 transition-all hidden">
+        <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-5xl w-full p-4 sm:p-6 shadow-2xl space-y-4 max-h-[95vh] overflow-y-auto">
+            
+            <!-- ACTIVE WORKOUT TRACKER VIEW -->
+            <div id="gwTrackerView" class="space-y-4">
+                <!-- Top Header: Block, Title, Sound & Exit -->
+                <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-3">
+                    <div class="flex items-center gap-2">
+                        <span id="gwBlockBadge" class="px-2.5 py-1 rounded-lg text-xs font-black uppercase tracking-wider bg-orange-600/20 text-orange-400 border border-orange-500/30">
+                            1. CALENTAMIENTO DINÁMICO
+                        </span>
+                        <h3 id="gwSessionTitle" class="text-sm sm:text-base font-bold text-white font-heading">
+                            Semana 1 • Día 1
+                        </h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="toggleWorkoutSound()" id="gwSoundBtn" class="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 transition cursor-pointer" title="Silenciar / Activar sonido">
+                            <i id="gwSoundIcon" class="fa-solid fa-volume-high text-amber-400 text-sm"></i>
+                        </button>
+                        <button onclick="exitGuidedWorkout()" class="p-2 rounded-xl bg-slate-800 hover:bg-red-600/80 text-slate-300 hover:text-white border border-slate-700 transition cursor-pointer text-sm" title="Salir de la sesión">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3 Timers Dashboard -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <!-- Timer 1: Current Exercise / Interval -->
+                    <div class="bg-gradient-to-br from-slate-850 to-slate-800/80 p-4 rounded-2xl border border-slate-700/70 text-center relative overflow-hidden shadow-inner">
+                        <div class="flex justify-between items-center mb-1">
+                            <span id="gwPhaseBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-red-600/20 text-red-400 border border-red-500/30">
+                                TRABAJO
+                            </span>
+                            <span id="gwSetCounter" class="text-[11px] font-bold text-slate-400 font-mono">
+                                Serie 1 de 3
+                            </span>
+                        </div>
+                        <div id="gwExerciseTimer" class="text-4xl sm:text-5xl font-black text-white tracking-tight font-mono py-1">
+                            00:45
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-2 mt-1 overflow-hidden border border-slate-700/60">
+                            <div id="gwStepProgressBar" class="h-full bg-gradient-to-r from-red-600 to-amber-500 rounded-full transition-all duration-300 ease-linear" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Timer 2: Block Remaining -->
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                        <div class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-cubes-stacked text-orange-400"></i> Bloque Restante
+                        </div>
+                        <div id="gwBlockTimer" class="text-2xl sm:text-3xl font-black text-orange-400 font-mono tracking-tight my-1">
+                            08:30
+                        </div>
+                        <div class="text-[10px] text-slate-500 font-medium">
+                            Tiempo restante en el bloque actual
+                        </div>
+                    </div>
+
+                    <!-- Timer 3: Total Session Remaining -->
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700/60 flex flex-col justify-between">
+                        <div class="flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-wider">
+                            <span class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-stopwatch text-cyan-400"></i> Sesión Total
+                            </span>
+                            <span id="gwSessionProgressPct" class="text-cyan-400 font-bold">0%</span>
+                        </div>
+                        <div id="gwSessionTimer" class="text-2xl sm:text-3xl font-black text-cyan-400 font-mono tracking-tight my-1">
+                            55:00
+                        </div>
+                        <div class="w-full bg-slate-800 rounded-full h-1.5 overflow-hidden border border-slate-700/60">
+                            <div id="gwSessionProgressBar" class="h-full bg-cyan-500 rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Workout Split Screen -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+                    <!-- Left: Video Embed & Biomechanical notes (7 Cols) -->
+                    <div class="lg:col-span-7 space-y-3">
+                        <div class="w-full aspect-video rounded-2xl overflow-hidden bg-black shadow-inner border border-slate-800">
+                            <iframe id="gwVideoIframe" class="w-full h-full" src="" title="Video del Ejercicio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div id="gwActiveExerciseTempo" class="hidden text-xs bg-purple-950/60 text-purple-300 p-2 rounded-xl border border-purple-800/40 font-mono">
+                            <!-- Tempo info -->
+                        </div>
+                    </div>
+
+                    <!-- Right: Active Exercise + Up Next + Player Controls (5 Cols) -->
+                    <div class="lg:col-span-5 space-y-3">
+                        <!-- Current Exercise Details Card -->
+                        <div class="bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 space-y-1.5">
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-red-400 bg-red-600/10 px-2 py-0.5 rounded border border-red-500/20">
+                                EN EJECUCIÓN
+                            </span>
+                            <h4 id="gwActiveExerciseTitle" class="text-lg sm:text-xl font-black text-white font-heading">
+                                Ejercicio Actual
+                            </h4>
+                            <p id="gwActiveExerciseDetails" class="text-xs text-slate-400 font-medium"></p>
+                            <p id="gwActiveExerciseDesc" class="text-xs text-slate-300/90 leading-relaxed pt-1"></p>
+                        </div>
+
+                        <!-- Up Next (El que continúa) Card -->
+                        <div class="bg-gradient-to-r from-amber-950/30 to-slate-800/70 p-4 rounded-2xl border border-amber-500/30 space-y-1">
+                            <div class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 flex items-center gap-1.5">
+                                <i class="fa-solid fa-forward-step"></i> A Continuación • Ejercicio que sigue:
+                            </div>
+                            <h5 id="gwNextExerciseTitle" class="text-sm sm:text-base font-bold text-white">
+                                Siguiente Ejercicio
+                            </h5>
+                            <p id="gwNextExerciseDetails" class="text-xs text-slate-400"></p>
+                            <p id="gwNextExerciseTip" class="text-[11px] text-amber-300/90 leading-relaxed"></p>
+                        </div>
+
+                        <!-- Player Controls Bar -->
+                        <div class="bg-slate-800/70 p-3 rounded-2xl border border-slate-700/80 flex items-center justify-between gap-3">
+                            <button onclick="prevWorkoutStep()" class="p-3 rounded-xl bg-slate-700/70 hover:bg-slate-600 text-white transition cursor-pointer" title="Retroceder al ejercicio o serie anterior">
+                                <i class="fa-solid fa-backward-step text-base"></i>
+                            </button>
+
+                            <button onclick="toggleWorkoutPlayPause()" id="gwPlayPauseBtn" class="w-14 h-14 rounded-2xl bg-red-600 hover:bg-red-500 text-white text-xl flex items-center justify-center shadow-lg shadow-red-600/40 transition active:scale-95 cursor-pointer" title="Pausar / Reanudar">
+                                <i id="gwPlayPauseIcon" class="fa-solid fa-pause"></i>
+                            </button>
+
+                            <button onclick="nextWorkoutStep()" class="p-3 rounded-xl bg-slate-700/70 hover:bg-slate-600 text-white transition cursor-pointer" title="Adelantar al siguiente ejercicio">
+                                <i class="fa-solid fa-forward-step text-base"></i>
+                            </button>
+
+                            <button onclick="skipCurrentWorkoutPhase()" class="px-3.5 py-3 rounded-xl bg-slate-700/50 hover:bg-slate-600 text-white text-xs font-bold transition flex items-center gap-1.5 cursor-pointer" title="Completar serie actual y avanzar">
+                                <i class="fa-solid fa-check text-emerald-400"></i>
+                                <span>Avanzar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKOUT COMPLETED CELEBRATION VIEW -->
+            <div id="gwFinishedView" class="hidden text-center py-8 px-4 space-y-6">
+                <div class="w-20 h-20 rounded-3xl bg-emerald-600/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center text-4xl mx-auto shadow-xl shadow-emerald-600/20 animate-bounce">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <div class="space-y-2">
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-800/40">
+                        ¡ENTRENAMIENTO COMPLETADO!
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-black text-white font-heading">
+                        ¡Felicitaciones, <span id="gwFinishAthleteName" class="text-red-500">Santiago</span>!
+                    </h3>
+                    <p id="gwFinishSessionDetail" class="text-xs sm:text-sm text-slate-400 max-w-lg mx-auto">
+                        Semana 1 • Día 1 completado con éxito.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-4 max-w-md mx-auto grid grid-cols-2 gap-3 text-center">
+                    <div>
+                        <div class="text-2xl font-black text-white font-mono">100%</div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase">Sesión Registrada</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black text-emerald-400 font-mono">✓ Activo</div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase">Calendario Actualizado</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                    <button onclick="exitGuidedWorkout(); switchMainTab('calendar');" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-6 py-3 rounded-xl shadow-lg shadow-red-600/30 transition flex items-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-calendar-check"></i> Ver en el Calendario
+                    </button>
+                    <button onclick="exitGuidedWorkout()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs px-6 py-3 rounded-xl border border-slate-700 transition cursor-pointer">
+                        Cerrar Resumen
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FLOATING ACTION BUTTON (FAB) FOR GUIDED WORKOUT -->
+    <button onclick="startGuidedWorkout()" id="floatingWorkoutFab" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-black text-xs sm:text-sm px-4 sm:px-5 py-3 rounded-2xl shadow-2xl shadow-red-600/50 border border-white/20 transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2.5 cursor-pointer group" title="Iniciar seguimiento de la sesión activa">
+        <span class="w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-play ml-0.5"></i>
+        </span>
+        <span class="hidden sm:inline">Iniciar Sesión Guiada</span>
+        <span class="sm:hidden">WOD</span>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-10 mt-16 text-slate-400 text-xs transition-colors">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-3">
+            <div class="flex items-center justify-center gap-2">
+                <i class="fa-solid fa-person-biking text-red-500 text-xl"></i>
+                <span class="text-white font-black tracking-wider text-base font-heading">ACTIVERZA BMX RACING ACADEMY</span>
+            </div>
+            <p class="max-w-2xl mx-auto text-slate-500 text-[11px] leading-relaxed">
+                Metodología integral de preparación física, pliometría reactiva, rigidez articular (stiffness), tolerancia láctica, nutrición pediátrica e imaginería neuromuscular adaptada por edad.
+            </p>
+            <p class="text-[10px] text-slate-600 font-mono">
+                Desarrollado para BMX Racing • Unleash Your Power
+            </p>
+        </div>
+    </footer>
+
+    <!-- MODULAR JAVASCRIPT MODULES -->
+    <script src="js/data.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/workout.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

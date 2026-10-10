@@ -1,0 +1,54 @@
+:root {
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-display);
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Pulse glow animation for track timer */
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(220, 38, 38, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(220, 38, 38, 0.8); }
+}
+
+.glow-active {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Smooth card transitions */
+.exercise-card {
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-2px);
+}
