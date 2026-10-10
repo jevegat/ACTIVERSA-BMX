@@ -58,7 +58,10 @@ Arquitectura modular en Vanilla JavaScript (ES6+), HTML5 semántico y CSS3 con T
 │   ├── calendar.js      # Planificador de fechas y calendario de seguimiento
 │   ├── workout.js       # Motor del WOD Tracker, tiempos guiados y control de sesión
 │   └── app.js           # Controlador principal, estado, perfiles y modales
-├── hero_bmx.jpg         # Imagen de acción en partidor BMX Racing
+├── images/              # Galería de 7 fotos de acción y técnica BMX Racing (selección dinámica)
+│   ├── bmx1.png ... bmx3.png
+│   └── bmx-proconcept.png ... bmx-proconcept4.png
+├── hero_bmx.jpg         # Imagen complementaria BMX Racing
 ├── package.json         # Configuración del paquete
 └── .gitignore           # Exclusiones de Git
 ```

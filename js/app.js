@@ -21,7 +21,77 @@ let state = {
     activeTab: 'training'
 };
 
+// Galería de fotos destacadas de BMX Racing disponibles en images/
+const HERO_BMX_GALLERY = [
+    { src: 'images/bmx1.png', label: 'Curva & Agresividad' },
+    { src: 'images/bmx2.png', label: 'Técnica en Salto' },
+    { src: 'images/bmx3.png', label: 'Ritmo & Velocidad' },
+    { src: 'images/bmx-proconcept.png', label: 'Partidor UCI Pro' },
+    { src: 'images/bmx-proconcept2.png', label: 'Sprint de Partida' },
+    { src: 'images/bmx-proconcept3.png', label: 'Peralte Pro Concept' },
+    { src: 'images/bmx-proconcept4.png', label: 'Fuerza Explosiva' }
+];
+
+let currentHeroImageIndex = 0;
+
+/**
+ * Selecciona aleatoriamente una foto de acción de la carpeta images/
+ * garantizando que sea distinta a la última mostrada al actualizar o recargar el sitio.
+ */
+function initRandomHeroImage() {
+    const heroImgEl = document.getElementById('heroBmxImage');
+    if (!heroImgEl || !HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
+
+    // Obtener la última foto mostrada para evitar repeticiones consecutivas
+    const lastSrc = sessionStorage.getItem('activerza_last_hero_src') || localStorage.getItem('activerza_last_hero_src');
+    
+    // Filtrar candidatos distintos a la última foto vista
+    const candidates = HERO_BMX_GALLERY.filter(item => item.src !== lastSrc);
+    const pool = candidates.length > 0 ? candidates : HERO_BMX_GALLERY;
+
+    const selected = pool[Math.floor(Math.random() * pool.length)];
+    currentHeroImageIndex = HERO_BMX_GALLERY.findIndex(item => item.src === selected.src);
+    if (currentHeroImageIndex === -1) currentHeroImageIndex = 0;
+
+    applyHeroImage(selected.src, selected.label);
+
+    // Guardar para la siguiente actualización
+    sessionStorage.setItem('activerza_last_hero_src', selected.src);
+    localStorage.setItem('activerza_last_hero_src', selected.src);
+}
+
+/**
+ * Aplica una foto con transición suave al elemento Hero
+ */
+function applyHeroImage(src, label) {
+    const heroImgEl = document.getElementById('heroBmxImage');
+    const heroTagEl = document.getElementById('heroImageTag');
+    if (!heroImgEl) return;
+
+    heroImgEl.style.opacity = '0.6';
+    heroImgEl.src = src;
+    heroImgEl.onload = () => {
+        heroImgEl.style.opacity = '1';
+    };
+    if (heroTagEl && label) {
+        heroTagEl.textContent = label;
+    }
+}
+
+/**
+ * Cicla interactivamente a la siguiente imagen de la galería
+ */
+function cycleHeroImage() {
+    if (!HERO_BMX_GALLERY || HERO_BMX_GALLERY.length === 0) return;
+    currentHeroImageIndex = (currentHeroImageIndex + 1) % HERO_BMX_GALLERY.length;
+    const nextItem = HERO_BMX_GALLERY[currentHeroImageIndex];
+    applyHeroImage(nextItem.src, nextItem.label);
+    sessionStorage.setItem('activerza_last_hero_src', nextItem.src);
+    localStorage.setItem('activerza_last_hero_src', nextItem.src);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    initRandomHeroImage();
     loadSavedState();
     if (typeof setupCalendarInputs === 'function') {
         setupCalendarInputs();
