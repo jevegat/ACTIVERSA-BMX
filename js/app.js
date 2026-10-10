@@ -419,7 +419,19 @@ function renderActiveView() {
 
     let html = '';
 
-    // 1. TARJETA DE CONSEJOS CLÍNICOS Y NUTRICIÓN
+    // 1. CÁLCULO DE DURACIÓN TOTAL DE LA SESIÓN Y DESGLOSE
+    let sessionSummary = { totalMin: 60, formattedTotal: "60:00", warmupRounds: 3, cardioRounds: 8, blocks: { warmup: 10, plyo: 10, strength: 15, cardio: 13, stretch: 8, recovery: 4 } };
+    if (typeof calculateSessionSummary === 'function') {
+        sessionSummary = calculateSessionSummary(w, d, age);
+    }
+
+    // Actualizar indicador de duración en el Hero principal
+    const heroDurationElem = document.getElementById('statSessionDuration');
+    if (heroDurationElem) {
+        heroDurationElem.innerText = `${sessionSummary.totalMin}'`;
+    }
+
+    // 1. TARJETA DE CONSEJOS CLÍNICOS, NUTRICIÓN Y RESUMEN ESTRUCTURAL COMPLETO
     html += `
         <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border-l-4 border-amber-500 p-5 rounded-3xl border border-amber-900/40 shadow-lg space-y-4">
             <div class="flex flex-wrap justify-between items-center gap-2">
@@ -446,6 +458,57 @@ function renderActiveView() {
                     <p class="text-[11px] text-slate-300/90 leading-relaxed">
                         ${dayData.nutrition.energy} ${dayData.nutrition.hydration}
                     </p>
+                </div>
+            </div>
+
+            <!-- RESUMEN ESTRUCTURAL COMPLETO Y DURACIÓN TOTAL DE LA SESIÓN -->
+            <div class="p-3.5 rounded-2xl bg-slate-950/70 border border-amber-500/30 shadow-inner space-y-2.5">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-lg bg-red-600/20 text-red-400 flex items-center justify-center font-bold text-xs">
+                            <i class="fa-solid fa-stopwatch-20"></i>
+                        </span>
+                        <span class="text-xs font-black text-white uppercase tracking-wider font-heading">
+                            Estructura de la Sesión y Duración Total Calculada:
+                        </span>
+                    </div>
+                    <span class="px-3 py-1 rounded-full text-xs font-black bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 text-white shadow flex items-center gap-1.5">
+                        <i class="fa-solid fa-clock"></i> ${sessionSummary.totalMin} Minutos (${sessionSummary.formattedTotal})
+                    </span>
+                </div>
+
+                <!-- Desglose de los 6 bloques con sus series y tiempos exactos -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 text-center text-xs">
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-orange-400 font-bold block truncate">1. Calentamiento</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.warmup} min</strong>
+                        <span class="text-[9px] text-slate-400 block">${sessionSummary.warmupRounds} series (${session.warmup ? session.warmup.length : 0} ej)</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-amber-400 font-bold block truncate">2A. Pliometría</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.plyo} min</strong>
+                        <span class="text-[9px] text-slate-400 block">3 series de 60s des</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-cyan-400 font-bold block truncate">2B. Fuerza Base</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.strength} min</strong>
+                        <span class="text-[9px] text-slate-400 block">3 series c/tempos</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-red-400 font-bold block truncate">2C. Cardio Pista</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.cardio} min</strong>
+                        <span class="text-[9px] text-slate-400 block">${sessionSummary.cardioRounds} rondas sprint</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-emerald-400 font-bold block truncate">3. Estiramiento</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.stretch} min</strong>
+                        <span class="text-[9px] text-slate-400 block">Elongación 8 min</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2 rounded-xl border border-slate-800">
+                        <span class="text-[10px] text-purple-400 font-bold block truncate">4. Recuperación</span>
+                        <strong class="text-white font-extrabold text-sm">${sessionSummary.blocks.recovery} min</strong>
+                        <span class="text-[9px] text-slate-400 block">Respiración SNC</span>
+                    </div>
                 </div>
             </div>
 

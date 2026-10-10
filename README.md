@@ -11,15 +11,27 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 ## 🌟 Funcionalidades Principales
 
 ### 1. ⏱️ WOD Tracker & Seguimiento Guiado de la Sesión
-* **Cronómetro Interválico Modal**: Flujo guiado paso a paso para ejecutar la sesión completa (60 minutos) con control de intervalos de trabajo y descanso.
-* **Triple Display de Tiempos**:
+* **Cronómetro Interválico Modal con Duración Total Calculada**: Flujo guiado paso a paso para ejecutar la sesión completa con control exacto de intervalos de trabajo y descanso.
+* **Indicaciones Completas por Bloque y Series Repetidas**:
+  - **Calentamiento Dinámico de 10 Minutos Garantizado**: Los circuitos de ejercicios (ej. 3 ejercicios de 45s x 15s) se repiten automáticamente por lo menos 3 series hasta completar los 10 minutos previstos con descanso/preparación antes de Pliometría.
+  - **Estructura Fisiológica Completa**: Bloque 2A Pliometría (3 series c/60s descanso PCr), Bloque 2B Fuerza Base (3 series con tempos excéntricos), Bloque 2C Cardio Pista (intervalos HIIT/Tabata), Bloque 3 Estiramiento (8 minutos con 2 series de elongación estática) y Bloque 4 Recuperación Parasimpática (4 minutos de respiración SNC e imaginería).
+  - **Resumen Estructural de Sesión**: Cálculo dinámico de la duración total (ej. 50 a 58 min) con tarjeta visual de desglose de minutos y series en la cabecera de la rutina y en el hero principal.
+* **Triple Display de Tiempos en Pantalla**:
   - Tiempo restante del ejercicio o intervalo actual con fases dinámicas (`TRABAJO`, `DESCANSO COMPLETO`, `TRANSICIÓN`).
   - Tiempo restante del bloque en curso (*Calentamiento, Pliometría, Fuerza con Tempos, Cardio HIIT, Estiramiento, Recuperación*).
-  - Tiempo total restante de la sesión de 60 minutos con barra porcentual de avance.
+  - Tiempo total restante de la sesión con barra porcentual de avance.
 * **Anticipación del Siguiente Ejercicio**: Muestra en tiempo real qué ejercicio o serie continúa, objetivo muscular y claves biomecánicas para que el atleta anticipe la postura.
 * **Video Embebido Sincronizado**: Reproduce el video tutorial del ejercicio activo y adelanta el del próximo ejercicio durante las pausas de descanso.
 * **Controles Interactivos**: Pausar / Reanudar, retroceder, adelantar serie y botón de avanzar rápido si se completan las repeticiones antes de tiempo.
 * **Beeps de Partidor UCI**: Señales acústicas en los 3 segundos finales con bocina de salida mediante Web Audio API.
+
+### 2. ⏱️ Cronómetro de Pista y Descansos Avanzado
+* **Control Total de Reproducción**: Todos los cronómetros y protocolos (Descanso Pliometría 60s, Intervalos 20/20, Protocolo 15/30, Tabata 30/15, EMOM 8 min y Umbral Láctico 40/20) permiten:
+  - **Pausar / Iniciar / Reanudar** en cualquier instante.
+  - **Adelantar** de forma inmediata a la siguiente fase o ronda (`⏭️ Ronda Sig`) o sumar tiempo (+15s).
+  - **Atrasar** a la fase o ronda anterior (`⏮️ Ronda Ant`) o restar tiempo (-15s).
+  - **Reiniciar** el protocolo desde la primera ronda.
+* **Displays y Progresión**: Barra de avance porcentual de la fase y cálculo dinámico en tiempo real del tiempo total restante del protocolo completo.
 
 ### 2. 📸 Carrusel Interactivo de Fotos de Acción BMX & ProconceptBMX
 * **Rotación y Selección Aleatoria**: Cada vez que el usuario carga o recarga el sitio, se selecciona una foto de acción distinta sin repetir la sesión anterior.

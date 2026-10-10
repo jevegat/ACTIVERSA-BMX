@@ -13,7 +13,64 @@ let isWorkoutRunning = false;
 let isWorkoutMuted = false;
 
 /**
- * Compila la secuencia cronológica de trabajo y descanso de la sesión activa
+ * Calcula la duración exacta y el desglose de cada bloque de la sesión
+ */
+function calculateSessionSummary(week, day, ageGroup) {
+    const steps = buildWorkoutPlan(week, day, ageGroup);
+    let totalSec = 0;
+    const blocksSec = {
+        warmup: 0,
+        plyo: 0,
+        strength: 0,
+        cardio: 0,
+        stretch: 0,
+        recovery: 0
+    };
+
+    steps.forEach(s => {
+        totalSec += s.duration;
+        if (s.blockIndex === 0) blocksSec.warmup += s.duration;
+        else if (s.blockIndex === 1) blocksSec.plyo += s.duration;
+        else if (s.blockIndex === 2) blocksSec.strength += s.duration;
+        else if (s.blockIndex === 3) blocksSec.cardio += s.duration;
+        else if (s.blockIndex === 4) blocksSec.stretch += s.duration;
+        else if (s.blockIndex === 5) blocksSec.recovery += s.duration;
+    });
+
+    const session = TRAINING_DB && TRAINING_DB[week] && TRAINING_DB[week].days && TRAINING_DB[week].days[day] ? TRAINING_DB[week].days[day].ageGroups[ageGroup] : null;
+    const warmupCount = session && session.warmup ? session.warmup.length : 3;
+    let warmupRounds = 3;
+    if (warmupCount <= 3) warmupRounds = 3;
+    else if (warmupCount === 4) warmupRounds = 2;
+    else if (warmupCount >= 5) warmupRounds = 2;
+
+    let cardioRounds = 8;
+    if (session && session.cardio) {
+        if (session.cardio.name.includes("40/20") || session.cardio.name.includes("Semáforo")) cardioRounds = 6;
+        else if (session.cardio.name.includes("EMOM")) cardioRounds = 8;
+    }
+
+    return {
+        totalSec,
+        totalMin: Math.round(totalSec / 60),
+        formattedTotal: formatTime(totalSec),
+        warmupRounds,
+        cardioRounds,
+        stepsCount: steps.length,
+        blocks: {
+            warmup: Math.round(blocksSec.warmup / 60),
+            plyo: Math.round(blocksSec.plyo / 60),
+            strength: Math.round(blocksSec.strength / 60),
+            cardio: Math.round(blocksSec.cardio / 60),
+            stretch: Math.round(blocksSec.stretch / 60),
+            recovery: Math.round(blocksSec.recovery / 60)
+        }
+    };
+}
+
+/**
+ * Compila la secuencia cronológica de trabajo y descanso de la sesión activa,
+ * asegurando la duración completa estipulada para cada bloque (ej. 10 min de calentamiento con series repetidas).
  */
 function buildWorkoutPlan(week, day, ageGroup) {
     const steps = [];
@@ -24,46 +81,77 @@ function buildWorkoutPlan(week, day, ageGroup) {
     const session = TRAINING_DB[week].days[day].ageGroups[ageGroup];
     if (!session) return steps;
 
-    // 1. BLOQUE 1: CALENTAMIENTO Y ACTIVACIÓN DINÁMICA (Bloque 0)
+    // 1. BLOQUE 1: CALENTAMIENTO Y ACTIVACIÓN DINÁMICA (Target: 10 min = 600s)
     if (session.warmup && session.warmup.length) {
-        session.warmup.forEach((ex, idx) => {
-            const exKey = `w${week}_d${day}_${ageGroup}_warm_${idx}`;
-            steps.push({
-                blockName: "1. Calentamiento Dinámico",
-                blockIndex: 0,
-                blockTotalSec: 600, // 10 min
-                name: ex.name,
-                type: "work",
-                phaseName: "ACTIVACIÓN",
-                duration: 45,
-                setLabel: `Ejercicio ${idx + 1} de ${session.warmup.length}`,
-                video: ex.video,
-                desc: ex.desc,
-                target: ex.target || "Movilidad y Core",
-                tempo: "",
-                exerciseKey: exKey
-            });
+        const warmupCount = session.warmup.length;
+        // Si hay 3 ejercicios (o menos), se realizan 3 series completas (3 rondas x 3 ej = 9 min + transición = 10 min)
+        let totalWarmupRounds = 3;
+        if (warmupCount <= 3) totalWarmupRounds = 3;
+        else if (warmupCount === 4) totalWarmupRounds = 2;
+        else if (warmupCount >= 5) totalWarmupRounds = 2;
 
-            // 15s de transición al siguiente ejercicio
+        for (let round = 1; round <= totalWarmupRounds; round++) {
+            session.warmup.forEach((ex, idx) => {
+                const exKey = `w${week}_d${day}_${ageGroup}_warm_${idx}`;
+                // Trabajo activo: 45 segundos
+                steps.push({
+                    blockName: "1. Calentamiento Dinámico",
+                    blockIndex: 0,
+                    blockTotalSec: 600, // 10 min
+                    name: ex.name,
+                    type: "work",
+                    phaseName: "ACTIVACIÓN",
+                    duration: 45,
+                    setLabel: `Serie ${round} de ${totalWarmupRounds} • Ejercicio ${idx + 1} de ${warmupCount}`,
+                    video: ex.video,
+                    desc: ex.desc,
+                    target: ex.target || "Movilidad y Core",
+                    tempo: "",
+                    exerciseKey: round === totalWarmupRounds ? exKey : null
+                });
+
+                // 15s de transición al siguiente ejercicio
+                steps.push({
+                    blockName: "1. Calentamiento Dinámico",
+                    blockIndex: 0,
+                    blockTotalSec: 600,
+                    name: "Transición y Respiración",
+                    type: "rest",
+                    phaseName: "TRANSICIÓN",
+                    duration: 15,
+                    setLabel: `Descanso Serie ${round} (${idx + 1}/${warmupCount})`,
+                    video: session.warmup[idx + 1] ? session.warmup[idx + 1].video : (session.warmup[0] ? session.warmup[0].video : ex.video),
+                    desc: "Respira hondo y prepárate para el siguiente movimiento articular.",
+                    target: "Frecuencia Cardíaca",
+                    tempo: "",
+                    exerciseKey: null
+                });
+            });
+        }
+
+        // Si el tiempo acumulado de calentamiento es menor a 600s, se añade un paso preparatorio/hidratación
+        const accumulatedWarmupSec = totalWarmupRounds * warmupCount * 60;
+        const remainingWarmupSec = 600 - accumulatedWarmupSec;
+        if (remainingWarmupSec > 0) {
             steps.push({
                 blockName: "1. Calentamiento Dinámico",
                 blockIndex: 0,
                 blockTotalSec: 600,
-                name: "Transición y Respiración",
+                name: "Hidratación y Transición a Pliometría",
                 type: "rest",
-                phaseName: "TRANSICIÓN",
-                duration: 15,
-                setLabel: "Recuperación",
-                video: session.warmup[idx + 1] ? session.warmup[idx + 1].video : (session.plyo && session.plyo[0] ? session.plyo[0].video : ex.video),
-                desc: "Respira hondo y prepárate para el siguiente movimiento.",
-                target: "Frecuencia Cardíaca",
+                phaseName: "PREPARACIÓN A PLIOMETRÍA",
+                duration: remainingWarmupSec,
+                setLabel: "Preparación Bloque 2A",
+                video: session.plyo && session.plyo[0] ? session.plyo[0].video : session.warmup[0].video,
+                desc: "Bebe un sorbo de agua, regula la respiración y prepárate para la máxima reactividad neuromuscular.",
+                target: "SNC e Hidratación",
                 tempo: "",
                 exerciseKey: null
             });
-        });
+        }
     }
 
-    // 2. BLOQUE 2A: PLIOMETRÍA Y AGILIDAD (Bloque 1)
+    // 2. BLOQUE 2A: PLIOMETRÍA, AGILIDAD Y REACCIÓN (Target: ~10 min = 600s)
     if (session.plyo && session.plyo.length) {
         session.plyo.forEach((ex, idx) => {
             const exKey = `w${week}_d${day}_${ageGroup}_plyo_${idx}`;
@@ -77,7 +165,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     type: "work",
                     phaseName: "TRABAJO PLIOMÉTRICO",
                     duration: 40,
-                    setLabel: `Serie ${s} de ${setsCount}`,
+                    setLabel: `Serie ${s} de ${setsCount} • Ejercicio ${idx + 1} de ${session.plyo.length}`,
                     video: ex.video,
                     desc: ex.desc,
                     target: ex.target || "Potencia de Salto",
@@ -89,13 +177,13 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     blockName: "2A. Pliometría y Agilidad",
                     blockIndex: 1,
                     blockTotalSec: 600,
-                    name: "Descanso Pliometría",
+                    name: "Descanso Pliometría Completo",
                     type: "rest",
-                    phaseName: "DESCANSO COMPLETO",
+                    phaseName: "RECUPERACIÓN PCr",
                     duration: 60,
-                    setLabel: `Descanso Serie ${s}`,
+                    setLabel: `Descanso Serie ${s} (60s)`,
                     video: ex.video,
-                    desc: "Recupera fosfocreatina (PCr). Camina suave y no te sientes.",
+                    desc: "Recupera fosfocreatina (PCr). Camina suave, mantente activo y no te sientes.",
                     target: "Sistema Fosfágeno",
                     tempo: "",
                     exerciseKey: null
@@ -104,7 +192,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
         });
     }
 
-    // 3. BLOQUE 2B: FUERZA ESTRICTA CON TEMPOS (Bloque 2)
+    // 3. BLOQUE 2B: FUERZA ESTRICTA CON TEMPOS (Target: ~15 min = 900s)
     if (session.strength && session.strength.length) {
         session.strength.forEach((ex, idx) => {
             const exKey = `w${week}_d${day}_${ageGroup}_str_${idx}`;
@@ -118,7 +206,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     type: "work",
                     phaseName: "SERIE DE FUERZA",
                     duration: 45,
-                    setLabel: `Serie ${s} de ${setsCount}`,
+                    setLabel: `Serie ${s} de ${setsCount} • Ejercicio ${idx + 1} de ${session.strength.length}`,
                     video: ex.video,
                     desc: ex.desc,
                     target: ex.target || "Fuerza Muscular",
@@ -134,9 +222,9 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     type: "rest",
                     phaseName: "DESCANSO",
                     duration: 45,
-                    setLabel: `Descanso Serie ${s}`,
+                    setLabel: `Descanso Serie ${s} (45s)`,
                     video: ex.video,
-                    desc: "Hidrátate con pequeños sorbos de agua.",
+                    desc: "Hidrátate con pequeños sorbos de agua y sacude los músculos.",
                     target: "Recuperación Muscular",
                     tempo: "",
                     exerciseKey: null
@@ -145,7 +233,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
         });
     }
 
-    // 4. BLOQUE 2C: CARDIO ESPECÍFICO BMX (Bloque 3)
+    // 4. BLOQUE 2C: CARDIO ESPECÍFICO BMX (Target: ~10-13 min)
     if (session.cardio) {
         const cardio = session.cardio;
         const exKey = `w${week}_d${day}_${ageGroup}_cardio_0`;
@@ -165,17 +253,21 @@ function buildWorkoutPlan(week, day, ageGroup) {
             rounds = 8;
             workDuration = 30;
             restDuration = 15;
-        } else if (cardio.name.includes("Semáforo")) {
+        } else if (cardio.name.includes("40/20") || cardio.name.includes("Semáforo")) {
             rounds = 6;
             workDuration = 40;
             restDuration = 20;
+        } else if (cardio.name.includes("EMOM")) {
+            rounds = 8;
+            workDuration = 45;
+            restDuration = 15;
         }
 
         for (let r = 1; r <= rounds; r++) {
             steps.push({
                 blockName: "2C. Cardio Específico BMX",
                 blockIndex: 3,
-                blockTotalSec: 780, // 13 min
+                blockTotalSec: 600,
                 name: cardio.name,
                 type: "work",
                 phaseName: "ESFUERZO MÁXIMO",
@@ -183,7 +275,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
                 setLabel: `Ronda ${r} de ${rounds}`,
                 video: cardio.video,
                 desc: cardio.desc,
-                target: "Tolerancia Láctica & Potencia",
+                target: "Tolerancia Láctica y Potencia",
                 tempo: "Máxima Aceleración",
                 exerciseKey: r === rounds ? exKey : null
             });
@@ -191,14 +283,14 @@ function buildWorkoutPlan(week, day, ageGroup) {
             steps.push({
                 blockName: "2C. Cardio Específico BMX",
                 blockIndex: 3,
-                blockTotalSec: 780,
+                blockTotalSec: 600,
                 name: "Recuperación Anaeróbica",
                 type: "rest",
                 phaseName: "DESCANSO INTERVALO",
                 duration: restDuration,
                 setLabel: `Descanso Ronda ${r}`,
                 video: cardio.video,
-                desc: "Regula respiración antes del siguiente sprint.",
+                desc: "Regula la respiración diafragmática antes del siguiente sprint.",
                 target: "Resistencia Anaeróbica",
                 tempo: "",
                 exerciseKey: null
@@ -206,45 +298,48 @@ function buildWorkoutPlan(week, day, ageGroup) {
         }
     }
 
-    // 5. BLOQUE 3: ESTIRAMIENTO POST-ENTRENAMIENTO (Bloque 4)
+    // 5. BLOQUE 3: ESTIRAMIENTO POST-ENTRENAMIENTO (Target: 8 min = 480s)
     if (session.stretch && session.stretch.length) {
-        session.stretch.forEach((ex, idx) => {
-            const exKey = `w${week}_d${day}_${ageGroup}_strtch_${idx}`;
-            steps.push({
-                blockName: "3. Estiramiento Post-Entreno",
-                blockIndex: 4,
-                blockTotalSec: 480, // 8 min
-                name: ex.name,
-                type: "work",
-                phaseName: "ELONGACIÓN ESTÁTICA",
-                duration: 35,
-                setLabel: `Estiramiento ${idx + 1} de ${session.stretch.length}`,
-                video: ex.video,
-                desc: ex.desc,
-                target: "Flexibilidad & Prevención",
-                tempo: "Sostener sin rebotar",
-                exerciseKey: exKey
-            });
+        const stretchRounds = session.stretch.length <= 3 ? 3 : 2;
+        for (let r = 1; r <= stretchRounds; r++) {
+            session.stretch.forEach((ex, idx) => {
+                const exKey = `w${week}_d${day}_${ageGroup}_strtch_${idx}`;
+                steps.push({
+                    blockName: "3. Estiramiento Post-Entreno",
+                    blockIndex: 4,
+                    blockTotalSec: 480, // 8 min
+                    name: ex.name,
+                    type: "work",
+                    phaseName: "ELONGACIÓN ESTÁTICA",
+                    duration: 40,
+                    setLabel: `Serie ${r} de ${stretchRounds} • Postura ${idx + 1} de ${session.stretch.length}`,
+                    video: ex.video,
+                    desc: ex.desc,
+                    target: "Flexibilidad y Prevención",
+                    tempo: "Sostener sin rebotar",
+                    exerciseKey: r === stretchRounds ? exKey : null
+                });
 
-            steps.push({
-                blockName: "3. Estiramiento Post-Entreno",
-                blockIndex: 4,
-                blockTotalSec: 480,
-                name: "Cambio de Postura",
-                type: "rest",
-                phaseName: "CAMBIO",
-                duration: 10,
-                setLabel: "Transición",
-                video: session.stretch[idx + 1] ? session.stretch[idx + 1].video : ex.video,
-                desc: "Cambia suavemente al siguiente músculo.",
-                target: "Movilidad",
-                tempo: "",
-                exerciseKey: null
+                steps.push({
+                    blockName: "3. Estiramiento Post-Entreno",
+                    blockIndex: 4,
+                    blockTotalSec: 480,
+                    name: "Cambio de Postura",
+                    type: "rest",
+                    phaseName: "CAMBIO",
+                    duration: 10,
+                    setLabel: "Transición",
+                    video: session.stretch[idx + 1] ? session.stretch[idx + 1].video : ex.video,
+                    desc: "Cambia suavemente de extremidad o pasa al siguiente grupo muscular.",
+                    target: "Movilidad",
+                    tempo: "",
+                    exerciseKey: null
+                });
             });
-        });
+        }
     }
 
-    // 6. BLOQUE 4: RECUPERACIÓN PARASIMPÁTICA (Bloque 5)
+    // 6. BLOQUE 4: RECUPERACIÓN PARASIMPÁTICA (Target: 4 min = 240s)
     if (session.recovery) {
         const recKey = `w${week}_d${day}_${ageGroup}_rec_0`;
         steps.push({
@@ -253,7 +348,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
             blockTotalSec: 240, // 4 min
             name: session.recovery.name,
             type: "work",
-            phaseName: "RESPIRACIÓN & VISUALIZACIÓN",
+            phaseName: "RESPIRACIÓN Y VISUALIZACIÓN",
             duration: 240, // 4 minutos
             setLabel: "Recuperación Final",
             video: "https://www.youtube.com/embed/2MJGg-dUKh0",
