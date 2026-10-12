@@ -152,7 +152,7 @@ const TRAINING_DB = {
                             "sub6": {
                                 methodology: "Neuro-diversión: Estímulos visuales y auditivos para reflejo motor en el suelo y cambios de ritmo.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s (2 rondas)", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el movimiento de pump.", target: "Columna y Lumbar" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s (2 rondas)", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el movimiento de pump.", target: "Columna y Lumbar" },
                                     { name: "Caminata de Cangrejo Invertida", duration: "45s (2 rondas)", video: "https://www.youtube.com/embed/ZodvhSMy6rk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación de glúteos y apertura de hombros mirando al techo.", target: "Glúteos y Hombros" }
                                 ],
                                 plyo: [
@@ -180,10 +180,10 @@ const TRAINING_DB = {
                             "7to12": {
                                 methodology: "Ventana de Aprendizaje Motor: Reflejos acústicos al aplauso simulando la campana del partidor y equilibrio monopodal.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Zona Lumbar" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Zona Lumbar" },
                                     { name: "Frankenstein Kicks / Toque de Punta Alterno", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activa flexores de cadera y prepara la pierna para el pedaleo.", target: "Flexores de Cadera" },
-                                    { name: "Balanceo de Pierna Adelante y Atrás / Leg Swings", duration: "45s (mitad por pierna)", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral profunda.", target: "Articulación Coxofemoral" },
-                                    { name: "Trote en el Puesto con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/zDMUQ63YdbE", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "3s rápido x 5s suave despertando el sistema nervioso.", target: "Alerta Nerviosa" }
+                                    { name: "Balanceo de Pierna Adelante y Atrás / Leg Swings", duration: "45s (mitad por pierna)", video: "https://www.youtube.com/embed/naW8u72lOzI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral profunda.", target: "Articulación Coxofemoral" },
+                                    { name: "Trote en el Puesto con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/v7rjHmZRs28", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "3s rápido x 5s suave despertando el sistema nervioso.", target: "Alerta Nerviosa" }
                                 ],
                                 plyo: [
                                     { name: "Salto del Patinador / Skater Jumps", sets: "3 series de 12 saltos (6 por lado)", rest: "Descanso 60s", video: "https://www.youtube.com/embed/qM5jviFhw9U", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Saltar lateralmente de un pie al otro buscando distancia y manteniendo el equilibrio 1s al aterrizar.", target: "Estabilidad Lateral" },
@@ -215,13 +215,13 @@ const TRAINING_DB = {
                             "13to17": {
                                 methodology: "Exigencia Técnica y Biomecánica: Control del valgo de rodilla en caídas y estabilidad del core bajo fatiga severa.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberación de la fascia toracolumbar.", target: "Columna" },
-                                    { name: "Toque de Punta de Pie Alterno", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación isométrica y dinámica de isquiotibiales.", target: "Isquiotibiales" },
-                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Rango articular de cadera previo a aceleraciones.", target: "Cadera" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberación de la fascia toracolumbar.", target: "Columna" },
+                                    { name: "Toque de Punta de Pie Alterno", duration: "45s", video: "https://www.youtube.com/embed/4rkvMQUtJ9U", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación isométrica y dinámica de isquiotibiales.", target: "Isquiotibiales" },
+                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/naW8u72lOzI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Rango articular de cadera previo a aceleraciones.", target: "Cadera" },
                                     { name: "Trote con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/zDMUQ63YdbE", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Aceleraciones explosivas de 3 segundos.", target: "SNC" }
                                 ],
                                 plyo: [
-                                    { name: "Broad Jump a Caída en un Pie / Single-Leg Stick", sets: "4 series de 6 saltos (3 der, 3 izq)", rest: "Descanso 60s", video: "https://www.youtube.com/embed/7Du1KbwCdUk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).", target: "Absorción y Estabilidad" },
+                                    { name: "Salto de Longitud a Caída en un Pie / Single-Leg Stick", sets: "4 series de 6 saltos (3 der, 3 izq)", rest: "Descanso 60s", video: "https://www.youtube.com/embed/mKbYaSu1FA8", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).", target: "Absorción y Estabilidad" },
                                     { name: "Piques desde Rodillas / Kneeling Sprints (Gate Sim)", sets: "4 repeticiones", rest: "Descanso 60s", video: "https://www.youtube.com/embed/OatchVmdl3s", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "De rodillas en el piso; a la señal, llevar pie al frente explosivo y skipping alto 6s a muerte.", target: "Salida del Partidor" }
                                 ],
                                 strength: [
@@ -518,9 +518,9 @@ const TRAINING_DB = {
                             "sub6": {
                                 methodology: "Neuro-diversión: Reacción auditiva '¡Salto!', '¡Piso!', '¡Estatua!' y pista de obstáculos imaginaria.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el movimiento de pump.", target: "Espalda Baja" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el movimiento de pump.", target: "Espalda Baja" },
                                     { name: "Frankenstein Kicks / Toque de Punta Alterno", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activa isquiotibiales y prepara extensión de rodilla.", target: "Isquiotibiales" },
-                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación de la articulación coxofemoral.", target: "Cadera" },
+                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/naW8u72lOzI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación de la articulación coxofemoral.", target: "Cadera" },
                                     { name: "Caminata de Cangrejo Invertida", duration: "45s", video: "https://www.youtube.com/embed/ZodvhSMy6rk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación de glúteos y apertura de hombros.", target: "Glúteos" },
                                     { name: "Trote con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/zDMUQ63YdbE", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "3s máxima velocidad x 5s suave despierta el SNC.", target: "SNC" }
                                 ],
@@ -551,9 +551,9 @@ const TRAINING_DB = {
                             "7to12": {
                                 methodology: "Ventana de Aprendizaje Motor Ideal: Piques de reacción auditiva al aplauso simulando 'Watch the gate... BEEP'.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Lumbar" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Lumbar" },
                                     { name: "Frankenstein Kicks / Toque de Punta Alterno", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activa los isquiotibiales y prepara la extensión de rodilla.", target: "Isquiotibiales" },
-                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral.", target: "Cadera" },
+                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/naW8u72lOzI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral.", target: "Cadera" },
                                     { name: "Caminata de Cangrejo Invertida", duration: "45s", video: "https://www.youtube.com/embed/ZodvhSMy6rk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación de glúteos y apertura de hombros.", target: "Glúteos" },
                                     { name: "Trote con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/zDMUQ63YdbE", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "3s velocidad máxima x 5s suave despierta el SNC.", target: "SNC" }
                                 ],
@@ -586,9 +586,9 @@ const TRAINING_DB = {
                             "13to17": {
                                 methodology: "Potencia y Absorción - Exigencia Técnica Total: Broad Jump a Single-Leg Stick evitando valgo de rodilla y salidas explosivas desde rodillas.",
                                 warmup: [
-                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/lzR7tzI1JUI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Espalda Baja" },
-                                    { name: "Toque de Punta de Pie Alterno", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activa isquiotibiales y rodilla.", target: "Isquiotibiales" },
-                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/aJvfeuu71gw", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral profunda.", target: "Cadera" },
+                                    { name: "Giro de Tronco con Pivote", duration: "45s", video: "https://www.youtube.com/embed/h6XyzlM8m24", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Liberar tensión lumbar preparatoria para el pump.", target: "Espalda Baja" },
+                                    { name: "Toque de Punta de Pie Alterno", duration: "45s", video: "https://www.youtube.com/embed/4rkvMQUtJ9U", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activa isquiotibiales y rodilla.", target: "Isquiotibiales" },
+                                    { name: "Balanceo de Pierna Adelante y Atrás", duration: "45s", video: "https://www.youtube.com/embed/naW8u72lOzI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Lubricación coxofemoral profunda.", target: "Cadera" },
                                     { name: "Caminata de Cangrejo Invertida", duration: "45s", video: "https://www.youtube.com/embed/ZodvhSMy6rk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación glútea y apertura torácica.", target: "Glúteos" },
                                     { name: "Trote con Cambios de Ritmo", duration: "45s", video: "https://www.youtube.com/embed/zDMUQ63YdbE", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Aceleraciones explosivas del SNC.", target: "SNC" }
                                 ],
