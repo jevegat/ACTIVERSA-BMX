@@ -870,6 +870,8 @@ function closeVideoModal() {
 function calculateHydration() {
     const weightInput = document.getElementById('calcAthleteWeight');
     const weight = parseFloat(weightInput ? weightInput.value : 38) || 38;
+    const pinInput = document.getElementById('inputProfilePin');
+    const pin = pinInput ? pinInput.value.trim() : '';
 
     const pre = Math.min(Math.max(Math.round(weight * 10), 300), 500);
     const duringMin = Math.round(weight * 2.5);
@@ -940,6 +942,13 @@ function removeAthletePhoto() {
     updatePhotoPreviewUI(null);
     const fileInput = document.getElementById('inputProfilePhoto');
     if (fileInput) fileInput.value = '';
+    const pinInputSel = document.getElementById('inputProfilePin');
+    if (pinInputSel) pinInputSel.value = profile.pin || '';
+    if (typeof setupCurrentPilotSync === 'function') setupCurrentPilotSync();
+    const pinInputNew = document.getElementById('inputProfilePin');
+    if (pinInputNew) pinInputNew.value = '';
+    const pinInput = document.getElementById('inputProfilePin');
+    if (pinInput) pinInput.value = current.pin || '';
 }
 
 function updatePhotoPreviewUI(photoUrl) {
@@ -1060,7 +1069,7 @@ function saveCurrentAthleteProfile() {
             }
         }
         const finalPhoto = tempUploadedPhoto || null;
-        state.athletes[name] = { ageGroup, weight, photo: finalPhoto };
+        state.athletes[name] = { ageGroup, weight, photo: finalPhoto, pin };
         state.currentAthlete = name;
         state.activeAgeGroup = ageGroup;
         if (!state.progress[name]) state.progress[name] = {};
@@ -1098,7 +1107,8 @@ function saveCurrentAthleteProfile() {
         state.athletes[name] = { 
             ageGroup, 
             weight, 
-            photo: finalPhoto 
+            photo: finalPhoto, 
+            pin 
         };
     }
 

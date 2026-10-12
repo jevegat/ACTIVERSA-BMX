@@ -1,16 +1,49 @@
 /**
  * ACTIVERZA BMX RACING ACADEMY
  * Módulo de Persistencia en la Nube con Google Firebase & Cloud Firestore
- * Soporte Offline Nativo (IndexedDB), Sincronización en Tiempo Real y Autenticación
+ * Soporte Offline Nativo (IndexedDB), Sincronización en Tiempo Real y
+ * Gestión Multi-Dispositivo por Nombre y PIN de Piloto
  */
+
+// Configuración embebida de Google Firebase para ACTIVERSA-BMX (Lista para producción)
+const DEFAULT_FIREBASE_CONFIG = {
+    apiKey: "AIzaSyCmoKFcUaxgsz2tEM3kWzYx_jIByIouUhc",
+    authDomain: "activersa-bmx.firebaseapp.com",
+    projectId: "activersa-bmx",
+    storageBucket: "activersa-bmx.firebasestorage.app",
+    messagingSenderId: "790081235374",
+    appId: "1:790081235374:web:09d832246e06c873ea803f",
+    measurementId: "G-NC67WLTV3B"
+};
 
 let firebaseApp = null;
 let firestoreDb = null;
 let firebaseAuth = null;
-let firestoreUnsubscribe = null;
+let firestorePilotUnsubscribe = null;
+
+let cloudState = {
+    isConfigured: true,
+    isConnected: false,
+    isSyncing: false,
+    lastSyncTime: null,
+    userId: null,
+    projectId: 'activersa-bmx',
+    activePilotSync: null,
+    statusText: 'Conectando a Nube...'
+};
 
 /**
- * Obtiene o genera un identificador persistente de la academia para Firestore
+ * Normaliza el nombre del piloto para generar un ID seguro y único de documento Firestore
+ */
+function getPilotDocId(name) {
+    if (!name) return 'piloto_default';
+    return name.trim().toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]/g, '_');
+}
+
+/**
+ * Obtiene o genera un ID de academia persistente localmente
  */
 function getOrCreateAcademyId() {
     let id = localStorage.getItem('activerza_academy_id');
@@ -21,41 +54,32 @@ function getOrCreateAcademyId() {
     return id;
 }
 
-let cloudState = {
-    isConfigured: false,
-    isConnected: false,
-    isSyncing: false,
-    lastSyncTime: null,
-    userId: null,
-    projectId: null,
-    statusText: 'Modo Local (Sin Nube)'
-};
-
 /**
- * Inicializa Firebase si existe una configuración guardada
+ * Inicializa Firebase de forma automática y transparente en cualquier dispositivo
  */
 function initFirebase() {
-    const savedConfigStr = localStorage.getItem('activerza_firebase_config');
-    if (!savedConfigStr) {
-        updateCloudStatusUI('local', 'Modo Local');
-        return;
-    }
-
     try {
-        const config = JSON.parse(savedConfigStr);
-        if (!config.apiKey || !config.projectId) {
-            updateCloudStatusUI('local', 'Configuración incompleta');
-            return;
-        }
-
-        // Verificar si Firebase SDK está disponible en el DOM
         if (typeof firebase === 'undefined') {
             console.warn('Firebase SDK no cargado en el navegador.');
-            updateCloudStatusUI('error', 'SDK no disponible');
+            updateCloudStatusUI('error', 'SDK no cargado');
             return;
         }
 
-        // Inicializar o reutilizar app
+        // Cargar configuración guardada o usar la configuración predeterminada del proyecto
+        let config = DEFAULT_FIREBASE_CONFIG;
+        const customConfigStr = localStorage.getItem('activerza_firebase_config');
+        if (customConfigStr) {
+            try {
+                const parsed = JSON.parse(customConfigStr);
+                if (parsed.apiKey && parsed.projectId) {
+                    config = parsed;
+                }
+            } catch (e) {
+                console.warn('Usando configuración predeterminada.');
+            }
+        }
+
+        // Inicializar o recuperar instancia de Firebase App
         if (!firebase.apps.length) {
             firebaseApp = firebase.initializeApp(config);
         } else {
@@ -67,10 +91,10 @@ function initFirebase() {
         cloudState.isConfigured = true;
         cloudState.projectId = config.projectId;
 
-        // Habilitar persistencia offline nativa en IndexedDB para la pista de BMX
+        // Activar persistencia offline nativa con IndexedDB (vital para la pista de BMX)
         firestoreDb.enablePersistence({ synchronizeTabs: true })
             .then(() => {
-                console.log('✅ Firestore: Persistencia offline (IndexedDB) habilitada.');
+                console.log('✅ Firestore: Persistencia offline (IndexedDB) activa.');
             })
             .catch(err => {
                 if (err.code === 'failed-precondition') {
@@ -80,108 +104,135 @@ function initFirebase() {
                 }
             });
 
-        // Identificador persistente de respaldo si Auth anónima no está activada en la consola
-        const fallbackAcademyId = getOrCreateAcademyId();
+        const fallbackUserId = getOrCreateAcademyId();
 
-        // Intentar autenticación con Firebase Auth
+        // Autenticación transparente (intenta anónima; si no está habilitada en consola, usa fallback directo)
         firebaseAuth.onAuthStateChanged(user => {
             if (user) {
                 cloudState.userId = user.uid;
                 cloudState.isConnected = true;
-                updateCloudStatusUI('connected', 'Nube Sincronizada');
-                setupFirestoreListener(user.uid);
+                updateCloudStatusUI('connected', 'Nube Conectada');
+                setupCurrentPilotSync();
             } else {
                 firebaseAuth.signInAnonymously()
                     .then(cred => {
                         cloudState.userId = cred.user.uid;
                         cloudState.isConnected = true;
-                        updateCloudStatusUI('connected', 'Nube Sincronizada');
-                        setupFirestoreListener(cred.user.uid);
+                        updateCloudStatusUI('connected', 'Nube Conectada');
+                        setupCurrentPilotSync();
                     })
                     .catch(err => {
-                        console.warn('Aviso: Proveedor anónimo deshabilitado en Firebase Console. Conectando a Firestore directamente con ID de academia:', err.code);
-                        // Fallback transparente: permitimos que Firestore funcione directamente
-                        cloudState.userId = fallbackAcademyId;
+                        console.warn('Aviso Auth anónima deshabilitada; conectando con ID local:', err.code);
+                        cloudState.userId = fallbackUserId;
                         cloudState.isConnected = true;
-                        updateCloudStatusUI('connected', 'Nube Sincronizada');
-                        setupFirestoreListener(fallbackAcademyId);
+                        updateCloudStatusUI('connected', 'Nube Conectada');
+                        setupCurrentPilotSync();
                     });
             }
         });
 
     } catch (e) {
         console.error('Error inicializando Firebase:', e);
-        updateCloudStatusUI('error', 'Error de configuración');
+        updateCloudStatusUI('error', 'Error Conexión');
     }
 }
 
 /**
- * Escucha cambios en tiempo real desde Firestore
+ * Vincula el listener en tiempo real de Firestore para el piloto actualmente activo
  */
-function setupFirestoreListener(userId) {
-    if (!firestoreDb || !userId) return;
+function setupCurrentPilotSync() {
+    if (!firestoreDb) return;
+    const currentName = (typeof state !== 'undefined' && state.currentAthlete) ? state.currentAthlete : 'Santiago Vega';
+    const pilotDocId = getPilotDocId(currentName);
 
-    if (firestoreUnsubscribe) {
-        firestoreUnsubscribe();
+    if (cloudState.activePilotSync === pilotDocId && firestorePilotUnsubscribe) {
+        return; // Ya está escuchando al mismo piloto
     }
 
-    const docRef = firestoreDb.collection('academies').doc(userId);
+    if (firestorePilotUnsubscribe) {
+        firestorePilotUnsubscribe();
+    }
 
-    firestoreUnsubscribe = docRef.onSnapshot(doc => {
+    cloudState.activePilotSync = pilotDocId;
+    const docRef = firestoreDb.collection('pilots').doc(pilotDocId);
+
+    firestorePilotUnsubscribe = docRef.onSnapshot(doc => {
         if (doc.exists) {
-            const remoteData = doc.data();
-            if (remoteData && remoteData.state && remoteData.updatedAt) {
+            const data = doc.data();
+            if (data && data.updatedAt) {
                 const localUpdated = parseInt(localStorage.getItem('activerza_last_local_write') || '0', 10);
-                
-                // Si la versión de la nube es más reciente o no hay conflicto, actualizamos el estado local
-                if (remoteData.updatedAt > localUpdated) {
-                    console.log('☁️ Actualización recibida desde Firestore:', remoteData);
-                    applyRemoteState(remoteData.state);
-                    cloudState.lastSyncTime = new Date(remoteData.updatedAt).toLocaleTimeString('es-ES');
+                if (data.updatedAt > localUpdated) {
+                    console.log(`☁️ Firestore: Novedad recibida para el piloto "${data.name}":`, data);
+                    applyRemotePilotData(data);
+                    cloudState.lastSyncTime = new Date(data.updatedAt).toLocaleTimeString('es-ES');
                     updateCloudStatusUI('connected', 'Sincronizado');
                 }
             }
         }
     }, err => {
-        console.warn('Aviso en listener de Firestore (posible falta de reglas públicas):', err);
+        console.warn('Aviso en listener de piloto Firestore:', err);
         updateCloudStatusUI('syncing', 'Modo Offline Pista');
     });
 }
 
 /**
- * Aplica el estado descargado de la nube al estado de la aplicación
+ * Aplica los datos descargados de un piloto en la nube al estado de la aplicación
  */
-function applyRemoteState(remoteState) {
-    if (!remoteState || typeof remoteState !== 'object') return;
+function applyRemotePilotData(pilotData) {
+    if (!pilotData || !pilotData.name || typeof state === 'undefined') return;
 
-    if (typeof state !== 'undefined') {
-        state = {
-            ...state,
-            ...remoteState,
-            athletes: { ...state.athletes, ...(remoteState.athletes || {}) },
-            progress: { ...state.progress, ...(remoteState.progress || {}) },
-            history: { ...state.history, ...(remoteState.history || {}) },
-            calendar: { ...state.calendar, ...(remoteState.calendar || {}) }
+    const name = pilotData.name;
+    if (!state.athletes[name]) {
+        state.athletes[name] = { 
+            ageGroup: pilotData.ageGroup || '7to12', 
+            weight: pilotData.weight || 38, 
+            photo: pilotData.photo || null,
+            pin: pilotData.pin || ''
         };
-
-        // Guardar copia local sin disparar bucle
-        localStorage.setItem('activerza_state_v1', JSON.stringify(state));
-
-        // Re-renderizar vistas activas
-        if (typeof updateNavAthleteInfo === 'function') updateNavAthleteInfo();
-        if (typeof renderAthletesList === 'function') renderAthletesList();
-        if (typeof renderActiveView === 'function') renderActiveView();
-        if (typeof renderCalendarSchedule === 'function') renderCalendarSchedule();
+    } else {
+        if (pilotData.ageGroup) state.athletes[name].ageGroup = pilotData.ageGroup;
+        if (pilotData.weight) state.athletes[name].weight = pilotData.weight;
+        if (pilotData.photo !== undefined) state.athletes[name].photo = pilotData.photo;
+        if (pilotData.pin) state.athletes[name].pin = pilotData.pin;
     }
+
+    if (pilotData.progress) {
+        state.progress[name] = { ...(state.progress[name] || {}), ...pilotData.progress };
+    }
+
+    if (pilotData.history && Array.isArray(pilotData.history)) {
+        state.history[name] = pilotData.history;
+    }
+
+    if (pilotData.calendar) {
+        state.calendar = { ...(state.calendar || {}), ...pilotData.calendar };
+    }
+
+    // Actualizar atleta activo y vistas
+    state.currentAthlete = name;
+    if (state.athletes[name].ageGroup) {
+        state.activeAgeGroup = state.athletes[name].ageGroup;
+    }
+
+    localStorage.setItem('activerza_state_v1', JSON.stringify(state));
+
+    if (typeof updateNavAthleteInfo === 'function') updateNavAthleteInfo();
+    if (typeof renderAthletesList === 'function') renderAthletesList();
+    if (typeof renderActiveView === 'function') renderActiveView();
+    if (typeof renderHeroCarouselDots === 'function') renderHeroCarouselDots();
+
+    updateCloudModalPilotInfo();
 }
 
 /**
- * Guarda el estado actual de la aplicación en Cloud Firestore
+ * Sincroniza los datos del piloto activo hacia Cloud Firestore
  */
 function syncStateToFirestore(currentState) {
-    if (!cloudState.isConfigured || !firestoreDb || !cloudState.userId) {
-        return Promise.resolve(false);
-    }
+    if (!firestoreDb) return Promise.resolve(false);
+
+    const pilotName = currentState.currentAthlete || 'Santiago Vega';
+    const pilotDocId = getPilotDocId(pilotName);
+    const athleteData = currentState.athletes[pilotName] || { ageGroup: '7to12', weight: 38 };
 
     cloudState.isSyncing = true;
     updateCloudStatusUI('syncing', 'Guardando...');
@@ -189,25 +240,41 @@ function syncStateToFirestore(currentState) {
     const now = Date.now();
     localStorage.setItem('activerza_last_local_write', now.toString());
 
-    // Sanitizar estado para Firestore (remover valores undefined)
-    const cleanState = JSON.parse(JSON.stringify(currentState));
+    // Objeto limpio para el piloto
+    const cleanProgress = currentState.progress[pilotName] || {};
+    const cleanHistory = currentState.history[pilotName] || [];
+    const cleanCalendar = currentState.calendar || {};
 
     const payload = {
-        state: cleanState,
+        pilotId: pilotDocId,
+        name: pilotName,
+        pin: athleteData.pin || '',
+        ageGroup: athleteData.ageGroup || currentState.activeAgeGroup || '7to12',
+        weight: athleteData.weight || 38,
+        photo: athleteData.photo || null,
+        progress: JSON.parse(JSON.stringify(cleanProgress)),
+        history: JSON.parse(JSON.stringify(cleanHistory)),
+        calendar: JSON.parse(JSON.stringify(cleanCalendar)),
+        stateSnapshot: {
+            activeWeek: currentState.activeWeek,
+            activeDay: currentState.activeDay,
+            activeAgeGroup: currentState.activeAgeGroup
+        },
         updatedAt: now,
         clientTime: new Date().toISOString(),
         platform: 'ACTIVERSA-BMX Web'
     };
 
-    return firestoreDb.collection('academies').doc(cloudState.userId).set(payload, { merge: true })
+    return firestoreDb.collection('pilots').doc(pilotDocId).set(payload, { merge: true })
         .then(() => {
             cloudState.isSyncing = false;
             cloudState.lastSyncTime = new Date().toLocaleTimeString('es-ES');
             updateCloudStatusUI('connected', 'Sincronizado');
+            updateCloudModalPilotInfo();
             return true;
         })
         .catch(err => {
-            console.error('Error guardando en Firestore:', err);
+            console.error('Error guardando piloto en Firestore:', err);
             cloudState.isSyncing = false;
             updateCloudStatusUI('connected', 'Pendiente (Offline)');
             return false;
@@ -215,52 +282,86 @@ function syncStateToFirestore(currentState) {
 }
 
 /**
- * Guarda y aplica una nueva configuración de Firebase introducida por el usuario
+ * Conecta o vincula un piloto en este dispositivo usando su Nombre y PIN
  */
-function saveFirebaseConfig(configObj) {
-    try {
-        if (!configObj || !configObj.apiKey || !configObj.projectId) {
-            throw new Error('Configuración inválida. Debe incluir al menos apiKey y projectId.');
-        }
-
-        localStorage.setItem('activerza_firebase_config', JSON.stringify(configObj));
-
-        // Reinicializar
-        if (firestoreUnsubscribe) firestoreUnsubscribe();
-        if (firebaseApp) {
-            firebase.apps.forEach(app => app.delete());
-        }
-
-        initFirebase();
-        return { success: true };
-    } catch (e) {
-        return { success: false, error: e.message };
+function connectPilotWithPin(name, pin) {
+    if (!name || !name.trim()) {
+        alert('Por favor ingresa el nombre del piloto.');
+        return Promise.reject(new Error('Nombre requerido'));
     }
+
+    const trimmedName = name.trim();
+    const pilotDocId = getPilotDocId(trimmedName);
+    const cleanPin = (pin || '').trim();
+
+    if (!firestoreDb) {
+        alert('Conectando a los servicios de nube, intenta en unos segundos...');
+        return Promise.reject(new Error('Firestore no listo'));
+    }
+
+    const btn = document.getElementById('btnConnectPilotSubmit');
+    if (btn) btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Verificando en Nube...';
+
+    return firestoreDb.collection('pilots').doc(pilotDocId).get()
+        .then(doc => {
+            if (btn) btn.innerHTML = '<i class="fa-solid fa-link mr-1"></i> Sincronizar en este Dispositivo';
+
+            if (doc.exists) {
+                const remote = doc.data();
+                // Si el perfil en la nube tiene PIN registrado, validamos coincidencia
+                if (remote.pin && remote.pin.trim() !== '') {
+                    if (cleanPin !== remote.pin.trim()) {
+                        alert(`❌ PIN incorrecto para el piloto "${trimmedName}".\nPor favor verifica tu PIN de 4 dígitos.`);
+                        return false;
+                    }
+                }
+
+                // PIN correcto o no configurado: aplicamos datos
+                applyRemotePilotData(remote);
+
+                // Si ingresó un PIN nuevo y en la nube estaba vacío, lo aseguramos
+                if (cleanPin && (!remote.pin || remote.pin === '')) {
+                    firestoreDb.collection('pilots').doc(pilotDocId).set({ pin: cleanPin }, { merge: true });
+                    if (state.athletes[trimmedName]) state.athletes[trimmedName].pin = cleanPin;
+                }
+
+                setupCurrentPilotSync();
+                alert(`✅ ¡Piloto "${trimmedName}" sincronizado exitosamente!\nTus entrenamientos y tiempos ya están en este dispositivo.`);
+                closeCloudSyncModal();
+                return true;
+            } else {
+                // El piloto no existe aún en la nube; lo creamos
+                if (typeof state !== 'undefined') {
+                    if (!state.athletes[trimmedName]) {
+                        state.athletes[trimmedName] = { ageGroup: '7to12', weight: 38, photo: null, pin: cleanPin };
+                    } else {
+                        state.athletes[trimmedName].pin = cleanPin;
+                    }
+                    state.currentAthlete = trimmedName;
+                    state.activeAgeGroup = state.athletes[trimmedName].ageGroup;
+                    saveStateToStorage();
+                    setupCurrentPilotSync();
+                }
+
+                alert(`✅ ¡Perfil del piloto "${trimmedName}" creado y registrado en la nube con tu PIN!`);
+                closeCloudSyncModal();
+                return true;
+            }
+        })
+        .catch(err => {
+            if (btn) btn.innerHTML = '<i class="fa-solid fa-link mr-1"></i> Sincronizar en este Dispositivo';
+            console.error('Error al conectar piloto:', err);
+            alert('Error conectando con la nube: ' + err.message);
+            return false;
+        });
 }
 
 /**
- * Elimina la configuración de Firebase y vuelve a modo local
- */
-function disconnectFirebase() {
-    if (confirm('¿Deseas desconectar Firebase? Tus datos locales se conservarán en este dispositivo.')) {
-        if (firestoreUnsubscribe) firestoreUnsubscribe();
-        localStorage.removeItem('activerza_firebase_config');
-        cloudState.isConfigured = false;
-        cloudState.isConnected = false;
-        cloudState.userId = null;
-        cloudState.projectId = null;
-        updateCloudStatusUI('local', 'Modo Local');
-        closeCloudSyncModal();
-        alert('Se ha desconectado Firebase. La aplicación ahora está en Modo Local.');
-    }
-}
-
-/**
- * Fuerza una sincronización manual del estado local a Firestore
+ * Fuerza la subida inmediata de los datos del piloto activo a Firestore
  */
 function forcePushToCloud() {
-    if (!cloudState.isConfigured || !cloudState.isConnected) {
-        alert('Debes conectar tu proyecto de Firebase primero.');
+    if (!firestoreDb) {
+        alert('Servicio de nube no disponible.');
         return;
     }
 
@@ -271,44 +372,96 @@ function forcePushToCloud() {
         syncStateToFirestore(state).then(ok => {
             if (btn) btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-up mr-1"></i> Subir a la Nube';
             if (ok) {
-                alert('¡Datos subidos exitosamente a Cloud Firestore!');
+                alert('¡Datos del piloto subidos exitosamente a Cloud Firestore!');
             } else {
-                alert('Se encolaron los datos localmente. Se sincronizarán en cuanto haya señal.');
+                alert('Se guardó localmente. Se sincronizará automáticamente al volver la señal.');
             }
         });
     }
 }
 
 /**
- * Fuerza una descarga manual del estado desde Firestore
+ * Fuerza la descarga inmediata de los datos del piloto activo desde Firestore
  */
 function forcePullFromCloud() {
-    if (!cloudState.isConfigured || !cloudState.userId || !firestoreDb) {
-        alert('Debes conectar tu proyecto de Firebase primero.');
+    if (!firestoreDb || typeof state === 'undefined') {
+        alert('Servicio de nube no disponible.');
         return;
     }
 
+    const currentName = state.currentAthlete;
+    const pilotDocId = getPilotDocId(currentName);
     const btn = document.getElementById('btnForcePullCloud');
     if (btn) btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-1"></i> Descargando...';
 
-    firestoreDb.collection('academies').doc(cloudState.userId).get()
+    firestoreDb.collection('pilots').doc(pilotDocId).get()
         .then(doc => {
-            if (btn) btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-down mr-1"></i> Descargar de la Nube';
-            if (doc.exists && doc.data() && doc.data().state) {
-                applyRemoteState(doc.data().state);
-                alert('¡Datos descargados y sincronizados desde la nube!');
+            if (btn) btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-down mr-1"></i> Descargar de Nube';
+            if (doc.exists && doc.data()) {
+                applyRemotePilotData(doc.data());
+                alert(`¡Datos del piloto "${currentName}" actualizados desde la nube!`);
             } else {
-                alert('Aún no hay datos guardados en la nube para esta cuenta.');
+                alert(`Aún no hay datos en la nube para el piloto "${currentName}".`);
             }
         })
         .catch(err => {
-            if (btn) btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-down mr-1"></i> Descargar de la Nube';
+            if (btn) btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-down mr-1"></i> Descargar de Nube';
             alert('Error descargando de la nube: ' + err.message);
         });
 }
 
 /**
- * Actualiza los elementos visuales de estado de nube en la UI
+ * Alterna la visibilidad de los campos de PIN (mostrar/ocultar)
+ */
+function togglePinVisibility(inputId) {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+    if (input.type === 'password') {
+        input.type = 'text';
+    } else {
+        input.type = 'password';
+    }
+}
+
+/**
+ * Actualiza la información del piloto y estado en el modal de nube
+ */
+function updateCloudModalPilotInfo() {
+    if (typeof state === 'undefined') return;
+
+    const currentName = state.currentAthlete || 'Santiago Vega';
+    const currentProfile = (state.athletes && state.athletes[currentName]) ? state.athletes[currentName] : null;
+
+    const nameElem = document.getElementById('modalCloudPilotName');
+    const pinElem = document.getElementById('modalCloudPilotPinBadge');
+    const photoElem = document.getElementById('modalCloudPilotPhoto');
+    const placeholderElem = document.getElementById('modalCloudPilotPlaceholder');
+
+    if (nameElem) nameElem.textContent = currentName;
+    if (pinElem) {
+        if (currentProfile && currentProfile.pin) {
+            pinElem.textContent = 'PIN: ' + '•'.repeat(currentProfile.pin.length);
+            pinElem.className = 'text-[11px] px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 font-mono font-bold border border-amber-500/30';
+        } else {
+            pinElem.textContent = 'Sin PIN (Asigna uno en tu perfil)';
+            pinElem.className = 'text-[11px] px-2.5 py-1 rounded-lg bg-slate-800 text-slate-400 font-bold border border-slate-700';
+        }
+    }
+
+    if (photoElem && placeholderElem) {
+        if (currentProfile && currentProfile.photo) {
+            photoElem.src = currentProfile.photo;
+            photoElem.classList.remove('hidden');
+            placeholderElem.classList.add('hidden');
+        } else {
+            photoElem.classList.add('hidden');
+            placeholderElem.classList.remove('hidden');
+        }
+    }
+}
+
+/**
+ * Actualiza los indicadores visuales de estado de nube en la UI
  */
 function updateCloudStatusUI(status, text) {
     const dot = document.getElementById('cloudStatusDot');
@@ -320,7 +473,7 @@ function updateCloudStatusUI(status, text) {
 
     if (dot) {
         if (status === 'connected') {
-            dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse";
+            dot.className = "w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-sm shadow-emerald-500/50 animate-pulse";
         } else if (status === 'syncing') {
             dot.className = "w-2.5 h-2.5 rounded-full bg-amber-400 animate-spin";
         } else if (status === 'error') {
@@ -333,34 +486,30 @@ function updateCloudStatusUI(status, text) {
     if (label) label.textContent = text;
     if (modalDot && dot) modalDot.className = dot.className;
     if (modalText) modalText.textContent = text;
-    if (modalProject) modalProject.textContent = cloudState.projectId || 'Ninguno (Modo Local)';
-    if (modalSyncTime) modalSyncTime.textContent = cloudState.lastSyncTime || 'No sincronizado aún';
+    if (modalProject) modalProject.textContent = cloudState.projectId || 'activersa-bmx';
+    if (modalSyncTime) modalSyncTime.textContent = cloudState.lastSyncTime || 'Sincronizado';
 }
 
 /**
- * Abre el modal de configuración y sincronización de Firebase
+ * Abre el modal de sincronización por Piloto y PIN
  */
 function openCloudSyncModal() {
     const modal = document.getElementById('cloudSyncModal');
     if (modal) {
         modal.classList.remove('hidden');
+        updateCloudModalPilotInfo();
+        updateCloudStatusUI(cloudState.isConnected ? 'connected' : 'local', cloudState.isConnected ? 'Nube Conectada' : 'Modo Offline');
         
-        // Cargar configuración existente en el textarea si existe
-        const saved = localStorage.getItem('activerza_firebase_config');
-        const input = document.getElementById('inputFirebaseConfigText');
-        if (input && saved) {
-            try {
-                input.value = JSON.stringify(JSON.parse(saved), null, 2);
-            } catch (e) {
-                input.value = saved;
-            }
+        // Sugerir nombre de piloto actual en el formulario si está vacío
+        const inputName = document.getElementById('inputSyncPilotName');
+        if (inputName && !inputName.value.trim() && typeof state !== 'undefined') {
+            inputName.value = state.currentAthlete || '';
         }
-        updateCloudStatusUI(cloudState.isConnected ? 'connected' : 'local', cloudState.isConnected ? 'Conectado a Firebase' : 'Modo Local');
     }
 }
 
 /**
- * Cierra el modal de configuración de Firebase
+ * Cierra el modal de sincronización
  */
 function closeCloudSyncModal() {
     const modal = document.getElementById('cloudSyncModal');
@@ -368,55 +517,25 @@ function closeCloudSyncModal() {
 }
 
 /**
- * Maneja el envío del formulario de configuración de Firebase
+ * Manejador del formulario de conexión de piloto por PIN
  */
-function handleSaveFirebaseConfigSubmit(e) {
+function handleConnectPilotSubmit(e) {
     if (e && e.preventDefault) e.preventDefault();
-    const input = document.getElementById('inputFirebaseConfigText');
-    if (!input || !input.value.trim()) {
-        alert('Por favor pega el objeto de configuración de Firebase.');
+    const inputName = document.getElementById('inputSyncPilotName');
+    const inputPin = document.getElementById('inputSyncPilotPin');
+
+    const name = inputName ? inputName.value.trim() : '';
+    const pin = inputPin ? inputPin.value.trim() : '';
+
+    if (!name) {
+        alert('Por favor escribe el nombre del piloto.');
         return;
     }
 
-    let parsedConfig = null;
-    const raw = input.value.trim();
-
-    try {
-        // Intentar parsear como JSON
-        parsedConfig = JSON.parse(raw);
-    } catch (err) {
-        try {
-            // Intentar extraer si el usuario pegó el código JS completo: const firebaseConfig = { ... };
-            const match = raw.match(/\{[\s\S]*\}/);
-            if (match) {
-                // Convertir propiedades JS a formato JSON seguro
-                const jsonLike = match[0]
-                    .replace(/([a-zA-Z0-9_]+)\s*:/g, '"$1":')
-                    .replace(/'/g, '"')
-                    .replace(/,\s*\}/g, '}');
-                parsedConfig = JSON.parse(jsonLike);
-            }
-        } catch (err2) {
-            alert('No se pudo interpretar el formato. Asegúrate de pegar el objeto { apiKey: "...", projectId: "..." }');
-            return;
-        }
-    }
-
-    if (!parsedConfig || !parsedConfig.apiKey || !parsedConfig.projectId) {
-        alert('La configuración debe contener al menos "apiKey" y "projectId".');
-        return;
-    }
-
-    const res = saveFirebaseConfig(parsedConfig);
-    if (res.success) {
-        alert('¡Configuración de Firebase guardada exitosamente! Conectando a la nube...');
-        closeCloudSyncModal();
-    } else {
-        alert('Error: ' + res.error);
-    }
+    connectPilotWithPin(name, pin);
 }
 
-// Inicializar al cargar el script
+// Inicializar automáticamente al cargar el documento
 document.addEventListener('DOMContentLoaded', () => {
     initFirebase();
 });

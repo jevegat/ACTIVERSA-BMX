@@ -56,9 +56,13 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * **Marcado automático de sesiones finalizadas**: Al culminar un entrenamiento en el WOD Tracker, la fecha del calendario se marca automáticamente como `[✓ Finalizada]`.
 
 ### 6. ☁️ Sincronización en la Nube con Google Firebase & Cloud Firestore
-* **Persistencia Offline-First en Pista**: Implementa IndexedDB local en el navegador para registrar y cronometrar entrenamientos en la pista de BMX aun sin señal de internet o WiFi; el SDK de Firestore sincroniza automáticamente en segundo plano al recuperar conectividad.
-* **Sincronización Multi-Dispositivo**: Padres, deportistas y entrenadores pueden sincronizar el progreso entre teléfonos móviles, tablets y computadores sin perder el estado.
-* **Panel de Conexión Amigable**: Botón de estado en la barra superior (🟢 Nube Sincronizada / 🟡 Guardando / ⚪ Modo Local) con modal para conectar fácilmente credenciales de Firebase (`firebaseConfig`), forzar subida/bajada manual y cambiar entre modo nube y local en un clic.
+* **Conexión Automática Out-of-the-Box**: La aplicación viene preconfigurada para conectarse directamente a la nube de ACTIVERSA-BMX en Google Firebase Firestore (`activersa-bmx`) sin exigir códigos técnicos ni configuraciones JSON a los usuarios.
+* **Sincronización Multi-Dispositivo por Nombre y PIN de Piloto**:
+  - Cada deportista puede configurar un **PIN de Seguridad (4 dígitos)** en su perfil.
+  - Al abrir la aplicación en cualquier celular, tablet o PC, basta con ingresar el **Nombre de Piloto** y su **PIN** para traer al instante su historial de entrenamientos, progreso de sesiones y tiempos de cronómetro.
+  - Soporte en tiempo real (`onSnapshot`): los cambios realizados en un dispositivo se reflejan automáticamente en los demás.
+* **Persistencia Offline-First en Pista**: Implementa IndexedDB local en el navegador para registrar y cronometrar entrenamientos en la pista de BMX aun sin señal de internet o datos móviles; Firestore sincroniza de manera automática y transparente al recuperar conectividad.
+* **Panel de Sincronización para Deportistas**: Botón de estado en la barra superior con indicador visual en vivo (🟢 Nube Conectada / 🟡 Guardando / ⚪ Modo Offline Pista), tarjeta de piloto activo con su PIN protegido y botones de sincronización rápida.
 
 ### 5. 🥗 Nutrición Pediátrica & Calculadora de Hidratación
 * Cálculo personalizado del volumen de hidratación antes, durante y después del esfuerzo según el peso corporal del deportista.
