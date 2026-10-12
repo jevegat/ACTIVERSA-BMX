@@ -77,6 +77,13 @@
                     <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-white transition ml-1"></i>
                 </button>
 
+                <!-- Cloud Sync Status (Firebase) -->
+                <button onclick="openCloudSyncModal()" id="btnCloudSyncStatus" aria-label="Sincronización en la Nube" class="p-2 sm:px-3 sm:py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-bold transition shadow flex items-center gap-2 cursor-pointer group" title="Sincronización en la Nube con Google Firebase">
+                    <span class="w-2.5 h-2.5 rounded-full bg-slate-400 group-hover:scale-110 transition-transform" id="cloudStatusDot"></span>
+                    <i class="fa-solid fa-cloud text-slate-300 group-hover:text-cyan-400 transition-colors"></i>
+                    <span class="hidden xl:inline text-slate-300" id="cloudStatusText">Nube</span>
+                </button>
+
                 <!-- Dark / Light Theme Toggle -->
                 <button onclick="toggleTheme()" id="themeToggleBtn" aria-label="Cambiar tema" class="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 hover:text-amber-300 transition shadow">
                     <i id="themeToggleIcon" class="fa-solid fa-sun text-sm"></i>
@@ -923,6 +930,113 @@
         </div>
     </div>
 
+    <!-- ========================================== -->
+    <!-- MODAL 4: CLOUD SYNC & FIREBASE FIRESTORE   -->
+    <!-- ========================================== -->
+    <div id="cloudSyncModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center p-4 transition-all hidden">
+        <div class="bg-slate-900 border border-slate-700/80 rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-5 max-h-[90vh] overflow-y-auto">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-orange-600/20 text-orange-400 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-black text-white font-heading">Sincronización en la Nube</h3>
+                        <p class="text-[11px] text-slate-400">Google Firebase & Cloud Firestore</p>
+                    </div>
+                </div>
+                <button onclick="closeCloudSyncModal()" aria-label="Cerrar modal de nube" class="text-slate-400 hover:text-white p-2 rounded-xl hover:bg-slate-800 transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Current Connection Status Card -->
+            <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-4 space-y-3">
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Estado de Conexión:</span>
+                    <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-xs font-bold bg-slate-800 text-slate-200 border border-slate-700">
+                        <span id="modalCloudDot" class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                        <span id="modalCloudStatusText">Modo Local</span>
+                    </span>
+                </div>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <div class="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800/80">
+                        <span class="text-[10px] text-slate-500 font-bold block uppercase">Proyecto Firestore</span>
+                        <span id="modalCloudProjectId" class="text-white font-mono font-bold truncate block">Ninguno</span>
+                    </div>
+                    <div class="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800/80">
+                        <span class="text-[10px] text-slate-500 font-bold block uppercase">Última Sincronización</span>
+                        <span id="modalCloudSyncTime" class="text-white font-mono font-bold truncate block">No sincronizado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fast Action Buttons -->
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" id="btnForcePushCloud" onclick="forcePushToCloud()" class="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl transition shadow flex items-center justify-center gap-2 cursor-pointer active:scale-95">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Subir a la Nube</span>
+                </button>
+                <button type="button" id="btnForcePullCloud" onclick="forcePullFromCloud()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs py-2.5 px-3 rounded-xl transition flex items-center justify-center gap-2 cursor-pointer active:scale-95">
+                    <i class="fa-solid fa-cloud-arrow-down text-cyan-400"></i>
+                    <span>Descargar de Nube</span>
+                </button>
+            </div>
+
+            <!-- Configuration Form -->
+            <div class="space-y-3 pt-2 border-t border-slate-800">
+                <div class="flex justify-between items-center">
+                    <label class="text-xs font-bold text-slate-300 uppercase tracking-wider">
+                        <i class="fa-brands fa-google text-orange-400 mr-1"></i> Credenciales de Firebase:
+                    </label>
+                    <button type="button" onclick="disconnectFirebase()" class="text-[11px] text-rose-400 hover:text-rose-300 font-bold transition">
+                        <i class="fa-solid fa-link-slash mr-1"></i> Desconectar
+                    </button>
+                </div>
+                <p class="text-[11px] text-slate-400 leading-relaxed">
+                    Pega a continuación el objeto de configuración que te entrega la consola de Firebase (<code class="text-amber-400 font-mono">firebaseConfig</code>):
+                </p>
+                <form onsubmit="handleSaveFirebaseConfigSubmit(event)" class="space-y-3">
+                    <textarea id="inputFirebaseConfigText" rows="6" placeholder='{
+  "apiKey": "AIzaSy...",
+  "authDomain": "activerza-bmx.firebaseapp.com",
+  "projectId": "activerza-bmx",
+  "storageBucket": "activerza-bmx.appspot.com",
+  "messagingSenderId": "...",
+  "appId": "..."
+}' class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-xs text-amber-300 font-mono focus:ring-2 focus:ring-red-500 focus:outline-none"></textarea>
+                    
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-3 rounded-xl shadow-lg shadow-emerald-600/30 transition flex items-center justify-center gap-2 cursor-pointer active:scale-95">
+                        <i class="fa-solid fa-floppy-disk"></i> Guardar y Conectar a Firebase
+                    </button>
+                </form>
+            </div>
+
+            <!-- Quick Step-by-Step Help Guide -->
+            <details class="bg-slate-950/50 border border-slate-800/80 rounded-2xl p-3 text-xs text-slate-400 group">
+                <summary class="font-bold text-slate-300 cursor-pointer list-none flex justify-between items-center">
+                    <span><i class="fa-solid fa-circle-question text-cyan-400 mr-1.5"></i> ¿Cómo obtener tu configuración de Firebase gratis?</span>
+                    <i class="fa-solid fa-chevron-down text-[10px] group-open:rotate-180 transition-transform"></i>
+                </summary>
+                <ol class="list-decimal list-inside space-y-1.5 text-[11px] text-slate-300/90 pt-3 border-t border-slate-800/60 mt-2.5">
+                    <li>Ingresa a <a href="https://console.firebase.google.com/" target="_blank" class="text-red-400 hover:underline">console.firebase.google.com</a> con tu cuenta Google.</li>
+                    <li>Haz clic en <strong>"Crear un proyecto"</strong> (ej. <em>ACTIVERSA-BMX</em>).</li>
+                    <li>En el menú lateral, ve a <strong>Compilación &gt; Firestore Database</strong> y haz clic en <strong>"Crear base de datos"</strong> (puedes iniciar en modo prueba).</li>
+                    <li>Ve a <strong>Configuración del proyecto (⚙️) &gt; Tus apps</strong>, añade una app web (ícono <code>&lt;/&gt;</code>) y copia el bloque <code>firebaseConfig</code> para pegarlo aquí.</li>
+                </ol>
+            </details>
+
+            <!-- Close Button -->
+            <div class="flex justify-end pt-1">
+                <button type="button" onclick="closeCloudSyncModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs px-5 py-2.5 rounded-xl transition">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- FLOATING ACTION BUTTON (FAB) FOR GUIDED WORKOUT -->
     <button onclick="startGuidedWorkout()" id="floatingWorkoutFab" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-black text-xs sm:text-sm px-4 sm:px-5 py-3 rounded-2xl shadow-2xl shadow-red-600/50 border border-white/20 transition-all transform hover:scale-105 active:scale-95 flex items-center gap-2.5 cursor-pointer group" title="Iniciar seguimiento de la sesión activa">
         <span class="w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
@@ -952,6 +1066,11 @@
     </footer>
 
     <!-- MODULAR JAVASCRIPT MODULES -->
+    <!-- Firebase SDK (Compat v10 para SPA Vanilla Browser) -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase.js"></script>
     <script src="js/data.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/calendar.js"></script>

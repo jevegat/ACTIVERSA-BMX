@@ -55,6 +55,11 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * Cálculo dinámico de fechas exactas y vinculación directa a cada día del plan.
 * **Marcado automático de sesiones finalizadas**: Al culminar un entrenamiento en el WOD Tracker, la fecha del calendario se marca automáticamente como `[✓ Finalizada]`.
 
+### 6. ☁️ Sincronización en la Nube con Google Firebase & Cloud Firestore
+* **Persistencia Offline-First en Pista**: Implementa IndexedDB local en el navegador para registrar y cronometrar entrenamientos en la pista de BMX aun sin señal de internet o WiFi; el SDK de Firestore sincroniza automáticamente en segundo plano al recuperar conectividad.
+* **Sincronización Multi-Dispositivo**: Padres, deportistas y entrenadores pueden sincronizar el progreso entre teléfonos móviles, tablets y computadores sin perder el estado.
+* **Panel de Conexión Amigable**: Botón de estado en la barra superior (🟢 Nube Sincronizada / 🟡 Guardando / ⚪ Modo Local) con modal para conectar fácilmente credenciales de Firebase (`firebaseConfig`), forzar subida/bajada manual y cambiar entre modo nube y local en un clic.
+
 ### 5. 🥗 Nutrición Pediátrica & Calculadora de Hidratación
 * Cálculo personalizado del volumen de hidratación antes, durante y después del esfuerzo según el peso corporal del deportista.
 * Fichas clínicas sobre mielinización, recarga de glucógeno y recuperación muscular sin suplementación artificial.
@@ -70,6 +75,7 @@ Arquitectura modular en Vanilla JavaScript (ES6+), HTML5 semántico y CSS3 con T
 ├── css/
 │   └── styles.css       # Estilos globales, modo oscuro/claro y animaciones
 ├── js/
+│   ├── firebase.js      # Integración con Google Firebase Firestore, Auth y Offline Sync
 │   ├── data.js          # Base de datos de rutinas, ejercicios, videos y nutrición
 │   ├── timer.js         # Síntesis de sonido Web Audio API y temporizador WOD
 │   ├── calendar.js      # Planificador de fechas y calendario de seguimiento

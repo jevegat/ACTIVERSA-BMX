@@ -235,6 +235,10 @@ function loadSavedState() {
 
 function saveStateToStorage() {
     localStorage.setItem('activerza_state_v1', JSON.stringify(state));
+    // Sincronizar automáticamente en segundo plano con Cloud Firestore si está conectado
+    if (typeof syncStateToFirestore === 'function') {
+        syncStateToFirestore(state);
+    }
 }
 
 /* ==========================================================================
