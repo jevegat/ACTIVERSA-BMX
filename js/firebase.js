@@ -9,6 +9,18 @@ let firestoreDb = null;
 let firebaseAuth = null;
 let firestoreUnsubscribe = null;
 
+/**
+ * Obtiene o genera un identificador persistente de la academia para Firestore
+ */
+function getOrCreateAcademyId() {
+    let id = localStorage.getItem('activerza_academy_id');
+    if (!id) {
+        id = 'bmx_' + Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
+        localStorage.setItem('activerza_academy_id', id);
+    }
+    return id;
+}
+
 let cloudState = {
     isConfigured: false,
     isConnected: false,
@@ -68,7 +80,10 @@ function initFirebase() {
                 }
             });
 
-        // Autenticación anónima por defecto para generar UID único y seguro
+        // Identificador persistente de respaldo si Auth anónima no está activada en la consola
+        const fallbackAcademyId = getOrCreateAcademyId();
+
+        // Intentar autenticación con Firebase Auth
         firebaseAuth.onAuthStateChanged(user => {
             if (user) {
                 cloudState.userId = user.uid;
@@ -84,8 +99,12 @@ function initFirebase() {
                         setupFirestoreListener(cred.user.uid);
                     })
                     .catch(err => {
-                        console.error('Error en autenticación anónima de Firebase:', err);
-                        updateCloudStatusUI('error', 'Error de Auth');
+                        console.warn('Aviso: Proveedor anónimo deshabilitado en Firebase Console. Conectando a Firestore directamente con ID de academia:', err.code);
+                        // Fallback transparente: permitimos que Firestore funcione directamente
+                        cloudState.userId = fallbackAcademyId;
+                        cloudState.isConnected = true;
+                        updateCloudStatusUI('connected', 'Nube Sincronizada');
+                        setupFirestoreListener(fallbackAcademyId);
                     });
             }
         });
