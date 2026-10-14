@@ -751,6 +751,7 @@ function finishGuidedWorkout() {
         timestamp: Date.now()
     });
     if (typeof saveStateToStorage === 'function') saveStateToStorage();
+    if (typeof renderCalendarSchedule === 'function') renderCalendarSchedule();
 
     const trackerView = document.getElementById('gwTrackerView');
     const finishView = document.getElementById('gwFinishedView');

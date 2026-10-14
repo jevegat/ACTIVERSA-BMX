@@ -843,13 +843,48 @@ function checkSessionCompletion() {
     const prefix = `w${w}_d${d}_${age}_`;
     const sessionKeys = Object.keys(prog).filter(k => k.startsWith(prefix) && prog[k]);
     
-    if (sessionKeys.length >= 8) {
+    let requiredCount = 6;
+    if (typeof TRAINING_DB !== 'undefined' && TRAINING_DB[w] && TRAINING_DB[w].days[d] && TRAINING_DB[w].days[d].ageGroups[age]) {
+        const s = TRAINING_DB[w].days[d].ageGroups[age];
+        const total = (s.warmup ? s.warmup.length : 0) + 
+                      (s.plyo ? s.plyo.length : 0) + 
+                      (s.strength ? s.strength.length : 0) + 
+                      (s.stretch ? s.stretch.length : 0) + 
+                      (s.recovery ? 1 : 0);
+        requiredCount = Math.max(6, total);
+    }
+
+    if (sessionKeys.length >= requiredCount) {
+        if (!state.history[athlete]) state.history[athlete] = [];
+        
+        // Registrar en el historial si no se ha registrado hoy
+        const todayStr = new Date().toISOString().split('T')[0];
+        const alreadyRecordedToday = state.history[athlete].some(h => 
+            Number(h.week) === Number(w) && 
+            Number(h.day) === Number(d) && 
+            (h.date || '').startsWith(todayStr)
+        );
+
+        if (!alreadyRecordedToday) {
+            state.history[athlete].push({
+                date: new Date().toISOString(),
+                week: Number(w),
+                day: Number(d),
+                timestamp: Date.now()
+            });
+            if (typeof saveStateToStorage === 'function') saveStateToStorage();
+        }
+
         if (window.confetti) {
             window.confetti({
                 particleCount: 80,
                 spread: 70,
                 origin: { y: 0.6 }
             });
+        }
+
+        if (typeof renderCalendarSchedule === 'function') {
+            renderCalendarSchedule();
         }
     }
 }
