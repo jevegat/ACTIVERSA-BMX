@@ -2,7 +2,8 @@
  * ACTIVERZA BMX RACING ACADEMY
  * Módulo de Seguimiento Completo de Sesión Guiada (Guided WOD Tracker)
  * Cronómetro interválico con anticipación del siguiente ejercicio,
- * control de tiempos (ejercicio, bloque y sesión), videos y finalización de calendario.
+ * control de tiempos (ejercicio, bloque y sesión), videos, series dinámicas con descanso intercalado,
+ * justificación técnica BMX del PDF y finalización de calendario.
  */
 
 let workoutSteps = [];
@@ -11,6 +12,32 @@ let stepSecondsLeft = 0;
 let workoutTimerInterval = null;
 let isWorkoutRunning = false;
 let isWorkoutMuted = false;
+
+/**
+ * Extrae el número total de series desde la cadena del ejercicio (ej. "4 series de 20 saltos" -> 4)
+ */
+function parseSetsCount(setsStr, defaultSets = 3) {
+    if (!setsStr) return defaultSets;
+    const match = setsStr.match(/(\d+)\s*series/i);
+    if (match && match[1]) {
+        const val = parseInt(match[1], 10);
+        if (!isNaN(val) && val > 0) return val;
+    }
+    return defaultSets;
+}
+
+/**
+ * Extrae la duración de descanso desde la cadena (ej. "Descanso 60s" -> 60)
+ */
+function parseRestSeconds(restStr, defaultRest = 60) {
+    if (!restStr) return defaultRest;
+    const match = restStr.match(/(\d+)\s*s/i);
+    if (match && match[1]) {
+        const val = parseInt(match[1], 10);
+        if (!isNaN(val) && val > 0) return val;
+    }
+    return defaultRest;
+}
 
 /**
  * Calcula la duración exacta y el desglose de cada bloque de la sesión
@@ -37,26 +64,9 @@ function calculateSessionSummary(week, day, ageGroup) {
         else if (s.blockIndex === 5) blocksSec.recovery += s.duration;
     });
 
-    const session = TRAINING_DB && TRAINING_DB[week] && TRAINING_DB[week].days && TRAINING_DB[week].days[day] ? TRAINING_DB[week].days[day].ageGroups[ageGroup] : null;
-    const warmupCount = session && session.warmup ? session.warmup.length : 3;
-    let warmupRounds = 3;
-    if (warmupCount <= 3) warmupRounds = 3;
-    else if (warmupCount === 4) warmupRounds = 2;
-    else if (warmupCount >= 5) warmupRounds = 2;
-
-    let cardioRounds = 8;
-    if (session && session.cardio) {
-        if (session.cardio.name.includes("40/20") || session.cardio.name.includes("Semáforo")) cardioRounds = 6;
-        else if (session.cardio.name.includes("EMOM")) cardioRounds = 8;
-    }
-
     return {
-        totalSec,
-        totalMin: Math.round(totalSec / 60),
-        formattedTotal: formatTime(totalSec),
-        warmupRounds,
-        cardioRounds,
-        stepsCount: steps.length,
+        totalMinutes: Math.round(totalSec / 60),
+        totalSeconds: totalSec,
         blocks: {
             warmup: Math.round(blocksSec.warmup / 60),
             plyo: Math.round(blocksSec.plyo / 60),
@@ -69,8 +79,7 @@ function calculateSessionSummary(week, day, ageGroup) {
 }
 
 /**
- * Compila la secuencia cronológica de trabajo y descanso de la sesión activa,
- * asegurando la duración completa estipulada para cada bloque (ej. 10 min de calentamiento con series repetidas).
+ * Construye la lista lineal de pasos para la sesión guiada
  */
 function buildWorkoutPlan(week, day, ageGroup) {
     const steps = [];
@@ -81,10 +90,16 @@ function buildWorkoutPlan(week, day, ageGroup) {
     const session = TRAINING_DB[week].days[day].ageGroups[ageGroup];
     if (!session) return steps;
 
+    const warmupInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('warmup', week, day, ageGroup) : "Calentamiento dinámico y activación neuromuscular sin fatiga previa.";
+    const plyoInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('plyo', week, day, ageGroup) : "En el BMX, un tobillo firme transfiere mejor la potencia al pedal. Descanso de 60 segundos entre series.";
+    const strengthInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('strength', week, day, ageGroup) : "Nomenclatura del Tempo: [Bajada / Pausa abajo / Subida / Pausa arriba]. Fase de bajada lenta (3 segundos) para proteger articulaciones y desarrollar fuerza tendinosa.";
+    const cardioInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('cardio', week, day, ageGroup) : "Simulación de carrera en pista y tolerancia láctica en la última recta.";
+    const stretchInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('stretch', week, day, ageGroup) : "POST-ENTRENAMIENTO. Sostener de 20 a 30s sin rebotar para devolver longitud al tejido y reducir tono muscular.";
+    const recoveryInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('recovery', week, day, ageGroup) : "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6.";
+
     // 1. BLOQUE 1: CALENTAMIENTO Y ACTIVACIÓN DINÁMICA (Target: 10 min = 600s)
     if (session.warmup && session.warmup.length) {
         const warmupCount = session.warmup.length;
-        // Si hay 3 ejercicios (o menos), se realizan 3 series completas (3 rondas x 3 ej = 9 min + transición = 10 min)
         let totalWarmupRounds = 3;
         if (warmupCount <= 3) totalWarmupRounds = 3;
         else if (warmupCount === 4) totalWarmupRounds = 2;
@@ -97,20 +112,24 @@ function buildWorkoutPlan(week, day, ageGroup) {
                 steps.push({
                     blockName: "1. Calentamiento Dinámico",
                     blockIndex: 0,
-                    blockTotalSec: 600, // 10 min
+                    blockTotalSec: 600,
                     name: ex.name,
                     type: "work",
                     phaseName: "ACTIVACIÓN",
                     duration: 45,
-                    setLabel: `Serie ${round} de ${totalWarmupRounds} • Ejercicio ${idx + 1} de ${warmupCount}`,
+                    setIndex: round,
+                    totalSets: totalWarmupRounds,
+                    setLabel: `Ronda ${round} de ${totalWarmupRounds} • Ejercicio ${idx + 1} de ${warmupCount}`,
+                    executionInfo: `Ronda ${round} de ${totalWarmupRounds} (45s de trabajo continuo)`,
+                    blockInsight: warmupInsight,
                     video: ex.video,
                     desc: ex.desc,
-                    target: ex.target || "Movilidad y Core",
-                    tempo: "",
+                    target: ex.target || "Activación Articular y SNC",
+                    tempo: "Fluido y controlado",
                     exerciseKey: round === totalWarmupRounds ? exKey : null
                 });
 
-                // 15s de transición al siguiente ejercicio
+                // Transición / Descanso activo: 15 segundos
                 steps.push({
                     blockName: "1. Calentamiento Dinámico",
                     blockIndex: 0,
@@ -119,34 +138,18 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     type: "rest",
                     phaseName: "TRANSICIÓN",
                     duration: 15,
-                    setLabel: `Descanso Serie ${round} (${idx + 1}/${warmupCount})`,
-                    video: session.warmup[idx + 1] ? session.warmup[idx + 1].video : (session.warmup[0] ? session.warmup[0].video : ex.video),
-                    desc: "Respira hondo y prepárate para el siguiente movimiento articular.",
-                    target: "Frecuencia Cardíaca",
+                    setIndex: round,
+                    totalSets: totalWarmupRounds,
+                    nextSetIndex: idx + 1 < warmupCount ? `Ej. ${idx + 2}` : `Ronda ${round + 1}`,
+                    setLabel: `Transición (15s)`,
+                    executionInfo: `Respira hondo y prepárate para el siguiente ejercicio`,
+                    blockInsight: warmupInsight,
+                    video: ex.video,
+                    desc: "Respira hondo, sacude extremidades y prepárate para el siguiente movimiento.",
+                    target: "Pausa activa",
                     tempo: "",
                     exerciseKey: null
                 });
-            });
-        }
-
-        // Si el tiempo acumulado de calentamiento es menor a 600s, se añade un paso preparatorio/hidratación
-        const accumulatedWarmupSec = totalWarmupRounds * warmupCount * 60;
-        const remainingWarmupSec = 600 - accumulatedWarmupSec;
-        if (remainingWarmupSec > 0) {
-            steps.push({
-                blockName: "1. Calentamiento Dinámico",
-                blockIndex: 0,
-                blockTotalSec: 600,
-                name: "Hidratación y Transición a Pliometría",
-                type: "rest",
-                phaseName: "PREPARACIÓN A PLIOMETRÍA",
-                duration: remainingWarmupSec,
-                setLabel: "Preparación Bloque 2A",
-                video: session.plyo && session.plyo[0] ? session.plyo[0].video : session.warmup[0].video,
-                desc: "Bebe un sorbo de agua, regula la respiración y prepárate para la máxima reactividad neuromuscular.",
-                target: "SNC e Hidratación",
-                tempo: "",
-                exerciseKey: null
             });
         }
     }
@@ -155,36 +158,50 @@ function buildWorkoutPlan(week, day, ageGroup) {
     if (session.plyo && session.plyo.length) {
         session.plyo.forEach((ex, idx) => {
             const exKey = `w${week}_d${day}_${ageGroup}_plyo_${idx}`;
-            const setsCount = 3;
+            const setsCount = parseSetsCount(ex.sets, 4);
+            const restSeconds = parseRestSeconds(ex.rest, 60);
+
             for (let s = 1; s <= setsCount; s++) {
+                // Trabajo de la Serie
                 steps.push({
-                    blockName: "2A. Pliometría y Agilidad",
+                    blockName: "2A. Pliometría, Agilidad y Reacción",
                     blockIndex: 1,
-                    blockTotalSec: 600, // 10 min
+                    blockTotalSec: 600,
                     name: ex.name,
                     type: "work",
-                    phaseName: "TRABAJO PLIOMÉTRICO",
-                    duration: 40,
-                    setLabel: `Serie ${s} de ${setsCount} • Ejercicio ${idx + 1} de ${session.plyo.length}`,
+                    phaseName: "SERIE EN EJECUCIÓN",
+                    duration: 40, // Tiempo sugerido
+                    setIndex: s,
+                    totalSets: setsCount,
+                    restDuration: restSeconds,
+                    setLabel: `Serie ${s} de ${setsCount}`,
+                    executionInfo: ex.sets ? `${ex.sets}` : `Serie ${s} de ${setsCount}`,
+                    blockInsight: plyoInsight,
                     video: ex.video,
                     desc: ex.desc,
-                    target: ex.target || "Potencia de Salto",
-                    tempo: "",
+                    target: ex.target || "Potencia de Salto y Stiffness",
+                    tempo: "Máxima explosividad",
                     exerciseKey: s === setsCount ? exKey : null
                 });
 
+                // Descanso entre series
                 steps.push({
-                    blockName: "2A. Pliometría y Agilidad",
+                    blockName: "2A. Pliometría, Agilidad y Reacción",
                     blockIndex: 1,
                     blockTotalSec: 600,
-                    name: "Descanso Pliometría Completo",
+                    name: `${ex.name} - Descanso Recuperación`,
                     type: "rest",
-                    phaseName: "RECUPERACIÓN PCr",
-                    duration: 60,
-                    setLabel: `Descanso Serie ${s} (60s)`,
+                    phaseName: "DESCANSO PCr",
+                    duration: restSeconds,
+                    setIndex: s,
+                    totalSets: setsCount,
+                    nextSetIndex: s < setsCount ? (s + 1) : "Siguiente Ejercicio",
+                    setLabel: `Descanso Serie ${s} (${restSeconds}s)`,
+                    executionInfo: `Descanso de ${restSeconds}s tras completar Serie ${s} de ${setsCount}`,
+                    blockInsight: plyoInsight,
                     video: ex.video,
                     desc: "Recupera fosfocreatina (PCr). Camina suave, mantente activo y no te sientes.",
-                    target: "Sistema Fosfágeno",
+                    target: "Sistema Fosfágeno (PCr)",
                     tempo: "",
                     exerciseKey: null
                 });
@@ -196,21 +213,28 @@ function buildWorkoutPlan(week, day, ageGroup) {
     if (session.strength && session.strength.length) {
         session.strength.forEach((ex, idx) => {
             const exKey = `w${week}_d${day}_${ageGroup}_str_${idx}`;
-            const setsCount = 3;
+            const setsCount = parseSetsCount(ex.sets, 3);
+            const restSeconds = parseRestSeconds(ex.rest, 60);
+
             for (let s = 1; s <= setsCount; s++) {
                 steps.push({
                     blockName: "2B. Fuerza Estricta (Tempos)",
                     blockIndex: 2,
-                    blockTotalSec: 900, // 15 min
+                    blockTotalSec: 900,
                     name: ex.name,
                     type: "work",
                     phaseName: "SERIE DE FUERZA",
                     duration: 45,
-                    setLabel: `Serie ${s} de ${setsCount} • Ejercicio ${idx + 1} de ${session.strength.length}`,
+                    setIndex: s,
+                    totalSets: setsCount,
+                    restDuration: restSeconds,
+                    setLabel: `Serie ${s} de ${setsCount}`,
+                    executionInfo: ex.sets ? `${ex.sets}` : `Serie ${s} de ${setsCount}`,
+                    blockInsight: strengthInsight,
                     video: ex.video,
                     desc: ex.desc,
-                    target: ex.target || "Fuerza Muscular",
-                    tempo: ex.tempo || "Tempo controlado",
+                    target: ex.target || "Fuerza Muscular y Tendinosa",
+                    tempo: ex.tempo ? `Tempo ${ex.tempo} [Bajada / Pausa / Subida / Pausa]` : "Tempo controlado 3-0-1-0",
                     exerciseKey: s === setsCount ? exKey : null
                 });
 
@@ -218,11 +242,16 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     blockName: "2B. Fuerza Estricta (Tempos)",
                     blockIndex: 2,
                     blockTotalSec: 900,
-                    name: "Descanso Muscular",
+                    name: `${ex.name} - Descanso Muscular`,
                     type: "rest",
-                    phaseName: "DESCANSO",
-                    duration: 45,
-                    setLabel: `Descanso Serie ${s} (45s)`,
+                    phaseName: "DESCANSO MUSCULAR",
+                    duration: restSeconds,
+                    setIndex: s,
+                    totalSets: setsCount,
+                    nextSetIndex: s < setsCount ? (s + 1) : "Siguiente Ejercicio",
+                    setLabel: `Descanso Serie ${s} (${restSeconds}s)`,
+                    executionInfo: `Descanso de ${restSeconds}s tras completar Serie ${s} de ${setsCount}`,
+                    blockInsight: strengthInsight,
                     video: ex.video,
                     desc: "Hidrátate con pequeños sorbos de agua y sacude los músculos.",
                     target: "Recuperación Muscular",
@@ -272,10 +301,14 @@ function buildWorkoutPlan(week, day, ageGroup) {
                 type: "work",
                 phaseName: "ESFUERZO MÁXIMO",
                 duration: workDuration,
+                setIndex: r,
+                totalSets: rounds,
                 setLabel: `Ronda ${r} de ${rounds}`,
+                executionInfo: `Ronda ${r} de ${rounds} (${workDuration}s Máximo Esfuerzo)`,
+                blockInsight: cardioInsight,
                 video: cardio.video,
                 desc: cardio.desc,
-                target: "Tolerancia Láctica y Potencia",
+                target: "Tolerancia Láctica y Potencia en Recta",
                 tempo: "Máxima Aceleración",
                 exerciseKey: r === rounds ? exKey : null
             });
@@ -288,7 +321,12 @@ function buildWorkoutPlan(week, day, ageGroup) {
                 type: "rest",
                 phaseName: "DESCANSO INTERVALO",
                 duration: restDuration,
-                setLabel: `Descanso Ronda ${r}`,
+                setIndex: r,
+                totalSets: rounds,
+                nextSetIndex: r < rounds ? (r + 1) : "Estiramiento",
+                setLabel: `Descanso Ronda ${r} (${restDuration}s)`,
+                executionInfo: `Recuperación de ${restDuration}s antes del próximo sprint`,
+                blockInsight: cardioInsight,
                 video: cardio.video,
                 desc: "Regula la respiración diafragmática antes del siguiente sprint.",
                 target: "Resistencia Anaeróbica",
@@ -307,16 +345,20 @@ function buildWorkoutPlan(week, day, ageGroup) {
                 steps.push({
                     blockName: "3. Estiramiento Post-Entreno",
                     blockIndex: 4,
-                    blockTotalSec: 480, // 8 min
+                    blockTotalSec: 480,
                     name: ex.name,
                     type: "work",
                     phaseName: "ELONGACIÓN ESTÁTICA",
                     duration: 40,
+                    setIndex: r,
+                    totalSets: stretchRounds,
                     setLabel: `Serie ${r} de ${stretchRounds} • Postura ${idx + 1} de ${session.stretch.length}`,
+                    executionInfo: ex.duration ? `${ex.duration} (Sostener sin rebotar)` : `Sostener 20-30s por lado`,
+                    blockInsight: stretchInsight,
                     video: ex.video,
                     desc: ex.desc,
-                    target: "Flexibilidad y Prevención",
-                    tempo: "Sostener sin rebotar",
+                    target: "Flexibilidad y Prevención de Lesiones",
+                    tempo: "Sostener estático sin rebotar",
                     exerciseKey: r === stretchRounds ? exKey : null
                 });
 
@@ -328,10 +370,15 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     type: "rest",
                     phaseName: "CAMBIO",
                     duration: 10,
-                    setLabel: "Transición",
+                    setIndex: r,
+                    totalSets: stretchRounds,
+                    nextSetIndex: idx + 1 < session.stretch.length ? `Postura ${idx + 2}` : `Serie ${r + 1}`,
+                    setLabel: "Transición (10s)",
+                    executionInfo: "Cambia suavemente de postura sin movimientos bruscos",
+                    blockInsight: stretchInsight,
                     video: session.stretch[idx + 1] ? session.stretch[idx + 1].video : ex.video,
                     desc: "Cambia suavemente de extremidad o pasa al siguiente grupo muscular.",
-                    target: "Movilidad",
+                    target: "Movilidad Articular",
                     tempo: "",
                     exerciseKey: null
                 });
@@ -345,12 +392,16 @@ function buildWorkoutPlan(week, day, ageGroup) {
         steps.push({
             blockName: "4. Recuperación Parasimpática",
             blockIndex: 5,
-            blockTotalSec: 240, // 4 min
+            blockTotalSec: 240,
             name: session.recovery.name,
             type: "work",
             phaseName: "RESPIRACIÓN Y VISUALIZACIÓN",
-            duration: 240, // 4 minutos
-            setLabel: "Recuperación Final",
+            duration: 240,
+            setIndex: 1,
+            totalSets: 1,
+            setLabel: "Recuperación Final (4 min)",
+            executionInfo: "4 minutos de visualización guiada en partidor y respiración diafragmática 4-4-6",
+            blockInsight: recoveryInsight,
             video: "https://www.youtube.com/embed/2MJGg-dUKh0",
             desc: session.recovery.desc,
             target: "Sistema Nervioso Central (SNC)",
@@ -368,7 +419,7 @@ function buildWorkoutPlan(week, day, ageGroup) {
 function startGuidedWorkout() {
     workoutSteps = buildWorkoutPlan(state.activeWeek, state.activeDay, state.activeAgeGroup);
     if (!workoutSteps.length) {
-        alert("No se encontraron ejercicios disponibles para esta sesión.");
+        alert("No se encontró plan de entrenamiento para los parámetros seleccionados.");
         return;
     }
 
@@ -376,23 +427,20 @@ function startGuidedWorkout() {
     stepSecondsLeft = workoutSteps[0].duration;
     isWorkoutRunning = true;
 
-    // Resetear vistas del modal
     const modal = document.getElementById('guidedWorkoutModal');
     const trackerView = document.getElementById('gwTrackerView');
-    const finishedView = document.getElementById('gwFinishedView');
+    const finishView = document.getElementById('gwFinishedView');
+    const playBtn = document.getElementById('gwPlayPauseBtn');
+    const btnIcon = document.getElementById('gwPlayPauseIcon');
 
-    if (trackerView) trackerView.classList.remove('hidden');
-    if (finishedView) finishedView.classList.add('hidden');
     if (modal) modal.classList.remove('hidden');
+    if (trackerView) trackerView.classList.remove('hidden');
+    if (finishView) finishView.classList.add('hidden');
 
-    // Inicializar audio si está soportado
-    if (typeof getAudioContext === 'function') {
-        getAudioContext();
-    }
-
-    // Tono de inicio del gate start
-    if (!isWorkoutMuted && typeof playGateBeeps === 'function') {
-        playGateBeeps();
+    if (btnIcon) btnIcon.className = "fa-solid fa-pause";
+    if (playBtn) {
+        playBtn.classList.remove('bg-emerald-600', 'hover:bg-emerald-500');
+        playBtn.classList.add('bg-red-600', 'hover:bg-red-500');
     }
 
     updateWorkoutUI();
@@ -400,7 +448,7 @@ function startGuidedWorkout() {
 }
 
 /**
- * Motor del temporizador con cuenta regresiva en segundos
+ * Arranca el temporizador de intervalo por segundo
  */
 function startWorkoutInterval() {
     if (workoutTimerInterval) clearInterval(workoutTimerInterval);
@@ -408,30 +456,19 @@ function startWorkoutInterval() {
     workoutTimerInterval = setInterval(() => {
         if (!isWorkoutRunning) return;
 
-        // Beeps de partidor en los 3 últimos segundos
-        if (stepSecondsLeft <= 3 && stepSecondsLeft > 0) {
-            if (!isWorkoutMuted && typeof playBeep === 'function') {
-                playBeep(700, 0.1);
+        if (stepSecondsLeft > 0) {
+            stepSecondsLeft--;
+            // Beep de anticipación en los últimos 3 segundos
+            if (stepSecondsLeft <= 3 && stepSecondsLeft > 0 && !isWorkoutMuted) {
+                if (typeof playBeep === 'function') playBeep(520, 0.1);
             }
-        }
-
-        stepSecondsLeft--;
-
-        if (stepSecondsLeft <= 0) {
-            // Tono de cambio de fase
-            if (!isWorkoutMuted && typeof playBeep === 'function') {
-                playBeep(1200, 0.3, 'triangle');
-            }
-
-            // Marcar ejercicio en el progreso si corresponde
-            const currentStep = workoutSteps[currentStepIndex];
-            if (currentStep && currentStep.exerciseKey) {
-                markExerciseAsDone(currentStep.exerciseKey);
-            }
-
-            advanceWorkoutStep();
-        } else {
             updateWorkoutUI();
+        } else {
+            // Sonido de cambio de fase
+            if (!isWorkoutMuted && typeof playBeep === 'function') {
+                playBeep(880, 0.35);
+            }
+            advanceWorkoutStep();
         }
     }, 1000);
 }
@@ -440,6 +477,11 @@ function startWorkoutInterval() {
  * Avanza al siguiente paso de la sesión
  */
 function advanceWorkoutStep() {
+    const curStep = workoutSteps[currentStepIndex];
+    if (curStep && curStep.exerciseKey) {
+        markExerciseAsDone(curStep.exerciseKey);
+    }
+
     currentStepIndex++;
     if (currentStepIndex >= workoutSteps.length) {
         finishGuidedWorkout();
@@ -482,6 +524,9 @@ function nextWorkoutStep() {
  * Completa la serie actual (pasa directo al descanso o siguiente ejercicio)
  */
 function skipCurrentWorkoutPhase() {
+    if (!isWorkoutMuted && typeof playBeep === 'function') {
+        playBeep(800, 0.15);
+    }
     nextWorkoutStep();
 }
 
@@ -587,7 +632,31 @@ function updateWorkoutUI() {
     const stepBar = document.getElementById('gwStepProgressBar');
     if (stepBar) stepBar.style.width = `${stepPct}%`;
 
-    // 3. DETALLE DEL EJERCICIO ACTUAL (Lado Derecho)
+    // 3. CAJAS DINÁMICAS DE EJECUCIÓN Y ENFOQUE BIOMECÁNICO BMX (Requerimiento Usuario)
+    const executionBox = document.getElementById('gwExecutionText');
+    const insightBox = document.getElementById('gwInsightText');
+    if (executionBox) {
+        executionBox.innerText = curStep.executionInfo || curStep.setLabel;
+    }
+    if (insightBox) {
+        insightBox.innerText = curStep.blockInsight || "En el BMX, la transferencia de potencia exige estabilidad, técnica y rigidez articular.";
+    }
+
+    // 4. BOTÓN DINÁMICO DE SERIE COMPLETADA / PASAR A DESCANSO
+    const actionBtn = document.getElementById('gwSetActionButton');
+    if (actionBtn) {
+        if (curStep.type === 'work') {
+            actionBtn.className = "w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-black text-xs sm:text-sm shadow-lg shadow-red-600/30 transition flex items-center justify-center gap-2 cursor-pointer active:scale-98";
+            actionBtn.innerHTML = `<i class="fa-solid fa-check-double text-emerald-300"></i> <span>¡Serie ${curStep.setIndex || 1} Completada! Pasar a Descanso (${curStep.restDuration || 60}s)</span>`;
+            actionBtn.title = "Haz clic al terminar tus repeticiones para avanzar de serie y comenzar el descanso";
+        } else {
+            actionBtn.className = "w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-black text-xs sm:text-sm shadow-lg shadow-cyan-600/30 transition flex items-center justify-center gap-2 cursor-pointer active:scale-98";
+            actionBtn.innerHTML = `<i class="fa-solid fa-forward text-cyan-200"></i> <span>¡Listo! Comenzar Serie ${curStep.nextSetIndex || ''}</span>`;
+            actionBtn.title = "Si ya te recuperaste, haz clic para saltar el descanso e iniciar la siguiente serie";
+        }
+    }
+
+    // 5. DETALLE DEL EJERCICIO ACTUAL (Lado Derecho)
     const activeTitle = document.getElementById('gwActiveExerciseTitle');
     const activeDetails = document.getElementById('gwActiveExerciseDetails');
     const activeDesc = document.getElementById('gwActiveExerciseDesc');
@@ -605,7 +674,7 @@ function updateWorkoutUI() {
         }
     }
 
-    // 4. DETALLE DEL SIGUIENTE EJERCICIO ("EL QUE CONTINÚA")
+    // 6. DETALLE DEL SIGUIENTE EJERCICIO ("EL QUE CONTINÚA")
     const nextStep = getNextDistinctExercise(currentStepIndex);
     const nextTitle = document.getElementById('gwNextExerciseTitle');
     const nextDetails = document.getElementById('gwNextExerciseDetails');
@@ -614,17 +683,16 @@ function updateWorkoutUI() {
     if (nextStep) {
         if (nextTitle) nextTitle.innerText = nextStep.name;
         if (nextDetails) nextDetails.innerText = `${nextStep.blockName} • ${nextStep.setLabel}`;
-        if (nextTip) nextTip.innerText = nextStep.target ? `Objetivo: ${nextStep.target}` : (nextStep.desc ? nextStep.desc.slice(0, 75) + '...' : '');
+        if (nextTip) nextTip.innerText = nextStep.target ? `Objetivo: ${nextStep.target}` : (nextStep.desc ? nextStep.desc.slice(0, 80) + '...' : '');
     } else {
         if (nextTitle) nextTitle.innerText = "¡Último ejercicio de la sesión!";
         if (nextDetails) nextDetails.innerText = "Finalizando entrenamiento con recuperación parasimpática";
         if (nextTip) nextTip.innerText = "Prepárate para registrar tu victoria.";
     }
 
-    // 5. VIDEO IFRAME DEL EJERCICIO
+    // 7. VIDEO IFRAME DEL EJERCICIO
     const iframe = document.getElementById('gwVideoIframe');
     if (iframe) {
-        // En descanso, si hay próximo ejercicio con video, mostramos el próximo para que aprenda la técnica
         const videoToPlay = (curStep.type === 'rest' && nextStep && nextStep.video) ? nextStep.video : curStep.video;
         if (videoToPlay && !iframe.src.includes(videoToPlay)) {
             iframe.src = videoToPlay.includes('?') ? `${videoToPlay}&autoplay=1&mute=1` : `${videoToPlay}?autoplay=1&mute=1`;
@@ -635,137 +703,84 @@ function updateWorkoutUI() {
 /**
  * Busca el siguiente paso que represente un ejercicio diferente o serie activa
  */
-function getNextDistinctExercise(fromIndex) {
-    for (let i = fromIndex + 1; i < workoutSteps.length; i++) {
-        if (workoutSteps[i].type === 'work') {
-            return workoutSteps[i];
+function getNextDistinctExercise(startIndex) {
+    const cur = workoutSteps[startIndex];
+    for (let i = startIndex + 1; i < workoutSteps.length; i++) {
+        const candidate = workoutSteps[i];
+        if (candidate.type === 'work' && (candidate.name !== cur.name || candidate.setLabel !== cur.setLabel)) {
+            return candidate;
         }
     }
     return null;
 }
 
 /**
- * Finaliza la sesión guiada, marca el progreso y actualiza el calendario
+ * Marca el ejercicio completado en el progreso del atleta
+ */
+function markExerciseAsDone(exKey) {
+    if (!exKey || typeof state === 'undefined') return;
+    const athlete = state.currentAthlete;
+    if (!state.progress[athlete]) state.progress[athlete] = {};
+    if (!state.progress[athlete][exKey]) {
+        state.progress[athlete][exKey] = true;
+        if (typeof saveStateToStorage === 'function') saveStateToStorage();
+        if (typeof renderActiveView === 'function') renderActiveView();
+    }
+}
+
+/**
+ * Finaliza la sesión guiada con pantalla de celebración y registro
  */
 function finishGuidedWorkout() {
     if (workoutTimerInterval) clearInterval(workoutTimerInterval);
     isWorkoutRunning = false;
 
-    // 1. Marcar todos los ejercicios de la sesión activa como completados
+    if (!isWorkoutMuted && typeof playBeep === 'function') {
+        playBeep(523, 0.2);
+        setTimeout(() => playBeep(659, 0.2), 200);
+        setTimeout(() => playBeep(784, 0.4), 400);
+    }
+
+    // Registrar en el historial del atleta
     const athlete = state.currentAthlete;
-    if (!state.progress[athlete]) state.progress[athlete] = {};
-
-    workoutSteps.forEach(s => {
-        if (s.exerciseKey) {
-            state.progress[athlete][s.exerciseKey] = true;
-        }
-    });
-
-    // 2. Registrar en el historial del atleta con fecha actual
     if (!state.history[athlete]) state.history[athlete] = [];
-    const scheduledDate = (typeof getScheduledDateForSession === 'function') 
-        ? getScheduledDateForSession(state.activeWeek, state.activeDay) 
-        : new Date().toLocaleDateString('es-ES');
-
     state.history[athlete].push({
         date: new Date().toISOString(),
-        scheduledDate: scheduledDate,
         week: state.activeWeek,
         day: state.activeDay,
-        ageGroup: state.activeAgeGroup,
-        completedAt: new Date().toLocaleTimeString('es-ES')
+        timestamp: Date.now()
     });
+    if (typeof saveStateToStorage === 'function') saveStateToStorage();
 
-    // 3. Guardar en LocalStorage
-    if (typeof saveStateToStorage === 'function') {
-        saveStateToStorage();
-    }
-
-    // 4. Actualizar calendario de seguimiento y vista principal
-    if (typeof renderCalendarSchedule === 'function') {
-        renderCalendarSchedule();
-    }
-    if (typeof renderActiveView === 'function') {
-        renderActiveView();
-    }
-
-    // 5. Celebración con Confetti
-    if (window.confetti) {
-        window.confetti({
-            particleCount: 150,
-            spread: 90,
-            origin: { y: 0.5 }
-        });
-    }
-
-    // 6. Sonido de victoria si está activo
-    if (!isWorkoutMuted && typeof playGateBeeps === 'function') {
-        playGateBeeps();
-    }
-
-    // 7. Mostrar pantalla de victoria en el modal
     const trackerView = document.getElementById('gwTrackerView');
-    const finishedView = document.getElementById('gwFinishedView');
-    const finishAthleteName = document.getElementById('gwFinishAthleteName');
-    const finishSessionDetail = document.getElementById('gwFinishSessionDetail');
-
+    const finishView = document.getElementById('gwFinishedView');
     if (trackerView) trackerView.classList.add('hidden');
-    if (finishedView) finishedView.classList.remove('hidden');
-    if (finishAthleteName) finishAthleteName.innerText = athlete;
-    if (finishSessionDetail) finishSessionDetail.innerText = `Semana ${state.activeWeek} • Día ${state.activeDay} • ${scheduledDate}`;
+    if (finishView) finishView.classList.remove('hidden');
+
+    if (typeof triggerConfetti === 'function') triggerConfetti();
 }
 
 /**
- * Cierra o minimiza el modal de seguimiento
+ * Cierra el modal de seguimiento guiado
  */
 function exitGuidedWorkout() {
-    if (isWorkoutRunning) {
-        const confirmExit = confirm("¿Deseas pausar y salir del entrenamiento guiado? Tu progreso actual se guardará.");
-        if (!confirmExit) return;
-    }
-
     if (workoutTimerInterval) clearInterval(workoutTimerInterval);
     isWorkoutRunning = false;
-
-    const iframe = document.getElementById('gwVideoIframe');
-    if (iframe) iframe.src = '';
-
     const modal = document.getElementById('guidedWorkoutModal');
     if (modal) modal.classList.add('hidden');
-
-    if (typeof renderActiveView === 'function') {
-        renderActiveView();
-    }
+    const iframe = document.getElementById('gwVideoIframe');
+    if (iframe) iframe.src = "";
+    if (typeof renderActiveView === 'function') renderActiveView();
 }
 
-/**
- * Función auxiliar para marcar un ejercicio individual como hecho
- */
-function markExerciseAsDone(exKey) {
-    const athlete = state.currentAthlete;
-    if (!state.progress[athlete]) state.progress[athlete] = {};
-    state.progress[athlete][exKey] = true;
-
-    if (typeof saveStateToStorage === 'function') {
-        saveStateToStorage();
-    }
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
 
-/**
- * Convierte segundos a formato MM:SS
- */
-function formatTime(totalSec) {
-    const s = Math.max(0, Math.floor(totalSec));
-    const m = Math.floor(s / 60);
-    const rem = s % 60;
-    return `${m < 10 ? '0' : ''}${m}:${rem < 10 ? '0' : ''}${rem}`;
-}
-
-function getAgeGroupName(age) {
-    const map = {
-        'sub6': 'Menores de 6 años',
-        '7to12': '7 a 12 años',
-        '13to17': '13 a 17 años'
-    };
-    return map[age] || '7 a 12 años';
+function getAgeGroupName(code) {
+    if (code === 'sub6') return 'Menores de 6 años';
+    if (code === '7to12') return '7 a 12 años';
+    return '13 a 17 años';
 }

@@ -398,6 +398,12 @@ function renderActiveView() {
     const dayData = weekData.days[d];
     const session = dayData.ageGroups[age];
     const dailyTips = weekData.dailyTips[d] || [];
+    const warmupInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('warmup', w, d, age) : '';
+    const plyoInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('plyo', w, d, age) : '';
+    const strengthInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('strength', w, d, age) : '';
+    const cardioInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('cardio', w, d, age) : '';
+    const stretchInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('stretch', w, d, age) : '';
+
 
     // Actualizar Hero
     const heroDesc = document.getElementById('heroAgeDesc');
@@ -580,6 +586,15 @@ function renderActiveView() {
                     Descanso 60s entre series
                 </span>
             </div>
+            <!-- Enfoque Biomecánico BMX del Bloque (PDF) -->
+            <div class="bg-amber-950/25 border border-amber-500/30 rounded-2xl p-3 flex items-start gap-2.5 text-xs text-amber-200/90 leading-relaxed shadow-sm">
+                <i class="fa-solid fa-lightbulb text-amber-400 mt-0.5 text-sm flex-shrink-0"></i>
+                <div>
+                    <strong class="font-bold text-amber-300 block text-[10px] uppercase tracking-wider mb-0.5">Enfoque Biomecánico BMX (PDF):</strong>
+                    ${plyoInsight}
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     `;
 
@@ -642,6 +657,15 @@ function renderActiveView() {
                     <i class="fa-solid fa-stopwatch"></i> Abrir en Cronómetro
                 </button>
             </div>
+            <!-- Enfoque Biomecánico BMX del Bloque (PDF) -->
+            <div class="bg-amber-950/25 border border-amber-500/30 rounded-2xl p-3 flex items-start gap-2.5 text-xs text-amber-200/90 leading-relaxed shadow-sm">
+                <i class="fa-solid fa-lightbulb text-amber-400 mt-0.5 text-sm flex-shrink-0"></i>
+                <div>
+                    <strong class="font-bold text-amber-300 block text-[10px] uppercase tracking-wider mb-0.5">Enfoque Biomecánico BMX (PDF):</strong>
+                    ${cardioInsight}
+                </div>
+            </div>
+
             
             <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-rose-500/30 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div class="space-y-2 flex-1">
@@ -678,6 +702,15 @@ function renderActiveView() {
                     Post-Entrenamiento Vital
                 </span>
             </div>
+            <!-- Enfoque Biomecánico BMX del Bloque (PDF) -->
+            <div class="bg-amber-950/25 border border-amber-500/30 rounded-2xl p-3 flex items-start gap-2.5 text-xs text-amber-200/90 leading-relaxed shadow-sm">
+                <i class="fa-solid fa-lightbulb text-amber-400 mt-0.5 text-sm flex-shrink-0"></i>
+                <div>
+                    <strong class="font-bold text-amber-300 block text-[10px] uppercase tracking-wider mb-0.5">Enfoque Biomecánico BMX (PDF):</strong>
+                    ${stretchInsight}
+                </div>
+            </div>
+
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     `;
@@ -722,9 +755,10 @@ function renderActiveView() {
 function renderExerciseCard(ex, exKey, isChecked, category, borderClass) {
     const safeName = ex.name.replace(/'/g, "\\'");
     const safeDesc = (ex.desc || '').replace(/'/g, "\\'");
-    const tempoHtml = ex.tempo ? `<span class="text-[10px] bg-purple-950 text-purple-300 font-mono px-2 py-0.5 rounded border border-purple-800/40"><i class="fa-solid fa-stopwatch mr-1"></i> ${ex.tempo}</span>` : '';
-    const setsHtml = ex.sets ? `<span class="text-[10px] bg-red-950 text-red-400 font-bold px-2 py-0.5 rounded border border-red-800/40">${ex.sets}</span>` : '';
-    const durHtml = ex.duration ? `<span class="text-[10px] bg-slate-800 text-slate-300 font-bold px-2 py-0.5 rounded border border-slate-700">${ex.duration}</span>` : '';
+    const tempoHtml = ex.tempo ? `<span class="text-[10px] bg-purple-950 text-purple-300 font-mono px-2.5 py-0.5 rounded border border-purple-800/40" title="Tempo [Bajada / Pausa abajo / Subida / Pausa arriba]"><i class="fa-solid fa-stopwatch mr-1 text-purple-400"></i> Tempo ${ex.tempo}</span>` : '';
+    const setsHtml = ex.sets ? `<span class="text-[10px] bg-red-950/90 text-red-300 font-bold px-2.5 py-0.5 rounded border border-red-800/50"><i class="fa-solid fa-repeat mr-1 text-red-400"></i> ${ex.sets}</span>` : '';
+    const durHtml = ex.duration ? `<span class="text-[10px] bg-slate-800 text-slate-300 font-bold px-2.5 py-0.5 rounded border border-slate-700"><i class="fa-regular fa-clock mr-1 text-amber-400"></i> ${ex.duration}</span>` : '';
+    const restHtml = ex.rest ? `<span class="text-[10px] bg-cyan-950 text-cyan-300 font-bold px-2.5 py-0.5 rounded border border-cyan-800/40"><i class="fa-solid fa-bed mr-1 text-cyan-400"></i> ${ex.rest}</span>` : '';
     const targetHtml = ex.target ? `<span class="text-[10px] text-slate-400 font-medium"><i class="fa-solid fa-bullseye text-red-500 mr-1"></i> ${ex.target}</span>` : '';
 
     return `
@@ -740,6 +774,7 @@ function renderExerciseCard(ex, exKey, isChecked, category, borderClass) {
                 <div class="flex flex-wrap items-center gap-1.5">
                     ${setsHtml}
                     ${durHtml}
+                    ${restHtml}
                     ${tempoHtml}
                     ${targetHtml}
                 </div>

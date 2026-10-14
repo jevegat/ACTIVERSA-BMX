@@ -840,6 +840,43 @@
                     </div>
                 </div>
 
+                <!-- Execution & BMX Biomechanical Insight Card (Requerimiento de Usuario) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <!-- Execution instructions -->
+                    <div class="bg-gradient-to-r from-red-950/40 to-slate-900 border border-red-500/40 p-3.5 rounded-2xl flex items-start gap-3 shadow-inner">
+                        <div class="w-8 h-8 rounded-xl bg-red-600/20 text-red-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i class="fa-solid fa-person-running text-base"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <span class="text-[10px] font-black uppercase tracking-wider text-red-400 block">Indicación de Ejecución & Series</span>
+                            <p id="gwExecutionText" class="text-xs sm:text-sm font-extrabold text-white leading-snug">
+                                4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- BMX Insight from PDF -->
+                    <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/40 p-3.5 rounded-2xl flex items-start gap-3 shadow-inner">
+                        <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <i class="fa-solid fa-lightbulb text-base"></i>
+                        </div>
+                        <div class="space-y-0.5 flex-1 min-w-0">
+                            <span class="text-[10px] font-black uppercase tracking-wider text-amber-400 block">Enfoque Biomecánico BMX (PDF)</span>
+                            <p id="gwInsightText" class="text-xs text-amber-200/90 leading-relaxed font-medium">
+                                En el BMX, un tobillo firme transfiere mejor la potencia al pedal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic Action Button: Complete Set / Skip Rest -->
+                <div class="pt-0.5">
+                    <button type="button" id="gwSetActionButton" onclick="skipCurrentWorkoutPhase()" class="w-full py-3.5 px-4 rounded-2xl bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-black text-xs sm:text-sm shadow-xl shadow-red-600/30 transition flex items-center justify-center gap-2 cursor-pointer active:scale-98">
+                        <i class="fa-solid fa-check-double text-emerald-300"></i>
+                        <span>¡Serie 1 Completada! Pasar a Descanso (60s)</span>
+                    </button>
+                </div>
+
                 <!-- Main Workout Split Screen -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
                     <!-- Left: Video Embed & Biomechanical notes (7 Cols) -->

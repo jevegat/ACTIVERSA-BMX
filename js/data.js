@@ -339,8 +339,8 @@ const TRAINING_DB = {
                                     { name: "Trote en Zig-Zag Imaginario", duration: "45s", video: "https://www.youtube.com/embed/PdSEGR2KuEk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Coordinación y agilidad.", target: "Cardio SNC" }
                                 ],
                                 plyo: [
-                                    { name: "Salto desde Caída (Drop Jump) / Drop to Jump", sets: "4 series de 5-6 repeticiones", rest: "Descanso 60s", video: "https://www.youtube.com/embed/jNXXwTbFo-Q", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Subirse a escalón, dejarse caer sin saltar previo, y al tocar suelo explotar inmediatamente hacia arriba. Clave: no dejar que los talones toquen el piso.", target: "Reflejo Miotático" },
-                                    { name: "Saltos de Pogo Reactivos / Reactive Pogo Jumps", sets: "4 series de 20 saltos", rest: "Descanso 60s", video: "https://www.youtube.com/embed/1eSXxyBJYXY", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Mínimo tiempo de contacto con el suelo simulando rigidez en el pedaleo.", target: "Stiffness Tobillo" }
+                                    { name: "Salto desde Caída (Drop Jump) / Drop to Jump", sets: "4 series de 5 a 6 repeticiones", rest: "Descanso 60s", video: "https://www.youtube.com/embed/jNXXwTbFo-Q", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.", target: "Reflejo Miotático & Potencia Vertical" },
+                                    { name: "Saltos de Pogo Reactivos / Reactive Pogo Jumps", sets: "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo", rest: "Descanso 60s", video: "https://www.youtube.com/embed/1eSXxyBJYXY", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.", target: "Stiffness Tobillo & Potencia Reactiva" }
                                 ],
                                 strength: [
                                     { name: "Flexiones en V (Pica) / Pike Push-ups", sets: "3 series de 8 a 10 reps", tempo: "Tempo 3-1-1-0 (3s bajada de coronilla)", video: "https://www.youtube.com/embed/89-8waE2XKI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Desarrolla fuerza específica en hombros y deltoides para Manuals y saltos dobles.", target: "Deltoides y Manuals" },
@@ -712,8 +712,8 @@ const TRAINING_DB = {
                                     { name: "Trote en Zig-Zag Imaginario", duration: "45s", video: "https://www.youtube.com/embed/PdSEGR2KuEk", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Activación cardiovascular con cambios suaves de dirección.", target: "Cardio" }
                                 ],
                                 plyo: [
-                                    { name: "Salto desde Caída (Drop Jump) / Drop to Jump", sets: "4 series de 6 repeticiones", rest: "Descanso 60s", video: "https://www.youtube.com/embed/jNXXwTbFo-Q", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Subirse a silla o escalón, dejarse caer sin saltar previo, y al tocar piso el contacto debe ser de milésimas de segundo antes de explotar verticalmente arriba.", target: "Reflejo Miotático Élite" },
-                                    { name: "Saltos de Pogo Reactivos / Reactive Pogo Jumps", sets: "4 series de 20 saltos", rest: "Descanso 60s", video: "https://www.youtube.com/embed/1eSXxyBJYXY", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "A máxima velocidad de contacto con rodillas rígidas.", target: "Stiffness Extremo" }
+                                    { name: "Salto desde Caída (Drop Jump) / Drop to Jump", sets: "4 series de 5 a 6 repeticiones", rest: "Descanso 60s", video: "https://www.youtube.com/embed/jNXXwTbFo-Q", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.", target: "Reflejo Miotático & Potencia Vertical" },
+                                    { name: "Saltos de Pogo Reactivos / Reactive Pogo Jumps", sets: "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo", rest: "Descanso 60s", video: "https://www.youtube.com/embed/1eSXxyBJYXY", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.", target: "Stiffness Tobillo & Potencia Reactiva" }
                                 ],
                                 strength: [
                                     { name: "Flexiones en V (Pica) / Pike Push-ups", sets: "3 series de 8 a 10 reps", tempo: "Tempo 3-1-1-0 (Bajar coronilla en 3s formando triángulo con manos)", video: "https://www.youtube.com/embed/89-8waE2XKI", instagram: "https://www.instagram.com/pipearenas.fit/reels/", desc: "Aísla deltoides anteriores, cruciales para el tirón de la llanta delantera en Manuals.", target: "Fuerza de Manuals" },
@@ -744,3 +744,40 @@ const TRAINING_DB = {
                 }
             }
         };
+
+/**
+ * Retorna la justificación técnica y pedagógica oficial del PDF para cada bloque
+ */
+function getBlockInsight(blockKey, week, day, ageGroup) {
+    const d = parseInt(day || 1, 10);
+    const w = parseInt(week || 1, 10);
+
+    if (blockKey === 'warmup') {
+        return "Trabajo fluido. 45 segundos por ejercicio, 15 segundos de transición (2 rondas). Calentamiento dinámico y activación neuromuscular sin fatiga previa.";
+    }
+    if (blockKey === 'plyo') {
+        if (d === 1) {
+            return "Descanso de 60 segundos entre series. Enfoque: Calidad del salto, aterrizaje suave y desaceleración controlada. En el BMX, la potencia se genera al empujar y la técnica al absorber.";
+        } else if (d === 2) {
+            return "Descanso de 60 segundos entre series. Enfoque: Velocidad de respuesta ante un estímulo (auditivo o visual, simulando el comando del partidor 'Riders Ready, Watch the Gate').";
+        } else {
+            return "Descanso de 60 segundos entre series. En el BMX, un tobillo firme transfiere mejor la potencia al pedal. Si el tobillo es blando absorbe la fuerza y la pierde; si es firme como un resorte ('stiffness'), transfiere toda la potencia al plato de la biela.";
+        }
+    }
+    if (blockKey === 'strength') {
+        return "Nomenclatura del Tempo: [Bajada / Pausa abajo / Subida / Pausa arriba]. En el entrenamiento de fuerza, la fase de bajada lenta (3 segundos) protege las articulaciones y desarrolla fuerza tendinosa.";
+    }
+    if (blockKey === 'cardio') {
+        if (d === 3) {
+            return "La Última Recta: Hoy simulamos la recta final de la pista: ese momento donde las piernas queman, pero hay que mantener la técnica, el agarre firme al manubrio y el pedaleo redondo.";
+        }
+        return "Simulación de carrera en pista y tolerancia láctica: sprints explosivos con recuperación anaeróbica aláctica y láctica. Mantener técnica bajo fatiga extrema.";
+    }
+    if (blockKey === 'stretch') {
+        return "Ubicación: POST-ENTRENAMIENTO. Estirar profundamente antes de entrenar reduce la potencia contráctil del músculo. Después de la rutina, ayuda a devolver la longitud al tejido, reduce el tono muscular y mejora la flexibilidad. Sostener 20-30s sin rebotar.";
+    }
+    if (blockKey === 'recovery') {
+        return "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6: Visualizar el partidor, la caída de la reja ('Ok riders, random start...'), la primera recta y la técnica activa las mismas rutas neuronales que el movimiento físico.";
+    }
+    return "";
+}
