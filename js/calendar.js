@@ -164,13 +164,18 @@ function renderCalendarSchedule() {
 
     let html = '';
 
-    [1, 2].forEach(w => {
+    [1, 2, 3].forEach(w => {
+        const weekTitles = {
+            1: 'Fundamentos & Fuerza Base',
+            2: 'Potencia Dirigida & Pista',
+            3: 'Integración Familiar & Tolerancia Láctica'
+        };
         html += `
             <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-slate-700/80 space-y-4">
                 <div class="flex items-center justify-between border-b border-slate-700/60 pb-2">
                     <h4 class="font-bold text-white text-base flex items-center gap-2">
                         <span class="w-6 h-6 rounded-md bg-red-600 text-white flex items-center justify-center text-xs">${w}</span>
-                        Semana ${w}: ${w === 1 ? 'Fundamentos & Fuerza Base' : 'Potencia Dirigida & Pista'}
+                        Semana ${w}: ${weekTitles[w] || 'Entrenamiento BMX'}
                     </h4>
                 </div>
                 <div class="space-y-3">

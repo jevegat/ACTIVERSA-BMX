@@ -332,18 +332,14 @@ function switchMainTab(tab) {
    ========================================================================== */
 function setWeek(w) {
     state.activeWeek = w;
-    const btnW1 = document.getElementById('btnWeek1');
-    const btnW2 = document.getElementById('btnWeek2');
-    if (btnW1) {
-        btnW1.className = w === 1 
-            ? "py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow"
-            : "py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2";
-    }
-    if (btnW2) {
-        btnW2.className = w === 2 
-            ? "py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow"
-            : "py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2";
-    }
+    [1, 2, 3].forEach(num => {
+        const btn = document.getElementById(`btnWeek${num}`);
+        if (btn) {
+            btn.className = num === w 
+                ? "py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow"
+                : "py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2";
+        }
+    });
     
     const heroTitle = document.getElementById('heroWeekTitle');
     if (heroTitle) heroTitle.innerText = `Semana ${w}`;
@@ -940,8 +936,6 @@ function closeVideoModal() {
 function calculateHydration() {
     const weightInput = document.getElementById('calcAthleteWeight');
     const weight = parseFloat(weightInput ? weightInput.value : 38) || 38;
-    const pinInput = document.getElementById('inputProfilePin');
-    const pin = pinInput ? pinInput.value.trim() : '';
 
     const pre = Math.min(Math.max(Math.round(weight * 10), 300), 500);
     const duringMin = Math.round(weight * 2.5);
@@ -1052,6 +1046,7 @@ function prepareNewAthleteForm() {
     const ageInput = document.getElementById('inputProfileAgeGroup');
     const weightInput = document.getElementById('inputProfileWeight');
     const fileInput = document.getElementById('inputProfilePhoto');
+    const pinInput = document.getElementById('inputProfilePin');
     const modeBadge = document.getElementById('modalProfileModeBadge');
     const titleElem = document.getElementById('modalProfileTitle');
     const btnDelete = document.getElementById('btnDeleteCurrentAthlete');
@@ -1065,6 +1060,7 @@ function prepareNewAthleteForm() {
     if (ageInput) ageInput.value = '7to12';
     if (weightInput) weightInput.value = '';
     if (fileInput) fileInput.value = '';
+    if (pinInput) pinInput.value = '';
 
     tempUploadedPhoto = '';
     updatePhotoPreviewUI(null);
@@ -1078,11 +1074,12 @@ function prepareNewAthleteForm() {
 function openProfileModal() {
     isCreatingNewProfile = false;
 
-    const current = state.athletes[state.currentAthlete] || { ageGroup: '7to12', weight: 38, photo: null };
+    const current = state.athletes[state.currentAthlete] || { ageGroup: '7to12', weight: 38, photo: null, pin: '' };
     const nameInput = document.getElementById('inputProfileName');
     const ageInput = document.getElementById('inputProfileAgeGroup');
     const weightInput = document.getElementById('inputProfileWeight');
     const fileInput = document.getElementById('inputProfilePhoto');
+    const pinInput = document.getElementById('inputProfilePin');
     const modeBadge = document.getElementById('modalProfileModeBadge');
     const titleElem = document.getElementById('modalProfileTitle');
     const btnDelete = document.getElementById('btnDeleteCurrentAthlete');
@@ -1095,6 +1092,7 @@ function openProfileModal() {
     if (ageInput) ageInput.value = current.ageGroup;
     if (weightInput) weightInput.value = current.weight || '';
     if (fileInput) fileInput.value = '';
+    if (pinInput) pinInput.value = current.pin || '';
 
     if (modeBadge) modeBadge.classList.add('hidden');
     if (titleElem) titleElem.innerText = 'Perfil del Deportista';
@@ -1114,6 +1112,8 @@ function closeProfileModal() {
     tempUploadedPhoto = null;
     const fileInput = document.getElementById('inputProfilePhoto');
     if (fileInput) fileInput.value = '';
+    const pinInput = document.getElementById('inputProfilePin');
+    if (pinInput) pinInput.value = '';
     const modal = document.getElementById('profileModal');
     if (modal) modal.classList.add('hidden');
 }
@@ -1122,10 +1122,12 @@ function saveCurrentAthleteProfile() {
     const nameInput = document.getElementById('inputProfileName');
     const ageInput = document.getElementById('inputProfileAgeGroup');
     const weightInput = document.getElementById('inputProfileWeight');
+    const pinInput = document.getElementById('inputProfilePin');
 
     const name = nameInput ? nameInput.value.trim() : '';
     const ageGroup = ageInput ? ageInput.value : '7to12';
     const weight = parseFloat(weightInput ? weightInput.value : 38) || 38;
+    const pin = pinInput ? pinInput.value.trim() : '';
 
     if (!name) {
         alert('Por favor escribe un nombre para el deportista.');
@@ -1178,7 +1180,7 @@ function saveCurrentAthleteProfile() {
             ageGroup, 
             weight, 
             photo: finalPhoto, 
-            pin 
+            pin: pin || (state.athletes[name] && state.athletes[name].pin) || ''
         };
     }
 
@@ -1338,6 +1340,7 @@ function selectAthlete(name) {
     const nameInput = document.getElementById('inputProfileName');
     const ageInput = document.getElementById('inputProfileAgeGroup');
     const weightInput = document.getElementById('inputProfileWeight');
+    const pinInput = document.getElementById('inputProfilePin');
     const modeBadge = document.getElementById('modalProfileModeBadge');
     const titleElem = document.getElementById('modalProfileTitle');
     const btnDelete = document.getElementById('btnDeleteCurrentAthlete');
@@ -1349,6 +1352,7 @@ function selectAthlete(name) {
     }
     if (ageInput) ageInput.value = profile.ageGroup;
     if (weightInput) weightInput.value = profile.weight || '';
+    if (pinInput) pinInput.value = profile.pin || '';
 
     if (modeBadge) modeBadge.classList.add('hidden');
     if (titleElem) titleElem.innerText = 'Perfil del Deportista';
@@ -1376,7 +1380,8 @@ function updateNavAthleteInfo() {
         const labels = {
             'sub6': 'Menores de 6 Años',
             '7to12': '7 a 12 Años',
-            '13to17': '13 a 17 Años'
+            '13to17': '13 a 17 Años',
+            '18plus': '18+ Años y Padres'
         };
         badgeElem.innerText = labels[state.activeAgeGroup] || '7 a 12 Años';
     }

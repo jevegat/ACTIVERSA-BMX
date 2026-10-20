@@ -282,6 +282,10 @@ function buildWorkoutPlan(week, day, ageGroup) {
             rounds = 8;
             workDuration = 30;
             restDuration = 15;
+        } else if (cardio.name.includes("30/30") || cardio.name.includes("30s trabajo / 30s descanso")) {
+            rounds = 8;
+            workDuration = 30;
+            restDuration = 30;
         } else if (cardio.name.includes("40/20") || cardio.name.includes("Semáforo")) {
             rounds = 6;
             workDuration = 40;
@@ -783,5 +787,6 @@ function formatTime(seconds) {
 function getAgeGroupName(code) {
     if (code === 'sub6') return 'Menores de 6 años';
     if (code === '7to12') return '7 a 12 años';
+    if (code === '18plus') return '18+ años y Padres';
     return '13 a 17 años';
 }

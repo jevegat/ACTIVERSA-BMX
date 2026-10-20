@@ -242,12 +242,15 @@
                     <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <i class="fa-solid fa-calendar-week text-red-500"></i> Semana del Microciclo
                     </label>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid grid-cols-3 gap-2">
                         <button onclick="setWeek(1)" id="btnWeek1" class="py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow">
                             <i class="fa-solid fa-1"></i> Semana 1
                         </button>
                         <button onclick="setWeek(2)" id="btnWeek2" class="py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2">
                             <i class="fa-solid fa-2"></i> Semana 2
+                        </button>
+                        <button onclick="setWeek(3)" id="btnWeek3" class="py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-3"></i> Semana 3
                         </button>
                     </div>
                 </div>
@@ -261,6 +264,7 @@
                         <option value="sub6">Menores de 6 años • Lúdico y Multimotor</option>
                         <option value="7to12" selected>7 a 12 años • Aprendizaje Motor & Agilidad</option>
                         <option value="13to17">13 a 17 años • Potencia Élite & Partidor</option>
+                        <option value="18plus">18+ años y Padres • Salud Articular & Cruiser</option>
                     </select>
                 </div>
 
@@ -698,6 +702,7 @@
                             <option value="sub6">Menores de 6 años</option>
                             <option value="7to12">7 a 12 años</option>
                             <option value="13to17">13 a 17 años</option>
+                            <option value="18plus">Mayores de 18 años y Padres (Cruiser)</option>
                         </select>
                     </div>
                     <div>
