@@ -9,3 +9,6 @@ desktop.ini
 # Logs & temp
 *.log
 .system_generated/
+
+# Local athlete progress backups
+*_progreso*.json

@@ -52,7 +52,7 @@ function toggleTrainingDay(dayId) {
             state.calendar.trainingDays.splice(idx, 1);
         }
     } else {
-        if (state.calendar.trainingDays.length < 3) {
+        if (state.calendar.trainingDays.length < 4) {
             state.calendar.trainingDays.push(dayId);
         } else {
             state.calendar.trainingDays.shift();
@@ -102,9 +102,17 @@ function getScheduledDateForSession(weekNum, dayNum) {
     if (!state || !state.calendar || !state.calendar.startDate) return null;
     const start = new Date(state.calendar.startDate + 'T00:00:00');
     const targetDays = state.calendar.trainingDays;
-    if (targetDays.length < dayNum) return null;
+    if (!targetDays || targetDays.length === 0) return null;
 
-    const targetDayOfWeek = targetDays[dayNum - 1];
+    let targetDayOfWeek;
+    if (targetDays.length >= dayNum) {
+        targetDayOfWeek = targetDays[dayNum - 1];
+    } else {
+        // Si tiene configurados 3 días y esta sesión es el Día 4, proyectar al día siguiente del último día de entrenamiento
+        const lastDay = targetDays[targetDays.length - 1];
+        targetDayOfWeek = (lastDay + 1) % 7;
+    }
+
     const currentDayOfWeek = start.getDay();
 
     let diffDays = targetDayOfWeek - currentDayOfWeek;
@@ -164,11 +172,12 @@ function renderCalendarSchedule() {
 
     let html = '';
 
-    [1, 2, 3].forEach(w => {
+    [1, 2, 3, 4].forEach(w => {
         const weekTitles = {
             1: 'Fundamentos & Fuerza Base',
             2: 'Potencia Dirigida & Pista',
-            3: 'Integración Familiar & Tolerancia Láctica'
+            3: 'Integración Familiar & Tolerancia Láctica',
+            4: 'Movilidad Activa, Rigor Técnico & Simulación Motos'
         };
         html += `
             <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-slate-700/80 space-y-4">
@@ -181,7 +190,8 @@ function renderCalendarSchedule() {
                 <div class="space-y-3">
         `;
 
-        [1, 2, 3].forEach(d => {
+        const daysForWeek = (w === 4) ? [1, 2, 3, 4] : [1, 2, 3];
+        daysForWeek.forEach(d => {
             const dateStr = getScheduledDateForSession(w, d) || `Sesión ${d}`;
             const athlete = state.currentAthlete;
             const historyList = (state.history && state.history[athlete]) || [];
@@ -195,6 +205,11 @@ function renderCalendarSchedule() {
             const lastEntry = count > 0 ? sessionCompletions[count - 1] : null;
             const completionFormatted = lastEntry ? formatCompletionDate(lastEntry.date || lastEntry.timestamp) : (isFullyDone ? 'Completada' : null);
 
+            const dayDesc = d === 1 ? 'Fuerza Base y Pliometría Reactiva' : 
+                            d === 2 ? 'Core, Estabilidad Lumbar y Partidor' : 
+                            d === 3 ? 'Tolerancia Láctica y Rigidez Articular (Stiffness)' : 
+                            'Movilidad Activa, Agilidad Rotacional y Simulación de Motos';
+
             html += `
                 <div class="bg-slate-900 p-4 rounded-xl border ${isFullyDone ? 'border-emerald-500/50 shadow-md shadow-emerald-950/30' : 'border-slate-800'} flex flex-col sm:flex-row sm:items-center justify-between gap-3.5 transition-all">
                     <div class="space-y-1.5 flex-1">
@@ -205,7 +220,7 @@ function renderCalendarSchedule() {
                             </span>
                         </div>
                         <p class="text-xs text-slate-400">
-                            ${d === 1 ? 'Fuerza Base y Pliometría Reactiva' : d === 2 ? 'Core, Estabilidad Lumbar y Partidor' : 'Tolerancia Láctica y Rigidez Articular (Stiffness)'}
+                            ${dayDesc}
                         </p>
                         
                         <!-- Estado de Finalización y Fecha de Realización -->

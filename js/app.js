@@ -200,6 +200,9 @@ function setupHeroCarouselTouch() {
 document.addEventListener('DOMContentLoaded', () => {
     initHeroCarousel();
     loadSavedState();
+    if (typeof setWeek === 'function') {
+        setWeek(state.activeWeek || 1);
+    }
     if (typeof setupCalendarInputs === 'function') {
         setupCalendarInputs();
     }
@@ -331,27 +334,51 @@ function switchMainTab(tab) {
    CONTROLADORES DE RUTINAS (SEMANA, DÍA, EDAD)
    ========================================================================== */
 function setWeek(w) {
-    state.activeWeek = w;
-    [1, 2, 3].forEach(num => {
+    state.activeWeek = Number(w);
+    [1, 2, 3, 4].forEach(num => {
         const btn = document.getElementById(`btnWeek${num}`);
         if (btn) {
-            btn.className = num === w 
-                ? "py-2.5 px-3 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-2 shadow"
-                : "py-2.5 px-3 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-2";
+            btn.className = num === state.activeWeek 
+                ? "py-2.5 px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-1.5 shadow"
+                : "py-2.5 px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1.5";
         }
     });
+
+    const isWeek4 = (state.activeWeek === 4);
+    const day4Btn = document.getElementById('btnDay4');
+    const dayContainer = document.getElementById('dayButtonsContainer');
+    const txtSessionDays = document.getElementById('txtSessionDays');
+
+    if (day4Btn) {
+        if (isWeek4) {
+            day4Btn.classList.remove('hidden');
+        } else {
+            day4Btn.classList.add('hidden');
+            if (state.activeDay === 4) {
+                state.activeDay = 1;
+            }
+        }
+    }
+    if (dayContainer) {
+        dayContainer.className = isWeek4 ? "grid grid-cols-4 gap-2" : "grid grid-cols-3 gap-2";
+    }
+    if (txtSessionDays) {
+        txtSessionDays.innerText = isWeek4 ? "Sesión Semanal (4 Días)" : "Sesión Semanal (3 Días)";
+    }
+
+    setDay(state.activeDay);
     
     const heroTitle = document.getElementById('heroWeekTitle');
-    if (heroTitle) heroTitle.innerText = `Semana ${w}`;
+    if (heroTitle) heroTitle.innerText = `Semana ${state.activeWeek}`;
     renderActiveView();
 }
 
 function setDay(d) {
-    state.activeDay = d;
-    [1, 2, 3].forEach(num => {
+    state.activeDay = Number(d);
+    [1, 2, 3, 4].forEach(num => {
         const btn = document.getElementById(`btnDay${num}`);
         if (btn) {
-            btn.className = num === d
+            btn.className = num === state.activeDay
                 ? "py-2.5 px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition text-center shadow"
                 : "py-2.5 px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition text-center";
         }
