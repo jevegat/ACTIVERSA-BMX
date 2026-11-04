@@ -270,27 +270,32 @@ function buildWorkoutPlan(week, day, ageGroup) {
         let workDuration = 30;
         let restDuration = 15;
 
-        if (cardio.name.includes("20/20")) {
+        const cardioText = `${cardio.name || ''} ${cardio.format || ''}`;
+        if (cardioText.includes("20/20")) {
             rounds = 8;
             workDuration = 20;
             restDuration = 20;
-        } else if (cardio.name.includes("15/30")) {
-            rounds = 8;
+        } else if (cardioText.includes("20/40") || cardioText.includes("20s a tope / 40s")) {
+            rounds = 6;
+            workDuration = 20;
+            restDuration = 40;
+        } else if (cardioText.includes("15/30")) {
+            rounds = cardioText.includes("10 rondas") ? 10 : 8;
             workDuration = 15;
             restDuration = 30;
-        } else if (cardio.name.includes("30/15") || cardio.name.includes("Tabata")) {
+        } else if (cardioText.includes("30/15") || cardioText.includes("Tabata")) {
             rounds = 8;
             workDuration = 30;
             restDuration = 15;
-        } else if (cardio.name.includes("30/30") || cardio.name.includes("30s trabajo / 30s descanso")) {
-            rounds = 8;
+        } else if (cardioText.includes("30/30") || cardioText.includes("30s trabajo / 30s descanso") || cardioText.includes("30s esfuerzo de alta intensidad / 30s")) {
+            rounds = cardioText.includes("6 rondas") ? 6 : 8;
             workDuration = 30;
             restDuration = 30;
-        } else if (cardio.name.includes("40/20") || cardio.name.includes("Semáforo")) {
+        } else if (cardioText.includes("40/20") || cardioText.includes("Semáforo")) {
             rounds = 6;
             workDuration = 40;
             restDuration = 20;
-        } else if (cardio.name.includes("EMOM")) {
+        } else if (cardioText.includes("EMOM")) {
             rounds = 8;
             workDuration = 45;
             restDuration = 15;

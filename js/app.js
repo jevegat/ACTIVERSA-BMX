@@ -335,22 +335,22 @@ function switchMainTab(tab) {
    ========================================================================== */
 function setWeek(w) {
     state.activeWeek = Number(w);
-    [1, 2, 3, 4].forEach(num => {
+    [1, 2, 3, 4, 5].forEach(num => {
         const btn = document.getElementById(`btnWeek${num}`);
         if (btn) {
             btn.className = num === state.activeWeek 
-                ? "py-2.5 px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-1.5 shadow"
-                : "py-2.5 px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1.5";
+                ? "py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-1 shadow"
+                : "py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1";
         }
     });
 
-    const isWeek4 = (state.activeWeek === 4);
+    const isFourDayWeek = (state.activeWeek === 4 || state.activeWeek === 5);
     const day4Btn = document.getElementById('btnDay4');
     const dayContainer = document.getElementById('dayButtonsContainer');
     const txtSessionDays = document.getElementById('txtSessionDays');
 
     if (day4Btn) {
-        if (isWeek4) {
+        if (isFourDayWeek) {
             day4Btn.classList.remove('hidden');
         } else {
             day4Btn.classList.add('hidden');
@@ -360,10 +360,10 @@ function setWeek(w) {
         }
     }
     if (dayContainer) {
-        dayContainer.className = isWeek4 ? "grid grid-cols-4 gap-2" : "grid grid-cols-3 gap-2";
+        dayContainer.className = isFourDayWeek ? "grid grid-cols-4 gap-2" : "grid grid-cols-3 gap-2";
     }
     if (txtSessionDays) {
-        txtSessionDays.innerText = isWeek4 ? "Sesión Semanal (4 Días)" : "Sesión Semanal (3 Días)";
+        txtSessionDays.innerText = isFourDayWeek ? "Sesión Semanal (4 Días)" : "Sesión Semanal (3 Días)";
     }
 
     setDay(state.activeDay);

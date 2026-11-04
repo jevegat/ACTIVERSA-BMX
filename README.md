@@ -7,6 +7,7 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * **Semana 2**: Potencia Dirigida, Reacción Acústica y Transferencia a Pista.
 * **Semana 3**: Integración Familiar, Rigor Biomecánico y Tolerancia Láctica.
 * **Semana 4**: Movilidad Activa, Rigor Técnico, Agilidad Rotacional y Simulación de Motos (4 Días Semanales).
+* **Semana 5**: Fuerza Estricta, Agilidad Multiplanar y Simulación de Baterías en Familia (4 Días Semanales).
 
 ---
 
