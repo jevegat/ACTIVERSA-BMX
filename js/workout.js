@@ -482,7 +482,11 @@ function buildWorkoutPlan(week, day, ageGroup) {
         let restDuration = 15;
 
         const cardioText = `${cardio.name || ''} ${cardio.format || ''}`;
-        if (cardioText.includes("20/20")) {
+        if (cardio.workSec && cardio.rounds) {
+            rounds = cardio.rounds;
+            workDuration = cardio.workSec;
+            restDuration = cardio.restSec || 0;
+        } else if (cardioText.includes("20/20")) {
             rounds = 8;
             workDuration = 20;
             restDuration = 20;
@@ -606,26 +610,31 @@ function buildWorkoutPlan(week, day, ageGroup) {
         }
     }
 
-    // 6. BLOQUE 4: RECUPERACIÓN PARASIMPÁTICA (Target: 4 min = 240s)
+    // 6. BLOQUE 4: RECUPERACIÓN PARASIMPÁTICA / ROLL RECOVERY
     if (session.recovery) {
         const recKey = `w${week}_d${day}_${ageGroup}_rec_0`;
+        const recDuration = session.recovery.durationSec || 240;
+        const recMins = Math.round(recDuration / 60);
+        const isRollRecovery = /roll recovery|rodillo/i.test(session.recovery.name || '');
         steps.push({
-            blockName: "4. Recuperación Parasimpática",
+            blockName: isRollRecovery ? "4. Roll Recovery en Rodillo" : "4. Recuperación Parasimpática",
             blockIndex: 5,
-            blockTotalSec: 240,
+            blockTotalSec: recDuration,
             name: session.recovery.name,
             type: "work",
-            phaseName: "RESPIRACIÓN Y VISUALIZACIÓN",
-            duration: 240,
+            phaseName: isRollRecovery ? "ROLL RECOVERY" : "RESPIRACIÓN Y VISUALIZACIÓN",
+            duration: recDuration,
             setIndex: 1,
             totalSets: 1,
-            setLabel: "Recuperación Final (4 min)",
-            executionInfo: "4 minutos de visualización guiada en partidor y respiración diafragmática 4-4-6",
+            setLabel: isRollRecovery ? `Roll Recovery (${recMins} min)` : "Recuperación Final (4 min)",
+            executionInfo: isRollRecovery
+                ? `${recMins} minutos de pedaleo suave, constante y redondo en rodillo`
+                : "4 minutos de visualización guiada en partidor y respiración diafragmática 4-4-6",
             blockInsight: recoveryInsight,
             video: "https://www.youtube.com/embed/2MJGg-dUKh0",
             desc: session.recovery.desc,
-            target: "Sistema Nervioso Central (SNC)",
-            tempo: "Inhalar 4s - Retener 4s - Exhalar 6s",
+            target: isRollRecovery ? "Eliminación de Metabolitos y Retorno a la Calma" : "Sistema Nervioso Central (SNC)",
+            tempo: isRollRecovery ? "Cadencia suave y redonda" : "Inhalar 4s - Retener 4s - Exhalar 6s",
             exerciseKey: recKey
         });
     }
@@ -1082,10 +1091,14 @@ function renderMacrocycleCongratsBox(week, day) {
     if (!congratsEl) return;
 
     const wData = (typeof TRAINING_DB !== 'undefined' && TRAINING_DB[week]) ? TRAINING_DB[week] : null;
+    const activeAge = (typeof state !== 'undefined' && state.activeAgeGroup) ? state.activeAgeGroup : '';
+    const ageClosing = (wData && wData.ageGroupMeta && wData.ageGroupMeta[activeAge] && wData.ageGroupMeta[activeAge].closingMessage)
+        ? wData.ageGroupMeta[activeAge].closingMessage
+        : null;
     const defaultClosing = (typeof TRAINING_DB !== 'undefined' && TRAINING_DB[6] && TRAINING_DB[6].closingMessage)
         ? TRAINING_DB[6].closingMessage
         : null;
-    const closing = (wData && wData.closingMessage) ? wData.closingMessage : (Number(day) === 4 ? defaultClosing : null);
+    const closing = ageClosing || ((wData && wData.closingMessage) ? wData.closingMessage : (Number(day) === 4 ? defaultClosing : null));
 
     if (Number(day) === 4 && closing) {
         congratsEl.innerHTML = `
@@ -1153,6 +1166,7 @@ function formatTime(seconds) {
 function getAgeGroupName(code) {
     if (code === 'sub6') return 'Menores de 6 años';
     if (code === '7to12') return '7 a 12 años';
+    if (code === '8to13_adv') return '8-13 Avanzado';
     if (code === '18plus') return '18+ años y Padres';
     return '13 a 17 años';
 }

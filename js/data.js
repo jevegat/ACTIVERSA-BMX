@@ -468,6 +468,186 @@ const TRAINING_DB = {
                             "name": "Respiración 4-4-6 + Imagery de Salida de Partidor",
                             "desc": "3 minutos de respiración diafragmática. Luego visualizar la cadencia de la voz oficial, el sonido de los pistones cayendo y la transferencia explosiva en la primera recta."
                         }
+                    },
+                    "8to13_adv": {
+                        "methodology": "8-13 Avanzado (Día 1): Calidad sobre cantidad. Tempos estrictos de Calistenia Pediátrica (3-1-1-0 y 2-1-2-1), potencia horizontal en Broad Jumps, Cardio continuo en rodillo (15 min) y Roll Recovery (10-12 min).",
+                        "sessionFocus": "Activación, Fuerza con Calistenia Pediátrica, Pliometría y Rodillo",
+                        "dailyTips": [
+                            "\"La calidad supera siempre a la cantidad.\" Vigila estrictamente que los tempos en la fuerza (como bajar en 3 segundos la sentadilla) se cumplan a cabalidad.",
+                            "Cero azúcares refinados y ultraprocesados: Paquetes, gaseosas, jugos en caja y dulces quedan totalmente fuera del plan.",
+                            "Consistencia en los horarios: Mantener los horarios de comidas con una variación máxima de 30 minutos entrena de forma óptima el metabolismo.",
+                            "El agua no se reemplaza: 1.5 a 2 litros de agua pura al día + 300 ml con electrolitos durante la sesión de BMX."
+                        ],
+                        "strictDiet": {
+                            "title": "Dieta Estricta - Día 1 (Enfoque: Recomposición Corporal y Rendimiento en BMX)",
+                            "hydrationNote": "Nota general de hidratación: Agua pura a lo largo del día (1.5 a 2 litros en sorbos pequeños), más 300 ml adicionales con electrolitos durante la sesión de entrenamiento.",
+                            "meals": [
+                                {
+                                    "moment": "1. Desayuno",
+                                    "time": "07:00 AM - 07:30 AM",
+                                    "foods": "1 huevo entero + 2 claras (revueltos con 1 cdta. de aceite de oliva); 40g-50g de avena en hojuelas (cocida en agua o leche semidescremada) con media taza de frutos rojos; 1 fruta mediana (banana o manzana pequeña).",
+                                    "goal": "Cargar glucógeno hepático, aportar proteína de alto valor biológico y grasas saludables para el desarrollo hormonal."
+                                },
+                                {
+                                    "moment": "2. Media Mañana (Pre-Entreno)",
+                                    "time": "10:00 AM - 10:30 AM",
+                                    "foods": "150g de yogur griego natural sin azúcar (o 100g de requesón); 1 cucharadita de miel de abejas pura; 15g de almendras o nueces (puñado pequeño).",
+                                    "goal": "Asegurar energía rápida y disponible antes de la actividad física sin sobrecargar la digestión; aportar calcio óseo."
+                                },
+                                {
+                                    "moment": "3. Almuerzo (Post-Entreno)",
+                                    "time": "01:00 PM - 01:45 PM",
+                                    "foods": "100g-120g de proteína magra (pollo, lomo de res magro o pescado); 120g-150g de carbohidrato complejo (arroz integral, quinoa o papa cocida/al horno); 1 taza de vegetales de hoja verde y colores variados (con limón y aceite de oliva); 1 vaso de agua.",
+                                    "goal": "La comida clave: Rellenar los depósitos de glucógeno muscular y proveer aminoácidos para la recuperación y el crecimiento."
+                                },
+                                {
+                                    "moment": "4. Media Tarde",
+                                    "time": "04:30 PM - 05:00 PM",
+                                    "foods": "1 rodaja gruesa de pan integral con 1 cucharada sopera rasa de crema de maní 100% natural; 1 fruta (pera o naranja en gajos).",
+                                    "goal": "Evitar el catabolismo muscular y mantener estables los niveles de energía durante la tarde."
+                                },
+                                {
+                                    "moment": "5. Cena",
+                                    "time": "07:30 PM - 08:00 PM",
+                                    "foods": "100g de filete de pescado o pollo desmenuzado (o tortilla de 1 huevo y 2 claras); 1.5 tazas de verduras salteadas (zucchini, champiñones, acelga); 5 aceitunas o medio aguacate pequeño.",
+                                    "goal": "Favorecer la oxidación de grasas durante el descanso nocturno, priorizando proteínas ligeras y reduciendo almidones pesados."
+                                }
+                            ]
+                        },
+                        "warmup": [
+                            {
+                                "name": "Joint Mobility / Movilidad Articular",
+                                "duration": "1 serie x 5-8 reps por articulación",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Fluido y controlado (Sin rebotes). Lubricar hombros, caderas, rodillas y tobillos.",
+                                "target": "Movilidad Articular Global"
+                            },
+                            {
+                                "name": "Dynamic Skipping / Skipping Dinámico",
+                                "duration": "2 series x 20 metros",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Ritmo moderado, apoyo de metatarso. Activar el tren inferior y la coordinación brazo-pierna.",
+                                "target": "Tren Inferior y Coordinación"
+                            },
+                            {
+                                "name": "Inchworms / Gusanos",
+                                "duration": "2 series x 6 repeticiones (Tempo 2-0-2-0)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Tempo 2-0-2-0 (Subir cadera con control). Estirar la cadena posterior y activar la estabilidad del core y hombros.",
+                                "target": "Cadena Posterior, Core y Hombros"
+                            },
+                            {
+                                "name": "Lateral Shuffles / Desplazamientos Laterales",
+                                "duration": "2 series x 10 metros por lado",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Pasos rápidos, flexión ligera de rodillas. Despertar la agilidad lateral y la postura base.",
+                                "target": "Agilidad Lateral y Postura Base"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogo Jumps / Saltos de Tobillo (Pogos)",
+                                "sets": "3 series de 10 saltos continuos",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Rebotes rápidos usando exclusivamente los tobillos, rodillas casi bloqueadas pero flexibles.",
+                                "target": "Rigidez y Reactividad del Tendón de Aquiles"
+                            },
+                            {
+                                "name": "Broad Jumps / Saltos de Longitud desde Detenido",
+                                "sets": "3 series de 5 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
+                                "desc": "Salto máximo hacia adelante buscando distancia, amortiguando suavemente la caída en posición de cuarto de sentadilla.",
+                                "target": "Potencia Horizontal Pura para Salida del Partidor"
+                            },
+                            {
+                                "name": "Agility Ladder - In-In Out-Out / Escalera de Agilidad",
+                                "sets": "3 series de ida y vuelta",
+                                "rest": "Descanso 30s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Pies rápidos dentro y fuera de los cuadros de la escalera con máxima frecuencia de pasos.",
+                                "target": "Coordinación Neuromuscular y Velocidad de Pies"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Bodyweight Squats / Sentadillas con Peso Corporal",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Bajar en 3s controlados, 1s de pausa abajo, subir explosivo. Mantener talones pegados al suelo.",
+                                "target": "Cuádriceps, Glúteos y Estabilidad de Rodilla"
+                            },
+                            {
+                                "name": "Incline Push-ups / Flexiones Inclinadas (Manos en superficie alta)",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-0-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Codos a 45 grados respecto al tronco, cuerpo totalmente recto como tabla.",
+                                "target": "Pectorales, Tríceps y Faja Abdominal"
+                            },
+                            {
+                                "name": "Glute Bridges / Puentes de Glúteo en Suelo",
+                                "sets": "3 series de 15 repeticiones",
+                                "tempo": "2-1-2-1",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "2s subiendo, 1s de contracción máxima apretando glúteos arriba, 2s bajando.",
+                                "target": "Glúteos y Cadena Posterior (Pedaleo)"
+                            },
+                            {
+                                "name": "Prone Plank / Plancha Abdominal Prona",
+                                "sets": "3 series de 45 segundos",
+                                "tempo": "Sostenido estático",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Glúteos y abdomen hiper contraídos, mirada al suelo (30 a 45 segundos).",
+                                "target": "Core de Acero (Previene fatiga lumbar en pista)"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Cardio Continuo en Rodillo (Intervalos Base • 15 min)",
+                            "format": "15 minutos en total (5 rondas • 1 min alta frecuencia / 2 min pedaleo suave)",
+                            "workSec": 60,
+                            "restSec": 120,
+                            "rounds": 5,
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "Alternar 2 minutos de pedaleo suave con 1 minuto de alta frecuencia (cadencia alta en desarrollo ligero) para mejorar la capacidad aeróbica base."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Hamstring Stretch / Estiramiento de Isquiotibiales",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Sentado en el suelo con una pierna extendida, inclinación frontal desde la cadera (espalda recta).",
+                                "target": "Parte Posterior del Muslo"
+                            },
+                            {
+                                "name": "Hip Flexor / Psoas Stretch / Estiramiento de Flexores de Cadera",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Una rodilla apoyada en el suelo (lunge), cadera proyectada suavemente hacia adelante.",
+                                "target": "Cadera y Psoas"
+                            },
+                            {
+                                "name": "Calf Stretch / Estiramiento de Pantorrillas (Gemelos y Sóleo)",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Apoyado de una pared, pierna trasera estirada con el talón totalmente pegado al piso.",
+                                "target": "Complejo Gemelo-Sóleo"
+                            },
+                            {
+                                "name": "Quad Stretch / Estiramiento de Cuádriceps",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "De pie, sujetar el empeine por detrás llevando el talón hacia el glúteo, manteniendo las rodillas juntas.",
+                                "target": "Cuádriceps"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Roll Recovery / Recuperación en Rodillo (10 a 12 Minutos)",
+                            "durationSec": 660,
+                            "desc": "Pedaleo muy suave, constante y redondo (foco en la tracción de subida y empuje de bajada) durante 10 a 12 minutos finales, permitiendo que la frecuencia cardíaca baje paulatinamente y se eliminen residuos metabólicos de las piernas."
+                        }
                     }
                 }
             },
@@ -924,6 +1104,185 @@ const TRAINING_DB = {
                         "recovery": {
                             "name": "Protocolo de Imagery Neuromuscular Avanzado",
                             "desc": "Visualizar el partidor, sentir el primer pedalazo, el pump en el primer obstáculo y cruzar la línea de meta. Activa las mismas redes neuronales que la acción física."
+                        }
+                    },
+                    "8to13_adv": {
+                        "methodology": "8-13 Avanzado (Día 2): Estabilidad rotacional, fuerza unilateral de piernas (Búlgaras 3-1-1-0 y Puente a una pierna 2-1-2-1), saltos de caída controlada y cardio explosivo en rodillo (12 min).",
+                        "sessionFocus": "Activación, Fuerza Unilateral, Potencia de Salida y Rodillo",
+                        "dailyTips": [
+                            "\"El equilibrio es el cimiento de la velocidad.\" Fijar el pie en el suelo como si tuviera raíces y mantener el abdomen firme en los ejercicios unilaterales.",
+                            "Variedad de fuentes de hierro: Incluir carne de res magra en el almuerzo apoya directamente la oxigenación celular para sprints cortos.",
+                            "Cero azúcares ocultos: Al preparar los panqueques de avena en casa evitamos azúcares refinados y grasas trans."
+                        ],
+                        "strictDiet": {
+                            "title": "Dieta Estricta - Día 2 (Variación Nutricional y Recuperación Ósea)",
+                            "hydrationNote": "Nota general de hidratación: Agua pura a lo largo del día (1.5 a 2 litros en sorbos pequeños) + 300 ml con electrolitos durante el bloque de entrenamiento.",
+                            "meals": [
+                                {
+                                    "moment": "1. Desayuno",
+                                    "time": "07:00 AM - 07:30 AM",
+                                    "foods": "Panqueques de avena y banano (1 huevo entero + 2 claras mezcladas con 40g de harina de avena o avena licuada y medio banano machacado, cocinados con unas gotas de aceite de coco o oliva); 1 vaso de leche semidescremada o bebida vegetal enriquecida con calcio; 5-6 mitades de nueces.",
+                                    "goal": "Aporte divertido y altamente nutritivo de carbohidratos complejos, proteínas y grasas saludables para arrancar el día."
+                                },
+                                {
+                                    "moment": "2. Media Mañana (Pre-Entreno)",
+                                    "time": "10:00 AM - 10:30 AM",
+                                    "foods": "1 manzana mediana troceada; 2 cucharadas soperas de mantequilla de maní o almendras 100% natural.",
+                                    "goal": "Carbohidrato de rápida asimilación combinado con grasas estables para rendimiento sin pesadez estomacal."
+                                },
+                                {
+                                    "moment": "3. Almuerzo (Post-Entreno)",
+                                    "time": "01:00 PM - 01:45 PM",
+                                    "foods": "120g de carne de res magra (lomo o pulpa) o pechuga de pollo en cubos; 150g de pasta integral (o puré de papa criolla / papa sabanera al horno); abundantes vegetales salteados (zanahoria rallada, habichuelas y zucchini); 1 vaso de agua.",
+                                    "goal": "Recuperación total: Máximo aporte de hierro de alta biodisponibilidad (transporte de oxígeno) y recarga de glucógeno."
+                                },
+                                {
+                                    "moment": "4. Media Tarde",
+                                    "time": "04:30 PM - 05:00 PM",
+                                    "foods": "150g de yogur griego natural sin azúcar; media taza de frutos rojos o trocitos de papaya.",
+                                    "goal": "Snack refrescante rico en proteína caseína de absorción moderada y antioxidantes para evitar el catabolismo vespertino."
+                                },
+                                {
+                                    "moment": "5. Cena",
+                                    "time": "07:30 PM - 08:00 PM",
+                                    "foods": "120g de filete de pescado blanco (tilapia o merluza) al horno o a la plancha; 1.5 tazas de crema de ahuyama (calabaza) o brócoli al vapor; 5 aceitunas negras o verdes.",
+                                    "goal": "Proteína ligera de muy fácil digestión para favorecer el descanso profundo y la síntesis nocturna de hormona de crecimiento."
+                                }
+                            ]
+                        },
+                        "warmup": [
+                            {
+                                "name": "Arm Circles & Torso Twists / Círculos de Brazos y Giros de Torso",
+                                "duration": "1 serie x 10 reps por dirección",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Movimiento amplio y controlado para lubricar cintura escapular y columna torácica.",
+                                "target": "Cintura Escapular y Columna Torácica"
+                            },
+                            {
+                                "name": "High Knees / Rodillas Arriba",
+                                "duration": "2 series x 20 metros",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Frecuencia alta, apoyo activo en la punta de los pies para elevar pulsaciones y activar flexores de cadera.",
+                                "target": "Frecuencia Cardíaca y Flexores de Cadera"
+                            },
+                            {
+                                "name": "World's Greatest Stretch / El Estiramiento Más Grande del Mundo",
+                                "duration": "2 series x 5 reps por lado (Tempo 3-0-1-0)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Tempo 3-0-1-0 (Profundo en la apertura de cadera y rotación). Movilidad integral de cadera, ingle y columna.",
+                                "target": "Cadera, Ingle y Columna"
+                            },
+                            {
+                                "name": "A-Skips / Skipping A",
+                                "duration": "2 series x 15 metros",
+                                "video": "https://www.youtube.com/embed/v7rjHmZRs28",
+                                "desc": "Coordinación estricta de brazos y zancada corta para mejorar la mecánica de aceleración y ritmo.",
+                                "target": "Mecánica de Aceleración y Ritmo"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Depth Jumps Bajos / Saltos de Caída Controlada",
+                                "sets": "3 series de 5 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
+                                "desc": "Caída desde un escalón muy bajo (10-15 cm) con amortiguación inmediata y salto vertical explosivo hacia arriba.",
+                                "target": "Reactividad Neuromuscular (Despegue Rápido)"
+                            },
+                            {
+                                "name": "Split Jumps / Saltos en Tijera con Cambio",
+                                "sets": "3 series de 8 saltos por pierna",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
+                                "desc": "Posición de zancada, salto explosivo cambiando de pierna en el aire y amortiguando al caer.",
+                                "target": "Potencia Explosiva y Simulación de Partida"
+                            },
+                            {
+                                "name": "T-Drill / Test de Agilidad en T",
+                                "sets": "3 series de 3 pasadas",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Desplazamientos cortos de 5 metros: al frente, toque lateral derecho, lateral izquierdo y retroceso.",
+                                "target": "Agilidad, Frenado y Aceleración Multidireccional"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Bulgarian Split Squats / Sentadillas Búlgaras (Pie trasero elevado)",
+                                "sets": "3 series de 8 a 10 reps por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Bajar el torso vertical en 3 segundos, rodilla delantera alineada sin pasar la punta del pie.",
+                                "target": "Cuádriceps y Glúteo Medio (Estabilidad en Curvas)"
+                            },
+                            {
+                                "name": "Single-Leg Glute Bridges / Puentes de Glúteo a Una Pierna",
+                                "sets": "3 series de 12 reps por pierna",
+                                "tempo": "2-1-2-1",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Elevar la cadera con una pierna estirada o apoyada en ángulo, apretando 1s arriba.",
+                                "target": "Glúteos e Isquiotibiales (Potencia de Pedaleo)"
+                            },
+                            {
+                                "name": "Walking Lunges / Zancadas Caminando",
+                                "sets": "3 series de 16 pasos totales",
+                                "tempo": "2-0-1-0",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Paso controlado hacia adelante, bajando la rodilla trasera sin golpear el suelo.",
+                                "target": "Coordinación, Fuerza y Equilibrio Dinámico"
+                            },
+                            {
+                                "name": "Side Plank / Plancha Lateral",
+                                "sets": "3 series de 30 segundos por lado",
+                                "tempo": "Sostenido estático",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Cadera elevada, línea recta perfecta de pies a cabeza.",
+                                "target": "Oblicuos y Cuadrado Lumbar (Torsión en Manillar)"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Cardio Explosivo en Rodillo (Intervalos Cortos • 12 min)",
+                            "format": "12 minutos en total (6 ciclos • 30s máxima intensidad / 90s pedaleo suave)",
+                            "workSec": 30,
+                            "restSec": 90,
+                            "rounds": 6,
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "30 segundos de pedaleo a máxima intensidad (simulando primera recta de BMX) por 90 segundos de pedaleo muy suave. Repetir 6 ciclos."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Pigeon Pose / Postura de la Paloma",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "En el suelo, una pierna doblada al frente y la otra extendida hacia atrás, inclinando el torso suavemente.",
+                                "target": "Glúteos y Rotadores Externos de Cadera"
+                            },
+                            {
+                                "name": "Standing Quad Stretch / Estiramiento de Cuádriceps de Pie",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "De pie, tomando el empeine con la mano contraria o misma mano, manteniendo pelvis neutra.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Seated Forward Bend / Flexión al Frente Sentado",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Sentado con piernas juntas y estiradas, buscando alcanzar la punta de los pies con la espalda alineada.",
+                                "target": "Cadena Posterior Completa"
+                            },
+                            {
+                                "name": "Wall Calf Stretch / Estiramiento de Pantorrilla en Pared",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Apoyando las manos en la pared, flexionar ligeramente la rodilla trasera para estirar el sóleo.",
+                                "target": "Gemelos y Sóleo"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Roll Recovery / Recuperación en Rodillo (10 a 12 Minutos)",
+                            "durationSec": 660,
+                            "desc": "Pedaleo suave, redondo y fluido a bajas revoluciones durante 10 a 12 minutos finales para favorecer la circulación sanguínea y la eliminación de toxinas."
                         }
                     }
                 }
@@ -1440,7 +1799,434 @@ const TRAINING_DB = {
                             "name": "Automasaje y Liberación Miofascial con Foam Roller",
                             "desc": "Si tienen Foam Roller o pelota de tenis, pasar lentamente por isquiotibiales y glúteos, respirando hondo con inhalaciones de 4 segundos para calmar el sistema nervioso."
                         }
+                    },
+                    "8to13_adv": {
+                        "methodology": "8-13 Avanzado (Día 3): Día de máxima exigencia. Calistenia pediátrica avanzada (Flexiones declinadas 3-1-1-0, Pike Push-ups 3-0-1-0, Superman 2-2-2-1, Hollow Body), Pro Agility 5-10-5 y Cardio de Pista en rodillo (15 min).",
+                        "sessionFocus": "Activación, Fuerza de Empuje/Tracción, Pliometría Avanzada y Rodillo",
+                        "dailyTips": [
+                            "\"La intensidad se gobierna con la mente.\" Aplicar el 100% de fuerza en cada milisegundo del ejercicio estricto (ej. Hollow Body sin arquear la espalda).",
+                            "Grasas saludables y omega-3: Pescado azul (trucha o salmón) y aguacate apoyan el SNC y reducen la inflamación post-entreno.",
+                            "Control de porciones: Cantidades calculadas para sentirse satisfechos sin pesadez estomacal."
+                        ],
+                        "strictDiet": {
+                            "title": "Dieta Estricta - Día 3 (Variación Metabólica y Densidad Nutricional)",
+                            "hydrationNote": "Nota general de hidratación: Agua pura a lo largo del día (1.5 a 2 litros en sorbos pequeños) + 300 ml con electrolitos durante el bloque de entrenamiento.",
+                            "meals": [
+                                {
+                                    "moment": "1. Desayuno",
+                                    "time": "07:00 AM - 07:30 AM",
+                                    "foods": "Tostadas de pan integral (2 unidades) untadas con puré de medio aguacate (palta) y 1 huevo revuelto o pochado encima; 1 vaso de leche semidescremada o bebida vegetal; 1 porción de fruta fresca (papaya o mango en cubos).",
+                                    "goal": "Grasas saludables y carbohidratos complejos de absorción sostenida para una energía mental y física prolongada."
+                                },
+                                {
+                                    "moment": "2. Media Mañana (Pre-Entreno)",
+                                    "time": "10:00 AM - 10:30 AM",
+                                    "foods": "1 yogur griego natural sin azúcar (150g); 1 cucharada de semillas de chía o avena en hojuelas integradas; 1 banano pequeño.",
+                                    "goal": "Aporte rápido de carbohidratos y proteínas de fácil digestión previo al esfuerzo físico en la pista."
+                                },
+                                {
+                                    "moment": "3. Almuerzo (Post-Entreno)",
+                                    "time": "01:00 PM - 01:45 PM",
+                                    "foods": "120g de pechuga de pollo desmenuzada o a la plancha; 150g de papa cocida al vapor o yuca cocida (sin fritos); ensalada fresca abundante (lechuga, tomate, pepino) con limón y aceite de oliva virgen extra; 1 vaso de agua.",
+                                    "goal": "La recarga post-entreno: Proteína magra de alta calidad biológica combinada con tubérculos locales para reponer glucógeno."
+                                },
+                                {
+                                    "moment": "4. Media Tarde",
+                                    "time": "04:30 PM - 05:00 PM",
+                                    "foods": "1 manzana o pera troceada; un puñado pequeño de almendras o anacardos (15g).",
+                                    "goal": "Antioxidantes, fibra y grasas esenciales que estabilizan la curva de glucosa durante la tarde."
+                                },
+                                {
+                                    "moment": "5. Cena",
+                                    "time": "07:30 PM - 08:00 PM",
+                                    "foods": "120g de filete de salmón o trucha (rica en omega-3) o tortilla de 1 huevo y 2 claras con espinacas; 1.5 tazas de vegetales al vapor (brócoli y zanahoria); 5 aceitunas.",
+                                    "goal": "Ácidos grasos esenciales para la recuperación articular, el sistema nervioso y un sueño profundo y reparador."
+                                }
+                            ]
+                        },
+                        "warmup": [
+                            {
+                                "name": "Arm Swings & Torso Rotations / Balanceo de Brazos y Rotaciones de Tronco",
+                                "duration": "1 serie x 10 reps por lado",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Dinámico y fluido para lubricar hombros y activar el tronco superior.",
+                                "target": "Hombros y Tronco Superior"
+                            },
+                            {
+                                "name": "High Knees to Butt Kicks / Rodillas Arriba y Talones a Glúteos",
+                                "duration": "2 series x 20 metros combinados",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Frecuencia alta de pies para activar el sistema neuromuscular y la coordinación.",
+                                "target": "Sistema Neuromuscular y Coordinación"
+                            },
+                            {
+                                "name": "Bear Crawl / Caminata de Oso",
+                                "duration": "2 series x 10 metros",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Rodillas a pocos centímetros del suelo, abdomen rígido. Estabilidad total del core, hombros y cadenas cruzadas.",
+                                "target": "Core, Hombros y Cadenas Cruzadas"
+                            },
+                            {
+                                "name": "Lateral Bounds / Saltos Laterales Suaves",
+                                "duration": "2 series x 8 saltos por lado",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Amortiguación inmediata al caer para despertar la propiocepción y agilidad lateral.",
+                                "target": "Propiocepción y Agilidad Lateral"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Tuck Jumps / Saltos Agrupados (Rodillas al Pecho)",
+                                "sets": "3 series de 6 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto explosivo vertical llevando las rodillas hacia el pecho de forma rápida y amortiguando suavemente al caer.",
+                                "target": "Potencia Explosiva Vertical y Rebote"
+                            },
+                            {
+                                "name": "Skater Jumps / Saltos de Patinador Laterales",
+                                "sets": "3 series de 10 saltos totales",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Impulso lateral máximo de un lado a otro, buscando distancia y estabilidad en una sola pierna.",
+                                "target": "Agilidad Lateral y Fuerza en Peraltes"
+                            },
+                            {
+                                "name": "Pro Agility Test (5-10-5) / Test de Agilidad Pro",
+                                "sets": "3 series de 3 pasadas",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Sprint lateral de 5m, cambio de dirección a tocar el suelo, sprint de 10m al otro lado y cierre.",
+                                "target": "Agilidad Pura, Desaceleración y Aceleración"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Decline Push-ups / Flexiones con Pies Elevados (o Normales Estrictas)",
+                                "sets": "3 series de 10 a 12 reps",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/IODxDxX7oi4",
+                                "desc": "Bajar en 3s controlados rozando el pecho, 1s pausa abajo, empuje explosivo.",
+                                "target": "Pectorales, Deltoides Anteriores y Tríceps"
+                            },
+                            {
+                                "name": "Pike Push-ups / Flexiones en V (Pike)",
+                                "sets": "3 series de 8 a 10 reps",
+                                "tempo": "3-0-1-0",
+                                "video": "https://www.youtube.com/embed/89-8waE2XKI",
+                                "desc": "Cadera elevada hacia arriba formando una V invertida, bajando la cabeza en diagonal.",
+                                "target": "Hombros y Estabilidad Escapular"
+                            },
+                            {
+                                "name": "Superman Holds / Extensiones Lumbares (Superman)",
+                                "sets": "3 series de 15 repeticiones",
+                                "tempo": "2-2-2-1",
+                                "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
+                                "desc": "2s subiendo tronco y piernas a la vez, 2s de contracción estática arriba, 2s bajando.",
+                                "target": "Erector Espinal y Cadena Posterior"
+                            },
+                            {
+                                "name": "Hollow Body Hold / Posición de Cazoleta (Hollow Body)",
+                                "sets": "3 series de 40 segundos",
+                                "tempo": "Sostenido estático",
+                                "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
+                                "desc": "Espalda baja pegada al suelo, piernas y brazos extendidos en tensión (30 a 40 segundos).",
+                                "target": "Máximo Control y Compresión Abdominal"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Cardio Alta Intensidad en Rodillo (Intervalos de Pista • 15 min)",
+                            "format": "15 minutos en total (6 ciclos • 45s máxima resistencia/velocidad / 75s recuperación suave)",
+                            "workSec": 45,
+                            "restSec": 75,
+                            "rounds": 6,
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "45 segundos de pedaleo a máxima resistencia/velocidad (simulando esfuerzo de manga completa) por 75 segundos de recuperación suave. Repetir 6 ciclos."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Chest & Shoulder Stretch / Estiramiento de Pecho y Hombros",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Brazos extendidos hacia atrás entrelazando los dedos, elevando suavemente el pecho.",
+                                "target": "Pectorales y Deltoides"
+                            },
+                            {
+                                "name": "Lat Stretch / Estiramiento de Dorsales (en Pared o Marco)",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Manos apoyadas en una superficie alta, dejando caer el torso hacia abajo con la espalda recta.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Standing Hamstring Stretch / Estiramiento de Isquiotibiales de Pie",
+                                "duration": "25 a 30s por lado",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "De pie, cruzar un pie sobre el otro y descender el tronco con control.",
+                                "target": "Cadena Posterior"
+                            },
+                            {
+                                "name": "Child's Pose / Postura del Niño",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Rodillas en el suelo, glúteos hacia los talones y brazos estirados al frente sobre la colchoneta.",
+                                "target": "Espalda y Zona Lumbar"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Roll Recovery / Recuperación en Rodillo (12 Minutos)",
+                            "durationSec": 720,
+                            "desc": "Pedaleo extremadamente suave, redondo y constante durante 12 minutos finales para limpiar los metabolitos acumulados y bajar las pulsaciones."
+                        }
                     }
+                }
+            },
+            "4": {
+                "focus": "Activación, Agilidad Multidireccional, Transferencia de Potencia y Rodillo",
+                "duration": "60-75 Minutos (Calistenia Pediátrica + Rodillo)",
+                "structure": "Calentamiento + Fuerza Estricta + Pliometría + Cardio en Rodillo + Roll Recovery + Estiramiento",
+                "dailyTips": [
+                    "\"La constancia vence al talento cuando el talento no es constante.\" Felicita a los deportistas por completar el ciclo completo.",
+                    "Consistencia en el cierre semanal: Mantener el orden nutricional del Día 4 asegura una recomposición corporal exitosa.",
+                    "Cero excesos de sodio y grasas procesadas: Preparaciones limpias (al horno, plancha o vapor) para no fatigar la digestión antes de la pista."
+                ],
+                "nutrition": {
+                    "energy": "Omelette de 1 huevo entero y 2 claras (con champiñones o espinacas); 1 arepa pequeña de maíz natural (o 2 tostadas integrales); 1 vaso de leche semidescremada o bebida vegetal; 1 fruta mediana (pera o manzana).",
+                    "protein": "120g de filete de pollo o pechuga de pavo a la plancha/horno; 150g de quinua cocida o arroz blanco; 1 taza de vegetales al vapor (brócoli, calabacín y zanahoria) aliñados con aceite de oliva; 1 vaso de agua.",
+                    "hydration": "Nota general de hidratación: Agua pura a lo largo del día (1.5 a 2 litros en sorbos pequeños) + 300 ml con electrolitos durante el bloque de entrenamiento.",
+                    "snacks": "1 vaso de batido casero: leche semidescremada, medio banano y 1 cucharada de crema de maní 100% natural."
+                },
+                "ageGroups": {
+                    "8to13_adv": {
+                        "methodology": "8-13 Avanzado (Día 4): Transferencia de potencia y agilidad multidireccional. Jump Squats con tempo 3-0-X-1, Broad Jump to Sprint, Step-Ups explosivos, Cardio Intermitente 20/40 en rodillo (14 ciclos) y Roll Recovery (12 min).",
+                        "sessionFocus": "Activación, Agilidad Multidireccional, Transferencia de Potencia y Rodillo",
+                        "dailyTips": [
+                            "\"La constancia vence al talento cuando el talento no es constante.\" Felicita a los deportistas por completar el ciclo completo.",
+                            "Consistencia en el cierre semanal: Mantener el orden nutricional del Día 4 asegura una recomposición corporal exitosa.",
+                            "Cero excesos de sodio y grasas procesadas: Preparaciones limpias (al horno, plancha o vapor) para no fatigar la digestión antes de la pista."
+                        ],
+                        "strictDiet": {
+                            "title": "Dieta Estricta - Día 4 (Cierre de Ciclo y Consolidación Muscular)",
+                            "hydrationNote": "Nota general de hidratación: Agua pura a lo largo del día (1.5 a 2 litros en sorbos pequeños) + 300 ml con electrolitos durante el bloque de entrenamiento.",
+                            "meals": [
+                                {
+                                    "moment": "1. Desayuno",
+                                    "time": "07:00 AM - 07:30 AM",
+                                    "foods": "Omelette de 1 huevo entero y 2 claras (con champiñones o espinacas); 1 arepa pequeña de maíz natural (o 2 tostadas integrales); 1 vaso de leche semidescremada o bebida vegetal; 1 fruta mediana (pera o manzana).",
+                                    "goal": "Proteína de alta calidad y carbohidratos estables para iniciar el día con alta concentración y energía."
+                                },
+                                {
+                                    "moment": "2. Media Mañana (Pre-Entreno)",
+                                    "time": "10:00 AM - 10:30 AM",
+                                    "foods": "1 yogur griego natural sin azúcar (150g); 1 cucharadita de miel pura; un puñado pequeño de arándanos frescos.",
+                                    "goal": "Energía de asimilación rápida previa al esfuerzo, protegiendo la masa muscular."
+                                },
+                                {
+                                    "moment": "3. Almuerzo (Post-Entreno)",
+                                    "time": "01:00 PM - 01:45 PM",
+                                    "foods": "120g de filete de pollo o pechuga de pavo a la plancha/horno; 150g de quinua cocida o arroz blanco; 1 taza de vegetales al vapor (brócoli, calabacín y zanahoria) aliñados con aceite de oliva; 1 vaso de agua.",
+                                    "goal": "Recuperación clave: Máxima síntesis proteica y reposición de depósitos de glucógeno para fijar las ganancias de la semana."
+                                },
+                                {
+                                    "moment": "4. Media Tarde",
+                                    "time": "04:30 PM - 05:00 PM",
+                                    "foods": "1 vaso de batido casero: leche semidescremada, medio banano y 1 cucharada de crema de maní 100% natural.",
+                                    "goal": "Snack reconfortante que aporta calorías limpias y proteínas de lenta asimilación para evitar el catabolismo."
+                                },
+                                {
+                                    "moment": "5. Cena",
+                                    "time": "07:30 PM - 08:00 PM",
+                                    "foods": "120g de pescado blanco (tilapia o merluza) desmenuzado o al horno; 1.5 tazas de crema ligera de ahuyama (calabaza) o verduras variadas; 5 aceitunas o medio aguacate pequeño.",
+                                    "goal": "Digestión ligera y rápida antes de dormir para potenciar la recuperación nocturna y el descanso profundo."
+                                }
+                            ]
+                        },
+                        "warmup": [
+                            {
+                                "name": "Dynamic Arms & Legs / Movilidad Dinámica de Brazos y Piernas",
+                                "duration": "1 serie x 8 reps por lado",
+                                "video": "https://www.youtube.com/embed/naW8u72lOzI",
+                                "desc": "Fluido y controlado para lubricación articular global.",
+                                "target": "Lubricación Articular Global"
+                            },
+                            {
+                                "name": "High Knees with Fast Feet / Skipping Alto con Pies Rápidos",
+                                "duration": "2 series x 20 metros",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Frecuencia muy alta, pisada ligera para activar el sistema nervioso central (SNC).",
+                                "target": "Activación del SNC"
+                            },
+                            {
+                                "name": "Inchworm to Push-up / Gusano con Flexión",
+                                "duration": "2 series x 5 reps (Tempo 3-0-1-0)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Tempo 3-0-1-0. Activación de cadena posterior, hombros y core.",
+                                "target": "Cadena Posterior, Hombros y Core"
+                            },
+                            {
+                                "name": "Side Shuffles / Desplazamientos Laterales en Sentadilla Baja",
+                                "duration": "2 series x 10 metros por lado",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Postura baja constante, sin cruzar los pies, despertando la agilidad lateral de peraltes.",
+                                "target": "Agilidad Lateral de Peraltes"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Broad Jump to Sprint / Salto de Longitud con Salida a Sprint",
+                                "sets": "3 series de 4 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
+                                "desc": "Salto máximo hacia adelante con caída estable, seguido de un sprint explosivo de 5 metros.",
+                                "target": "Simulación de Salida del Partidor y Primera Recta"
+                            },
+                            {
+                                "name": "Lateral Hop Over Line / Saltos Laterales sobre Línea",
+                                "sets": "3 series de 20 segundos",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Saltos laterales continuos a máxima velocidad de pies sobre una línea imaginaria o bastón en el suelo.",
+                                "target": "Agilidad de Tobillos y Velocidad de Reacción"
+                            },
+                            {
+                                "name": "Box / Chair Step-Up Explosivo / Subidas Explosivas a Banco Bajo",
+                                "sets": "3 series de 8 reps por pierna",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/hxldG9FX4j4",
+                                "desc": "Apoyo firme en banco seguro, subida explosiva vertical y bajada controlada.",
+                                "target": "Fuerza Unilateral y Potencia de Zancada"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Jump Squats Controladas / Sentadillas con Pequeño Salto",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-0-X-1",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Bajar en 3 segundos controlados, salto explosivo corto hacia arriba, amortiguar suave.",
+                                "target": "Cuádriceps y Potencia Inicial de Piernas"
+                            },
+                            {
+                                "name": "Wide Push-ups / Flexiones con Manos Abiertas",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/IODxDxX7oi4",
+                                "desc": "Manos más abiertas que los hombros, bajada estricta controlada.",
+                                "target": "Pectorales Externos y Estabilidad de Hombros"
+                            },
+                            {
+                                "name": "Glute Bridge Marches / Puentes de Glúteo con Marcha",
+                                "sets": "3 series de 16 pasos totales",
+                                "tempo": "Sostenido con elevación alterna",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Cadera arriba fija mientras se levanta un pie y luego el otro de forma alterna.",
+                                "target": "Glúteos y Estabilidad Pélvica en Pedaleo"
+                            },
+                            {
+                                "name": "Side Plank with Leg Lift / Plancha Lateral con Elevación de Pierna",
+                                "sets": "3 series de 25 segundos por lado",
+                                "tempo": "Sostenido estático",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Cuerpo en línea recta, elevando ligeramente la pierna superior.",
+                                "target": "Oblicuos y Equilibrio Lateral"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Cardio Intermitente en Rodillo (Sprints 20/40 • 14 min)",
+                            "format": "14 minutos en total (14 ciclos • 20s máxima potencia / 40s pedaleo suave)",
+                            "workSec": 20,
+                            "restSec": 40,
+                            "rounds": 14,
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "20 segundos de pedaleo a máxima potencia por 40 segundos de pedaleo suave. Repetir 14 ciclos continuos para descarga metabólica y acondicionamiento aeróbico."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Seated Straddle Stretch / Estiramiento de Abductores Sentado",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Sentado con las piernas abiertas en 'V', inclinando el torso al frente con la espalda recta.",
+                                "target": "Aductor e Ingle"
+                            },
+                            {
+                                "name": "Couch Stretch / Estiramiento de Psoas en Pared o Silla",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Rodilla apoyada contra la pared/silla y pie adelantado, proyectando la cadera al frente.",
+                                "target": "Psoas y Cuádriceps Profundo"
+                            },
+                            {
+                                "name": "Standing Calf Stretch / Estiramiento de Gemelos de Pie",
+                                "duration": "25 a 30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Apoyado contra una pared, pierna trasera estirada con el talón totalmente pegado al suelo.",
+                                "target": "Complejo Gemelo-Sóleo"
+                            },
+                            {
+                                "name": "Upper Back & Neck Release / Estiramiento de Espalda Alta y Cuello",
+                                "duration": "25 a 30s sostenido",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Sentado, entrelazando las manos detrás de la cabeza con una flexión suave y controlada del cuello hacia adelante.",
+                                "target": "Trapecios y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Roll Recovery / Recuperación en Rodillo (12 Minutos)",
+                            "durationSec": 720,
+                            "desc": "Pedaleo fluido, suave y completamente redondo durante 12 minutos finales para relajar la musculatura y bajar las pulsaciones al 100%."
+                        }
+                    }
+                }
+            }
+        },
+        "ageGroupMeta": {
+            "8to13_adv": {
+                "introBanner": {
+                    "title": "Plan Específico: 8-13 Años Avanzado • Ventana de Crecimiento y Recomposición Corporal",
+                    "subtitle": "Puente estructurado entre el juego dirigido y el alto rendimiento. Optimizamos la arquitectura corporal, la coordinación inter e intramuscular, la densidad mineral ósea (Calistenia Pediátrica) y el manejo del déficit de peso mediante superávit cualitativo.",
+                    "goldenRule": "4 Principios Pediátricos Clave: 1) Plasticidad del SNC (conexiones neuronales rápidas). 2) Calistenia Pediátrica con tempos estrictos. 3) Recomposición corporal sin dietas restrictivas. 4) Estiramientos y recuperación en rodillo (Roll Recovery) obligatorios por crecimiento óseo."
+                },
+                "dailyCapsule": {
+                    "title": "Cápsula Diaria de Reflejos y Partidor (15-20 Minutos • Todos los Días)",
+                    "coachTip": "La velocidad de reacción no se entrena cuando el cuerpo está cansado. Haz esta cápsula todos los días (incluso en descanso o vacaciones) preferiblemente por la tarde a la misma hora para convertir la salida del partidor en un reflejo 100% automático.",
+                    "phases": [
+                        {
+                            "name": "Fase 1: Activación Neuronal de Tobillos y Pies (3 Min)",
+                            "items": [
+                                "Pogo Jumps (Saltos rápidos sobre la punta de los pies): 2 series de 20 rebotes rápidos en el sitio. Rodillas casi sin doblar; todo el trabajo lo hacen tobillos y gemelos.",
+                                "Quick Feet in Place (Pies rápidos estáticos): 2 series de 10 segundos a la máxima frecuencia posible."
+                            ]
+                        },
+                        {
+                            "name": "Fase 2: Entrenamiento con App de Partidor BMX Gate Start Pro (7 Min)",
+                            "items": [
+                                "Bloque 1 - Reacción al Sonido (3 series de 5 salidas): A 2m de la pantalla de espaldas o de costado. Al sonar la salida, girar y arrancar en sprint frontal explosivo de 3 a 5m (30s descanso).",
+                                "Bloque 2 - Reacción a la Luz / Visual (3 series de 5 salidas): Frente a la pantalla en 'Posición de Ataque'. Al cambiar la luz, pedalazo explosivo de pie de 2s (30s descanso)."
+                            ]
+                        },
+                        {
+                            "name": "Fase 3: Agilidad y Coordinación de Manos (5 Min)",
+                            "items": [
+                                "Tennis Ball Wall Toss & Catch (Lanzar y atrapar pelota de tenis contra la pared): 3 series de 10 repeticiones (mano derecha a izquierda, o aplauso rápido antes de atrapar)."
+                            ]
+                        },
+                        {
+                            "name": "Fase 4: Vuelta a la Calma y Estiramiento Exprés (3 Min)",
+                            "items": [
+                                "Calf & Hamstring Stretch (Estiramiento de gemelos e isquiotibiales): 30s por pierna.",
+                                "Deep Breathing (Respiraciones profundas): 1 min inhalando profundo por la nariz inflando abdomen y exhalando lento por la boca."
+                            ]
+                        }
+                    ]
+                },
+                "closingMessage": {
+                    "title": "¡Felicitaciones, Equipo ACTIVERZA! (Cierre Semana 1 • 8-13 Avanzado)",
+                    "paragraphs": [
+                        "Han completado una semana de entrenamiento de nivel superior. Cada sentadilla con su tempo estricto, cada salto pliométrico buscando la máxima explosividad, cada gota de sudor en el rodillo y cada elección nutricional consciente demuestra que han decidido dejar de ser espectadores para convertirse en verdaderos protagonistas de su propio rendimiento.",
+                        "En el BMX Racing, la victoria no se decide únicamente en la pista el día de la competencia; se forja en el silencio de la disciplina diaria, en el respeto por los tiempos de ejecución, en la constancia cuando las piernas pesan y en la decisión mental de no negociar el esfuerzo. Hoy han demostrado que tienen la madera, el enfoque y la resiliencia que se necesita para volar sobre la bicicleta.",
+                        "Recuerden que el déficit físico o motriz con el que comenzamos no es una debilidad, sino el punto de partida de su grandeza. Cada semana que pasa, con este sistema de trabajo inteligente y estructurado, están construyendo una estructura ósea más fuerte, músculos más explosivos y una agilidad mental implacable para dominar cada peraltado, cada curva y cada salida de partidor.",
+                        "¡Siéntanse orgullosos de lo que han logrado en estos 4 días! Esto apenas comienza, y con la disciplina, la unión y la guía correcta, no hay meta imposible de alcanzar. ¡A seguir rodando con el corazón y la mente en modo ACTIVERZA!"
+                    ]
                 }
             }
         }
@@ -4457,2077 +5243,2077 @@ const TRAINING_DB = {
         }
     },
     "4": {
-    "name": "Semana 4 - Movilidad Activa, Rigor Técnico e Integración Multigeneracional",
-    "dailyTips": {
-        "1": [
-            "Integración Familiar en Menores de 6: Cuando los más pequeños participan con sus padres o hermanos mayores, el ejercicio deja de ser una obligación y se convierte en un juego de equipo. Fomenta hábitos deportivos desde el hogar sin presiones.",
-            "Rigor en el Tempo: En los bloques de fuerza para adolescentes y adultos, las bajadas deben durar los segundos indicados en el tempo. El músculo se fortalece en la fase excéntrica (frenado). La prisa reduce efectividad y aumenta el riesgo articular.",
-            "Hidratación Post-Sesión: Al terminar los 60 minutos, ofrecer un vaso de agua fresca y una fruta pequeña a los niños para iniciar la resíntesis de glucógeno de inmediato."
-        ],
-        "2": [
-            "Ergonomía Escolar y Laboral: Los niños pasan horas sentados en el colegio y los adultos frente al computador, acortando drásticamente el psoas ilíaco. Pausa activa de 1 minuto para estirar cadera cada hora.",
-            "Tolerancia a la Frustración en el Equilibrio: En los ejercicios unipodales (como el peso muerto a una pierna), es normal desequilibrarse. El equilibrio se construye a través del error; el cerebro crea nuevas rutas neuronales.",
-            "Calidad del Sueño y Pantallas: Apagar pantallas 1 hora antes de dormir. Tras un trabajo intenso del sistema nervioso y de reacción, el sueño profundo es el único medio para consolidar la adaptación motriz."
-        ],
-        "3": [
-            "Prevención del Arm Pump: El agarre al manubrio no debe ser de tensión al 100% de manera estática. Enseñar a relajar mínimamente las manos en el aire durante los saltos permite que la sangre irrigue los antebrazos.",
-            "Autonomía y Mantenimiento: Aprovechar el cierre de la sesión para que cada deportista revise el estado de su bicicleta (presión de neumáticos, cadena y tornillería) antes de la práctica en pista.",
-            "El Descanso es Entrenamiento: El crecimiento muscular y la ganancia real de potencia ocurren durante el sueño y el descanso profundo, no durante la fatiga del ejercicio."
-        ],
-        "4": [
-            "Cierre de Ciclo Exitoso: Al completar los 4 días de entrenamiento, felicita a todo el equipo familiar. La constancia es el ingrediente secreto del alto rendimiento en el BMX Racing.",
-            "Disfrute y Fluidez en Pista: Aplicar la técnica de respiración diafragmática y visualización antes de subir al partidor. La calma mental produce la salida más explosiva.",
-            "Nutrición Antiinflamatoria: Consumir fuentes de omega-3 (semillas de chía, pescado) y abundante agua para recuperar el tejido conjuntivo de cara al siguiente microciclo."
-        ]
-    },
-    "days": {
-        "1": {
-            "focus": "Fuerza Base, Estabilidad de Core, Activación Cardiovascular y Pliometría Inicial",
-            "duration": "60 Minutos Máximo",
-            "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
-            "nutrition": {
-                "energy": "Menores de 6 años: Frutas, avena, plátano y alimentos reales coloridos. 7 a 17 años: Carbohidratos complejos (arroz integral, papa, pasta) antes de entrenar y fuentes de hierro con cítricos. Adultos: Control de porciones y grasas saludables (aguacate, frutos secos, aceite de oliva).",
-                "protein": "Proteínas de alto valor biológico (huevo, pollo, carnes magras, legumbres) para desarrollo óseo, celular y muscular sin suplementación artificial.",
-                "hydration": "Agua pura constante a sorbos pequeños antes, durante y después del entrenamiento. Evitar bebidas azucaradas o energizantes artificiales.",
-                "snacks": "Pre: Banana con miel o avena. Post (primeros 30 min): Vaso de leche o fruta fresca con yogur para inicio inmediato de resíntesis de glucógeno."
-            },
-            "ageGroups": {
-                "sub6": {
-                    "methodology": "Enfoque Multimotor y Lúdico: Participación familiar activa como juego de equipo, desarrollando equilibrio dinámico, coordinación óculo-manual y fuerza básica.",
-                    "warmup": [
-                        {
-                            "name": "Trote con Rodillas Altas / High Knees",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
-                            "target": "Temperatura y Psoas Ilíaco"
-                        },
-                        {
-                            "name": "Círculos de Brazos / Arm Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
-                            "target": "Manguito Rotador y Hombros"
-                        },
-                        {
-                            "name": "Caminata de Oruga / Inchworms",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
-                            "target": "Isquiotibiales y Core"
-                        },
-                        {
-                            "name": "Saltos de Tijera / Jumping Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
-                            "target": "Flexores de Cadera y Tronco"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Salto del Conejo con Marcadores / Bunny Hops",
-                            "sets": "3 series de 6 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Colocar marcas en el suelo (hojas o tiza). Pies juntos, saltando de una a otra con aterrizaje suave y silencioso.",
-                            "target": "Amortiguación y Coordinación"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Caminata de Oso en Familia / Family Bear Crawl Tag",
-                            "sets": "3 series de 8 pasos",
-                            "tempo": "Controlado",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "A cuatro patas con rodillas despegadas del suelo 5 cm. Intentar tocar suavemente la espalda de papá o mamá.",
-                            "target": "Hombros, Muñecas y Core"
-                        },
-                        {
-                            "name": "Sentadillas de Canguro / Kangaroo Squats",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "Libre lúdico",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Llevar manos al pecho, bajar como canguro y subir manteniendo la espalda recta.",
-                            "target": "Cuádriceps y Glúteos"
-                        },
-                        {
-                            "name": "Puente de Glúteo / Glute Bridge",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "Sostener 2s arriba",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Acostados boca arriba con rodillas dobladas, elevar la pelvis apretando glúteos y contar hasta 2.",
-                            "target": "Cadena Posterior"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "El Juego de las Estatuas / Musical Statues",
-                        "format": "5 minutos continuos de juego interactivo",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Trotar o bailar al ritmo; cuando la música para, congelarse como estatua en posición de bombeo (pump) de BMX. Estimula frenado y control neuromuscular."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Sujetarse del hombro de un padre, llevar el talón al glúteo manteniendo rodillas juntas.",
-                            "target": "Cuádriceps y Psoas"
-                        },
-                        {
-                            "name": "Perro Boca Abajo / Downward Dog",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Formar una 'V' invertida con el cuerpo empujando talones hacia el suelo.",
-                            "target": "Gemelos e Isquiotibiales"
-                        },
-                        {
-                            "name": "Postura del Niño / Child's Pose",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "desc": "Sentarse sobre los talones y estirar los brazos al frente descargando la columna lumbar.",
-                            "target": "Espalda Baja y Dorsales"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Acostados en colchoneta boca arriba con una mano en el pecho y otra en el abdomen. Inhalar 4s inflando la barriga, sostener 4s y botar el aire en 6s muy suave por la boca."
-                    }
+        "name": "Semana 4 - Movilidad Activa, Rigor Técnico e Integración Multigeneracional",
+        "dailyTips": {
+            "1": [
+                "Integración Familiar en Menores de 6: Cuando los más pequeños participan con sus padres o hermanos mayores, el ejercicio deja de ser una obligación y se convierte en un juego de equipo. Fomenta hábitos deportivos desde el hogar sin presiones.",
+                "Rigor en el Tempo: En los bloques de fuerza para adolescentes y adultos, las bajadas deben durar los segundos indicados en el tempo. El músculo se fortalece en la fase excéntrica (frenado). La prisa reduce efectividad y aumenta el riesgo articular.",
+                "Hidratación Post-Sesión: Al terminar los 60 minutos, ofrecer un vaso de agua fresca y una fruta pequeña a los niños para iniciar la resíntesis de glucógeno de inmediato."
+            ],
+            "2": [
+                "Ergonomía Escolar y Laboral: Los niños pasan horas sentados en el colegio y los adultos frente al computador, acortando drásticamente el psoas ilíaco. Pausa activa de 1 minuto para estirar cadera cada hora.",
+                "Tolerancia a la Frustración en el Equilibrio: En los ejercicios unipodales (como el peso muerto a una pierna), es normal desequilibrarse. El equilibrio se construye a través del error; el cerebro crea nuevas rutas neuronales.",
+                "Calidad del Sueño y Pantallas: Apagar pantallas 1 hora antes de dormir. Tras un trabajo intenso del sistema nervioso y de reacción, el sueño profundo es el único medio para consolidar la adaptación motriz."
+            ],
+            "3": [
+                "Prevención del Arm Pump: El agarre al manubrio no debe ser de tensión al 100% de manera estática. Enseñar a relajar mínimamente las manos en el aire durante los saltos permite que la sangre irrigue los antebrazos.",
+                "Autonomía y Mantenimiento: Aprovechar el cierre de la sesión para que cada deportista revise el estado de su bicicleta (presión de neumáticos, cadena y tornillería) antes de la práctica en pista.",
+                "El Descanso es Entrenamiento: El crecimiento muscular y la ganancia real de potencia ocurren durante el sueño y el descanso profundo, no durante la fatiga del ejercicio."
+            ],
+            "4": [
+                "Cierre de Ciclo Exitoso: Al completar los 4 días de entrenamiento, felicita a todo el equipo familiar. La constancia es el ingrediente secreto del alto rendimiento en el BMX Racing.",
+                "Disfrute y Fluidez en Pista: Aplicar la técnica de respiración diafragmática y visualización antes de subir al partidor. La calma mental produce la salida más explosiva.",
+                "Nutrición Antiinflamatoria: Consumir fuentes de omega-3 (semillas de chía, pescado) y abundante agua para recuperar el tejido conjuntivo de cara al siguiente microciclo."
+            ]
+        },
+        "days": {
+            "1": {
+                "focus": "Fuerza Base, Estabilidad de Core, Activación Cardiovascular y Pliometría Inicial",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Menores de 6 años: Frutas, avena, plátano y alimentos reales coloridos. 7 a 17 años: Carbohidratos complejos (arroz integral, papa, pasta) antes de entrenar y fuentes de hierro con cítricos. Adultos: Control de porciones y grasas saludables (aguacate, frutos secos, aceite de oliva).",
+                    "protein": "Proteínas de alto valor biológico (huevo, pollo, carnes magras, legumbres) para desarrollo óseo, celular y muscular sin suplementación artificial.",
+                    "hydration": "Agua pura constante a sorbos pequeños antes, durante y después del entrenamiento. Evitar bebidas azucaradas o energizantes artificiales.",
+                    "snacks": "Pre: Banana con miel o avena. Post (primeros 30 min): Vaso de leche o fruta fresca con yogur para inicio inmediato de resíntesis de glucógeno."
                 },
-                "7to12": {
-                    "methodology": "Aprendizaje Motor, Rigor en el Tempo y Potencia Elástica: Enfoque en calidad técnica de amortiguación, control del core y desaceleración sin compensaciones articulares.",
-                    "warmup": [
-                        {
-                            "name": "Trote con Rodillas Altas / High Knees",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
-                            "target": "Temperatura y Psoas Ilíaco"
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Enfoque Multimotor y Lúdico: Participación familiar activa como juego de equipo, desarrollando equilibrio dinámico, coordinación óculo-manual y fuerza básica.",
+                        "warmup": [
+                            {
+                                "name": "Trote con Rodillas Altas / High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
+                                "target": "Temperatura y Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Círculos de Brazos / Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
+                                "target": "Manguito Rotador y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
+                                "target": "Isquiotibiales y Core"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
+                                "target": "Flexores de Cadera y Tronco"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Salto del Conejo con Marcadores / Bunny Hops",
+                                "sets": "3 series de 6 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Colocar marcas en el suelo (hojas o tiza). Pies juntos, saltando de una a otra con aterrizaje suave y silencioso.",
+                                "target": "Amortiguación y Coordinación"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Caminata de Oso en Familia / Family Bear Crawl Tag",
+                                "sets": "3 series de 8 pasos",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "A cuatro patas con rodillas despegadas del suelo 5 cm. Intentar tocar suavemente la espalda de papá o mamá.",
+                                "target": "Hombros, Muñecas y Core"
+                            },
+                            {
+                                "name": "Sentadillas de Canguro / Kangaroo Squats",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "Libre lúdico",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Llevar manos al pecho, bajar como canguro y subir manteniendo la espalda recta.",
+                                "target": "Cuádriceps y Glúteos"
+                            },
+                            {
+                                "name": "Puente de Glúteo / Glute Bridge",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "Sostener 2s arriba",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Acostados boca arriba con rodillas dobladas, elevar la pelvis apretando glúteos y contar hasta 2.",
+                                "target": "Cadena Posterior"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "El Juego de las Estatuas / Musical Statues",
+                            "format": "5 minutos continuos de juego interactivo",
+                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                            "desc": "Trotar o bailar al ritmo; cuando la música para, congelarse como estatua en posición de bombeo (pump) de BMX. Estimula frenado y control neuromuscular."
                         },
-                        {
-                            "name": "Círculos de Brazos / Arm Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
-                            "target": "Manguito Rotador y Hombros"
-                        },
-                        {
-                            "name": "Caminata de Oruga / Inchworms",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
-                            "target": "Isquiotibiales y Core"
-                        },
-                        {
-                            "name": "Saltos de Tijera / Jumping Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
-                            "target": "Flexores de Cadera y Tronco"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Sujetarse del hombro de un padre, llevar el talón al glúteo manteniendo rodillas juntas.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Perro Boca Abajo / Downward Dog",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Formar una 'V' invertida con el cuerpo empujando talones hacia el suelo.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Sentarse sobre los talones y estirar los brazos al frente descargando la columna lumbar.",
+                                "target": "Espalda Baja y Dorsales"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Acostados en colchoneta boca arriba con una mano en el pecho y otra en el abdomen. Inhalar 4s inflando la barriga, sostener 4s y botar el aire en 6s muy suave por la boca."
                         }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Saltos de Longitud / Broad Jumps",
-                            "sets": "4 series de 5 repeticiones",
-                            "rest": "Descanso 60s",
+                    },
+                    "7to12": {
+                        "methodology": "Aprendizaje Motor, Rigor en el Tempo y Potencia Elástica: Enfoque en calidad técnica de amortiguación, control del core y desaceleración sin compensaciones articulares.",
+                        "warmup": [
+                            {
+                                "name": "Trote con Rodillas Altas / High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
+                                "target": "Temperatura y Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Círculos de Brazos / Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
+                                "target": "Manguito Rotador y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
+                                "target": "Isquiotibiales y Core"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
+                                "target": "Flexores de Cadera y Tronco"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Longitud / Broad Jumps",
+                                "sets": "4 series de 5 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
+                                "desc": "Salto horizontal buscando máxima distancia con despegue explosivo y caída en semisentadilla silenciosa ('caer como un felino').",
+                                "target": "Potencia Horizontal y Amortiguación"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadillas Clásicas / Air Squats",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "2-1-1-0 (Bajar 2s, pausa 1s abajo, subir 1s)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Pecho erguido, rodillas siguiendo la línea de los pies y talones bien anclados al piso.",
+                                "target": "Cuádriceps y Glúteos"
+                            },
+                            {
+                                "name": "Flexiones con Rodillas Apoyadas / Kneeling Push-Ups",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Cuerpo en línea recta desde las rodillas hasta la cabeza. Codos a 45 grados del torso.",
+                                "target": "Pectorales, Tríceps y Core"
+                            },
+                            {
+                                "name": "Peso Muerto Rumano Unipodal sin Peso / Single Leg RDL",
+                                "sets": "3 series de 8 repeticiones por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Cadera cuadrada, pierna trasera extendida como una bisagra. Foco en equilibrio y cadena posterior.",
+                                "target": "Isquiotibiales y Estabilidad Lumbar"
+                            },
+                            {
+                                "name": "Plancha Frontal / Front Plank",
+                                "sets": "3 series de 25 segundos",
+                                "tempo": "Isometría estricta",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Antebrazos apoyados, abdomen y glúteos contraídos para proteger la zona lumbar.",
+                                "target": "Core y Anti-Extensión Lumbar"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Escaladores de Montaña / Mountain Climbers",
+                            "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s trabajo x 20s descanso",
+                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                            "desc": "En posición de flexión, alternar rodillas al pecho a máxima velocidad sin elevar la cadera ni botar los hombros hacia atrás."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Talón al glúteo, pelvis neutra y rodillas alineadas.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Perro Boca Abajo / Downward Dog",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alarga gemelos, sóleos e isquiotibiales tras el esfuerzo pliométrico.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Brazos extendidos al frente para relajar dorsales y zona sacrolumbar.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "30s por brazo",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Brazo apoyado a 90 grados contra la pared con rotación suave del torso.",
+                                "target": "Pectoral Mayor y Menor"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Atletas recostados boca arriba con ojos cerrados. Inhalar 4s por la nariz inflando el abdomen, pausa controlada 4s y exhalar en 6s por la boca. Activa el sistema parasimpático para dar inicio inmediato a la recuperación tisular."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Potencia Élite, Sobrecarga Excéntrica y Máxima Velocidad de Salida: Control milimétrico de tempos excéntricos de 3s para blindar tendones rotulianos y transferir potencia explosiva al gate start.",
+                        "warmup": [
+                            {
+                                "name": "Trote con Rodillas Altas / High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
+                                "target": "Temperatura y Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Círculos de Brazos / Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
+                                "target": "Manguito Rotador y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
+                                "target": "Isquiotibiales y Core"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
+                                "target": "Flexores de Cadera y Tronco"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos al Cajón con Caída Suave / Box Jumps",
+                                "sets": "4 series de 6 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto vertical explosivo a cajón o escalón firme (40-50 cm). Aterrizar con ambos pies amortiguando suavemente. Bajar caminando.",
+                                "target": "Potencia Vertical y Absorción de Impacto"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Búlgara / Bulgarian Split Squat",
+                                "sets": "3 series de 8 repeticiones por pierna",
+                                "tempo": "3-1-1-0 (3s bajada, 1s pausa abajo, subida explosiva)",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Pie trasero elevado en banco o silla. Bajar verticalmente manteniendo la rodilla delantera estable sin colapso en valgo.",
+                                "target": "Potencia Unilateral y Glúteo Medio"
+                            },
+                            {
+                                "name": "Flexiones Militares / Push-Ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-0-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Cuerpo rígido en una sola pieza. Pecho toca el suelo a 2 cm y sube con potencia. Fuerza para el pull del partidor.",
+                                "target": "Pectorales, Tríceps y Core Anterior"
+                            },
+                            {
+                                "name": "Puente de Glúteo a una Pierna / Single Leg Glute Bridge",
+                                "sets": "3 series de 10 repeticiones por pierna",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Una pierna en el aire y la otra empuja el suelo con el talón. Sostener 1s arriba contrayendo glúteo e isquiotibial.",
+                                "target": "Cadena Posterior y Estabilidad Pélvica"
+                            },
+                            {
+                                "name": "Hollow Body Hold / Barco Isométrico",
+                                "sets": "3 series de 25 segundos",
+                                "tempo": "Isometría estricta",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Espalda baja pegada milimétricamente al piso, brazos y piernas extendidos en el aire. Tensión máxima en todo el core.",
+                                "target": "Core Global y Fuerza Gimnástica"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Burpees Modificados / Sprawls",
+                            "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
                             "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                            "desc": "Salto horizontal buscando máxima distancia con despegue explosivo y caída en semisentadilla silenciosa ('caer como un felino').",
-                            "target": "Potencia Horizontal y Amortiguación"
+                            "desc": "De pie, lanzar pies atrás a posición de plancha alta y regresar rápidamente de pie sin flexión de pecho. Simula la aceleración máxima saliendo de peraltes."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Alinear rodillas, pelvis en retroversión para profundizar en el recto femoral.",
+                                "target": "Cuádriceps y Recto Femoral"
+                            },
+                            {
+                                "name": "Perro Boca Abajo / Downward Dog",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Foco en elongar gemelos y fascia plantar tras los saltos de potencia.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Descompresión lumbosacra con respiraciones profundas.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Libera la cintura escapular tras las flexiones y el agarre firme.",
+                                "target": "Pectoral y Hombros"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
+                            "desc": "Atletas en colchoneta con ojos cerrados. Inhalar 4s, retener 4s, exhalar en 6s. Durante la exhalación, visualizar la caída de la reja ('Watch the gate'), el primer pedalazo perfecto y la absorción de los saltos sin pérdida de inercia."
                         }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Sentadillas Clásicas / Air Squats",
-                            "sets": "3 series de 12 repeticiones",
-                            "tempo": "2-1-1-0 (Bajar 2s, pausa 1s abajo, subir 1s)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Pecho erguido, rodillas siguiendo la línea de los pies y talones bien anclados al piso.",
-                            "target": "Cuádriceps y Glúteos"
-                        },
-                        {
-                            "name": "Flexiones con Rodillas Apoyadas / Kneeling Push-Ups",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Cuerpo en línea recta desde las rodillas hasta la cabeza. Codos a 45 grados del torso.",
-                            "target": "Pectorales, Tríceps y Core"
-                        },
-                        {
-                            "name": "Peso Muerto Rumano Unipodal sin Peso / Single Leg RDL",
-                            "sets": "3 series de 8 repeticiones por pierna",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Cadera cuadrada, pierna trasera extendida como una bisagra. Foco en equilibrio y cadena posterior.",
-                            "target": "Isquiotibiales y Estabilidad Lumbar"
-                        },
-                        {
-                            "name": "Plancha Frontal / Front Plank",
-                            "sets": "3 series de 25 segundos",
-                            "tempo": "Isometría estricta",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Antebrazos apoyados, abdomen y glúteos contraídos para proteger la zona lumbar.",
-                            "target": "Core y Anti-Extensión Lumbar"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Escaladores de Montaña / Mountain Climbers",
-                        "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s trabajo x 20s descanso",
-                        "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                        "desc": "En posición de flexión, alternar rodillas al pecho a máxima velocidad sin elevar la cadera ni botar los hombros hacia atrás."
                     },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Talón al glúteo, pelvis neutra y rodillas alineadas.",
-                            "target": "Cuádriceps y Psoas"
-                        },
-                        {
-                            "name": "Perro Boca Abajo / Downward Dog",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Alarga gemelos, sóleos e isquiotibiales tras el esfuerzo pliométrico.",
-                            "target": "Gemelos e Isquiotibiales"
-                        },
-                        {
-                            "name": "Postura del Niño / Child's Pose",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "desc": "Brazos extendidos al frente para relajar dorsales y zona sacrolumbar.",
-                            "target": "Espalda Baja y Dorsales"
-                        },
-                        {
-                            "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
-                            "duration": "30s por brazo",
-                            "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "desc": "Brazo apoyado a 90 grados contra la pared con rotación suave del torso.",
-                            "target": "Pectoral Mayor y Menor"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Atletas recostados boca arriba con ojos cerrados. Inhalar 4s por la nariz inflando el abdomen, pausa controlada 4s y exhalar en 6s por la boca. Activa el sistema parasimpático para dar inicio inmediato a la recuperación tisular."
-                    }
-                },
-                "13to17": {
-                    "methodology": "Potencia Élite, Sobrecarga Excéntrica y Máxima Velocidad de Salida: Control milimétrico de tempos excéntricos de 3s para blindar tendones rotulianos y transferir potencia explosiva al gate start.",
-                    "warmup": [
-                        {
-                            "name": "Trote con Rodillas Altas / High Knees",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
+                    "18plus": {
+                        "methodology": "Salud Articular, Longevidad Mecánica y Cruiser Power: Preservación del cartílago hialino, control del core contra impactos y prevención de lesiones en columna y rodillas.",
+                        "warmup": [
+                            {
+                                "name": "Trote con Rodillas Altas / High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
+                                "target": "Temperatura y Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Círculos de Brazos / Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
+                                "target": "Manguito Rotador y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
+                                "target": "Isquiotibiales y Core"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
+                                "target": "Flexores de Cadera y Tronco"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogos Controlados / Controlled Pogo Jumps",
+                                "sets": "4 series de 20 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Saltos verticales cortos usando solo tobillos con rodillas semiflexionadas. Mantener rigidez elástica en tendones sin impacto brusco.",
+                                "target": "Stiffness de Tobillo y Protección Tendinosa"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Asistida a Silla / Box Squat",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-1-1-0 (3s bajada controlada, tocar silla y subir)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Bajar lentamente hasta rozar el asiento de una silla sin sentarse por completo. Protege rodillas y activa glúteos.",
+                                "target": "Cuádriceps, Glúteos y Rodillas Seguras"
+                            },
+                            {
+                                "name": "Flexiones en Pared o Banco Elevado / Incline Push-Ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Manos apoyadas en banco o pared para reducir carga articular en hombros y muñecas sin perder tono pectoral.",
+                                "target": "Pectorales y Protección de Muñeca"
+                            },
+                            {
+                                "name": "Puente de Glúteo Bipodal / Glute Bridge",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "2-2-1-0 (Sostener 2s arriba)",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Elevar la pelvis apretando glúteos al máximo. Descomprime la espalda baja tras largas horas de oficina.",
+                                "target": "Glúteos y Descompresión Lumbar"
+                            },
+                            {
+                                "name": "Plancha en Antebrazos / Forearm Plank",
+                                "sets": "3 series de 30 segundos",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Alineación de columna neutra sin hundir la cadera. Respiración diafragmática continua.",
+                                "target": "Faja Abdominal y Estabilidad Lumbar"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Paso del Soldado con Elevación de Rodillas / Marching High Knees",
+                            "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
-                            "target": "Temperatura y Psoas Ilíaco"
+                            "desc": "Marcha dinámica en el sitio con rodillas altas y braceo vigoroso sin impacto articular en las fases de caída."
                         },
-                        {
-                            "name": "Círculos de Brazos / Arm Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
-                            "target": "Manguito Rotador y Hombros"
-                        },
-                        {
-                            "name": "Caminata de Oruga / Inchworms",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
-                            "target": "Isquiotibiales y Core"
-                        },
-                        {
-                            "name": "Saltos de Tijera / Jumping Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
-                            "target": "Flexores de Cadera y Tronco"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Sujetándose de una pared o poste. Rodillas juntas, pelvis alineada.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Perro Boca Abajo / Downward Dog",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Descompresión de columna lumbar e isquiotibiales acortados.",
+                                "target": "Cadena Posterior y Columna"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Alivia la tensión acumulada en espalda baja y hombros.",
+                                "target": "Espalda Baja y Movilidad de Cadera"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Contrarresta la postura cifótica del trabajo de oficina y manubrio de bicicleta.",
+                                "target": "Pectoral y Cintura Escapular"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Recostados en colchoneta. Inhalar 4s expandiendo el abdomen, pausar 4s y botar todo el aire en 6s por la boca. Reduce cortisol y activa regeneración articular."
                         }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Saltos al Cajón con Caída Suave / Box Jumps",
-                            "sets": "4 series de 6 repeticiones",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Salto vertical explosivo a cajón o escalón firme (40-50 cm). Aterrizar con ambos pies amortiguando suavemente. Bajar caminando.",
-                            "target": "Potencia Vertical y Absorción de Impacto"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Sentadilla Búlgara / Bulgarian Split Squat",
-                            "sets": "3 series de 8 repeticiones por pierna",
-                            "tempo": "3-1-1-0 (3s bajada, 1s pausa abajo, subida explosiva)",
-                            "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                            "desc": "Pie trasero elevado en banco o silla. Bajar verticalmente manteniendo la rodilla delantera estable sin colapso en valgo.",
-                            "target": "Potencia Unilateral y Glúteo Medio"
-                        },
-                        {
-                            "name": "Flexiones Militares / Push-Ups",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "3-0-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Cuerpo rígido en una sola pieza. Pecho toca el suelo a 2 cm y sube con potencia. Fuerza para el pull del partidor.",
-                            "target": "Pectorales, Tríceps y Core Anterior"
-                        },
-                        {
-                            "name": "Puente de Glúteo a una Pierna / Single Leg Glute Bridge",
-                            "sets": "3 series de 10 repeticiones por pierna",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Una pierna en el aire y la otra empuja el suelo con el talón. Sostener 1s arriba contrayendo glúteo e isquiotibial.",
-                            "target": "Cadena Posterior y Estabilidad Pélvica"
-                        },
-                        {
-                            "name": "Hollow Body Hold / Barco Isométrico",
-                            "sets": "3 series de 25 segundos",
-                            "tempo": "Isometría estricta",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Espalda baja pegada milimétricamente al piso, brazos y piernas extendidos en el aire. Tensión máxima en todo el core.",
-                            "target": "Core Global y Fuerza Gimnástica"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Burpees Modificados / Sprawls",
-                        "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
-                        "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                        "desc": "De pie, lanzar pies atrás a posición de plancha alta y regresar rápidamente de pie sin flexión de pecho. Simula la aceleración máxima saliendo de peraltes."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Alinear rodillas, pelvis en retroversión para profundizar en el recto femoral.",
-                            "target": "Cuádriceps y Recto Femoral"
-                        },
-                        {
-                            "name": "Perro Boca Abajo / Downward Dog",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Foco en elongar gemelos y fascia plantar tras los saltos de potencia.",
-                            "target": "Gemelos e Isquiotibiales"
-                        },
-                        {
-                            "name": "Postura del Niño / Child's Pose",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "desc": "Descompresión lumbosacra con respiraciones profundas.",
-                            "target": "Espalda Baja y Dorsales"
-                        },
-                        {
-                            "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "desc": "Libera la cintura escapular tras las flexiones y el agarre firme.",
-                            "target": "Pectoral y Hombros"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
-                        "desc": "Atletas en colchoneta con ojos cerrados. Inhalar 4s, retener 4s, exhalar en 6s. Durante la exhalación, visualizar la caída de la reja ('Watch the gate'), el primer pedalazo perfecto y la absorción de los saltos sin pérdida de inercia."
                     }
+                }
+            },
+            "2": {
+                "focus": "Cadena Posterior, Estabilidad Pélvica, Reacción Auditiva y Control Neuromuscular",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Menores de 6 años: Grasas saludables y mielinización (aguacate, huevo entero, frutos secos molidos). 7 a 17 años: Glucosa sostenida con carbohidratos de bajo índice glucémico (avena, quinoa) y magnesio (plátano, espinaca). Adultos: Antioxidantes y grasas monoinsaturadas para mitigar inflamación articular.",
+                    "protein": "Pescado azul, pavo y legumbres ricas en aminoácidos para síntesis de neurotransmisores.",
+                    "hydration": "Agua con pizca de sal marina y limón para conductividad nerviosa y prevención de calambres.",
+                    "snacks": "Pre: Tostada integral con crema de almendras o aguacate. Post: Batido natural de leche o yogur con frutos rojos."
                 },
-                "18plus": {
-                    "methodology": "Salud Articular, Longevidad Mecánica y Cruiser Power: Preservación del cartílago hialino, control del core contra impactos y prevención de lesiones en columna y rodillas.",
-                    "warmup": [
-                        {
-                            "name": "Trote con Rodillas Altas / High Knees",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Lúdica de Reacción y Mielinización: Juegos de respuesta auditiva inmediata, coordinación de gateo y activación de glúteos en entorno familiar.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
+                                "target": "Columna Torácica y Tobillos"
+                            },
+                            {
+                                "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
+                                "target": "Cadera y Aductores"
+                            },
+                            {
+                                "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
+                                "target": "Tibiales y Gemelos"
+                            },
+                            {
+                                "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
+                                "target": "Glúteo Medio"
+                            },
+                            {
+                                "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
+                                "target": "Pectorales, Tríceps e Isquiotibiales"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Juego 'Simón Dice Explosivo' / Simon Says Jumps",
+                                "sets": "4 series de 1 minuto",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "Comandos auditivos rápidos del adulto: ¡Salto de cohete!, ¡Al suelo!, ¡Estatua en un pie! Estimula la reacción inmediata.",
+                                "target": "Tiempo de Reacción y Agilidad"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "El Bicho Muerto / Dead Bug",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
+                                "desc": "Acostados boca arriba, mover brazos y piernas alternadamente imitando un insecto invertido sin despegar la espalda baja.",
+                                "target": "Core Cruzado y Coordinación"
+                            },
+                            {
+                                "name": "Paseo de la Tortuga / Slow Crawl",
+                                "sets": "3 series de 6 pasos",
+                                "tempo": "Lento y estable",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Gateo muy lento y controlado transportando un juguete pequeño en la espalda sin que se caiga.",
+                                "target": "Estabilidad Escapular y Lumbar"
+                            },
+                            {
+                                "name": "Puente de Glúteo en Familia / Family Glute Bridge",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "Sostener 2s",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Elevar la cadera todos al mismo tiempo contando juntos en voz alta.",
+                                "target": "Glúteo Mayor"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "El Semáforo BMX / BMX Traffic Light",
+                            "format": "5 minutos continuos de juego interactivo",
+                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                            "desc": "Verde: pedalear rápido en el aire acostados; Amarillo: pedalear suave; Rojo: congelarse con piernas arriba. Desarrolla velocidad y control del core."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "En posición de caballero, empujar suavemente la pelvis hacia adelante para elongar flexores.",
+                                "target": "Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Acostados boca arriba, cruzar una rodilla flexionada sobre el cuerpo girando suavemente.",
+                                "target": "Columna Lumbar y Dorsal"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Postura de 'figura 4' sentados para descargar glúteos y piramidales.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Inclinación suave de la cabeza hacia el hombro relajando trapecios.",
+                                "target": "Trapecio Superior y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Respiración pausada en colchoneta sintiendo el latido cardíaco desacelerar hasta volver a estado de calma."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Reacción Acústica de Partidor, Estabilidad Lumbo-Pélvica y Potencia Lateral: Reflejos rápidos simulando el pitido UCI, desaceleración unipodal y antirotación del core.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
+                                "target": "Columna Torácica y Tobillos"
+                            },
+                            {
+                                "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
+                                "target": "Cadera y Aductores"
+                            },
+                            {
+                                "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
+                                "target": "Tibiales y Gemelos"
+                            },
+                            {
+                                "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
+                                "target": "Glúteo Medio"
+                            },
+                            {
+                                "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
+                                "target": "Pectorales, Tríceps e Isquiotibiales"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Piques de Reacción Auditiva / Reaction Sprints",
+                                "sets": "4 repeticiones",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "Iniciar acostados boca abajo. Al aplauso o señal de voz, ponerse de pie en máxima explosión y hacer sprint en el sitio por 5 segundos.",
+                                "target": "Tiempo de Reacción de Partidor"
+                            },
+                            {
+                                "name": "Saltos del Patinador / Skater Hops",
+                                "sets": "3 series de 12 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto lateral de un pie al otro sosteniendo el aterrizaje 1 segundo en equilibrio sin mover el pie de apoyo.",
+                                "target": "Potencia Lateral y Estabilidad Unipodal"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Plancha Frontal / Forearm Plank",
+                                "sets": "3 series de 35 segundos",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Espalda recta como una tabla, apretando glúteos y abdomen para blindar la zona lumbar.",
+                                "target": "Faja Abdominal y Resistencia de Core"
+                            },
+                            {
+                                "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
+                                "sets": "3 series de 8 por pierna",
+                                "tempo": "2-2-1-0",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Una pierna en el aire y la otra empuja el talón sosteniendo 2s arriba. Evita la caída de la pelvis.",
+                                "target": "Glúteo Mayor y Cadena Posterior"
+                            },
+                            {
+                                "name": "Desplantes Hacia Atrás / Reverse Lunges",
+                                "sets": "3 series de 10 por pierna",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Paso amplio atrás, rodilla delantera alineada a 90 grados. Menor estrés rotuliano que el desplante frontal.",
+                                "target": "Cuádriceps y Estabilidad de Rodilla"
+                            },
+                            {
+                                "name": "Plancha Lateral / Side Plank",
+                                "sets": "3 series de 20 segundos por lado",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Cuerpo en línea recta sobre un antebrazo. Fuerza antilateral para soportar fuerzas centrífugas en peraltes.",
+                                "target": "Oblicuos y Cuadrado Lumbar"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Saltos de Cuerda Imaginarios / Invisible Jump Rope",
+                            "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s máxima cadencia x 20s recuperación",
+                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                            "desc": "Simular salto de cuerda con giros de muñeca y rebote rápido sobre las puntas de pie a cadencia de pedaleo de sprint."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Desbloquea los flexores de cadera tras horas sentado y pedaleo enérgico.",
+                                "target": "Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Libera la tensión en las vértebras lumbares.",
+                                "target": "Columna Lumbar"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Cruzar tobillo sobre rodilla contraria y acercar el pecho con espalda recta.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical acumulada por el uso del casco de BMX.",
+                                "target": "Trapecio y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Inhalación nasal profunda inflando el abdomen 4s, pausa 4s y exhalación bucal en 6s para desconectar el sistema de alerta simpático."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Potencia de Cadena Posterior, Tiempo de Reacción de Élite y Rigidez Lateral: Transferencia inmediata del partidor al primer salto; desarrollo de fuerza excéntrica en RDL y estabilización lateral de peralte.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
+                                "target": "Columna Torácica y Tobillos"
+                            },
+                            {
+                                "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
+                                "target": "Cadera y Aductores"
+                            },
+                            {
+                                "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
+                                "target": "Tibiales y Gemelos"
+                            },
+                            {
+                                "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
+                                "target": "Glúteo Medio"
+                            },
+                            {
+                                "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
+                                "target": "Pectorales, Tríceps e Isquiotibiales"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Salto de Longitud con Caída Reactiva / Broad Jump to Sprint",
+                                "sets": "4 series de 4 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto horizontal amplio e inmediatamente al tocar el suelo encadenar un sprint explosivo de 3 pasos hacia adelante. Simula la salida de la reja.",
+                                "target": "Transferencia de Potencia Horizontal y Aceleración"
+                            },
+                            {
+                                "name": "Saltos Laterales en Peralte / Lateral Skater Jumps",
+                                "sets": "3 series de 10 por lado",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Saltos laterales de máxima distancia con carga en tobillo y glúteo medio sin perder balance.",
+                                "target": "Potencia Lateral y Resistencia al Valgo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Peso Muerto Rumano Unipodal / Single-Leg RDL",
+                                "sets": "3 series de 8 por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Bajar en 3s controlando la bisagra de cadera. Fortalece isquiotibiales y previene desbalances entre piernas.",
+                                "target": "Cadena Posterior y Estabilidad Unipodal"
+                            },
+                            {
+                                "name": "Plancha con Toque de Hombros / Plank Shoulder Taps",
+                                "sets": "3 series de 16 toques",
+                                "tempo": "2-0-1-0",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Posición de plancha alta; alternar mano al hombro contrario manteniendo la pelvis inmóvil.",
+                                "target": "Antirotación de Core y Estabilidad Escapular"
+                            },
+                            {
+                                "name": "Sentadillas en Tempo / Tempo Squats",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-2-X-0 (3s bajada, 2s pausa abajo, subida explosiva)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Pausa isométrica profunda de 2s abajo antes de estallar hacia arriba. Genera reclutamiento de fibras tipo IIb.",
+                                "target": "Fuerza Reactiva de Cuádriceps"
+                            },
+                            {
+                                "name": "Plancha Copenhagen Asistida / Copenhagen Plank",
+                                "sets": "3 series de 20 segundos por lado",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Plancha lateral con pierna superior apoyada en banco y pierna inferior suspendida. Fortalece aductores para el agarre de la bicicleta.",
+                                "target": "Aductores y Core Lateral"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Salto en Sentadilla + Sprawl / Squat Jump to Sprawl",
+                            "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
+                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                            "desc": "Salto vertical explosivo con recepción suave, inmediatamente bajar a sprawl y volver a saltar. Exigencia anaeróbica pura."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Elonga psoas y recto anterior con retroversión pélvica.",
+                                "target": "Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Descompresión rotacional de la columna tras el trabajo de core.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Alivia el piramidal para evitar compresiones del nervio ciático.",
+                                "target": "Glúteos y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la musculatura occipital y trapecios.",
+                                "target": "Cervicales y Trapecios"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
+                            "desc": "Visualizar la llegada al primer peralte con máxima inercia, la inclinación perfecta sobre la bicicleta y la aceleración inmediata de salida."
+                        }
+                    },
+                    "18plus": {
+                        "methodology": "Estabilidad Pélvica, Prevención de Lumbalgias y Agilidad Cruiser: Fortalecimiento de la cadena posterior y estabilización lumbo-abdominal sin compresión axial de columna.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
+                                "target": "Columna Torácica y Tobillos"
+                            },
+                            {
+                                "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
+                                "target": "Cadera y Aductores"
+                            },
+                            {
+                                "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
+                                "target": "Tibiales y Gemelos"
+                            },
+                            {
+                                "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
+                                "target": "Glúteo Medio"
+                            },
+                            {
+                                "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
+                                "target": "Pectorales, Tríceps e Isquiotibiales"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Subida a Escalón Rápida / Fast Step-Ups",
+                                "sets": "3 series de 15 por pierna",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Subir a un escalón firme con ritmo ágil empujando desde el talón sin salto de impacto.",
+                                "target": "Potencia de Extensión de Cadera y Rodilla"
+                            },
+                            {
+                                "name": "Saltos del Patinador Asistidos / Low-Impact Skater Steps",
+                                "sets": "3 series de 12 por lado",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Paso lateral amplio con flexión de rodilla tocando suavemente el pie de apoyo atrás.",
+                                "target": "Glúteo Medio y Balance"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Peso Muerto Unilateral / Bodyweight Single-Leg RDL",
+                                "sets": "3 series de 10 por pierna",
+                                "tempo": "3-1-1-1",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Estabilidad de cadera y fortalecimiento de la cadena posterior adulta sin carga externa.",
+                                "target": "Isquiotibiales y Glúteos"
+                            },
+                            {
+                                "name": "Plancha Lateral con Elevación / Side Plank Dips",
+                                "sets": "3 series de 12 por lado",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Descenso controlado de la cadera y elevación fuerte activando oblicuos y cuadrado lumbar.",
+                                "target": "Oblicuos y Estabilidad Lumbar"
+                            },
+                            {
+                                "name": "Desplantes Inversos / Reverse Lunges",
+                                "sets": "3 series de 12 por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Paso atrás amplio protegiendo la rótula con rango de movimiento completo.",
+                                "target": "Cuádriceps y Estabilidad de Cadera"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Escalador Controlado / Slow Mountain Climbers",
+                            "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
+                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                            "desc": "Ritmo moderado y constante acercando rodillas al pecho sin colapsar la zona lumbar."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Libera la tensión en caderas por horas prolongadas sentado.",
+                                "target": "Psoas Ilíaco"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alivia rigidez lumbar.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Descarga de cadera y pelvis.",
+                                "target": "Glúteos"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical de pantalla y conducción.",
+                                "target": "Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Inhalación 4s, pausa 4s y exhalación en 6s para disminuir el tono simpático y facilitar la conciliación del sueño reparador."
+                        }
+                    }
+                }
+            },
+            "3": {
+                "focus": "Tolerancia Láctica, Fuerza de Tren Superior, Agarre de Manubrio y Rigidez Elástica (Stiffness)",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Menores de 6 años: Fruta fresca y carbohidratos naturales pre-sesión. 7 a 17 años: Alto consumo de carbohidratos complejos para reponer glucógeno muscular y calcio/vitamina D para matriz ósea. Adultos: Proteína magra y vegetales alcalinos para reducir la acidez muscular post-ácido láctico.",
+                    "protein": "Proteínas limpias (pollo, pavo, pescado, tofu, huevos) para reparación de microfibras musculares.",
+                    "hydration": "Agua con sales minerales antes y después de la sesión de alta acumulación láctica.",
+                    "snacks": "Pre: Tostada con miel o batido de avena. Post: Yogur griego con fruta o leche achocolatada natural."
+                },
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Coordinación de Rebote y Agarre Lúdico: Ejercicios de carretilla, juego de cangrejo y carreras familiares para estimular hombros y tobillos elásticos.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media y facilita el control del manubrio.",
+                                "target": "Columna Torácica"
+                            },
+                            {
+                                "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
+                                "target": "Muñecas y Antebrazos"
+                            },
+                            {
+                                "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
+                                "target": "Core y Hombros"
+                            },
+                            {
+                                "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Apertura de la cadena anterior completa.",
+                                "target": "Cadera y Hombros"
+                            },
+                            {
+                                "name": "Saltos de Tijera Cruzados / Crossover Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
+                                "target": "Coordinación Neuromuscular"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Conejo Rápidos / Quick Bunny Hops",
+                                "sets": "4 series de 30 segundos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Pies juntos, saltando adelante y atrás sobre una línea en el suelo con ritmo divertido.",
+                                "target": "Stiffness de Tobillo y Agilidad"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "La Carretilla Familiar / Family Wheelbarrow Walk",
+                                "sets": "3 series de 8 pasos",
+                                "tempo": "Asistido",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Caminar con las manos mientras un adulto sostiene los muslos del niño. Fortalece hombros para los saltos.",
+                                "target": "Hombros, Tríceps y Core"
+                            },
+                            {
+                                "name": "El Cangrejo con Peluche / Stuffed Animal Crab Walk",
+                                "sets": "3 series de 20 segundos",
+                                "tempo": "Continuo",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Caminar boca arriba en cuatro patas transportando un peluche sobre la barriga sin que caiga.",
+                                "target": "Cadena Posterior y Tríceps"
+                            },
+                            {
+                                "name": "Flexión del Mono / Monkey Push-Ups",
+                                "sets": "3 series de 6 repeticiones",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Empujar el piso desde posición de cuatro patas imitando un mono juguetón.",
+                                "target": "Pectorales y Hombros"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "La Carrera de Relevos / Relay Tag",
+                            "format": "5 minutos de juego familiar interactivo",
+                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                            "desc": "Correr a tocar una pared o cono y volver a chocar las manos con papá o mamá. Estimula velocidad pura y aceleración."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "30s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Palma hacia adelante jalando suavemente los dedos hacia atrás para liberar flexores.",
+                                "target": "Antebrazos y Muñecas"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s fluido",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la columna vertebral completa alternando flexión y extensión.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Plantas de los pies juntas, bajando suavemente las rodillas hacia el piso.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Talón apoyado contra la pared con rodilla ligeramente flexionada para relajar el tendón de Aquiles.",
+                                "target": "Sóleo y Tendón de Aquiles"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Automasaje Miofascial con Pelota de Tenis y Respiración 4-4-6",
+                            "desc": "Rodar suavemente una pelota de tenis bajo la planta de los pies y glúteos, acompañado de respiración diafragmática calmada."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Stiffness Elástico de Tobillo, Fuerza de Empuje y Tolerancia a la Fatiga: Rebote vertical sin pérdida de energía, fondos de tríceps para absorber caídas y resistencia al pedaleo.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media y facilita el control del manubrio.",
+                                "target": "Columna Torácica"
+                            },
+                            {
+                                "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
+                                "target": "Muñecas y Antebrazos"
+                            },
+                            {
+                                "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
+                                "target": "Core y Hombros"
+                            },
+                            {
+                                "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Apertura de la cadena anterior completa.",
+                                "target": "Cadera y Hombros"
+                            },
+                            {
+                                "name": "Saltos de Tijera Cruzados / Crossover Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
+                                "target": "Coordinación Neuromuscular"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Pogo / Pogo Jumps",
+                                "sets": "3 series de 15 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Rebote vertical usando exclusivamente la fuerza reactiva de gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
+                                "target": "Rigidez Articular (Stiffness) y Tendón de Aquiles"
+                            },
+                            {
+                                "name": "Saltos Laterales sobre Objeto / Lateral Hurdle Hops",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Cruzar un objeto bajo de lado a lado con agilidad y mínimo tiempo de contacto en el suelo.",
+                                "target": "Potencia Reactiva Lateral"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Fondos en Silla para Tríceps / Chair Dips",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
+                                "desc": "Bajar controlado en 2s flexionando codos y subir en 1s. Fuerza de empuje clave para absorber caídas de saltos.",
+                                "target": "Tríceps y Hombros"
+                            },
+                            {
+                                "name": "Tijeras Pliométricas / Jumping Lunges",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "Dinámico",
+                                "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
+                                "desc": "Zancadas alternas con salto corto para potencia independiente en cada pierna.",
+                                "target": "Potencia Unilateral de Piernas"
+                            },
+                            {
+                                "name": "Flexiones Militares / Strict Push-Ups",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "2-0-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Pecho al suelo manteniendo abdomen firme sin arqueo lumbar.",
+                                "target": "Pectorales y Core"
+                            },
+                            {
+                                "name": "Puente de Glúteo con Marcha / Glute Bridge March",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Sostener puente de glúteos arriba y alternar elevación de rodillas sin que la pelvis oscile.",
+                                "target": "Glúteos y Estabilidad Pélvica"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Sprint en el Sitio con Resistencia / Resisted High Knee Sprints",
+                            "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
-                            "target": "Temperatura y Psoas Ilíaco"
+                            "desc": "Sprint estático a máxima cadencia imaginando empujar la bicicleta en la última recta de la pista."
                         },
-                        {
-                            "name": "Círculos de Brazos / Arm Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
-                            "target": "Manguito Rotador y Hombros"
-                        },
-                        {
-                            "name": "Caminata de Oruga / Inchworms",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
-                            "target": "Isquiotibiales y Core"
-                        },
-                        {
-                            "name": "Saltos de Tijera / Jumping Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
-                            "target": "Flexores de Cadera y Tronco"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "30s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
+                                "target": "Flexores y Extensores de Muñeca"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
+                                "target": "Sóleo y Tendón de Aquiles"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Automasaje Miofascial con Pelota de Tenis y Respiración 4-4-6",
+                            "desc": "Liberación de puntos gatillo en fascia plantar y glúteos combinada con respiración diafragmática para eliminar metabolitos ácidos."
                         }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Pogos Controlados / Controlled Pogo Jumps",
-                            "sets": "4 series de 20 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                            "desc": "Saltos verticales cortos usando solo tobillos con rodillas semiflexionadas. Mantener rigidez elástica en tendones sin impacto brusco.",
-                            "target": "Stiffness de Tobillo y Protección Tendinosa"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Sentadilla Asistida a Silla / Box Squat",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "3-1-1-0 (3s bajada controlada, tocar silla y subir)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Bajar lentamente hasta rozar el asiento de una silla sin sentarse por completo. Protege rodillas y activa glúteos.",
-                            "target": "Cuádriceps, Glúteos y Rodillas Seguras"
-                        },
-                        {
-                            "name": "Flexiones en Pared o Banco Elevado / Incline Push-Ups",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Manos apoyadas en banco o pared para reducir carga articular en hombros y muñecas sin perder tono pectoral.",
-                            "target": "Pectorales y Protección de Muñeca"
-                        },
-                        {
-                            "name": "Puente de Glúteo Bipodal / Glute Bridge",
-                            "sets": "3 series de 12 repeticiones",
-                            "tempo": "2-2-1-0 (Sostener 2s arriba)",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Elevar la pelvis apretando glúteos al máximo. Descomprime la espalda baja tras largas horas de oficina.",
-                            "target": "Glúteos y Descompresión Lumbar"
-                        },
-                        {
-                            "name": "Plancha en Antebrazos / Forearm Plank",
-                            "sets": "3 series de 30 segundos",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Alineación de columna neutra sin hundir la cadera. Respiración diafragmática continua.",
-                            "target": "Faja Abdominal y Estabilidad Lumbar"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Paso del Soldado con Elevación de Rodillas / Marching High Knees",
-                        "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
-                        "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                        "desc": "Marcha dinámica en el sitio con rodillas altas y braceo vigoroso sin impacto articular en las fases de caída."
                     },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Sujetándose de una pared o poste. Rodillas juntas, pelvis alineada.",
-                            "target": "Cuádriceps y Psoas"
+                    "13to17": {
+                        "methodology": "Potencia Láctica Élite, Fuerza de Agarre y Stiffness Unipodal: Simulación de la recta final de pista donde las piernas queman; fortalecimiento de remo invertido para el pull del partidor.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media y facilita el control del manubrio.",
+                                "target": "Columna Torácica"
+                            },
+                            {
+                                "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
+                                "target": "Muñecas y Antebrazos"
+                            },
+                            {
+                                "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
+                                "target": "Core y Hombros"
+                            },
+                            {
+                                "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Apertura de la cadena anterior completa.",
+                                "target": "Cadera y Hombros"
+                            },
+                            {
+                                "name": "Saltos de Tijera Cruzados / Crossover Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
+                                "target": "Coordinación Neuromuscular"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogos Unipodales con Stiffness / Single-Leg Pogo Jumps",
+                                "sets": "3 series de 10 por pierna",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Rebote vertical sobre una sola pierna con rodilla semiflexionada rígida como un resorte de acero. Transfiere la fuerza al pedal.",
+                                "target": "Stiffness Reactivo Unipodal"
+                            },
+                            {
+                                "name": "Salto con Rodillas al Pecho / Tuck Jumps",
+                                "sets": "3 series de 6 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto vertical de máxima altura llevando rodillas al pecho y extendiendo rápido para aterrizar con control.",
+                                "target": "Potencia de Flexión de Cadera y Despegue"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Flexiones Diamante / Diamond Push-Ups",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Manos juntas formando un triángulo. Fortalece tríceps para resistir las compresiones en los saltos dobles de BMX.",
+                                "target": "Tríceps y Hombros Anteriores"
+                            },
+                            {
+                                "name": "Remo Invertido en Mesa / Inverted Table Rows",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Acostados bajo una mesa firme, agarrar el borde y tirar del pecho hacia la mesa. Desarrolla la tracción de espalda para el gate pull.",
+                                "target": "Dorsales, Romboides y Bíceps"
+                            },
+                            {
+                                "name": "Sentadilla Pistol Asistida / Assisted Pistol Squats",
+                                "sets": "3 series de 6 por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Sentadilla completa a una pierna sujetándose de un marco o poste. Fuerza máxima unilateral.",
+                                "target": "Fuerza Unilateral Extrema de Piernas"
+                            },
+                            {
+                                "name": "Paseo del Granjero Isométrico / Farmer's Hold",
+                                "sets": "3 series de 40 segundos",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Sostener botellones de agua a los lados con espalda erguida y agarre al 100%. Blindaje contra el arm pump.",
+                                "target": "Fuerza de Agarre y Trapecios"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Thrusters sin Peso o con Mochila / Bodyweight Thrusters",
+                            "format": "Protocolo Tabata • 8 rondas (Total: 4 min) • 20s esfuerzo máximo x 10s descanso",
+                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                            "desc": "Sentadilla profunda e impulso vertical extendiendo los brazos arriba sin pausa. Simulación extrema de fatiga láctica en la última recta."
                         },
-                        {
-                            "name": "Perro Boca Abajo / Downward Dog",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Descompresión de columna lumbar e isquiotibiales acortados.",
-                            "target": "Cadena Posterior y Columna"
-                        },
-                        {
-                            "name": "Postura del Niño / Child's Pose",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "desc": "Alivia la tensión acumulada en espalda baja y hombros.",
-                            "target": "Espalda Baja y Movilidad de Cadera"
-                        },
-                        {
-                            "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "desc": "Contrarresta la postura cifótica del trabajo de oficina y manubrio de bicicleta.",
-                            "target": "Pectoral y Cintura Escapular"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "30s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Alivia flexores y extensores tras el farmer's hold y las flexiones.",
+                                "target": "Antebrazos"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Descomprime discos vertebrales.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia aductores tras las sentadillas unilaterales.",
+                                "target": "Aductores"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Descarga profunda del tendón de Aquiles.",
+                                "target": "Sóleo"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
+                            "desc": "Visualizar la última recta de la carrera: piernas ardiendo pero manteniendo cadencia redonda, hombros firmes y cabeza fría para cruzar la meta."
                         }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Recostados en colchoneta. Inhalar 4s expandiendo el abdomen, pausar 4s y botar todo el aire en 6s por la boca. Reduce cortisol y activa regeneración articular."
+                    },
+                    "18plus": {
+                        "methodology": "Resistencia a la Fatiga, Fuerza de Tracción y Preservación de Muñecas: Fuerza de hombros y espalda sin sobrecarga en la articulación de la muñeca ni hiperextensión lumbar.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media y facilita el control del manubrio.",
+                                "target": "Columna Torácica"
+                            },
+                            {
+                                "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
+                                "target": "Muñecas y Antebrazos"
+                            },
+                            {
+                                "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
+                                "target": "Core y Hombros"
+                            },
+                            {
+                                "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Apertura de la cadena anterior completa.",
+                                "target": "Cadera y Hombros"
+                            },
+                            {
+                                "name": "Saltos de Tijera Cruzados / Crossover Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
+                                "target": "Coordinación Neuromuscular"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogos Rítmicos en Sitio / Rhythm Pogo Jumps",
+                                "sets": "3 series de 25 saltos",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Rebotes rítmicos controlados estimulando la elasticidad del tendón sin impacto articular severo.",
+                                "target": "Elasticidad y Salud Tendinosa"
+                            },
+                            {
+                                "name": "Saltos en X de Bajo Impacto / Low-Impact Step Jacks",
+                                "sets": "3 series de 20 repeticiones",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Apertura lateral de piernas sin salto brusco, manteniendo ritmo cardiovascular constante.",
+                                "target": "Capacidad Aeróbica y Coordinación"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Búlgara / Bulgarian Split Squat",
+                                "sets": "3 series de 10 por pierna",
+                                "tempo": "3-1-X-1",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Fuerza unilateral profunda y estabilidad avanzada de cadera sin compresión espinal.",
+                                "target": "Glúteos y Cuádriceps"
+                            },
+                            {
+                                "name": "Plancha Lateral / Side Plank",
+                                "sets": "3 series de 40 segundos por lado",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Estabilidad lateral del tronco y los oblicuos para proteger la zona lumbar.",
+                                "target": "Core Lateral"
+                            },
+                            {
+                                "name": "Flexiones Inclinadas en Mesa o Banco / Table Push-Ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Flexiones con inclinación que reducen la carga en muñecas y hombros manteniendo tono pectoral.",
+                                "target": "Pectorales y Tríceps"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Sombra de Pedaleo Rápido / Shadow Pedaling",
+                            "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s ritmo intenso x 15s recuperación",
+                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                            "desc": "De pie en posición de ataque de BMX simulando pedaleo de alta frecuencia y empuje en manubrio."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "30s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Alivia muñecas y codos.",
+                                "target": "Antebrazos"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s fluido",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Descompresión de columna lumbar.",
+                                "target": "Espalda"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Flexibilidad de cadera y pelvis.",
+                                "target": "Aductores"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "30s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relajación del tendón de Aquiles.",
+                                "target": "Sóleo"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Respiración profunda en colchoneta facilitando la desinflamación muscular y recuperación física."
+                        }
                     }
                 }
-            }
-        },
-        "2": {
-            "focus": "Cadena Posterior, Estabilidad Pélvica, Reacción Auditiva y Control Neuromuscular",
-            "duration": "60 Minutos Máximo",
-            "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
-            "nutrition": {
-                "energy": "Menores de 6 años: Grasas saludables y mielinización (aguacate, huevo entero, frutos secos molidos). 7 a 17 años: Glucosa sostenida con carbohidratos de bajo índice glucémico (avena, quinoa) y magnesio (plátano, espinaca). Adultos: Antioxidantes y grasas monoinsaturadas para mitigar inflamación articular.",
-                "protein": "Pescado azul, pavo y legumbres ricas en aminoácidos para síntesis de neurotransmisores.",
-                "hydration": "Agua con pizca de sal marina y limón para conductividad nerviosa y prevención de calambres.",
-                "snacks": "Pre: Tostada integral con crema de almendras o aguacate. Post: Batido natural de leche o yogur con frutos rojos."
             },
-            "ageGroups": {
-                "sub6": {
-                    "methodology": "Lúdica de Reacción y Mielinización: Juegos de respuesta auditiva inmediata, coordinación de gateo y activación de glúteos en entorno familiar.",
-                    "warmup": [
-                        {
-                            "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
-                            "target": "Columna Torácica y Tobillos"
-                        },
-                        {
-                            "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
-                            "target": "Cadera y Aductores"
-                        },
-                        {
-                            "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
-                            "target": "Tibiales y Gemelos"
-                        },
-                        {
-                            "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
-                            "target": "Glúteo Medio"
-                        },
-                        {
-                            "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
-                            "target": "Pectorales, Tríceps e Isquiotibiales"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Juego 'Simón Dice Explosivo' / Simon Says Jumps",
-                            "sets": "4 series de 1 minuto",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                            "desc": "Comandos auditivos rápidos del adulto: ¡Salto de cohete!, ¡Al suelo!, ¡Estatua en un pie! Estimula la reacción inmediata.",
-                            "target": "Tiempo de Reacción y Agilidad"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "El Bicho Muerto / Dead Bug",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "Controlado",
-                            "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                            "desc": "Acostados boca arriba, mover brazos y piernas alternadamente imitando un insecto invertido sin despegar la espalda baja.",
-                            "target": "Core Cruzado y Coordinación"
-                        },
-                        {
-                            "name": "Paseo de la Tortuga / Slow Crawl",
-                            "sets": "3 series de 6 pasos",
-                            "tempo": "Lento y estable",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Gateo muy lento y controlado transportando un juguete pequeño en la espalda sin que se caiga.",
-                            "target": "Estabilidad Escapular y Lumbar"
-                        },
-                        {
-                            "name": "Puente de Glúteo en Familia / Family Glute Bridge",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "Sostener 2s",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Elevar la cadera todos al mismo tiempo contando juntos en voz alta.",
-                            "target": "Glúteo Mayor"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "El Semáforo BMX / BMX Traffic Light",
-                        "format": "5 minutos continuos de juego interactivo",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Verde: pedalear rápido en el aire acostados; Amarillo: pedalear suave; Rojo: congelarse con piernas arriba. Desarrolla velocidad y control del core."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "desc": "En posición de caballero, empujar suavemente la pelvis hacia adelante para elongar flexores.",
-                            "target": "Psoas Ilíaco"
-                        },
-                        {
-                            "name": "Torsión Espinal Supina / Lying Spinal Twist",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Acostados boca arriba, cruzar una rodilla flexionada sobre el cuerpo girando suavemente.",
-                            "target": "Columna Lumbar y Dorsal"
-                        },
-                        {
-                            "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Postura de 'figura 4' sentados para descargar glúteos y piramidales.",
-                            "target": "Glúteo y Piramidal"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello / Neck Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "desc": "Inclinación suave de la cabeza hacia el hombro relajando trapecios.",
-                            "target": "Trapecio Superior y Cuello"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Respiración pausada en colchoneta sintiendo el latido cardíaco desacelerar hasta volver a estado de calma."
-                    }
+            "4": {
+                "focus": "Movilidad Activa, Agilidad Rotacional y Resistencia Coordinativa (Simulación de Motos de Carrera)",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Menores de 6 años: Frutas ricas en agua (sandía, naranja, melón) y agua pura en lugar de jugos procesados. 7 a 17 años: Alimentos antiinflamatorios con omega-3 (chía, linaza, frutos secos) y frutos rojos para protección oxidativa. Adultos: Té verde, cúrcuma, jengibre y grasas antiinflamatorias para cuidar ligamentos y articulaciones.",
+                    "protein": "Proteínas de digestión ligera (pescado blanco, claras de huevo, legumbres cocidas) para nutrición tisular sin pesadez estomacal.",
+                    "hydration": "Reposición hídrica abundante durante todo el día para eliminar toxinas del ciclo semanal.",
+                    "snacks": "Pre: Rodajas de manzana con canela y nueces. Post: Batido de frutas naturales con semillas de chía o yogur."
                 },
-                "7to12": {
-                    "methodology": "Reacción Acústica de Partidor, Estabilidad Lumbo-Pélvica y Potencia Lateral: Reflejos rápidos simulando el pitido UCI, desaceleración unipodal y antirotación del core.",
-                    "warmup": [
-                        {
-                            "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
-                            "target": "Columna Torácica y Tobillos"
-                        },
-                        {
-                            "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Juegos de Agilidad, Coordinación Dinámica y Cierre Festivo Familiar: Estimulación vestibular con cambios de dirección y celebración familiar del ciclo completado.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Cadera y Pelvis"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Activa la parte superior de la espalda y hombros.",
+                                "target": "Pectorales y Espalda Alta"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
+                                "target": "Isquiotibiales y Tronco"
+                            },
+                            {
+                                "name": "Saltos de Tijera en Cruz / Cross Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
+                                "target": "Aductores y Movilidad de Tobillo"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Juego de Estatuas Musicales / Family Musical Statues",
+                                "sets": "4 series de 1 minuto",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Bailar o trotar al ritmo de la música en familia; al pausar, congelarse en una postura de equilibrio de BMX.",
+                                "target": "Equilibrio y Control Vestibular"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "El Cangrejo Viajero / Traveling Crab Walk",
+                                "sets": "3 series de 30 segundos",
+                                "tempo": "Dinámico",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Caminar en posición de cangrejo transportando un peluche sobre el abdomen.",
+                                "target": "Hombros, Tríceps y Glúteos"
+                            },
+                            {
+                                "name": "El Puente Mágico / Magic Bridge",
+                                "sets": "3 series de 20 segundos",
+                                "tempo": "Sostenido",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Sostener el puente de glúteos arriba mientras un familiar hace pasar un juguete rodando por debajo.",
+                                "target": "Glúteos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Paso de Rana / Frog Hop Step",
+                                "sets": "3 series de 8 saltos",
+                                "tempo": "Lúdico",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Saltitos cortos y suaves desde posición de rana sin hacer ruido.",
+                                "target": "Potencia Suave de Piernas"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Circuito de Obstáculos Domésticos / Living Room Obstacle Course",
+                            "format": "5 minutos continuos de juego interactivo",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
-                            "target": "Cadera y Aductores"
+                            "desc": "Sortear cojines en zigzag, pasar por debajo de una mesa y saltar una toalla doblada simulando la pista completa de bicicross."
                         },
-                        {
-                            "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
-                            "target": "Tibiales y Gemelos"
-                        },
-                        {
-                            "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
-                            "target": "Glúteo Medio"
-                        },
-                        {
-                            "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
-                            "target": "Pectorales, Tríceps e Isquiotibiales"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Sentados con piernas juntas extendidas, alcanzar las puntas de los pies con suavidad.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Manos apoyadas en la pared con cadera atrás para elongar dorsales.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Acostados boca abajo, elevar suavemente el torso estirando el abdomen.",
+                                "target": "Abdomen y Flexores de Cadera"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Movimientos suaves de cabeza y relajación de la mandíbula apretada durante los esfuerzos.",
+                                "target": "Trapecios y Mandíbula"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Descompresión Mental, Gratitud en Familia y Respiración Consciente (4-4-6)",
+                            "desc": "Reunidos en círculo en colchonetas. Inhalar 4s, retener 4s, exhalar en 6s mientras cada miembro agradece el esfuerzo compartido y el cierre del microciclo."
                         }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Piques de Reacción Auditiva / Reaction Sprints",
-                            "sets": "4 repeticiones",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                            "desc": "Iniciar acostados boca abajo. Al aplauso o señal de voz, ponerse de pie en máxima explosión y hacer sprint en el sitio por 5 segundos.",
-                            "target": "Tiempo de Reacción de Partidor"
-                        },
-                        {
-                            "name": "Saltos del Patinador / Skater Hops",
-                            "sets": "3 series de 12 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Salto lateral de un pie al otro sosteniendo el aterrizaje 1 segundo en equilibrio sin mover el pie de apoyo.",
-                            "target": "Potencia Lateral y Estabilidad Unipodal"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Plancha Frontal / Forearm Plank",
-                            "sets": "3 series de 35 segundos",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "desc": "Espalda recta como una tabla, apretando glúteos y abdomen para blindar la zona lumbar.",
-                            "target": "Faja Abdominal y Resistencia de Core"
-                        },
-                        {
-                            "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
-                            "sets": "3 series de 8 por pierna",
-                            "tempo": "2-2-1-0",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Una pierna en el aire y la otra empuja el talón sosteniendo 2s arriba. Evita la caída de la pelvis.",
-                            "target": "Glúteo Mayor y Cadena Posterior"
-                        },
-                        {
-                            "name": "Desplantes Hacia Atrás / Reverse Lunges",
-                            "sets": "3 series de 10 por pierna",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Paso amplio atrás, rodilla delantera alineada a 90 grados. Menor estrés rotuliano que el desplante frontal.",
-                            "target": "Cuádriceps y Estabilidad de Rodilla"
-                        },
-                        {
-                            "name": "Plancha Lateral / Side Plank",
-                            "sets": "3 series de 20 segundos por lado",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "desc": "Cuerpo en línea recta sobre un antebrazo. Fuerza antilateral para soportar fuerzas centrífugas en peraltes.",
-                            "target": "Oblicuos y Cuadrado Lumbar"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Saltos de Cuerda Imaginarios / Invisible Jump Rope",
-                        "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s máxima cadencia x 20s recuperación",
-                        "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                        "desc": "Simular salto de cuerda con giros de muñeca y rebote rápido sobre las puntas de pie a cadencia de pedaleo de sprint."
                     },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "desc": "Desbloquea los flexores de cadera tras horas sentado y pedaleo enérgico.",
-                            "target": "Psoas Ilíaco"
+                    "7to12": {
+                        "methodology": "Agilidad Rotacional, Coordinación en Zig-Zag y Simulación de Mangas: Cambios de dirección tipo Carioca, estabilización rotacional de hombros y resistencia a series repetidas.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Cadera y Pelvis"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Activa la parte superior de la espalda y hombros.",
+                                "target": "Pectorales y Espalda Alta"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
+                                "target": "Isquiotibiales y Tronco"
+                            },
+                            {
+                                "name": "Saltos de Tijera en Cruz / Cross Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
+                                "target": "Aductores y Movilidad de Tobillo"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Desplazamientos Laterales Cruzados / Carioca Steps",
+                                "sets": "3 series de 20 segundos",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Movimiento lateral cruzando pies por delante y por detrás con máxima agilidad y disociación de tronco.",
+                                "target": "Agilidad Rotacional y Coordinación de Pies"
+                            },
+                            {
+                                "name": "Saltos en Zig-Zag / Z-Pattern Jumps",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Saltar en diagonal de lado a lado imaginando conos en el suelo, frenando y acelerando en cada vértice.",
+                                "target": "Cambio de Dirección y Desaceleración"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Plancha con Toque de Hombros / Plank Shoulder Taps",
+                                "sets": "3 series de 16 toques",
+                                "tempo": "2-0-1-0",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Mantener la cadera completamente quieta mientras se alterna el toque de hombros. Antirotación pura.",
+                                "target": "Estabilidad de Core y Hombros"
+                            },
+                            {
+                                "name": "Sentadilla Cosaco Asistida / Cossack Squats",
+                                "sets": "3 series de 8 por lado",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Descenso lateral profundo sobre una pierna manteniendo el talón opuesto apoyado. Sujetándose de una mesa o poste.",
+                                "target": "Aductores y Movilidad de Cadera"
+                            },
+                            {
+                                "name": "Bicho Muerto Alterno / Dead Bug",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/4XLEnwUr1d8",
+                                "desc": "Control neuromuscular estricto coordinando brazo y pierna opuesta con espalda baja anclada.",
+                                "target": "Core Profundo y Coordinación"
+                            },
+                            {
+                                "name": "Flexiones Explosivas en Suelo / Clapping or Fast Push-Ups",
+                                "sets": "3 series de 6 repeticiones",
+                                "tempo": "Explosivo",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Empuje potente desde el suelo buscando despegar las manos del piso.",
+                                "target": "Potencia Pectoral de Empuje"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Sprint de Patinador + Burpee / Skater Sprint to Burpee",
+                            "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
+                            "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
+                            "desc": "3 saltos de patinador laterales seguidos de un burpee rápido. Simula adelantamientos y aceleraciones en curvas de pista."
                         },
-                        {
-                            "name": "Torsión Espinal Supina / Lying Spinal Twist",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Libera la tensión en las vértebras lumbares.",
-                            "target": "Columna Lumbar"
-                        },
-                        {
-                            "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Cruzar tobillo sobre rodilla contraria y acercar el pecho con espalda recta.",
-                            "target": "Glúteo y Piramidal"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello / Neck Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "desc": "Relaja la tensión cervical acumulada por el uso del casco de BMX.",
-                            "target": "Trapecio y Cuello"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera los músculos encargados de halar el manubrio.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Apertura de la faja abdominal.",
+                                "target": "Abdomen"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Relaja trapecios y cuello.",
+                                "target": "Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Descompresión Mental, Gratitud en Familia y Respiración Consciente (4-4-6)",
+                            "desc": "Inhalar 4s, retener 4s y botar el aire en 6s cerrando los ojos. Consolidar el aprendizaje motor de los 4 días de entrenamiento."
                         }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Inhalación nasal profunda inflando el abdomen 4s, pausa 4s y exhalación bucal en 6s para desconectar el sistema de alerta simpático."
-                    }
-                },
-                "13to17": {
-                    "methodology": "Potencia de Cadena Posterior, Tiempo de Reacción de Élite y Rigidez Lateral: Transferencia inmediata del partidor al primer salto; desarrollo de fuerza excéntrica en RDL y estabilización lateral de peralte.",
-                    "warmup": [
-                        {
-                            "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
-                            "target": "Columna Torácica y Tobillos"
-                        },
-                        {
-                            "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
-                            "target": "Cadera y Aductores"
-                        },
-                        {
-                            "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
-                            "target": "Tibiales y Gemelos"
-                        },
-                        {
-                            "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
-                            "target": "Glúteo Medio"
-                        },
-                        {
-                            "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
-                            "target": "Pectorales, Tríceps e Isquiotibiales"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Salto de Longitud con Caída Reactiva / Broad Jump to Sprint",
-                            "sets": "4 series de 4 repeticiones",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Salto horizontal amplio e inmediatamente al tocar el suelo encadenar un sprint explosivo de 3 pasos hacia adelante. Simula la salida de la reja.",
-                            "target": "Transferencia de Potencia Horizontal y Aceleración"
-                        },
-                        {
-                            "name": "Saltos Laterales en Peralte / Lateral Skater Jumps",
-                            "sets": "3 series de 10 por lado",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Saltos laterales de máxima distancia con carga en tobillo y glúteo medio sin perder balance.",
-                            "target": "Potencia Lateral y Resistencia al Valgo"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Peso Muerto Rumano Unipodal / Single-Leg RDL",
-                            "sets": "3 series de 8 por pierna",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Bajar en 3s controlando la bisagra de cadera. Fortalece isquiotibiales y previene desbalances entre piernas.",
-                            "target": "Cadena Posterior y Estabilidad Unipodal"
-                        },
-                        {
-                            "name": "Plancha con Toque de Hombros / Plank Shoulder Taps",
-                            "sets": "3 series de 16 toques",
-                            "tempo": "2-0-1-0",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Posición de plancha alta; alternar mano al hombro contrario manteniendo la pelvis inmóvil.",
-                            "target": "Antirotación de Core y Estabilidad Escapular"
-                        },
-                        {
-                            "name": "Sentadillas en Tempo / Tempo Squats",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "3-2-X-0 (3s bajada, 2s pausa abajo, subida explosiva)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Pausa isométrica profunda de 2s abajo antes de estallar hacia arriba. Genera reclutamiento de fibras tipo IIb.",
-                            "target": "Fuerza Reactiva de Cuádriceps"
-                        },
-                        {
-                            "name": "Plancha Copenhagen Asistida / Copenhagen Plank",
-                            "sets": "3 series de 20 segundos por lado",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Plancha lateral con pierna superior apoyada en banco y pierna inferior suspendida. Fortalece aductores para el agarre de la bicicleta.",
-                            "target": "Aductores y Core Lateral"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Salto en Sentadilla + Sprawl / Squat Jump to Sprawl",
-                        "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
-                        "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                        "desc": "Salto vertical explosivo con recepción suave, inmediatamente bajar a sprawl y volver a saltar. Exigencia anaeróbica pura."
                     },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "desc": "Elonga psoas y recto anterior con retroversión pélvica.",
-                            "target": "Psoas Ilíaco"
-                        },
-                        {
-                            "name": "Torsión Espinal Supina / Lying Spinal Twist",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Descompresión rotacional de la columna tras el trabajo de core.",
-                            "target": "Columna Vertebral"
-                        },
-                        {
-                            "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Alivia el piramidal para evitar compresiones del nervio ciático.",
-                            "target": "Glúteos y Piramidal"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello / Neck Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "desc": "Relaja la musculatura occipital y trapecios.",
-                            "target": "Cervicales y Trapecios"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
-                        "desc": "Visualizar la llegada al primer peralte con máxima inercia, la inclinación perfecta sobre la bicicleta y la aceleración inmediata de salida."
-                    }
-                },
-                "18plus": {
-                    "methodology": "Estabilidad Pélvica, Prevención de Lumbalgias y Agilidad Cruiser: Fortalecimiento de la cadena posterior y estabilización lumbo-abdominal sin compresión axial de columna.",
-                    "warmup": [
-                        {
-                            "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
-                            "target": "Columna Torácica y Tobillos"
-                        },
-                        {
-                            "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
-                            "target": "Cadera y Aductores"
-                        },
-                        {
-                            "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
-                            "target": "Tibiales y Gemelos"
-                        },
-                        {
-                            "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
-                            "target": "Glúteo Medio"
-                        },
-                        {
-                            "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
-                            "target": "Pectorales, Tríceps e Isquiotibiales"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Subida a Escalón Rápida / Fast Step-Ups",
-                            "sets": "3 series de 15 por pierna",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Subir a un escalón firme con ritmo ágil empujando desde el talón sin salto de impacto.",
-                            "target": "Potencia de Extensión de Cadera y Rodilla"
-                        },
-                        {
-                            "name": "Saltos del Patinador Asistidos / Low-Impact Skater Steps",
-                            "sets": "3 series de 12 por lado",
-                            "rest": "Descanso 60s",
+                    "13to17": {
+                        "methodology": "Fuerza Multiplanar Élite, Agilidad Rotacional y Simulación de Mangas UCI: Estabilidad rotacional en zancadas cruzadas, potencia explosiva en saltos X y resistencia a baterías repetidas.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Cadera y Pelvis"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Activa la parte superior de la espalda y hombros.",
+                                "target": "Pectorales y Espalda Alta"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
+                                "target": "Isquiotibiales y Tronco"
+                            },
+                            {
+                                "name": "Saltos de Tijera en Cruz / Cross Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
+                                "target": "Aductores y Movilidad de Tobillo"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos en 'X' Multiangulares / Multi-Directional X-Hops",
+                                "sets": "4 series de 8 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Saltar dibujando una 'X' imaginaria en el suelo con despegues y frenadas multidireccionales explosivas.",
+                                "target": "Agilidad Multidireccional y Tobillos"
+                            },
+                            {
+                                "name": "Salto Rotacional de 90 Grados / 90-Degree Rotational Jumps",
+                                "sets": "3 series de 6 saltos por lado",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Salto vertical girando 90 grados en el aire y aterrizando en perfecta semisentadilla firme simulando el cambio de ángulo en peraltes.",
+                                "target": "Potencia Rotacional y Control Aéreo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Zancadas Rotacionales / Curtsy Lunges",
+                                "sets": "3 series de 10 por pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
+                                "desc": "Paso cruzado atrás por detrás de la pierna delantera. Fortalece glúteo medio y estabiliza rodillas ante fuerzas en torsión.",
+                                "target": "Glúteo Medio y Cadera Rotacional"
+                            },
+                            {
+                                "name": "Plancha Lateral con Elevación de Pierna / Star Plank",
+                                "sets": "3 series de 25 segundos por lado",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Plancha lateral en estrella elevando la pierna superior en el aire. Exigencia extrema en abductores y core.",
+                                "target": "Core Lateral y Abductores"
+                            },
+                            {
+                                "name": "Flexiones Spiderman / Spiderman Push-Ups",
+                                "sets": "3 series de 8 repeticiones",
+                                "tempo": "3-0-1-0",
+                                "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
+                                "desc": "Al bajar el pecho, llevar una rodilla por fuera hasta tocar el codo. Fuerza de empuje con máxima compresión de oblicuos.",
+                                "target": "Pectorales, Tríceps y Oblicuos"
+                            },
+                            {
+                                "name": "Dragon Flag Asistido / Candlestick Core",
+                                "sets": "3 series de 6 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Sujetándose de una base fija o poste, elevar las piernas y bajar el cuerpo rígido en una sola línea en 3s controlando con el abdomen.",
+                                "target": "Fuerza Abdominal Extrema"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Batería BMX All-Out: Sprint en Partidor + Salto + Sprawl",
+                            "format": "Protocolo 15/45 • 5 rondas (Total: 5 min) • 15s esfuerzo máximo x 45s recuperación",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Paso lateral amplio con flexión de rodilla tocando suavemente el pie de apoyo atrás.",
-                            "target": "Glúteo Medio y Balance"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Peso Muerto Unilateral / Bodyweight Single-Leg RDL",
-                            "sets": "3 series de 10 por pierna",
-                            "tempo": "3-1-1-1",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Estabilidad de cadera y fortalecimiento de la cadena posterior adulta sin carga externa.",
-                            "target": "Isquiotibiales y Glúteos"
+                            "desc": "Simulación idéntica a una manga oficial de BMX: 5 segundos de sprint en sitio, 2 saltos al cajón y 1 sprawl inmediato a máxima potencia."
                         },
-                        {
-                            "name": "Plancha Lateral con Elevación / Side Plank Dips",
-                            "sets": "3 series de 12 por lado",
-                            "tempo": "2-1-1-1",
-                            "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "desc": "Descenso controlado de la cadera y elevación fuerte activando oblicuos y cuadrado lumbar.",
-                            "target": "Oblicuos y Estabilidad Lumbar"
-                        },
-                        {
-                            "name": "Desplantes Inversos / Reverse Lunges",
-                            "sets": "3 series de 12 por pierna",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Paso atrás amplio protegiendo la rótula con rango de movimiento completo.",
-                            "target": "Cuádriceps y Estabilidad de Cadera"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Elonga isquiotibiales y fascia toracolumbar.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera la tensión de hombros y dorsales.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Descarga de flexores de cadera y pared abdominal.",
+                                "target": "Abdomen"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Relajación cervical y de músculos masticatorios.",
+                                "target": "Cuello y Mandíbula"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
+                            "desc": "Visualizar la final de la carrera: subida al partidor en calma mental absoluta, salida perfecta, trazada limpia en los peraltes y victoria con técnica impecable."
                         }
-                    ],
-                    "cardio": {
-                        "name": "Escalador Controlado / Slow Mountain Climbers",
-                        "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
-                        "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                        "desc": "Ritmo moderado y constante acercando rodillas al pecho sin colapsar la zona lumbar."
                     },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "desc": "Libera la tensión en caderas por horas prolongadas sentado.",
-                            "target": "Psoas Ilíaco"
-                        },
-                        {
-                            "name": "Torsión Espinal Supina / Lying Spinal Twist",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "desc": "Alivia rigidez lumbar.",
-                            "target": "Columna Vertebral"
-                        },
-                        {
-                            "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Descarga de cadera y pelvis.",
-                            "target": "Glúteos"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello / Neck Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "desc": "Relaja la tensión cervical de pantalla y conducción.",
-                            "target": "Cuello"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Inhalación 4s, pausa 4s y exhalación en 6s para disminuir el tono simpático y facilitar la conciliación del sueño reparador."
-                    }
-                }
-            }
-        },
-        "3": {
-            "focus": "Tolerancia Láctica, Fuerza de Tren Superior, Agarre de Manubrio y Rigidez Elástica (Stiffness)",
-            "duration": "60 Minutos Máximo",
-            "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
-            "nutrition": {
-                "energy": "Menores de 6 años: Fruta fresca y carbohidratos naturales pre-sesión. 7 a 17 años: Alto consumo de carbohidratos complejos para reponer glucógeno muscular y calcio/vitamina D para matriz ósea. Adultos: Proteína magra y vegetales alcalinos para reducir la acidez muscular post-ácido láctico.",
-                "protein": "Proteínas limpias (pollo, pavo, pescado, tofu, huevos) para reparación de microfibras musculares.",
-                "hydration": "Agua con sales minerales antes y después de la sesión de alta acumulación láctica.",
-                "snacks": "Pre: Tostada con miel o batido de avena. Post: Yogur griego con fruta o leche achocolatada natural."
-            },
-            "ageGroups": {
-                "sub6": {
-                    "methodology": "Coordinación de Rebote y Agarre Lúdico: Ejercicios de carretilla, juego de cangrejo y carreras familiares para estimular hombros y tobillos elásticos.",
-                    "warmup": [
-                        {
-                            "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Libera la espalda media y facilita el control del manubrio.",
-                            "target": "Columna Torácica"
-                        },
-                        {
-                            "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
+                    "18plus": {
+                        "methodology": "Movilidad Articular Multiplanar, Salud de Columna y Agilidad Cruiser: Fortalecimiento de cadera lateral, prevención de rigidez matutina y control dinámico sin saltos de alto impacto.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Cadera y Pelvis"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Activa la parte superior de la espalda y hombros.",
+                                "target": "Pectorales y Espalda Alta"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
+                                "target": "Isquiotibiales y Tronco"
+                            },
+                            {
+                                "name": "Saltos de Tijera en Cruz / Cross Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
+                                "target": "Coordinación Rítmica"
+                            },
+                            {
+                                "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
+                                "target": "Aductores y Movilidad de Tobillo"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pasos Laterales con Resorte / Lateral Rebound Steps",
+                                "sets": "3 series de 16 repeticiones",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Paso lateral dinámico rebotando suavemente en metatarsos sin cargar rodillas.",
+                                "target": "Elasticidad Lateral de Tobillos"
+                            },
+                            {
+                                "name": "Giros de Tronco Controlados / Controlled Pivot Rotations",
+                                "sets": "3 series de 12 por lado",
+                                "rest": "Descanso 45s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Pivote de pies y rotación suave de hombros manteniendo postura erguida.",
+                                "target": "Movilidad de Cadera y Tronco"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Cosaco Controlada / Controlled Cossack Squat",
+                                "sets": "3 series de 8 por lado",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Descenso profundo sobre una pierna manteniendo el talón contrario apoyado o elevado según movilidad.",
+                                "target": "Movilidad de Cadera y Aductores"
+                            },
+                            {
+                                "name": "Plancha Abdominal sobre Antebrazos / Forearm Plank",
+                                "sets": "3 series de 50 segundos",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                                "desc": "Alineación perfecta de hombros, cadera y talones con contracción total.",
+                                "target": "Fuerza Lumbo-Abdominal"
+                            },
+                            {
+                                "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
+                                "sets": "3 series de 10 por pierna",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Estabilidad de pelvis y fuerza en la cadena posterior adulta.",
+                                "target": "Cadena Posterior y Glúteos"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Intervalo de Recuperación Activa: Sombra de Carrera / Active Shadow Stride",
+                            "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico fluido x 15s recuperación",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
-                            "target": "Muñecas y Antebrazos"
+                            "desc": "Trote suave y braceo en el sitio simulando fluidez y respiración controlada."
                         },
-                        {
-                            "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
-                            "target": "Core y Hombros"
-                        },
-                        {
-                            "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Apertura de la cadena anterior completa.",
-                            "target": "Cadera y Hombros"
-                        },
-                        {
-                            "name": "Saltos de Tijera Cruzados / Crossover Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
-                            "target": "Coordinación Neuromuscular"
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Alivia tensión lumbar e isquiotibial.",
+                                "target": "Cadena Posterior"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Elonga espalda superior y hombros.",
+                                "target": "Dorsales"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "30s sostenido",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Descompresión anterior.",
+                                "target": "Abdomen"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
+                                "duration": "20s por lado",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Relajación cervical profunda.",
+                                "target": "Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática (4-4-6)",
+                            "desc": "Inhalación lenta por la nariz 4s, retención 4s, exhalación en 6s por la boca. Cierre de microciclo con sensación de plenitud y regeneración tisular."
                         }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Saltos de Conejo Rápidos / Quick Bunny Hops",
-                            "sets": "4 series de 30 segundos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Pies juntos, saltando adelante y atrás sobre una línea en el suelo con ritmo divertido.",
-                            "target": "Stiffness de Tobillo y Agilidad"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "La Carretilla Familiar / Family Wheelbarrow Walk",
-                            "sets": "3 series de 8 pasos",
-                            "tempo": "Asistido",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Caminar con las manos mientras un adulto sostiene los muslos del niño. Fortalece hombros para los saltos.",
-                            "target": "Hombros, Tríceps y Core"
-                        },
-                        {
-                            "name": "El Cangrejo con Peluche / Stuffed Animal Crab Walk",
-                            "sets": "3 series de 20 segundos",
-                            "tempo": "Continuo",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Caminar boca arriba en cuatro patas transportando un peluche sobre la barriga sin que caiga.",
-                            "target": "Cadena Posterior y Tríceps"
-                        },
-                        {
-                            "name": "Flexión del Mono / Monkey Push-Ups",
-                            "sets": "3 series de 6 repeticiones",
-                            "tempo": "Controlado",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Empujar el piso desde posición de cuatro patas imitando un mono juguetón.",
-                            "target": "Pectorales y Hombros"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "La Carrera de Relevos / Relay Tag",
-                        "format": "5 minutos de juego familiar interactivo",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Correr a tocar una pared o cono y volver a chocar las manos con papá o mamá. Estimula velocidad pura y aceleración."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Antebrazos / Forearm Stretch",
-                            "duration": "30s por brazo",
-                            "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "desc": "Palma hacia adelante jalando suavemente los dedos hacia atrás para liberar flexores.",
-                            "target": "Antebrazos y Muñecas"
-                        },
-                        {
-                            "name": "Gato-Camello / Cat-Cow Stretch",
-                            "duration": "40s fluido",
-                            "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "desc": "Moviliza la columna vertebral completa alternando flexión y extensión.",
-                            "target": "Columna Vertebral"
-                        },
-                        {
-                            "name": "Estiramiento en Mariposa / Butterfly Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "desc": "Plantas de los pies juntas, bajando suavemente las rodillas hacia el piso.",
-                            "target": "Aductores e Ingle"
-                        },
-                        {
-                            "name": "Estiramiento del Sóleo / Soleus Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "desc": "Talón apoyado contra la pared con rodilla ligeramente flexionada para relajar el tendón de Aquiles.",
-                            "target": "Sóleo y Tendón de Aquiles"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Automasaje Miofascial con Pelota de Tenis y Respiración 4-4-6",
-                        "desc": "Rodar suavemente una pelota de tenis bajo la planta de los pies y glúteos, acompañado de respiración diafragmática calmada."
-                    }
-                },
-                "7to12": {
-                    "methodology": "Stiffness Elástico de Tobillo, Fuerza de Empuje y Tolerancia a la Fatiga: Rebote vertical sin pérdida de energía, fondos de tríceps para absorber caídas y resistencia al pedaleo.",
-                    "warmup": [
-                        {
-                            "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Libera la espalda media y facilita el control del manubrio.",
-                            "target": "Columna Torácica"
-                        },
-                        {
-                            "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
-                            "target": "Muñecas y Antebrazos"
-                        },
-                        {
-                            "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
-                            "target": "Core y Hombros"
-                        },
-                        {
-                            "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Apertura de la cadena anterior completa.",
-                            "target": "Cadera y Hombros"
-                        },
-                        {
-                            "name": "Saltos de Tijera Cruzados / Crossover Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
-                            "target": "Coordinación Neuromuscular"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Saltos de Pogo / Pogo Jumps",
-                            "sets": "3 series de 15 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                            "desc": "Rebote vertical usando exclusivamente la fuerza reactiva de gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
-                            "target": "Rigidez Articular (Stiffness) y Tendón de Aquiles"
-                        },
-                        {
-                            "name": "Saltos Laterales sobre Objeto / Lateral Hurdle Hops",
-                            "sets": "3 series de 10 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                            "desc": "Cruzar un objeto bajo de lado a lado con agilidad y mínimo tiempo de contacto en el suelo.",
-                            "target": "Potencia Reactiva Lateral"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Fondos en Silla para Tríceps / Chair Dips",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
-                            "desc": "Bajar controlado en 2s flexionando codos y subir en 1s. Fuerza de empuje clave para absorber caídas de saltos.",
-                            "target": "Tríceps y Hombros"
-                        },
-                        {
-                            "name": "Tijeras Pliométricas / Jumping Lunges",
-                            "sets": "3 series de 12 repeticiones",
-                            "tempo": "Dinámico",
-                            "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                            "desc": "Zancadas alternas con salto corto para potencia independiente en cada pierna.",
-                            "target": "Potencia Unilateral de Piernas"
-                        },
-                        {
-                            "name": "Flexiones Militares / Strict Push-Ups",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "2-0-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Pecho al suelo manteniendo abdomen firme sin arqueo lumbar.",
-                            "target": "Pectorales y Core"
-                        },
-                        {
-                            "name": "Puente de Glúteo con Marcha / Glute Bridge March",
-                            "sets": "3 series de 12 repeticiones",
-                            "tempo": "Controlado",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Sostener puente de glúteos arriba y alternar elevación de rodillas sin que la pelvis oscile.",
-                            "target": "Glúteos y Estabilidad Pélvica"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Sprint en el Sitio con Resistencia / Resisted High Knee Sprints",
-                        "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
-                        "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                        "desc": "Sprint estático a máxima cadencia imaginando empujar la bicicleta en la última recta de la pista."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Antebrazos / Forearm Stretch",
-                            "duration": "30s por brazo",
-                            "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
-                            "target": "Flexores y Extensores de Muñeca"
-                        },
-                        {
-                            "name": "Gato-Camello / Cat-Cow Stretch",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
-                            "target": "Columna Vertebral"
-                        },
-                        {
-                            "name": "Estiramiento en Mariposa / Butterfly Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
-                            "target": "Aductores e Ingle"
-                        },
-                        {
-                            "name": "Estiramiento del Sóleo / Soleus Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
-                            "target": "Sóleo y Tendón de Aquiles"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Automasaje Miofascial con Pelota de Tenis y Respiración 4-4-6",
-                        "desc": "Liberación de puntos gatillo en fascia plantar y glúteos combinada con respiración diafragmática para eliminar metabolitos ácidos."
-                    }
-                },
-                "13to17": {
-                    "methodology": "Potencia Láctica Élite, Fuerza de Agarre y Stiffness Unipodal: Simulación de la recta final de pista donde las piernas queman; fortalecimiento de remo invertido para el pull del partidor.",
-                    "warmup": [
-                        {
-                            "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Libera la espalda media y facilita el control del manubrio.",
-                            "target": "Columna Torácica"
-                        },
-                        {
-                            "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
-                            "target": "Muñecas y Antebrazos"
-                        },
-                        {
-                            "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
-                            "target": "Core y Hombros"
-                        },
-                        {
-                            "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Apertura de la cadena anterior completa.",
-                            "target": "Cadera y Hombros"
-                        },
-                        {
-                            "name": "Saltos de Tijera Cruzados / Crossover Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
-                            "target": "Coordinación Neuromuscular"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Pogos Unipodales con Stiffness / Single-Leg Pogo Jumps",
-                            "sets": "3 series de 10 por pierna",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Rebote vertical sobre una sola pierna con rodilla semiflexionada rígida como un resorte de acero. Transfiere la fuerza al pedal.",
-                            "target": "Stiffness Reactivo Unipodal"
-                        },
-                        {
-                            "name": "Salto con Rodillas al Pecho / Tuck Jumps",
-                            "sets": "3 series de 6 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Salto vertical de máxima altura llevando rodillas al pecho y extendiendo rápido para aterrizar con control.",
-                            "target": "Potencia de Flexión de Cadera y Despegue"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Flexiones Diamante / Diamond Push-Ups",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Manos juntas formando un triángulo. Fortalece tríceps para resistir las compresiones en los saltos dobles de BMX.",
-                            "target": "Tríceps y Hombros Anteriores"
-                        },
-                        {
-                            "name": "Remo Invertido en Mesa / Inverted Table Rows",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "2-1-1-1",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Acostados bajo una mesa firme, agarrar el borde y tirar del pecho hacia la mesa. Desarrolla la tracción de espalda para el gate pull.",
-                            "target": "Dorsales, Romboides y Bíceps"
-                        },
-                        {
-                            "name": "Sentadilla Pistol Asistida / Assisted Pistol Squats",
-                            "sets": "3 series de 6 por pierna",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Sentadilla completa a una pierna sujetándose de un marco o poste. Fuerza máxima unilateral.",
-                            "target": "Fuerza Unilateral Extrema de Piernas"
-                        },
-                        {
-                            "name": "Paseo del Granjero Isométrico / Farmer's Hold",
-                            "sets": "3 series de 40 segundos",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Sostener botellones de agua a los lados con espalda erguida y agarre al 100%. Blindaje contra el arm pump.",
-                            "target": "Fuerza de Agarre y Trapecios"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Thrusters sin Peso o con Mochila / Bodyweight Thrusters",
-                        "format": "Protocolo Tabata • 8 rondas (Total: 4 min) • 20s esfuerzo máximo x 10s descanso",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Sentadilla profunda e impulso vertical extendiendo los brazos arriba sin pausa. Simulación extrema de fatiga láctica en la última recta."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Antebrazos / Forearm Stretch",
-                            "duration": "30s por brazo",
-                            "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "desc": "Alivia flexores y extensores tras el farmer's hold y las flexiones.",
-                            "target": "Antebrazos"
-                        },
-                        {
-                            "name": "Gato-Camello / Cat-Cow Stretch",
-                            "duration": "40s sostenido",
-                            "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "desc": "Descomprime discos vertebrales.",
-                            "target": "Columna Vertebral"
-                        },
-                        {
-                            "name": "Estiramiento en Mariposa / Butterfly Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "desc": "Alivia aductores tras las sentadillas unilaterales.",
-                            "target": "Aductores"
-                        },
-                        {
-                            "name": "Estiramiento del Sóleo / Soleus Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "desc": "Descarga profunda del tendón de Aquiles.",
-                            "target": "Sóleo"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
-                        "desc": "Visualizar la última recta de la carrera: piernas ardiendo pero manteniendo cadencia redonda, hombros firmes y cabeza fría para cruzar la meta."
-                    }
-                },
-                "18plus": {
-                    "methodology": "Resistencia a la Fatiga, Fuerza de Tracción y Preservación de Muñecas: Fuerza de hombros y espalda sin sobrecarga en la articulación de la muñeca ni hiperextensión lumbar.",
-                    "warmup": [
-                        {
-                            "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "desc": "Libera la espalda media y facilita el control del manubrio.",
-                            "target": "Columna Torácica"
-                        },
-                        {
-                            "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
-                            "target": "Muñecas y Antebrazos"
-                        },
-                        {
-                            "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
-                            "target": "Core y Hombros"
-                        },
-                        {
-                            "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Apertura de la cadena anterior completa.",
-                            "target": "Cadera y Hombros"
-                        },
-                        {
-                            "name": "Saltos de Tijera Cruzados / Crossover Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
-                            "target": "Coordinación Neuromuscular"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Pogos Rítmicos en Sitio / Rhythm Pogo Jumps",
-                            "sets": "3 series de 25 saltos",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Rebotes rítmicos controlados estimulando la elasticidad del tendón sin impacto articular severo.",
-                            "target": "Elasticidad y Salud Tendinosa"
-                        },
-                        {
-                            "name": "Saltos en X de Bajo Impacto / Low-Impact Step Jacks",
-                            "sets": "3 series de 20 repeticiones",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Apertura lateral de piernas sin salto brusco, manteniendo ritmo cardiovascular constante.",
-                            "target": "Capacidad Aeróbica y Coordinación"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Sentadilla Búlgara / Bulgarian Split Squat",
-                            "sets": "3 series de 10 por pierna",
-                            "tempo": "3-1-X-1",
-                            "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                            "desc": "Fuerza unilateral profunda y estabilidad avanzada de cadera sin compresión espinal.",
-                            "target": "Glúteos y Cuádriceps"
-                        },
-                        {
-                            "name": "Plancha Lateral / Side Plank",
-                            "sets": "3 series de 40 segundos por lado",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "desc": "Estabilidad lateral del tronco y los oblicuos para proteger la zona lumbar.",
-                            "target": "Core Lateral"
-                        },
-                        {
-                            "name": "Flexiones Inclinadas en Mesa o Banco / Table Push-Ups",
-                            "sets": "3 series de 10 repeticiones",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Flexiones con inclinación que reducen la carga en muñecas y hombros manteniendo tono pectoral.",
-                            "target": "Pectorales y Tríceps"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Sombra de Pedaleo Rápido / Shadow Pedaling",
-                        "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s ritmo intenso x 15s recuperación",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "De pie en posición de ataque de BMX simulando pedaleo de alta frecuencia y empuje en manubrio."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Antebrazos / Forearm Stretch",
-                            "duration": "30s por brazo",
-                            "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "desc": "Alivia muñecas y codos.",
-                            "target": "Antebrazos"
-                        },
-                        {
-                            "name": "Gato-Camello / Cat-Cow Stretch",
-                            "duration": "40s fluido",
-                            "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "desc": "Descompresión de columna lumbar.",
-                            "target": "Espalda"
-                        },
-                        {
-                            "name": "Estiramiento en Mariposa / Butterfly Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "desc": "Flexibilidad de cadera y pelvis.",
-                            "target": "Aductores"
-                        },
-                        {
-                            "name": "Estiramiento del Sóleo / Soleus Stretch",
-                            "duration": "30s por pierna",
-                            "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "desc": "Relajación del tendón de Aquiles.",
-                            "target": "Sóleo"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Respiración profunda en colchoneta facilitando la desinflamación muscular y recuperación física."
-                    }
-                }
-            }
-        },
-        "4": {
-            "focus": "Movilidad Activa, Agilidad Rotacional y Resistencia Coordinativa (Simulación de Motos de Carrera)",
-            "duration": "60 Minutos Máximo",
-            "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
-            "nutrition": {
-                "energy": "Menores de 6 años: Frutas ricas en agua (sandía, naranja, melón) y agua pura en lugar de jugos procesados. 7 a 17 años: Alimentos antiinflamatorios con omega-3 (chía, linaza, frutos secos) y frutos rojos para protección oxidativa. Adultos: Té verde, cúrcuma, jengibre y grasas antiinflamatorias para cuidar ligamentos y articulaciones.",
-                "protein": "Proteínas de digestión ligera (pescado blanco, claras de huevo, legumbres cocidas) para nutrición tisular sin pesadez estomacal.",
-                "hydration": "Reposición hídrica abundante durante todo el día para eliminar toxinas del ciclo semanal.",
-                "snacks": "Pre: Rodajas de manzana con canela y nueces. Post: Batido de frutas naturales con semillas de chía o yogur."
-            },
-            "ageGroups": {
-                "sub6": {
-                    "methodology": "Juegos de Agilidad, Coordinación Dinámica y Cierre Festivo Familiar: Estimulación vestibular con cambios de dirección y celebración familiar del ciclo completado.",
-                    "warmup": [
-                        {
-                            "name": "Círculos de Cadera / Hip Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
-                            "target": "Cadera y Pelvis"
-                        },
-                        {
-                            "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Activa la parte superior de la espalda y hombros.",
-                            "target": "Pectorales y Espalda Alta"
-                        },
-                        {
-                            "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
-                            "target": "Isquiotibiales y Tronco"
-                        },
-                        {
-                            "name": "Saltos de Tijera en Cruz / Cross Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
-                            "target": "Aductores y Movilidad de Tobillo"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Juego de Estatuas Musicales / Family Musical Statues",
-                            "sets": "4 series de 1 minuto",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Bailar o trotar al ritmo de la música en familia; al pausar, congelarse en una postura de equilibrio de BMX.",
-                            "target": "Equilibrio y Control Vestibular"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "El Cangrejo Viajero / Traveling Crab Walk",
-                            "sets": "3 series de 30 segundos",
-                            "tempo": "Dinámico",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Caminar en posición de cangrejo transportando un peluche sobre el abdomen.",
-                            "target": "Hombros, Tríceps y Glúteos"
-                        },
-                        {
-                            "name": "El Puente Mágico / Magic Bridge",
-                            "sets": "3 series de 20 segundos",
-                            "tempo": "Sostenido",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Sostener el puente de glúteos arriba mientras un familiar hace pasar un juguete rodando por debajo.",
-                            "target": "Glúteos e Isquiotibiales"
-                        },
-                        {
-                            "name": "Paso de Rana / Frog Hop Step",
-                            "sets": "3 series de 8 saltos",
-                            "tempo": "Lúdico",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Saltitos cortos y suaves desde posición de rana sin hacer ruido.",
-                            "target": "Potencia Suave de Piernas"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Circuito de Obstáculos Domésticos / Living Room Obstacle Course",
-                        "format": "5 minutos continuos de juego interactivo",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Sortear cojines en zigzag, pasar por debajo de una mesa y saltar una toalla doblada simulando la pista completa de bicicross."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Sentados con piernas juntas extendidas, alcanzar las puntas de los pies con suavidad.",
-                            "target": "Isquiotibiales y Espalda Baja"
-                        },
-                        {
-                            "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Manos apoyadas en la pared con cadera atrás para elongar dorsales.",
-                            "target": "Dorsales y Hombros"
-                        },
-                        {
-                            "name": "Postura de la Cobra / Cobra Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Acostados boca abajo, elevar suavemente el torso estirando el abdomen.",
-                            "target": "Abdomen y Flexores de Cadera"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Movimientos suaves de cabeza y relajación de la mandíbula apretada durante los esfuerzos.",
-                            "target": "Trapecios y Mandíbula"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Descompresión Mental, Gratitud en Familia y Respiración Consciente (4-4-6)",
-                        "desc": "Reunidos en círculo en colchonetas. Inhalar 4s, retener 4s, exhalar en 6s mientras cada miembro agradece el esfuerzo compartido y el cierre del microciclo."
-                    }
-                },
-                "7to12": {
-                    "methodology": "Agilidad Rotacional, Coordinación en Zig-Zag y Simulación de Mangas: Cambios de dirección tipo Carioca, estabilización rotacional de hombros y resistencia a series repetidas.",
-                    "warmup": [
-                        {
-                            "name": "Círculos de Cadera / Hip Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
-                            "target": "Cadera y Pelvis"
-                        },
-                        {
-                            "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Activa la parte superior de la espalda y hombros.",
-                            "target": "Pectorales y Espalda Alta"
-                        },
-                        {
-                            "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
-                            "target": "Isquiotibiales y Tronco"
-                        },
-                        {
-                            "name": "Saltos de Tijera en Cruz / Cross Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
-                            "target": "Aductores y Movilidad de Tobillo"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Desplazamientos Laterales Cruzados / Carioca Steps",
-                            "sets": "3 series de 20 segundos",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Movimiento lateral cruzando pies por delante y por detrás con máxima agilidad y disociación de tronco.",
-                            "target": "Agilidad Rotacional y Coordinación de Pies"
-                        },
-                        {
-                            "name": "Saltos en Zig-Zag / Z-Pattern Jumps",
-                            "sets": "3 series de 10 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Saltar en diagonal de lado a lado imaginando conos en el suelo, frenando y acelerando en cada vértice.",
-                            "target": "Cambio de Dirección y Desaceleración"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Plancha con Toque de Hombros / Plank Shoulder Taps",
-                            "sets": "3 series de 16 toques",
-                            "tempo": "2-0-1-0",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Mantener la cadera completamente quieta mientras se alterna el toque de hombros. Antirotación pura.",
-                            "target": "Estabilidad de Core y Hombros"
-                        },
-                        {
-                            "name": "Sentadilla Cosaco Asistida / Cossack Squats",
-                            "sets": "3 series de 8 por lado",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Descenso lateral profundo sobre una pierna manteniendo el talón opuesto apoyado. Sujetándose de una mesa o poste.",
-                            "target": "Aductores y Movilidad de Cadera"
-                        },
-                        {
-                            "name": "Bicho Muerto Alterno / Dead Bug",
-                            "sets": "3 series de 12 repeticiones",
-                            "tempo": "2-1-1-0",
-                            "video": "https://www.youtube.com/embed/4XLEnwUr1d8",
-                            "desc": "Control neuromuscular estricto coordinando brazo y pierna opuesta con espalda baja anclada.",
-                            "target": "Core Profundo y Coordinación"
-                        },
-                        {
-                            "name": "Flexiones Explosivas en Suelo / Clapping or Fast Push-Ups",
-                            "sets": "3 series de 6 repeticiones",
-                            "tempo": "Explosivo",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Empuje potente desde el suelo buscando despegar las manos del piso.",
-                            "target": "Potencia Pectoral de Empuje"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Sprint de Patinador + Burpee / Skater Sprint to Burpee",
-                        "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
-                        "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                        "desc": "3 saltos de patinador laterales seguidos de un burpee rápido. Simula adelantamientos y aceleraciones en curvas de pista."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza.",
-                            "target": "Isquiotibiales y Espalda Baja"
-                        },
-                        {
-                            "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Libera los músculos encargados de halar el manubrio.",
-                            "target": "Dorsales y Hombros"
-                        },
-                        {
-                            "name": "Postura de la Cobra / Cobra Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Apertura de la faja abdominal.",
-                            "target": "Abdomen"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Relaja trapecios y cuello.",
-                            "target": "Cuello"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Descompresión Mental, Gratitud en Familia y Respiración Consciente (4-4-6)",
-                        "desc": "Inhalar 4s, retener 4s y botar el aire en 6s cerrando los ojos. Consolidar el aprendizaje motor de los 4 días de entrenamiento."
-                    }
-                },
-                "13to17": {
-                    "methodology": "Fuerza Multiplanar Élite, Agilidad Rotacional y Simulación de Mangas UCI: Estabilidad rotacional en zancadas cruzadas, potencia explosiva en saltos X y resistencia a baterías repetidas.",
-                    "warmup": [
-                        {
-                            "name": "Círculos de Cadera / Hip Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
-                            "target": "Cadera y Pelvis"
-                        },
-                        {
-                            "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Activa la parte superior de la espalda y hombros.",
-                            "target": "Pectorales y Espalda Alta"
-                        },
-                        {
-                            "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
-                            "target": "Isquiotibiales y Tronco"
-                        },
-                        {
-                            "name": "Saltos de Tijera en Cruz / Cross Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
-                            "target": "Aductores y Movilidad de Tobillo"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Saltos en 'X' Multiangulares / Multi-Directional X-Hops",
-                            "sets": "4 series de 8 saltos",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Saltar dibujando una 'X' imaginaria en el suelo con despegues y frenadas multidireccionales explosivas.",
-                            "target": "Agilidad Multidireccional y Tobillos"
-                        },
-                        {
-                            "name": "Salto Rotacional de 90 Grados / 90-Degree Rotational Jumps",
-                            "sets": "3 series de 6 saltos por lado",
-                            "rest": "Descanso 60s",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Salto vertical girando 90 grados en el aire y aterrizando en perfecta semisentadilla firme simulando el cambio de ángulo en peraltes.",
-                            "target": "Potencia Rotacional y Control Aéreo"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Zancadas Rotacionales / Curtsy Lunges",
-                            "sets": "3 series de 10 por pierna",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "desc": "Paso cruzado atrás por detrás de la pierna delantera. Fortalece glúteo medio y estabiliza rodillas ante fuerzas en torsión.",
-                            "target": "Glúteo Medio y Cadera Rotacional"
-                        },
-                        {
-                            "name": "Plancha Lateral con Elevación de Pierna / Star Plank",
-                            "sets": "3 series de 25 segundos por lado",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Plancha lateral en estrella elevando la pierna superior en el aire. Exigencia extrema en abductores y core.",
-                            "target": "Core Lateral y Abductores"
-                        },
-                        {
-                            "name": "Flexiones Spiderman / Spiderman Push-Ups",
-                            "sets": "3 series de 8 repeticiones",
-                            "tempo": "3-0-1-0",
-                            "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "desc": "Al bajar el pecho, llevar una rodilla por fuera hasta tocar el codo. Fuerza de empuje con máxima compresión de oblicuos.",
-                            "target": "Pectorales, Tríceps y Oblicuos"
-                        },
-                        {
-                            "name": "Dragon Flag Asistido / Candlestick Core",
-                            "sets": "3 series de 6 repeticiones",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Sujetándose de una base fija o poste, elevar las piernas y bajar el cuerpo rígido en una sola línea en 3s controlando con el abdomen.",
-                            "target": "Fuerza Abdominal Extrema"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Batería BMX All-Out: Sprint en Partidor + Salto + Sprawl",
-                        "format": "Protocolo 15/45 • 5 rondas (Total: 5 min) • 15s esfuerzo máximo x 45s recuperación",
-                        "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                        "desc": "Simulación idéntica a una manga oficial de BMX: 5 segundos de sprint en sitio, 2 saltos al cajón y 1 sprawl inmediato a máxima potencia."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Elonga isquiotibiales y fascia toracolumbar.",
-                            "target": "Isquiotibiales y Espalda Baja"
-                        },
-                        {
-                            "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Libera la tensión de hombros y dorsales.",
-                            "target": "Dorsales y Hombros"
-                        },
-                        {
-                            "name": "Postura de la Cobra / Cobra Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Descarga de flexores de cadera y pared abdominal.",
-                            "target": "Abdomen"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Relajación cervical y de músculos masticatorios.",
-                            "target": "Cuello y Mandíbula"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Visualización Guiada (Imagery) y Respiración 4-4-6",
-                        "desc": "Visualizar la final de la carrera: subida al partidor en calma mental absoluta, salida perfecta, trazada limpia en los peraltes y victoria con técnica impecable."
-                    }
-                },
-                "18plus": {
-                    "methodology": "Movilidad Articular Multiplanar, Salud de Columna y Agilidad Cruiser: Fortalecimiento de cadera lateral, prevención de rigidez matutina y control dinámico sin saltos de alto impacto.",
-                    "warmup": [
-                        {
-                            "name": "Círculos de Cadera / Hip Circles",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
-                            "target": "Cadera y Pelvis"
-                        },
-                        {
-                            "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Activa la parte superior de la espalda y hombros.",
-                            "target": "Pectorales y Espalda Alta"
-                        },
-                        {
-                            "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
-                            "target": "Isquiotibiales y Tronco"
-                        },
-                        {
-                            "name": "Saltos de Tijera en Cruz / Cross Jacks",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
-                            "target": "Coordinación Rítmica"
-                        },
-                        {
-                            "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
-                            "duration": "45s trabajo x 15s transición (2 rondas)",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
-                            "target": "Aductores y Movilidad de Tobillo"
-                        }
-                    ],
-                    "plyo": [
-                        {
-                            "name": "Pasos Laterales con Resorte / Lateral Rebound Steps",
-                            "sets": "3 series de 16 repeticiones",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Paso lateral dinámico rebotando suavemente en metatarsos sin cargar rodillas.",
-                            "target": "Elasticidad Lateral de Tobillos"
-                        },
-                        {
-                            "name": "Giros de Tronco Controlados / Controlled Pivot Rotations",
-                            "sets": "3 series de 12 por lado",
-                            "rest": "Descanso 45s",
-                            "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "desc": "Pivote de pies y rotación suave de hombros manteniendo postura erguida.",
-                            "target": "Movilidad de Cadera y Tronco"
-                        }
-                    ],
-                    "strength": [
-                        {
-                            "name": "Sentadilla Cosaco Controlada / Controlled Cossack Squat",
-                            "sets": "3 series de 8 por lado",
-                            "tempo": "3-1-1-0",
-                            "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "desc": "Descenso profundo sobre una pierna manteniendo el talón contrario apoyado o elevado según movilidad.",
-                            "target": "Movilidad de Cadera y Aductores"
-                        },
-                        {
-                            "name": "Plancha Abdominal sobre Antebrazos / Forearm Plank",
-                            "sets": "3 series de 50 segundos",
-                            "tempo": "Isometría",
-                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "desc": "Alineación perfecta de hombros, cadera y talones con contracción total.",
-                            "target": "Fuerza Lumbo-Abdominal"
-                        },
-                        {
-                            "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
-                            "sets": "3 series de 10 por pierna",
-                            "tempo": "2-1-1-1",
-                            "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "desc": "Estabilidad de pelvis y fuerza en la cadena posterior adulta.",
-                            "target": "Cadena Posterior y Glúteos"
-                        }
-                    ],
-                    "cardio": {
-                        "name": "Intervalo de Recuperación Activa: Sombra de Carrera / Active Shadow Stride",
-                        "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico fluido x 15s recuperación",
-                        "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "desc": "Trote suave y braceo en el sitio simulando fluidez y respiración controlada."
-                    },
-                    "stretch": [
-                        {
-                            "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Alivia tensión lumbar e isquiotibial.",
-                            "target": "Cadena Posterior"
-                        },
-                        {
-                            "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
-                            "duration": "30s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Elonga espalda superior y hombros.",
-                            "target": "Dorsales"
-                        },
-                        {
-                            "name": "Postura de la Cobra / Cobra Stretch",
-                            "duration": "30s sostenido",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Descompresión anterior.",
-                            "target": "Abdomen"
-                        },
-                        {
-                            "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
-                            "duration": "20s por lado",
-                            "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "desc": "Relajación cervical profunda.",
-                            "target": "Cuello"
-                        }
-                    ],
-                    "recovery": {
-                        "name": "Protocolo de Respiración Diafragmática (4-4-6)",
-                        "desc": "Inhalación lenta por la nariz 4s, retención 4s, exhalación en 6s por la boca. Cierre de microciclo con sensación de plenitud y regeneración tisular."
                     }
                 }
             }
         }
-    }
-},
+    },
     "5": {
         "name": "Semana 5 - Fuerza Estricta, Agilidad Multiplanar y Simulación de Baterías en Familia",
         "dailyTips": {

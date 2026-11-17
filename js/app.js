@@ -403,6 +403,9 @@ function switchMainTab(tab) {
     if (tab === 'timer' && typeof syncGateAthleteUI === 'function') {
         syncGateAthleteUI();
     }
+    if (tab === 'nutrition' && typeof renderNutritionStrictPlan === 'function') {
+        renderNutritionStrictPlan();
+    }
     renderToolsDropdownMenus();
 }
 
@@ -424,7 +427,7 @@ function setWeek(w) {
         }
     });
 
-    const isFourDayWeek = (state.activeWeek >= 4);
+    const isFourDayWeek = (state.activeWeek >= 4 || (state.activeWeek === 1 && state.activeAgeGroup === '8to13_adv'));
     const day4Btn = document.getElementById('btnDay4');
     const dayContainer = document.getElementById('dayButtonsContainer');
     const txtSessionDays = document.getElementById('txtSessionDays');
@@ -466,6 +469,95 @@ function setDay(d) {
     renderActiveView();
 }
 
+
+function renderStrictDietTableHtml(strictDiet) {
+    if (!strictDiet || !strictDiet.meals || !strictDiet.meals.length) return '';
+    return `
+        <div class="bg-slate-950/80 border border-emerald-500/30 rounded-2xl p-4 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+                <h4 class="text-xs sm:text-sm font-black text-emerald-400 flex items-center gap-2">
+                    <i class="fa-solid fa-utensils"></i> ${strictDiet.title}
+                </h4>
+                <span class="text-[10px] font-bold text-cyan-300 bg-cyan-950/60 border border-cyan-700/40 px-2.5 py-1 rounded-full">
+                    <i class="fa-solid fa-droplet mr-1"></i> Recomposición Corporal • 5 Comidas
+                </span>
+            </div>
+            <p class="text-[11px] text-cyan-200/90 bg-cyan-950/30 border border-cyan-800/40 rounded-xl p-2.5">
+                ${strictDiet.hydrationNote}
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse text-[11px]">
+                    <thead>
+                        <tr class="border-b border-slate-800 text-slate-400 uppercase text-[10px]">
+                            <th class="py-2 pr-3">Momento / Horario</th>
+                            <th class="py-2 pr-3">Alimentos y Cantidades</th>
+                            <th class="py-2">Objetivo Pediátrico / Nutricional</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800/70">
+                        ${strictDiet.meals.map(m => `
+                            <tr class="hover:bg-slate-900/60">
+                                <td class="py-2.5 pr-3 align-top whitespace-nowrap">
+                                    <strong class="text-white block">${m.moment}</strong>
+                                    <span class="text-[10px] text-amber-400 font-mono">${m.time}</span>
+                                </td>
+                                <td class="py-2.5 pr-3 align-top text-slate-200 leading-relaxed">${m.foods}</td>
+                                <td class="py-2.5 align-top text-slate-400 leading-relaxed">${m.goal}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+}
+
+function renderNutritionStrictPlan() {
+    const container = document.getElementById('nutritionStrictPlanContainer');
+    if (!container) return;
+
+    if (state.activeAgeGroup !== '8to13_adv' || typeof TRAINING_DB === 'undefined' || !TRAINING_DB['1']) {
+        container.classList.add('hidden');
+        container.innerHTML = '';
+        return;
+    }
+
+    const week1 = TRAINING_DB['1'];
+    let html = `
+        <div class="bg-gradient-to-br from-emerald-950/50 via-slate-900 to-slate-950 border-2 border-emerald-500/40 rounded-3xl p-5 sm:p-6 space-y-5 shadow-xl">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-emerald-500/30 pb-3">
+                <div>
+                    <span class="text-[10px] font-black uppercase tracking-widest text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-1 rounded-md">
+                        Plan Nutricional Específico • 8-13 Avanzado
+                    </span>
+                    <h3 class="text-lg sm:text-xl font-black text-white mt-1.5 font-heading">
+                        Dieta Estricta por Horarios y Cantidades (Días 1 a 4)
+                    </h3>
+                </div>
+            </div>
+            <div class="space-y-4">
+    `;
+
+    ['1', '2', '3', '4'].forEach(dNum => {
+        const s = week1.days[dNum] && week1.days[dNum].ageGroups && week1.days[dNum].ageGroups['8to13_adv'];
+        if (s && s.strictDiet) {
+            html += `
+                <div class="space-y-2">
+                    <div class="text-xs font-black uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                        <span class="w-5 h-5 rounded bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-[10px]">${dNum}</span>
+                        Día ${dNum}
+                    </div>
+                    ${renderStrictDietTableHtml(s.strictDiet)}
+                </div>
+            `;
+        }
+    });
+
+    html += `</div></div>`;
+    container.innerHTML = html;
+    container.classList.remove('hidden');
+}
+
 function onAgeGroupChanged(age) {
     state.activeAgeGroup = age;
     if (state.athletes[state.currentAthlete]) {
@@ -473,7 +565,10 @@ function onAgeGroupChanged(age) {
     }
     updateNavAthleteInfo();
     saveStateToStorage();
-    renderActiveView();
+    if (typeof renderNutritionStrictPlan === 'function') {
+        renderNutritionStrictPlan();
+    }
+    setWeek(state.activeWeek);
 }
 
 /* ==========================================================================
@@ -490,17 +585,42 @@ function renderActiveView() {
     if (!weekData || !weekData.days[d] || !weekData.days[d].ageGroups[age]) {
         const container = document.getElementById('routineContainer');
         if (container) {
-            container.innerHTML = `
-                <div class="p-8 bg-slate-900 border border-slate-800 rounded-3xl text-center text-slate-400">
-                    No hay rutina registrada para estos parámetros.
-                </div>`;
+            if (age === '8to13_adv' && Number(w) >= 2) {
+                container.innerHTML = `
+                    <div class="p-8 bg-gradient-to-br from-slate-900 to-amber-950/30 border border-amber-500/40 rounded-3xl text-center space-y-4 shadow-xl">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/15 text-amber-400 border border-amber-500/30 flex items-center justify-center text-2xl mx-auto">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                        </div>
+                        <div class="space-y-1.5 max-w-lg mx-auto">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-full">
+                                Próximamente • 8-13 Avanzado
+                            </span>
+                            <h3 class="text-xl font-black text-white font-heading">Semana ${w} en Preparación</h3>
+                            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                                El plan específico de <strong>8-13 Avanzado</strong> actualmente tiene disponible su ciclo completo de 4 días en la <strong>Semana 1</strong>. Próximamente se integrarán las siguientes semanas de este programa.
+                            </p>
+                        </div>
+                        <button type="button" onclick="setWeek(1)" class="px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs shadow-lg shadow-red-600/30 transition cursor-pointer inline-flex items-center gap-2">
+                            <i class="fa-solid fa-arrow-left"></i> Ir a Semana 1 (8-13 Avanzado)
+                        </button>
+                    </div>`;
+            } else {
+                container.innerHTML = `
+                    <div class="p-8 bg-slate-900 border border-slate-800 rounded-3xl text-center text-slate-400">
+                        No hay rutina registrada para estos parámetros.
+                    </div>`;
+            }
         }
         return;
     }
 
     const dayData = weekData.days[d];
     const session = dayData.ageGroups[age];
-    const dailyTips = weekData.dailyTips[d] || [];
+    const dailyTips = session.dailyTips || weekData.dailyTips[d] || [];
+    const ageMeta = (weekData.ageGroupMeta && weekData.ageGroupMeta[age]) ? weekData.ageGroupMeta[age] : null;
+    const activeIntroBanner = (ageMeta && ageMeta.introBanner) ? ageMeta.introBanner : weekData.introBanner;
+    const activeDailyCapsule = (ageMeta && ageMeta.dailyCapsule) ? ageMeta.dailyCapsule : null;
+    const activeClosingMessage = (ageMeta && ageMeta.closingMessage) ? ageMeta.closingMessage : weekData.closingMessage;
     const warmupInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('warmup', w, d, age) : '';
     const plyoInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('plyo', w, d, age) : '';
     const strengthInsight = (typeof getBlockInsight === 'function') ? getBlockInsight('strength', w, d, age) : '';
@@ -544,8 +664,8 @@ function renderActiveView() {
         heroDurationElem.innerText = `${sessionSummary.totalMin}'`;
     }
 
-    // 0. BANNER DE BIENVENIDA Y REGLA DE ORO (CICLO SUPERIOR - SEMANA 6)
-    if (weekData.introBanner) {
+    // 0. BANNER DE BIENVENIDA Y REGLA DE ORO (CICLO SUPERIOR O 8-13 AVANZADO)
+    if (activeIntroBanner) {
         html += `
             <div class="bg-gradient-to-r from-red-950/60 via-slate-900 to-amber-950/50 border border-red-500/40 rounded-3xl p-5 shadow-xl space-y-2.5">
                 <div class="flex flex-wrap items-center justify-between gap-2">
@@ -556,11 +676,41 @@ function renderActiveView() {
                         <i class="fa-solid fa-medal text-amber-400"></i> Evolución Semillero & Familia
                     </span>
                 </div>
-                <h3 class="text-base sm:text-lg font-black text-white font-heading">${weekData.introBanner.title}</h3>
-                <p class="text-xs text-slate-300 leading-relaxed">${weekData.introBanner.subtitle}</p>
+                <h3 class="text-base sm:text-lg font-black text-white font-heading">${activeIntroBanner.title}</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">${activeIntroBanner.subtitle}</p>
                 <div class="bg-amber-950/40 border border-amber-500/40 rounded-2xl p-3 text-xs text-amber-200 flex items-start gap-2.5">
                     <i class="fa-solid fa-crown text-amber-400 mt-0.5 text-sm shrink-0"></i>
-                    <span>${weekData.introBanner.goldenRule}</span>
+                    <span>${activeIntroBanner.goldenRule}</span>
+                </div>
+            </div>
+        `;
+    }
+
+    // 0B. CÁPSULA DIARIA DE REFLEJOS Y PARTIDOR (8-13 AVANZADO)
+    if (activeDailyCapsule) {
+        html += `
+            <div class="bg-gradient-to-r from-cyan-950/50 via-slate-900 to-amber-950/40 border border-cyan-500/40 rounded-3xl p-5 shadow-xl space-y-3">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-cyan-800/40 pb-3">
+                    <div>
+                        <span class="text-[10px] font-black uppercase tracking-widest bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 px-2.5 py-0.5 rounded-full">
+                            <i class="fa-solid fa-bolt mr-1"></i> Entrenamiento Diario Express (SNC)
+                        </span>
+                        <h3 class="text-base sm:text-lg font-black text-white mt-1 font-heading">${activeDailyCapsule.title}</h3>
+                    </div>
+                    <button type="button" onclick="openTool('gate')" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/25 transition flex items-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-traffic-light"></i> Abrir BMX Gate Start Pro
+                    </button>
+                </div>
+                <p class="text-xs text-cyan-100/90 leading-relaxed">${activeDailyCapsule.coachTip}</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    ${activeDailyCapsule.phases.map(ph => `
+                        <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-3.5 space-y-1.5">
+                            <h4 class="text-xs font-black text-amber-300">${ph.name}</h4>
+                            <ul class="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
+                                ${ph.items.map(it => `<li>${it}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `).join('')}
                 </div>
             </div>
         `;
@@ -574,7 +724,7 @@ function renderActiveView() {
                     <i class="fa-solid fa-lightbulb"></i> Consejos del Entrenador & Nutrición del Día ${d}
                 </h3>
                 <span class="text-[11px] font-bold text-amber-300/80 bg-amber-900/30 px-2 py-0.5 rounded border border-amber-800/40">
-                    ${dayData.focus}
+                    ${session.sessionFocus || dayData.focus}
                 </span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
@@ -591,10 +741,12 @@ function renderActiveView() {
                         <i class="fa-solid fa-utensils text-amber-400"></i> Recomendación Nutricional Pediátrica:
                     </strong>
                     <p class="text-[11px] text-slate-300/90 leading-relaxed">
-                        ${dayData.nutrition.energy} ${dayData.nutrition.hydration}
+                        ${session.strictDiet ? session.strictDiet.title + '. ' + session.strictDiet.hydrationNote : (dayData.nutrition.energy + ' ' + dayData.nutrition.hydration)}
                     </p>
                 </div>
             </div>
+
+${session.strictDiet ? renderStrictDietTableHtml(session.strictDiet) : ''}
 
             <!-- RESUMEN ESTRUCTURAL COMPLETO Y DURACIÓN TOTAL DE LA SESIÓN -->
             <div class="p-3.5 rounded-2xl bg-slate-950/70 border border-amber-500/30 shadow-inner space-y-2.5">
@@ -866,7 +1018,7 @@ function renderActiveView() {
     html += `</div></section>`;
 
     // TARJETA ESPECIAL DE CIERRE DE MACROCICLO EN EL DÍA 4
-    if (Number(d) === 4 && weekData.closingMessage) {
+    if (Number(d) === 4 && activeClosingMessage) {
         html += `
             <section class="bg-gradient-to-br from-amber-950/60 via-slate-900 to-red-950/50 border-2 border-amber-500/50 rounded-3xl p-6 shadow-2xl space-y-4">
                 <div class="flex flex-wrap items-center justify-between gap-3 border-b border-amber-500/30 pb-3">
@@ -876,7 +1028,7 @@ function renderActiveView() {
                         </div>
                         <div>
                             <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block">Cierre de Macrociclo • Día 4</span>
-                            <h3 class="text-lg sm:text-xl font-black text-white font-heading">${weekData.closingMessage.title}</h3>
+                            <h3 class="text-lg sm:text-xl font-black text-white font-heading">${activeClosingMessage.title}</h3>
                         </div>
                     </div>
                     <button type="button" onclick="if (typeof showMacrocycleCompletionModal === 'function') showMacrocycleCompletionModal(${w}, ${d});" class="bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-400 hover:to-red-500 text-white font-black text-xs px-4 py-2.5 rounded-xl shadow-lg shadow-amber-600/20 transition flex items-center gap-2 cursor-pointer">
@@ -884,7 +1036,7 @@ function renderActiveView() {
                     </button>
                 </div>
                 <div class="space-y-2 text-xs sm:text-sm text-slate-200 leading-relaxed">
-                    ${weekData.closingMessage.paragraphs.map(p => `<p>${p}</p>`).join('')}
+                    ${activeClosingMessage.paragraphs.map(p => `<p>${p}</p>`).join('')}
                 </div>
             </section>
         `;

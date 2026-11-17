@@ -192,7 +192,17 @@ function renderCalendarSchedule() {
                 <div class="space-y-3">
         `;
 
-        const daysForWeek = (w >= 4) ? [1, 2, 3, 4] : [1, 2, 3];
+        if (state.activeAgeGroup === '8to13_adv' && w >= 2) {
+            html += `
+                <div class="p-4 rounded-xl bg-slate-900/70 border border-amber-500/30 text-xs text-slate-300 flex items-center justify-between gap-2">
+                    <span><i class="fa-solid fa-hourglass-half text-amber-400 mr-1.5"></i> Semana ${w} para <strong>8-13 Avanzado</strong> estará disponible próximamente.</span>
+                    <span class="px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 font-bold text-[10px] uppercase">Próximamente</span>
+                </div>
+            `;
+            html += `</div></div>`;
+            return;
+        }
+        const daysForWeek = (w >= 4 || (w === 1 && state.activeAgeGroup === '8to13_adv')) ? [1, 2, 3, 4] : [1, 2, 3];
         daysForWeek.forEach(d => {
             const dateStr = getScheduledDateForSession(w, d) || `Sesión ${d}`;
             const athlete = state.currentAthlete;

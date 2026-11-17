@@ -9,6 +9,7 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * **Semana 4**: Movilidad Activa, Rigor Técnico, Agilidad Rotacional y Simulación de Motos (4 Días Semanales).
 * **Semana 5**: Fuerza Estricta, Agilidad Multiplanar y Simulación de Baterías en Familia (4 Días Semanales).
 * **Semana 6**: Ciclo Superior: Potencia Base de Salida (*Gate Acceleration*), Reactividad y Baterías Múltiples (4 Días Semanales).
+* **Plan Específico 8-13 Avanzado (`8to13_adv`)**: Semana 1 de 4 días con Cápsula Diaria de Reflejos y Partidor, Calistenia Pediátrica con tempos estrictos, Cardio en Rodillo + *Roll Recovery* y Dieta Estricta de 5 comidas para recomposición corporal.
 
 ---
 

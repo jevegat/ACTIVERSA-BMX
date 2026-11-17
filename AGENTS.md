@@ -6,7 +6,7 @@ Plataforma web interactiva (SPA en Vanilla JavaScript ES6+, HTML5 y Tailwind CSS
 - **Entorno**: Aplicación estática lista para ejecutarse directamente en navegador o desplegarse en **GitHub Pages** sin requerir pasos de compilación (no bundler).
 
 ## 2. Arquitectura de Archivos
-- `index.html`: Maquetación principal de la SPA, modales (WOD Tracker, Perfiles, Sincronización Firebase, Edición de Sesiones en Calendario) y carga de scripts con cache-busting (`?v=6.2.0`).
+- `index.html`: Maquetación principal de la SPA, modales (WOD Tracker, Perfiles, Sincronización Firebase, Edición de Sesiones en Calendario) y carga de scripts con cache-busting (`?v=6.3.0`).
 - `css/styles.css`: Estilos personalizados, animaciones y soporte visual (modo oscuro/claro).
 - `js/data.js`: Base de datos maestra (`TRAINING_DB`) con los microciclos semanales, ejercicios, videos embebidos de YouTube, claves biomecánicas y guías de nutrición.
 - `js/app.js`: Controlador principal. Gestiona el estado global (`state`), perfiles de deportistas (incluyendo foto comprimida en Canvas y PIN de 4 dígitos), carrusel hero de fotos (`HERO_BMX_GALLERY`), checklist de ejercicios, rachas (*streak*), exportación/importación JSON y modales.
@@ -24,9 +24,10 @@ Cada semana en `TRAINING_DB[week]` contiene:
 - `dailyTips`: Consejos diarios por día.
 - `days[day]`:
   - `focus`, `duration`, `structure`, `nutrition` (`energy`, `protein`, `hydration`, `snacks`).
-  - `ageGroups`: Dividido siempre en 4 categorías:
+  - `ageGroups`: Dividido en 4 categorías generales + 1 plan específico:
     - `sub6`: Semillero Inicial (3 a 6 años) - Enfoque multimotor y lúdico.
     - `7to12`: Desarrollo (7 a 12 años) - Coordinación, técnica y velocidad.
+    - `8to13_adv`: 8-13 Avanzado (Plan Específico Semana 1 de 4 días) - Calistenia pediátrica, Cápsula Diaria de Reflejos, Cardio en Rodillo + Roll Recovery y Dieta Estricta de 5 comidas.
     - `13to17`: Juvenil / Competitivo (13 a 17 años) - Potencia, rigor biomecánico y tolerancia láctica.
     - `18plus`: Cruiser / Padres (18+ años) - Movilidad, salud articular, fuerza funcional y potencia en pista.
   - Bloques por categoría de edad:

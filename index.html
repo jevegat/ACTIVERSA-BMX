@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <!-- Custom Modular CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=6.2.0">
+    <link rel="stylesheet" href="css/styles.css?v=6.3.0">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 selection:bg-red-600 selection:text-white">
 
@@ -273,6 +273,7 @@
                     <select id="selectAgeGroup" onchange="onAgeGroupChanged(this.value)" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-2.5 text-xs font-bold focus:ring-2 focus:ring-red-500 focus:outline-none">
                         <option value="sub6">Menores de 6 años • Lúdico y Multimotor</option>
                         <option value="7to12" selected>7 a 12 años • Aprendizaje Motor & Agilidad</option>
+                        <option value="8to13_adv">8 a 13 años • 8-13 Avanzado (Plan Específico)</option>
                         <option value="13to17">13 a 17 años • Potencia Élite & Partidor</option>
                         <option value="18plus">18+ años y Padres • Salud Articular & Cruiser</option>
                     </select>
@@ -645,6 +646,9 @@
                     </p>
                 </div>
 
+                <!-- PLAN NUTRICIONAL ESTRICTO (8-13 AVANZADO) -->
+                <div id="nutritionStrictPlanContainer" class="hidden space-y-4"></div>
+
                 <!-- CALCULADORA DE HIDRATACIÓN -->
                 <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900 p-6 rounded-2xl border border-cyan-800/40 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
                     <div class="md:col-span-5 space-y-3">
@@ -864,6 +868,7 @@
                         <select id="inputProfileAgeGroup" class="w-full bg-slate-800 border border-slate-700 rounded-xl p-2.5 text-xs text-white font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
                             <option value="sub6">Menores de 6 años</option>
                             <option value="7to12">7 a 12 años</option>
+                            <option value="8to13_adv">8 a 13 años (8-13 Avanzado)</option>
                             <option value="13to17">13 a 17 años</option>
                             <option value="18plus">Mayores de 18 años y Padres (Cruiser)</option>
                         </select>
@@ -1383,12 +1388,12 @@
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-    <script src="js/firebase.js?v=6.2.0"></script>
-    <script src="js/data.js?v=6.2.0"></script>
-    <script src="js/timer.js?v=6.2.0"></script>
-    <script src="js/gate.js?v=6.2.0"></script>
-    <script src="js/calendar.js?v=6.2.0"></script>
-    <script src="js/workout.js?v=6.2.0"></script>
-    <script src="js/app.js?v=6.2.0"></script>
+    <script src="js/firebase.js?v=6.3.0"></script>
+    <script src="js/data.js?v=6.3.0"></script>
+    <script src="js/timer.js?v=6.3.0"></script>
+    <script src="js/gate.js?v=6.3.0"></script>
+    <script src="js/calendar.js?v=6.3.0"></script>
+    <script src="js/workout.js?v=6.3.0"></script>
+    <script src="js/app.js?v=6.3.0"></script>
 </body>
 </html>
