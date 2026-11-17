@@ -1,12 +1,12 @@
 # Memoria y Reglas del Proyecto: ACTIVERZA / ACTIVERSA BMX Racing Academy
 
 ## 1. Contexto General
-Plataforma web interactiva (SPA en Vanilla JavaScript ES6+, HTML5 y Tailwind CSS) diseñada para la preparación física, biomecánica, nutrición y seguimiento de entrenamientos de **BMX Racing** (Metodología Semilleros orientada por `@pipearenas.fit` y fotografía de `@bmxproconcept`).
+Plataforma web interactiva (SPA en Vanilla JavaScript ES6+, HTML5 y Tailwind CSS) diseñada para la preparación física, biomecánica, nutrición y seguimiento de entrenamientos de **BMX Racing** (Metodología Semilleros y fotografía de `@bmxproconcept`).
 - **Idioma**: Todo el contenido de la interfaz, comentarios de código, textos técnicos y respuestas al usuario deben mantenerse en **español**.
 - **Entorno**: Aplicación estática lista para ejecutarse directamente en navegador o desplegarse en **GitHub Pages** sin requerir pasos de compilación (no bundler).
 
 ## 2. Arquitectura de Archivos
-- `index.html`: Maquetación principal de la SPA, modales (WOD Tracker, Perfiles, Sincronización Firebase, Edición de Sesiones en Calendario) y carga de scripts con cache-busting (`?v=5.0.0`).
+- `index.html`: Maquetación principal de la SPA, modales (WOD Tracker, Perfiles, Sincronización Firebase, Edición de Sesiones en Calendario) y carga de scripts con cache-busting (`?v=6.2.0`).
 - `css/styles.css`: Estilos personalizados, animaciones y soporte visual (modo oscuro/claro).
 - `js/data.js`: Base de datos maestra (`TRAINING_DB`) con los microciclos semanales, ejercicios, videos embebidos de YouTube, claves biomecánicas y guías de nutrición.
 - `js/app.js`: Controlador principal. Gestiona el estado global (`state`), perfiles de deportistas (incluyendo foto comprimida en Canvas y PIN de 4 dígitos), carrusel hero de fotos (`HERO_BMX_GALLERY`), checklist de ejercicios, rachas (*streak*), exportación/importación JSON y modales.
@@ -19,8 +19,8 @@ Plataforma web interactiva (SPA en Vanilla JavaScript ES6+, HTML5 y Tailwind CSS
 Cada semana en `TRAINING_DB[week]` contiene:
 - `name`: Nombre y enfoque del microciclo semanal.
   - **Semana 1 a 3**: Microciclos de **3 días** semanales (`days["1"]` a `days["3"]`).
-  - **Semana 4 y Semana 5**: Microciclos de **4 días** semanales (`days["1"]` a `days["4"]`).
-  - *(Nota: En la raíz del proyecto se encuentran los PDFs fuente `Rutina Semillero 01..05 ACTIVERZA.pdf`).*
+  - **Semana 4 a Semana 6**: Microciclos de **4 días** semanales (`days["1"]` a `days["4"]`).
+  - *(Nota: En la raíz del proyecto se encuentran los PDFs fuente `Rutina Semillero 01..06 ACTIVERZA.pdf`).*
 - `dailyTips`: Consejos diarios por día.
 - `days[day]`:
   - `focus`, `duration`, `structure`, `nutrition` (`energy`, `protein`, `hydration`, `snacks`).

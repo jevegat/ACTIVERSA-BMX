@@ -17,14 +17,14 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <!-- Custom Modular CSS -->
-    <link rel="stylesheet" href="css/styles.css?v=5.0.0">
+    <link rel="stylesheet" href="css/styles.css?v=6.2.0">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen transition-colors duration-300 selection:bg-red-600 selection:text-white">
 
     <!-- TOP ANNOUNCEMENT BAR -->
     <div class="bg-gradient-to-r from-red-700 via-red-600 to-amber-600 text-white text-xs font-semibold py-1.5 px-4 text-center tracking-wide flex items-center justify-center gap-2 shadow-md">
         <i class="fa-solid fa-flag-checkered animate-bounce"></i>
-        <span>METODOLOGÍA OFICIAL ACTIVERZA BMX RACING • SEMANAS 1 A 5 • PREPARACIÓN FÍSICA Y BIOMECÁNICA</span>
+        <span>METODOLOGÍA OFICIAL ACTIVERZA BMX RACING • SEMANAS 1 A 6 • PREPARACIÓN FÍSICA Y BIOMECÁNICA</span>
     </div>
 
     <!-- MAIN NAVBAR -->
@@ -56,9 +56,17 @@
                     <button onclick="switchMainTab('calendar')" id="tabNavCalendar" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
                         <i class="fa-solid fa-calendar-alt"></i> Calendario
                     </button>
-                    <button onclick="switchMainTab('timer')" id="tabNavTimer" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
-                        <i class="fa-solid fa-stopwatch"></i> Cronómetro Pista
-                    </button>
+                    <div class="relative group" id="desktopToolsNavWrapper">
+                        <button onclick="openTool('gate')" id="tabNavTimer" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5 cursor-pointer">
+                            <i class="fa-solid fa-screwdriver-wrench"></i> Herramientas
+                            <i class="fa-solid fa-chevron-down text-[9px] opacity-75 group-hover:rotate-180 transition-transform duration-200"></i>
+                        </button>
+                        <div class="hidden group-hover:block absolute left-0 top-full pt-2 w-72 z-50">
+                            <div id="toolsDropdownMenu" class="bg-slate-900 border border-slate-700/90 rounded-2xl shadow-2xl shadow-black/60 p-2 space-y-1 backdrop-blur-xl">
+                                <!-- Inyectado dinámicamente desde TOOLS_MENU_ITEMS -->
+                            </div>
+                        </div>
+                    </div>
                     <button onclick="switchMainTab('nutrition')" id="tabNavNutrition" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white transition flex items-center gap-1.5">
                         <i class="fa-solid fa-apple-whole"></i> Nutrición
                     </button>
@@ -99,12 +107,17 @@
             <button onclick="switchMainTab('calendar')" id="tabNavMobCalendar" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
                 <i class="fa-solid fa-calendar-alt mr-1"></i> Calendario
             </button>
-            <button onclick="switchMainTab('timer')" id="tabNavMobTimer" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
-                <i class="fa-solid fa-stopwatch mr-1"></i> Cronómetro
+            <button onclick="toggleMobileToolsMenu()" id="tabNavMobTimer" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 flex items-center gap-1">
+                <i class="fa-solid fa-screwdriver-wrench mr-0.5"></i> Herramientas <i class="fa-solid fa-chevron-down text-[9px] ml-0.5"></i>
             </button>
             <button onclick="switchMainTab('nutrition')" id="tabNavMobNutrition" class="flex-shrink-0 px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300">
                 <i class="fa-solid fa-apple-whole mr-1"></i> Nutrición
             </button>
+        </div>
+
+        <!-- Mobile Tools Submenu -->
+        <div id="mobileToolsDropdownMenu" class="md:hidden hidden px-4 pb-3 pt-1 border-t border-slate-800/80 bg-slate-950/95 space-y-1.5">
+            <!-- Inyectado dinámicamente desde TOOLS_MENU_ITEMS -->
         </div>
     </nav>
 
@@ -239,26 +252,17 @@
             <section class="bg-slate-900 dark:bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-lg grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Selector Semana -->
                 <div>
-                    <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                    <label for="selectWeek" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
                         <i class="fa-solid fa-calendar-week text-red-500"></i> Semana del Microciclo
                     </label>
-                    <div class="grid grid-cols-5 gap-1.5 sm:gap-2">
-                        <button onclick="setWeek(1)" id="btnWeek1" class="py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-red-500 bg-red-600 text-white transition flex items-center justify-center gap-1 shadow">
-                            <i class="fa-solid fa-1"></i> <span class="hidden lg:inline">Semana</span><span class="lg:hidden">Sem</span> 1
-                        </button>
-                        <button onclick="setWeek(2)" id="btnWeek2" class="py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-2"></i> <span class="hidden lg:inline">Semana</span><span class="lg:hidden">Sem</span> 2
-                        </button>
-                        <button onclick="setWeek(3)" id="btnWeek3" class="py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-3"></i> <span class="hidden lg:inline">Semana</span><span class="lg:hidden">Sem</span> 3
-                        </button>
-                        <button onclick="setWeek(4)" id="btnWeek4" class="py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-4"></i> <span class="hidden lg:inline">Semana</span><span class="lg:hidden">Sem</span> 4
-                        </button>
-                        <button onclick="setWeek(5)" id="btnWeek5" class="py-2.5 px-1.5 sm:px-2 rounded-xl font-bold text-xs border border-slate-700 bg-slate-800 text-slate-300 hover:text-white transition flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-5"></i> <span class="hidden lg:inline">Semana</span><span class="lg:hidden">Sem</span> 5
-                        </button>
-                    </div>
+                    <select id="selectWeek" onchange="setWeek(this.value)" class="w-full bg-slate-800 border border-slate-700 text-white rounded-xl p-2.5 text-xs font-bold focus:ring-2 focus:ring-red-500 focus:outline-none cursor-pointer">
+                        <option value="1" selected>Semana 1 • Fundamentos y Fuerza Base (3 Días)</option>
+                        <option value="2">Semana 2 • Potencia Dirigida y Pista (3 Días)</option>
+                        <option value="3">Semana 3 • Integración Familiar y Tolerancia Láctica (3 Días)</option>
+                        <option value="4">Semana 4 • Movilidad Activa y Simulación Motos (4 Días)</option>
+                        <option value="5">Semana 5 • Fuerza Estricta y Agilidad Multiplanar (4 Días)</option>
+                        <option value="6">Semana 6 • Ciclo Superior: Gate Acceleration & Baterías (4 Días)</option>
+                    </select>
                 </div>
 
                 <!-- Selector Grupo de Edad / Nivel -->
@@ -332,7 +336,7 @@
                         </label>
                         <input type="date" id="calendarStartDate" onchange="renderCalendarSchedule()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-sm font-semibold focus:ring-2 focus:ring-red-500 focus:outline-none">
                         <p class="text-[11px] text-slate-400">
-                            A partir de esta fecha se calcularán automáticamente las fechas correspondientes para las Semanas 1 a 5 del microciclo.
+                            A partir de esta fecha se calcularán automáticamente las fechas correspondientes para las Semanas 1 a 6 del microciclo.
                         </p>
                     </div>
 
@@ -350,7 +354,7 @@
                     </div>
                 </div>
 
-                <!-- Visual Timeline of the 5 Weeks -->
+                <!-- Visual Timeline of the 6 Weeks -->
                 <div class="mt-8 space-y-4">
                     <h3 class="text-lg font-bold text-white flex items-center gap-2">
                         <i class="fa-solid fa-timeline text-amber-500"></i> Cronograma de Sesiones Planificadas
@@ -363,9 +367,11 @@
         </div>
 
         <!-- ========================================== -->
-        <!-- VIEW 3: BMX TRACK WOD TIMER               -->
+        <!-- VIEW 3: HERRAMIENTAS (CRONÓMETRO & GATE)  -->
         <!-- ========================================== -->
         <div id="viewTimer" class="hidden space-y-6">
+            <!-- SUB-VISTA 1: CRONÓMETRO DE PISTA E INTERVALOS -->
+            <div id="toolSubViewTimer">
             <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
                 <div class="text-center max-w-xl mx-auto space-y-2 mb-8">
                     <span class="text-xs font-extrabold text-red-400 uppercase tracking-widest bg-red-600/10 border border-red-500/20 px-3 py-1 rounded-md">
@@ -474,6 +480,154 @@
                     </button>
                 </div>
             </section>
+            </div>
+
+            <!-- SUB-VISTA 2: SIMULADOR DE PARTIDOR BMX GATE START PRO PRACTICE -->
+            <div id="toolSubViewGate" class="hidden">
+                <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+                    <!-- Header BMX Gate Start Pro -->
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-800 pb-5">
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="text-xs font-extrabold text-amber-400 uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-2.5 py-1 rounded-md">
+                                    <i class="fa-solid fa-traffic-light mr-1"></i> Simulador Oficial UCI Random Start
+                                </span>
+                                <span class="text-[11px] text-slate-400 font-medium">
+                                    Creado por <strong class="text-amber-400">Eduardo Vega</strong> • jevegat@gmail.com
+                                </span>
+                            </div>
+                            <h2 class="text-2xl sm:text-3xl font-black text-white mt-2 font-heading">BMX Gate Start Pro Practice</h2>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-0.5">
+                                Entrena tu tiempo de reacción en el partidor con la secuencia oficial de voz UCI y semáforo de 4 luces.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <div class="bg-amber-500/10 border border-amber-500/40 rounded-2xl px-3.5 py-2 flex items-center gap-2 text-xs text-amber-300 font-bold">
+                                <i class="fa-solid fa-user-astronaut text-amber-400"></i>
+                                <span>Piloto: <strong id="lblGateNombrePiloto" class="text-white">Santiago Vega</strong></span>
+                                <button type="button" onclick="openProfileModal()" class="text-amber-400 hover:text-white ml-1 transition cursor-pointer" title="Cambiar piloto activo">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Grid: Left (Traffic Light & Controls) | Right (Stats & History Table) -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                        <!-- Columna Izquierda: Semáforo, Estado y Controles (6 cols) -->
+                        <div class="lg:col-span-6 space-y-4">
+                            <div class="flex flex-row gap-4 items-stretch">
+                                <!-- Semáforo UCI de 4 luces -->
+                                <div class="gate-semaforo">
+                                    <div id="gateLuzRoja" class="gate-luz roja"></div>
+                                    <div id="gateLuzAmarilla1" class="gate-luz amarilla"></div>
+                                    <div id="gateLuzAmarilla2" class="gate-luz amarilla"></div>
+                                    <div id="gateLuzVerde" class="gate-luz verde"></div>
+                                </div>
+
+                                <!-- Pantalla de Estado y Tiempo de Reacción -->
+                                <div class="flex-1 bg-slate-950 border-2 border-slate-800 rounded-3xl p-5 flex flex-col justify-center items-center text-center shadow-inner min-h-[240px]">
+                                    <span class="text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-2">
+                                        Estado / Resultado de Salida
+                                    </span>
+                                    <div id="txtGateMensaje" class="text-base sm:text-lg font-extrabold text-amber-400 leading-snug mb-2">
+                                        Presiona INICIAR para comenzar la secuencia
+                                    </div>
+                                    <div id="txtGateTiempo" class="text-3xl sm:text-5xl font-black font-mono text-cyan-400 tracking-tight mt-1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Panel de Control del Partidor -->
+                            <div class="bg-slate-950/70 border border-slate-800/80 rounded-2xl p-4 space-y-3">
+                                <div class="space-y-1.5">
+                                    <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 text-center">
+                                        Medir tiempo de reacción al encender:
+                                    </label>
+                                    <div class="flex gap-2">
+                                        <button type="button" id="btnGateModoRoja" onclick="setGateReactionMode('roja')" class="flex-1 py-2.5 px-3 rounded-xl font-bold text-xs bg-slate-900 text-slate-400 border border-slate-700 hover:text-white transition cursor-pointer">
+                                            🔴 Luz Roja
+                                        </button>
+                                        <button type="button" id="btnGateModoAmarilla" onclick="setGateReactionMode('amarilla')" class="flex-1 py-2.5 px-3 rounded-xl font-black text-xs bg-amber-400 text-slate-950 border border-amber-400 shadow transition cursor-pointer">
+                                            🟡 1ra Luz Amarilla (Oficial)
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <button type="button" id="btnGateBeepToggle" onclick="toggleGateFrequencyBeeps()" class="w-full py-2.5 px-4 rounded-xl font-bold text-xs bg-emerald-950/50 text-emerald-400 border border-emerald-500/50 hover:bg-emerald-900/40 transition cursor-pointer">
+                                    <i class="fa-solid fa-volume-high mr-1.5"></i> Beeps de Frecuencia: ACTIVOS
+                                </button>
+
+                                <button type="button" id="btnGateIniciar" onclick="startGateSequence()" class="w-full py-4 px-5 rounded-2xl font-black text-sm sm:text-base uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-lg shadow-amber-500/25 transition active:scale-98 cursor-pointer flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-play"></i> INICIAR SECUENCIA (START)
+                                </button>
+
+                                <button type="button" id="btnGateReaccion" onclick="recordGateReaction()" class="w-full py-6 px-5 rounded-2xl font-black text-xl sm:text-2xl uppercase tracking-wider text-white shadow-xl transition active:scale-95 cursor-pointer flex items-center justify-center gap-2 select-none" style="background-color: #00cc44;">
+                                    <i class="fa-solid fa-bolt"></i> ¡REACCIÓN!
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Columna Derecha: Estadísticas e Historial de Intentos (6 cols) -->
+                        <div class="lg:col-span-6 space-y-4">
+                            <!-- Resumen Estadístico -->
+                            <div class="grid grid-cols-3 gap-3">
+                                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Mejor Intento</span>
+                                    <strong id="txtGateMejor" class="text-lg sm:text-2xl font-black text-emerald-400 font-mono mt-1 block">--- ms</strong>
+                                </div>
+                                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Promedio</span>
+                                    <strong id="txtGatePromedio" class="text-lg sm:text-2xl font-black text-amber-400 font-mono mt-1 block">--- ms</strong>
+                                </div>
+                                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 text-center">
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Salidas en Falso</span>
+                                    <strong id="txtGateFallos" class="text-lg sm:text-2xl font-black text-red-500 font-mono mt-1 block">0</strong>
+                                </div>
+                            </div>
+
+                            <!-- Tabla de Historial de Intentos -->
+                            <div class="bg-slate-950 border border-slate-800 rounded-2xl p-4 space-y-3">
+                                <div class="flex flex-wrap justify-between items-center gap-2 border-b border-slate-800 pb-3">
+                                    <h3 class="text-xs sm:text-sm font-black uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                                        <i class="fa-solid fa-list-ol"></i> Historial de Intentos del Piloto
+                                    </h3>
+                                    <div class="flex items-center gap-1.5">
+                                        <button type="button" onclick="exportGateHistoryFile()" class="px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700 transition cursor-pointer flex items-center gap-1" title="Guardar historial en archivo JSON">
+                                            <i class="fa-solid fa-floppy-disk"></i> Guardar
+                                        </button>
+                                        <label class="px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-slate-700 transition cursor-pointer flex items-center gap-1" title="Cargar archivo JSON de historial">
+                                            <i class="fa-solid fa-folder-open"></i> Cargar
+                                            <input type="file" id="inputGateCargarArchivo" onchange="importGateHistoryFile(event)" accept=".json" class="hidden">
+                                        </label>
+                                        <button type="button" onclick="clearGateHistory()" class="px-2.5 py-1.5 rounded-lg text-[11px] font-bold bg-rose-950/60 hover:bg-rose-600 text-rose-300 hover:text-white border border-rose-800/50 transition cursor-pointer" title="Limpiar historial de intentos">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="max-h-[340px] overflow-y-auto">
+                                    <table class="w-full text-center border-collapse">
+                                        <thead>
+                                            <tr class="border-b border-slate-800 text-[10px] font-extrabold uppercase tracking-wider text-slate-400">
+                                                <th class="py-2 px-3">Intento</th>
+                                                <th class="py-2 px-3">Reacción</th>
+                                                <th class="py-2 px-3">Fecha / Hora</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tablaGateIntentos">
+                                            <tr>
+                                                <td colspan="3" class="py-6 text-slate-500 text-xs">Aún no hay intentos registrados para este piloto</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <!-- ========================================== -->
@@ -854,6 +1008,10 @@
                     </div>
                 </div>
 
+                <!-- Panel en Vivo de Seguimiento de Repeticiones y Tempo [Bajada - Pausa - Subida - Pausa] -->
+                <div id="gwTempoLivePanel" class="hidden bg-gradient-to-r from-purple-950/50 via-slate-900 to-amber-950/40 border-2 border-purple-500/40 p-3.5 rounded-2xl space-y-2.5 shadow-xl">
+                </div>
+
                 <!-- Execution & BMX Biomechanical Insight Card (Requerimiento de Usuario) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                     <!-- Execution instructions -->
@@ -979,6 +1137,10 @@
                         <div class="text-2xl font-black text-emerald-400 font-mono">✓ Activo</div>
                         <div class="text-[10px] font-bold text-slate-400 uppercase">Calendario Actualizado</div>
                     </div>
+                </div>
+
+                <!-- Mensaje Especial de Felicitación de Cierre de Ciclo (Día 4) -->
+                <div id="gwMacrocycleCongrats" class="hidden max-w-2xl mx-auto text-left bg-gradient-to-br from-amber-950/70 via-slate-900 to-red-950/50 border-2 border-amber-500/60 rounded-2xl p-5 space-y-3 shadow-xl shadow-amber-950/30">
                 </div>
 
                 <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
@@ -1221,11 +1383,12 @@
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
-    <script src="js/firebase.js?v=5.0.0"></script>
-    <script src="js/data.js?v=5.0.0"></script>
-    <script src="js/timer.js?v=5.0.0"></script>
-    <script src="js/calendar.js?v=5.0.0"></script>
-    <script src="js/workout.js?v=5.0.0"></script>
-    <script src="js/app.js?v=5.0.0"></script>
+    <script src="js/firebase.js?v=6.2.0"></script>
+    <script src="js/data.js?v=6.2.0"></script>
+    <script src="js/timer.js?v=6.2.0"></script>
+    <script src="js/gate.js?v=6.2.0"></script>
+    <script src="js/calendar.js?v=6.2.0"></script>
+    <script src="js/workout.js?v=6.2.0"></script>
+    <script src="js/app.js?v=6.2.0"></script>
 </body>
 </html>

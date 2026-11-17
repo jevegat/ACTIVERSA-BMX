@@ -38,7 +38,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oso / Bear Crawl",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de hombros, muñecas y core. Mantener rodillas a 5 cm del suelo sin tocarlo.",
                                 "target": "Hombros y Core"
                             },
@@ -46,7 +45,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Cadera y Brazos",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad articular para hombros y pelvis preparando los giros y saltos.",
                                 "target": "Movilidad Articular"
                             },
@@ -54,7 +52,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Elevación de Rodillas",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevación de frecuencia cardíaca y activación del psoas de manera suave.",
                                 "target": "Cardiovascular"
                             },
@@ -62,7 +59,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación general de brazos y piernas, aumentando temperatura.",
                                 "target": "Coordinación"
                             }
@@ -73,7 +69,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Colocar marcas en el piso (hojas o juguetes) para saltar de una a otra imitando ranas.",
                                 "target": "Potencia de Piernas"
                             }
@@ -84,7 +79,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Libre lúdico",
                                 "video": "https://www.youtube.com/embed/2aMn_J6Lip0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar el piso con las manos entre las piernas y ponerse de pie.",
                                 "target": "Cuádriceps y Glúteos"
                             },
@@ -93,7 +87,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Sostener 2s arriba",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostados boca arriba, elevar la cadera apretando glúteos y contar hasta 2.",
                                 "target": "Cadena Posterior"
                             }
@@ -102,7 +95,6 @@ const TRAINING_DB = {
                             "name": "Juego del Semáforo en Casa",
                             "format": "6 minutos continuos interactivos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Verde = Trote rápido en el sitio. Rojo = Estatua congelada. Fomenta atención y aceleración."
                         },
                         "stretch": [
@@ -110,14 +102,12 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "20-30s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tirar del tobillo hacia el glúteo manteniendo rodillas juntas."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodillas al piso, brazos extendidos al frente, glúteos a los talones."
                             }
                         ],
@@ -133,7 +123,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oso / Bear Crawl",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación neuromuscular de tren superior y core manteniendo rodillas a 5 cm del suelo.",
                                 "target": "Tren Superior y Core"
                             },
@@ -141,7 +130,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y estabilización de rodilla al dar el paso al frente.",
                                 "target": "Cadera y Rodilla"
                             },
@@ -149,7 +137,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevación de frecuencia cardíaca y activación del psoas ilíaco.",
                                 "target": "Activación Psoas"
                             },
@@ -157,7 +144,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación general e incremento térmico muscular.",
                                 "target": "Temperatura y Ritmo"
                             }
@@ -168,7 +154,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aterrizar suavemente como un gato flexionando rodillas a 90° sin hacer ruido.",
                                 "target": "Potencia Horizontal"
                             },
@@ -177,7 +162,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Paso lateral veloz a máxima frecuencia de pies simulando línea imaginaria.",
                                 "target": "Frecuencia de Apoyo"
                             }
@@ -188,7 +172,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 a 12 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (2s bajada, 1s pausa abajo, 1s subida)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control estricto en la fase excéntrica con pecho erguido.",
                                 "target": "Cuádriceps y Glúteos"
                             },
@@ -197,7 +180,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 repeticiones",
                                 "tempo": "Tempo 3-1-1-0 (3s bajando con control)",
                                 "video": "https://www.youtube.com/embed/jWxvty2KROs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza de empuje para controlar el manubrio de la bicicleta.",
                                 "target": "Pectoral y Tríceps"
                             },
@@ -206,7 +188,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 reps (2s arriba)",
                                 "tempo": "Isometría 2s",
                                 "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fortalece la zona lumbar y cadena posterior para resistir la posición sobre la bici.",
                                 "target": "Zona Lumbar"
                             }
@@ -215,7 +196,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 20/20 - Escaladores y Sprints Fijos",
                             "format": "8 rondas (5 min 20 s total) • 20s esfuerzo máximo x 20s descanso",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas 1,3,5,7: Mountain Climbers. Rondas 2,4,6,8: Fast Feet in Place (sprints fijos)."
                         },
                         "stretch": [
@@ -223,28 +203,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas alineadas."
                             },
                             {
                                 "name": "Estiramiento de Isquiotibiales Sentado",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pecho hacia los muslos con la espalda recta."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja espalda baja y hombros."
                             },
                             {
                                 "name": "Estiramiento de Pectorales en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo a 90° en la pared y rotar torso hacia afuera."
                             }
                         ],
@@ -260,7 +236,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estiramiento dinámico isquiotibial y transición a plancha abdominal.",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -268,7 +243,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y activación de glúteo medio.",
                                 "target": "Glúteos y Caderas"
                             },
@@ -276,7 +250,6 @@ const TRAINING_DB = {
                                 "name": "High Knees con Aceleración",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación profunda del sistema nervioso central.",
                                 "target": "Sistema Nervioso"
                             }
@@ -287,7 +260,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima altura, extensión total de cadera en el aire y aterrizaje suave con rodillas flexionadas.",
                                 "target": "Potencia Vertical"
                             },
@@ -296,7 +268,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3 cambios de dirección explosivos simulando entrada a peraltes.",
                                 "target": "Agilidad y Frenado"
                             }
@@ -307,7 +278,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada, 1s pausa, subida explosiva X, 1s arriba)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral imprescindible para la potencia del primer pedalazo.",
                                 "target": "Fuerza Unilateral"
                             },
@@ -316,7 +286,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 a 12 repeticiones",
                                 "tempo": "Tempo 3-1-X-0 (Fase excéntrica lenta de 3s)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad escapular para halar y empujar el manubrio.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -325,7 +294,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 segundos",
                                 "tempo": "Isometría a 90°",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza de sostén cuádriceps para curvas y recta de salida.",
                                 "target": "Resistencia Cuádriceps"
                             },
@@ -334,7 +302,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques totales",
                                 "tempo": "Control anti-rotación",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Evitar el balanceo de cadera; core de hierro para transmisión de potencia.",
                                 "target": "Core Anti-Rotación"
                             }
@@ -343,7 +310,6 @@ const TRAINING_DB = {
                             "name": "Tabata Modificado 30/15 BMX",
                             "format": "8 rondas (6 min total) • 30s esfuerzo máximo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas 1, 3, 5, 7: Burpees sin flexión / Squat Thrusts. Rondas 2, 4, 6, 8: Skipping Alto Explosivo / High Knee Sprints."
                         },
                         "stretch": [
@@ -351,35 +317,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tirar del empeine hacia el glúteo manteniendo pelvis neutra."
                             },
                             {
                                 "name": "Estiramiento de Isquiotibiales Sentado",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Piernas extendidas, aproximar abdomen a muslos."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión lumbar vital para ciclistas."
                             },
                             {
                                 "name": "Estiramiento de Pectorales en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene la postura redondeada de hombros."
                             },
                             {
                                 "name": "Estiramiento de Gemelos en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón totalmente apoyado en el piso empujando la pared."
                             }
                         ],
@@ -395,7 +356,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estiramiento dinámico isquiotibial y transición a plancha abdominal.",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -403,7 +363,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y activación de glúteo medio.",
                                 "target": "Glúteos y Caderas"
                             },
@@ -411,7 +370,6 @@ const TRAINING_DB = {
                                 "name": "High Knees con Aceleración",
                                 "duration": "45s trabajo x 15s descanso",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación profunda del sistema nervioso central.",
                                 "target": "Sistema Nervioso"
                             }
@@ -422,7 +380,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima altura, extensión total de cadera en el aire y aterrizaje suave con rodillas flexionadas.",
                                 "target": "Potencia Vertical"
                             },
@@ -431,7 +388,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3 cambios de dirección explosivos simulando entrada a peraltes.",
                                 "target": "Agilidad y Frenado"
                             }
@@ -442,7 +398,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada, 1s pausa, subida explosiva X, 1s arriba)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral imprescindible para la potencia del primer pedalazo.",
                                 "target": "Fuerza Unilateral"
                             },
@@ -451,7 +406,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 a 12 repeticiones",
                                 "tempo": "Tempo 3-1-X-0 (Fase excéntrica lenta de 3s)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad escapular para halar y empujar el manubrio.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -460,7 +414,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 segundos",
                                 "tempo": "Isometría a 90°",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza de sostén cuádriceps para curvas y recta de salida.",
                                 "target": "Resistencia Cuádriceps"
                             },
@@ -469,7 +422,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques totales",
                                 "tempo": "Control anti-rotación",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Evitar el balanceo de cadera; core de hierro para transmisión de potencia.",
                                 "target": "Core Anti-Rotación"
                             }
@@ -478,7 +430,6 @@ const TRAINING_DB = {
                             "name": "Tabata Modificado 30/15 BMX",
                             "format": "8 rondas (6 min total) • 30s esfuerzo máximo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas 1, 3, 5, 7: Burpees sin flexión / Squat Thrusts. Rondas 2, 4, 6, 8: Skipping Alto Explosivo / High Knee Sprints."
                         },
                         "stretch": [
@@ -486,35 +437,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tirar del empeine hacia el glúteo manteniendo pelvis neutra."
                             },
                             {
                                 "name": "Estiramiento de Isquiotibiales Sentado",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Piernas extendidas, aproximar abdomen a muslos."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión lumbar vital para ciclistas."
                             },
                             {
                                 "name": "Estiramiento de Pectorales en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene la postura redondeada de hombros."
                             },
                             {
                                 "name": "Estiramiento de Gemelos en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón totalmente apoyado en el piso empujando la pared."
                             }
                         ],
@@ -543,7 +489,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el movimiento de pump.",
                                 "target": "Columna y Lumbar"
                             },
@@ -551,7 +496,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos y apertura de hombros mirando al techo.",
                                 "target": "Glúteos y Hombros"
                             }
@@ -562,7 +506,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 1 minuto",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "El entrenador dice: ¡Salto! (saltan alto), ¡Piso! (tocan suelo), ¡Estatua en un pie! (equilibrio).",
                                 "target": "Reacción Auditiva"
                             }
@@ -573,7 +516,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 segundos",
                                 "tempo": "Continuo",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moverse adelante y atrás manteniendo la cadera arriba.",
                                 "target": "Fuerza Postural"
                             },
@@ -582,7 +524,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Lento",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostados boca arriba, mover brazos y piernas al aire en coordinación como insecto invertido.",
                                 "target": "Coordinación Abdominal"
                             }
@@ -591,7 +532,6 @@ const TRAINING_DB = {
                             "name": "La Pista de Obstáculos Imaginaria",
                             "format": "3 rondas de 2 minutos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr en el puesto; cuando se grita '¡Salto!' saltan un obstáculo imaginario; cuando se dice '¡Túnel!' caminan como patos."
                         },
                         "stretch": [
@@ -599,14 +539,12 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Una rodilla en piso, empujar suavemente cadera al frente."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado boca arriba, rodilla al pecho y cruzar al lado opuesto."
                             }
                         ],
@@ -622,7 +560,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el pump.",
                                 "target": "Zona Lumbar"
                             },
@@ -630,7 +567,6 @@ const TRAINING_DB = {
                                 "name": "Frankenstein Kicks / Toque de Punta Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa flexores de cadera y prepara la pierna para el pedaleo.",
                                 "target": "Flexores de Cadera"
                             },
@@ -638,7 +574,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
                                 "duration": "45s (mitad por pierna)",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación coxofemoral profunda.",
                                 "target": "Articulación Coxofemoral"
                             },
@@ -646,7 +581,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Puesto con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/v7rjHmZRs28",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s rápido x 5s suave despertando el sistema nervioso.",
                                 "target": "Alerta Nerviosa"
                             }
@@ -657,7 +591,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 saltos (6 por lado)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar lateralmente de un pie al otro buscando distancia y manteniendo el equilibrio 1s al aterrizar.",
                                 "target": "Estabilidad Lateral"
                             },
@@ -666,7 +599,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Iniciar acostados boca abajo. Al aplauso o '¡Ya!', levantarse de un salto y hacer sprint en el sitio 5s.",
                                 "target": "Tiempo de Reacción"
                             }
@@ -677,7 +609,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 a 40 segundos",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Espalda recta, apretando glúteos para no arquear la zona lumbar.",
                                 "target": "Core Frontal"
                             },
@@ -686,7 +617,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 reps por pierna",
                                 "tempo": "Tempo 2-2-1-0 (Subir, 2s arriba, 2s bajada)",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aislar la cadera para compensar desbalances entre piernas.",
                                 "target": "Glúteo Mayor"
                             },
@@ -695,7 +625,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 reps por lado",
                                 "tempo": "Controlado",
                                 "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Construye fuerza estabilizadora para tomar peraltes a alta velocidad.",
                                 "target": "Aductores y Peraltes"
                             }
@@ -704,7 +633,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 15/30 - Medios Burpees",
                             "format": "10 rondas (7.5 min total) • 15s trabajo máximo x 30s descanso pasivo",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Medios Burpees (sin flexión de pecho, volver rápido a posición de pie). La meta es la velocidad de pies al recoger rodillas al pecho."
                         },
                         "stretch": [
@@ -712,35 +640,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Vital para evitar dolores lumbares en ciclistas."
                             },
                             {
                                 "name": "El Perro Boca Abajo / Downward Dog",
                                 "duration": "40s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Presionar talones al suelo; relaja pantorrillas y espalda completa."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad toracolumbar."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar tobillo sobre rodilla y presionar pecho."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relajar el trapecio tensionado por el peso del casco integral."
                             }
                         ],
@@ -756,7 +679,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberación de la fascia toracolumbar.",
                                 "target": "Columna"
                             },
@@ -764,7 +686,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación isométrica y dinámica de isquiotibiales.",
                                 "target": "Isquiotibiales"
                             },
@@ -772,7 +693,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rango articular de cadera previo a aceleraciones.",
                                 "target": "Cadera"
                             },
@@ -780,7 +700,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aceleraciones explosivas de 3 segundos.",
                                 "target": "SNC"
                             }
@@ -791,7 +710,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos (3 der, 3 izq)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/mKbYaSu1FA8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).",
                                 "target": "Absorción y Estabilidad"
                             },
@@ -800,7 +718,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "De rodillas en el piso; a la señal, llevar pie al frente explosivo y skipping alto 6s a muerte.",
                                 "target": "Salida del Partidor"
                             }
@@ -811,7 +728,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 4-1-1-1 (4s bajada, control total del equilibrio)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Sentir el estiramiento profundo del isquiotibial y estabilidad de tobillo.",
                                 "target": "Cadena Posterior Unilateral"
                             },
@@ -820,7 +736,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones por lado",
                                 "tempo": "Tempo 2-1-1-1 (Bajar cadera en 2s, subir fuerte)",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza oblicua y pélvica para resistir fuerzas centrífugas en peraltes.",
                                 "target": "Oblicuos y Cadera"
                             },
@@ -829,7 +744,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 a 45 segundos",
                                 "tempo": "Isometría estricta",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado boca arriba, piernas y hombros elevados a 10 cm, zona lumbar aplastada contra el suelo.",
                                 "target": "Core Gimnástico"
                             },
@@ -838,7 +752,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones por pierna",
                                 "tempo": "Tempo 2-1-X-0 (Paso atrás en 2s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Empuje vertical con la pierna delantera simulando pedalazo.",
                                 "target": "Extensión de Cadera"
                             }
@@ -847,7 +760,6 @@ const TRAINING_DB = {
                             "name": "Simulador de Vuelta Completa - 'BMX Track EMOM'",
                             "format": "EMOM 8 Minutos (Every Minute on the Minute)",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares (1, 3, 5, 7 - Rectas y Saltos): 12 Tuck Jumps al pecho. Minutos Pares (2, 4, 6, 8 - Peraltes y Remate): 30s de Quick Feet a máxima velocidad."
                         },
                         "stretch": [
@@ -855,35 +767,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Evita inclinación pélvica anterior por exceso de pedaleo."
                             },
                             {
                                 "name": "El Perro Boca Abajo / Downward Dog",
                                 "duration": "40s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elongación de gemelos y descompresión de columna."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Restablece movilidad rotacional de la columna."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apertura del piramidal y rotadores externos de cadera."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descargar trapecios y cervicales post-impacto."
                             }
                         ],
@@ -899,7 +806,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberación de la fascia toracolumbar.",
                                 "target": "Columna"
                             },
@@ -907,7 +813,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación isométrica y dinámica de isquiotibiales.",
                                 "target": "Isquiotibiales"
                             },
@@ -915,7 +820,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rango articular de cadera previo a aceleraciones.",
                                 "target": "Cadera"
                             },
@@ -923,7 +827,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aceleraciones explosivas de 3 segundos.",
                                 "target": "SNC"
                             }
@@ -934,7 +837,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos (3 der, 3 izq)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/mKbYaSu1FA8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).",
                                 "target": "Absorción y Estabilidad"
                             },
@@ -943,7 +845,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "De rodillas en el piso; a la señal, llevar pie al frente explosivo y skipping alto 6s a muerte.",
                                 "target": "Salida del Partidor"
                             }
@@ -954,7 +855,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 4-1-1-1 (4s bajada, control total del equilibrio)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Sentir el estiramiento profundo del isquiotibial y estabilidad de tobillo.",
                                 "target": "Cadena Posterior Unilateral"
                             },
@@ -963,7 +863,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones por lado",
                                 "tempo": "Tempo 2-1-1-1 (Bajar cadera en 2s, subir fuerte)",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza oblicua y pélvica para resistir fuerzas centrífugas en peraltes.",
                                 "target": "Oblicuos y Cadera"
                             },
@@ -972,7 +871,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 a 45 segundos",
                                 "tempo": "Isometría estricta",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado boca arriba, piernas y hombros elevados a 10 cm, zona lumbar aplastada contra el suelo.",
                                 "target": "Core Gimnástico"
                             },
@@ -981,7 +879,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones por pierna",
                                 "tempo": "Tempo 2-1-X-0 (Paso atrás en 2s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Empuje vertical con la pierna delantera simulando pedalazo.",
                                 "target": "Extensión de Cadera"
                             }
@@ -990,7 +887,6 @@ const TRAINING_DB = {
                             "name": "Simulador de Vuelta Completa - 'BMX Track EMOM'",
                             "format": "EMOM 8 Minutos (Every Minute on the Minute)",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares (1, 3, 5, 7 - Rectas y Saltos): 12 Tuck Jumps al pecho. Minutos Pares (2, 4, 6, 8 - Peraltes y Remate): 30s de Quick Feet a máxima velocidad."
                         },
                         "stretch": [
@@ -998,35 +894,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Evita inclinación pélvica anterior por exceso de pedaleo."
                             },
                             {
                                 "name": "El Perro Boca Abajo / Downward Dog",
                                 "duration": "40s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elongación de gemelos y descompresión de columna."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Restablece movilidad rotacional de la columna."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apertura del piramidal y rotadores externos de cadera."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descargar trapecios y cervicales post-impacto."
                             }
                         ],
@@ -1055,7 +946,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media, crucial para halar el manubrio.",
                                 "target": "Espalda Media"
                             },
@@ -1063,7 +953,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abrir y cerrar brazos al frente calentando hombros y pecho.",
                                 "target": "Pectoral y Hombros"
                             },
@@ -1071,7 +960,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo movilizando aductores.",
                                 "target": "Aductores"
                             },
@@ -1079,7 +967,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Preparación de puntos de contacto directo con puños y pedales.",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -1087,7 +974,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cambio de Dirección"
                             }
@@ -1098,7 +984,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 30 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pies juntos, saltando adelante y atrás sobre una línea imaginaria lo más rápido posible.",
                                 "target": "Rigidez de Tobillos"
                             }
@@ -1109,7 +994,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 6 a 8 pasos",
                                 "tempo": "Asistido",
                                 "video": "https://www.youtube.com/embed/umtTnKXkqc8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Los padres sostienen las piernas, el niño camina con las manos. Excelente para hombros y core.",
                                 "target": "Fuerza de Hombros"
                             },
@@ -1118,7 +1002,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 5 repeticiones",
                                 "tempo": "Explosivo",
                                 "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostarse boca arriba y buscar la manera más rápida de ponerse de pie a la señal.",
                                 "target": "Agilidad y Coordinación"
                             }
@@ -1127,7 +1010,6 @@ const TRAINING_DB = {
                             "name": "Carrera de Relevos de Juguetes",
                             "format": "3 rondas de 2 minutos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "5 juguetes en un extremo. Correr, agarrar uno, volver y depositarlo. Descanso hasta recuperar aliento."
                         },
                         "stretch": [
@@ -1135,21 +1017,18 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos (Flexor & Extensor)",
                                 "duration": "30s por brazo",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Palmas arriba y abajo jalando dedos. Previene el arm pump."
                             },
                             {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones lentas",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Arquear y hundir espalda en cuadrupedia."
                             },
                             {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Plantas de los pies juntas, presionar rodillas al suelo."
                             }
                         ],
@@ -1165,7 +1044,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Crucial para liberar la espalda media al halar el manubrio.",
                                 "target": "Tórax y Escápulas"
                             },
@@ -1173,7 +1051,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Hombros"
                             },
@@ -1181,7 +1058,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza aductores para el control de la bicicleta con las rodillas.",
                                 "target": "Aductores"
                             },
@@ -1189,7 +1065,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación de pedales y puños.",
                                 "target": "Articulaciones de Apoyo"
                             },
@@ -1197,7 +1072,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Agilidad en cambios de línea en pista.",
                                 "target": "Agilidad"
                             }
@@ -1208,7 +1082,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar verticalmente con la fuerza de gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
                                 "target": "Stiffness Tobillo"
                             },
@@ -1217,7 +1090,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos explosivos cruzando un tenis o almohada pequeña.",
                                 "target": "Potencia Lateral"
                             }
@@ -1228,7 +1100,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 2-1-1-0 (Bajar 2s, 1s abajo, 1s arriba)",
                                 "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desarrolla la fuerza para empujar la bicicleta hacia abajo en saltos y amortiguar.",
                                 "target": "Tríceps y Empuje"
                             },
@@ -1237,7 +1108,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 reps alternas",
                                 "tempo": "Explosivo",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza explosiva individual para cada pierna en aceleración.",
                                 "target": "Potencia de Piernas"
                             },
@@ -1246,7 +1116,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 segundos",
                                 "tempo": "Continuo",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fortalece la cadena anterior del brazo y hombro posterior.",
                                 "target": "Tren Superior Posterior"
                             }
@@ -1255,7 +1124,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 30/30 - High Knees y Speed Skaters",
                             "format": "8 rondas (8 min total) • 30s trabajo máximo x 30s descanso",
                             "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares: Rodillas al Pecho en el sitio. Rondas Pares: Patinadores Rápidos (Speed Skaters)."
                         },
                         "stretch": [
@@ -1263,35 +1131,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos (Flexor & Extensor)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene la fatiga extrema en antebrazos ('arm pump')."
                             },
                             {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de la columna dorsal y lumbar."
                             },
                             {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Plantas juntas, rodillas hacia el suelo."
                             },
                             {
                                 "name": "Estiramiento del Sóleo (Pantorrilla Baja)",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Igual al de gemelos pero flexionando la rodilla de atrás para estirar cerca al tendón de Aquiles."
                             },
                             {
                                 "name": "Apertura de Pecho y Hombro / Standing Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos entrelazadas detrás de la espalda, sacar pecho y elevar brazos."
                             }
                         ],
@@ -1307,7 +1170,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s (mitad por lado)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad escapular y torácica.",
                                 "target": "Espalda Media"
                             },
@@ -1315,7 +1177,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación del manguito rotador y pectorales.",
                                 "target": "Pectoral"
                             },
@@ -1323,7 +1184,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apertura de cadera y aductores.",
                                 "target": "Aductores"
                             },
@@ -1331,7 +1191,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Articulaciones de contacto directo.",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -1339,7 +1198,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación y agilidad.",
                                 "target": "Cardio SNC"
                             }
@@ -1350,7 +1208,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 a 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.",
                                 "target": "Reflejo Miotático & Potencia Vertical"
                             },
@@ -1359,7 +1216,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.",
                                 "target": "Stiffness Tobillo & Potencia Reactiva"
                             }
@@ -1370,7 +1226,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 3-1-1-0 (3s bajada de coronilla)",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desarrolla fuerza específica en hombros y deltoides para Manuals y saltos dobles.",
                                 "target": "Deltoides y Manuals"
                             },
@@ -1379,7 +1234,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 16 reps (8 por pierna)",
                                 "tempo": "Amortiguación y rebote sin pausa",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fase de vuelo máxima para simular esfuerzo anaeróbico en rectas de pista.",
                                 "target": "Potencia Aláctica"
                             },
@@ -1388,7 +1242,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 reps por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada en escalón, pausa 1s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apoyados en borde de escalón. Fuerza tendinosa para la biela.",
                                 "target": "Gemelos y Sóleo"
                             },
@@ -1397,7 +1250,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En plancha alta, arrastrar maleta pesada o mancuerna por debajo del cuerpo sin mover la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -1406,7 +1258,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20)",
                             "format": "6 rondas (6 min total) • 40s esfuerzo máximo x 20s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas 1 y 4: Sprawls (tirarse a plancha y volver a pararse veloz). Rondas 2 y 5: Abdominales de Bicicleta Rápidos. Rondas 3 y 6: Sentadillas con Salto Rápido."
                         },
                         "stretch": [
@@ -1414,7 +1265,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos (Flexor & Extensor)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Jalar dedos hacia atrás y abajo. Vital para prevenir Arm Pump.",
                                 "target": "Antebrazos"
                             },
@@ -1422,7 +1272,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión torácica.",
                                 "target": "Columna"
                             },
@@ -1430,7 +1279,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relajación de aductores.",
                                 "target": "Cadera"
                             },
@@ -1438,7 +1286,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo (Pantorrilla Baja)",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estiramiento profundo del tendón de Aquiles.",
                                 "target": "Sóleo"
                             },
@@ -1446,7 +1293,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho y Hombro / Standing Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la postura encorvada del ciclista.",
                                 "target": "Pectoral"
                             }
@@ -1463,7 +1309,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s (mitad por lado)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad escapular y torácica.",
                                 "target": "Espalda Media"
                             },
@@ -1471,7 +1316,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación del manguito rotador y pectorales.",
                                 "target": "Pectoral"
                             },
@@ -1479,7 +1323,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apertura de cadera y aductores.",
                                 "target": "Aductores"
                             },
@@ -1487,7 +1330,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Articulaciones de contacto directo.",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -1495,7 +1337,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación y agilidad.",
                                 "target": "Cardio SNC"
                             }
@@ -1506,7 +1347,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 a 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.",
                                 "target": "Reflejo Miotático & Potencia Vertical"
                             },
@@ -1515,7 +1355,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.",
                                 "target": "Stiffness Tobillo & Potencia Reactiva"
                             }
@@ -1526,7 +1365,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 3-1-1-0 (3s bajada de coronilla)",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desarrolla fuerza específica en hombros y deltoides para Manuals y saltos dobles.",
                                 "target": "Deltoides y Manuals"
                             },
@@ -1535,7 +1373,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 16 reps (8 por pierna)",
                                 "tempo": "Amortiguación y rebote sin pausa",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fase de vuelo máxima para simular esfuerzo anaeróbico en rectas de pista.",
                                 "target": "Potencia Aláctica"
                             },
@@ -1544,7 +1381,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 reps por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada en escalón, pausa 1s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apoyados en borde de escalón. Fuerza tendinosa para la biela.",
                                 "target": "Gemelos y Sóleo"
                             },
@@ -1553,7 +1389,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En plancha alta, arrastrar maleta pesada o mancuerna por debajo del cuerpo sin mover la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -1562,7 +1397,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20)",
                             "format": "6 rondas (6 min total) • 40s esfuerzo máximo x 20s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas 1 y 4: Sprawls (tirarse a plancha y volver a pararse veloz). Rondas 2 y 5: Abdominales de Bicicleta Rápidos. Rondas 3 y 6: Sentadillas con Salto Rápido."
                         },
                         "stretch": [
@@ -1570,7 +1404,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos (Flexor & Extensor)",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Jalar dedos hacia atrás y abajo. Vital para prevenir Arm Pump.",
                                 "target": "Antebrazos"
                             },
@@ -1578,7 +1411,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión torácica.",
                                 "target": "Columna"
                             },
@@ -1586,7 +1418,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relajación de aductores.",
                                 "target": "Cadera"
                             },
@@ -1594,7 +1425,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo (Pantorrilla Baja)",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estiramiento profundo del tendón de Aquiles.",
                                 "target": "Sóleo"
                             },
@@ -1602,7 +1432,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho y Hombro / Standing Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la postura encorvada del ciclista.",
                                 "target": "Pectoral"
                             }
@@ -1654,7 +1483,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa el psoas y eleva la frecuencia cardíaca de forma divertida.",
                                 "target": "Cardiovascular"
                             },
@@ -1662,7 +1490,6 @@ const TRAINING_DB = {
                                 "name": "Rotación de Brazos Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Calienta los manguitos rotadores, clave para el pull en la salida.",
                                 "target": "Manguito Rotador"
                             },
@@ -1670,7 +1497,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desde de pie, caminar con las manos hasta posición de plancha y volver.",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -1678,7 +1504,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación y temperatura corporal.",
                                 "target": "Ritmo"
                             },
@@ -1686,7 +1511,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión (Desplantes con Giro)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y activación del core.",
                                 "target": "Cadera"
                             }
@@ -1697,7 +1521,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Colocar marcas en el suelo (hojas o cojines) para que salten de una a otra.",
                                 "target": "Pliometría Lúdica"
                             }
@@ -1708,7 +1531,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 segundos",
                                 "tempo": "Continuo",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fomenta la fuerza del tren superior jugando a ser osos.",
                                 "target": "Fuerza Tren Superior"
                             },
@@ -1717,7 +1539,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Libre",
                                 "video": "https://www.youtube.com/embed/2aMn_J6Lip0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar el piso con las manos entre las piernas y ponerse de pie.",
                                 "target": "Piernas"
                             }
@@ -1726,7 +1547,6 @@ const TRAINING_DB = {
                             "name": "Semáforo Loco en Casa",
                             "format": "5 minutos continuos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Verde = Correr rápido en el sitio. Amarillo = Caminar. Rojo = Congelarse como estatua."
                         },
                         "stretch": [
@@ -1734,14 +1554,12 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la espalda baja."
                             }
                         ],
@@ -1757,7 +1575,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa el psoas y eleva la frecuencia cardíaca.",
                                 "target": "Psoas"
                             },
@@ -1765,7 +1582,6 @@ const TRAINING_DB = {
                                 "name": "Rotación de Brazos / Arm Circles",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Calienta los manguitos rotadores para halar el manubrio.",
                                 "target": "Hombros"
                             },
@@ -1773,7 +1589,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caminar con las manos hasta plancha y regresar.",
                                 "target": "Isquiotibiales"
                             },
@@ -1781,7 +1596,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación y temperatura.",
                                 "target": "Cardio"
                             },
@@ -1789,7 +1603,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión (Desplantes con Giro)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y torsión de tronco.",
                                 "target": "Caderas"
                             }
@@ -1800,7 +1613,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar adelante lo más lejos posible, aterrizando en sentadilla profunda como ninjas (sin hacer ruido).",
                                 "target": "Absorción y Potencia"
                             },
@@ -1809,7 +1621,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos (5 por pierna)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Buscando equilibrio monopodal al caer.",
                                 "target": "Equilibrio Monopodal"
                             }
@@ -1820,7 +1631,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (Bajan en 2s, pausa 1s, suben en 1s)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza base con postura erguida.",
                                 "target": "Cuádriceps"
                             },
@@ -1829,7 +1639,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 2-1-1-0",
                                 "video": "https://www.youtube.com/embed/jWxvty2KROs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control pectoral y escapular.",
                                 "target": "Pectoral"
                             },
@@ -1838,7 +1647,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 reps (2s arriba)",
                                 "tempo": "Isometría 2s",
                                 "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Sosteniendo 2 segundos arriba. Fortalece la zona lumbar.",
                                 "target": "Zona Lumbar"
                             }
@@ -1847,7 +1655,6 @@ const TRAINING_DB = {
                             "name": "Intervalos 20/20 Mountain Climbers",
                             "format": "8 rondas (5 min 20 s total) • 20s esfuerzo máximo x 20s recuperación total",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Escaladores Rápidos / Mountain Climbers a máxima cadencia simulando el pique en pista."
                         },
                         "stretch": [
@@ -1855,28 +1662,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas."
                             },
                             {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Posición de V invertida empujando talones al piso."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la espalda baja."
                             },
                             {
                                 "name": "Estiramiento de Pectoral en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo a 90° en la pared, girar el torso hacia afuera."
                             }
                         ],
@@ -1892,7 +1695,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa el psoas y eleva la frecuencia cardíaca.",
                                 "target": "Psoas"
                             },
@@ -1900,7 +1702,6 @@ const TRAINING_DB = {
                                 "name": "Rotación de Brazos / Arm Circles",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manguitos rotadores para el 'pull' en el partidor.",
                                 "target": "Hombros"
                             },
@@ -1908,7 +1709,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad posterior y estabilización de muñecas.",
                                 "target": "Cadena Posterior"
                             },
@@ -1916,7 +1716,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Temperatura y ritmo neuromuscular.",
                                 "target": "Coordinación"
                             },
@@ -1924,7 +1723,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión (Desplantes con Giro)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y activación rotacional del core.",
                                 "target": "Core Rotacional"
                             }
@@ -1935,7 +1733,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima explosividad hacia arriba, extensión completa de cadera en el aire.",
                                 "target": "Extensión Explosiva"
                             },
@@ -1944,7 +1741,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos rápidos con rodillas rectas simulando el rebote elástico de un resorte.",
                                 "target": "Stiffness de Tobillo"
                             }
@@ -1955,7 +1751,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada, 1s pausa, subida explosiva, 1s arriba)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Construcción de potencia simétrica en cada pierna para el pedaleo.",
                                 "target": "Fuerza Unilateral"
                             },
@@ -1964,7 +1759,6 @@ const TRAINING_DB = {
                                 "sets": "3 series al fallo técnico",
                                 "tempo": "Tempo 3-1-X-0 (3s bajando con control, subida fuerte)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Hasta perder la forma técnica. Aumenta la firmeza en brazos y torso.",
                                 "target": "Tren Superior"
                             },
@@ -1973,7 +1767,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Toques a los hombros intentando no rotar la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -1982,7 +1775,6 @@ const TRAINING_DB = {
                             "name": "Tabata Modificado 30/15 BMX",
                             "format": "6 rondas (4 min 30 s total) • 30s esfuerzo máximo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares: Burpees sin flexión / Sprawls. Rondas Pares: Sprints en el sitio / Fast Feet (a ras de suelo simulando cadencia alta de pedaleo)."
                         },
                         "stretch": [
@@ -1990,28 +1782,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, respirando profundo."
                             },
                             {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talones empujando al suelo estirando gemelos e isquiotibiales."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la espalda baja, fundamental en BMX."
                             },
                             {
                                 "name": "Estiramiento de Pectoral en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo a 90° en la pared, previene la postura encorvada."
                             }
                         ],
@@ -2027,7 +1815,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa el psoas y eleva la frecuencia cardíaca.",
                                 "target": "Psoas"
                             },
@@ -2035,7 +1822,6 @@ const TRAINING_DB = {
                                 "name": "Rotación de Brazos / Arm Circles",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manguitos rotadores para el 'pull' en el partidor.",
                                 "target": "Hombros"
                             },
@@ -2043,7 +1829,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad posterior y estabilización de muñecas.",
                                 "target": "Cadena Posterior"
                             },
@@ -2051,7 +1836,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Temperatura y ritmo neuromuscular.",
                                 "target": "Coordinación"
                             },
@@ -2059,7 +1843,6 @@ const TRAINING_DB = {
                                 "name": "Estocadas Dinámicas con Torsión (Desplantes con Giro)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera y activación rotacional del core.",
                                 "target": "Core Rotacional"
                             }
@@ -2070,7 +1853,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima explosividad hacia arriba, extensión completa de cadera en el aire.",
                                 "target": "Extensión Explosiva"
                             },
@@ -2079,7 +1861,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos rápidos con rodillas rectas simulando el rebote elástico de un resorte.",
                                 "target": "Stiffness de Tobillo"
                             }
@@ -2090,7 +1871,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (3s bajada, 1s pausa, subida explosiva, 1s arriba)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Construcción de potencia simétrica en cada pierna para el pedaleo.",
                                 "target": "Fuerza Unilateral"
                             },
@@ -2099,7 +1879,6 @@ const TRAINING_DB = {
                                 "sets": "3 series al fallo técnico",
                                 "tempo": "Tempo 3-1-X-0 (3s bajando con control, subida fuerte)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Hasta perder la forma técnica. Aumenta la firmeza en brazos y torso.",
                                 "target": "Tren Superior"
                             },
@@ -2108,7 +1887,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Toques a los hombros intentando no rotar la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -2117,7 +1895,6 @@ const TRAINING_DB = {
                             "name": "Tabata Modificado 30/15 BMX",
                             "format": "6 rondas (4 min 30 s total) • 30s esfuerzo máximo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares: Burpees sin flexión / Sprawls. Rondas Pares: Sprints en el sitio / Fast Feet (a ras de suelo simulando cadencia alta de pedaleo)."
                         },
                         "stretch": [
@@ -2125,28 +1902,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, respirando profundo."
                             },
                             {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/Y0GDgQqt-bA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talones empujando al suelo estirando gemelos e isquiotibiales."
                             },
                             {
                                 "name": "Posición del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la espalda baja, fundamental en BMX."
                             },
                             {
                                 "name": "Estiramiento de Pectoral en Pared",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo a 90° en la pared, previene la postura encorvada."
                             }
                         ],
@@ -2175,7 +1948,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el movimiento de pump.",
                                 "target": "Espalda Baja"
                             },
@@ -2183,7 +1955,6 @@ const TRAINING_DB = {
                                 "name": "Frankenstein Kicks / Toque de Punta Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa isquiotibiales y prepara extensión de rodilla.",
                                 "target": "Isquiotibiales"
                             },
@@ -2191,7 +1962,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación de la articulación coxofemoral.",
                                 "target": "Cadera"
                             },
@@ -2199,7 +1969,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos y apertura de hombros.",
                                 "target": "Glúteos"
                             },
@@ -2207,7 +1976,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s máxima velocidad x 5s suave despierta el SNC.",
                                 "target": "SNC"
                             }
@@ -2218,7 +1986,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 1 minuto",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Entrenador dice: '¡Salto!' (saltan alto), '¡Piso!' (tocan suelo), '¡Estatua en un pie!' (equilibrio).",
                                 "target": "Reacción Auditiva"
                             }
@@ -2229,7 +1996,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Coordinado",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Boca arriba, mover brazos y piernas al aire coordinadamente.",
                                 "target": "Core"
                             },
@@ -2238,7 +2004,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Contar 3s arriba",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subir la cadera y contar hasta 3 antes de bajar.",
                                 "target": "Glúteos"
                             }
@@ -2247,7 +2012,6 @@ const TRAINING_DB = {
                             "name": "Pista de Obstáculos Imaginaria",
                             "format": "3 rondas de 2 minutos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr esquivando objetos; cuando el entrenador grita '¡Túnel!' caminan agachados; '¡Doble!' saltan alto."
                         },
                         "stretch": [
@@ -2255,28 +2019,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Empujar cadera suavemente hacia adelante sin arquear espalda."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodilla hacia el pecho cruzando hacia el piso del lado opuesto."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar tobillo derecho sobre rodilla izquierda y presionar pecho."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Inclinar cabeza hacia el hombro relajando el trapecio."
                             }
                         ],
@@ -2292,7 +2052,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el pump.",
                                 "target": "Lumbar"
                             },
@@ -2300,7 +2059,6 @@ const TRAINING_DB = {
                                 "name": "Frankenstein Kicks / Toque de Punta Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa los isquiotibiales y prepara la extensión de rodilla.",
                                 "target": "Isquiotibiales"
                             },
@@ -2308,7 +2066,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación coxofemoral.",
                                 "target": "Cadera"
                             },
@@ -2316,7 +2073,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos y apertura de hombros.",
                                 "target": "Glúteos"
                             },
@@ -2324,7 +2080,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s velocidad máxima x 5s suave despierta el SNC.",
                                 "target": "SNC"
                             }
@@ -2335,7 +2090,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostados boca abajo. Al aplauso, se levantan de un salto y hacen un sprint en el sitio por 5s a muerte.",
                                 "target": "Reacción Auditiva"
                             },
@@ -2344,7 +2098,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 saltos (6 por lado)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar lateralmente buscando distancia y manteniendo el equilibrio 1s al aterrizar.",
                                 "target": "Equilibrio Dinámico"
                             }
@@ -2355,7 +2108,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 a 40 segundos",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Espalda recta, apretando glúteos para no arquear la zona lumbar.",
                                 "target": "Estabilidad Pélvica"
                             },
@@ -2364,7 +2116,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 reps por pierna",
                                 "tempo": "Tempo 2-2-1-0 (Subir normal, 2s arriba, bajar en 2s)",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aislar glúteos y estabilizar pelvis.",
                                 "target": "Glúteo Mayor"
                             },
@@ -2373,7 +2124,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 reps por lado",
                                 "tempo": "Controlado",
                                 "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Construye fuerza estabilizadora para tomar peraltes a alta velocidad.",
                                 "target": "Aductores"
                             }
@@ -2382,7 +2132,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 15/30 Medios Burpees",
                             "format": "10 rondas (7.5 min total) • 15s trabajo máximo x 30s descanso pasivo",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Medios Burpees (sin flexión de pecho, volver rápido a posición de pie). La meta es la velocidad de los pies al recoger rodillas al pecho."
                         },
                         "stretch": [
@@ -2390,28 +2139,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Vital para evitar dolores lumbares en ciclistas."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Llevar rodilla hacia el pecho y cruzar al lado opuesto."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Presionar pecho hacia piernas con espalda recta."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el trapecio tensionado por el casco integral."
                             }
                         ],
@@ -2427,7 +2172,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el pump.",
                                 "target": "Espalda Baja"
                             },
@@ -2435,7 +2179,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa isquiotibiales y rodilla.",
                                 "target": "Isquiotibiales"
                             },
@@ -2443,7 +2186,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación coxofemoral profunda.",
                                 "target": "Cadera"
                             },
@@ -2451,7 +2193,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación glútea y apertura torácica.",
                                 "target": "Glúteos"
                             },
@@ -2459,7 +2200,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aceleraciones explosivas del SNC.",
                                 "target": "SNC"
                             }
@@ -2470,7 +2210,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos (3 der, 3 izq)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).",
                                 "target": "Absorción y Control de Rodilla"
                             },
@@ -2479,7 +2218,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "De rodillas en el piso; a la señal, llevar pie al frente explosivo, pararse y skipping alto a máxima velocidad por 6 segundos.",
                                 "target": "Salida Explosiva de Partidor"
                             }
@@ -2490,7 +2228,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 4-1-1-1 (Bajar en 4s sintiendo el estiramiento del isquiotibial)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control total del equilibrio innegociable.",
                                 "target": "Cadena Posterior"
                             },
@@ -2499,7 +2236,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 2-1-X-0 (Paso atrás en 2s, pausa 1s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Empujar explosivamente con la pierna delantera.",
                                 "target": "Potencia Cuádriceps"
                             },
@@ -2508,7 +2244,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 segundos",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Piernas y hombros elevados a 10 cm del suelo, zona lumbar aplastada contra el piso.",
                                 "target": "Core Gimnástico"
                             },
@@ -2517,7 +2252,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 por lado",
                                 "tempo": "Tempo controlado",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar cadera suave y subir fuerte.",
                                 "target": "Oblicuos"
                             }
@@ -2526,7 +2260,6 @@ const TRAINING_DB = {
                             "name": "BMX Track EMOM (Every Minute on the Minute)",
                             "format": "EMOM 8 Minutos • El tiempo sobrante es descanso",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares (1, 3, 5, 7 - Rectas y Saltos): 12 Tuck Jumps al pecho. Minutos Pares (2, 4, 6, 8 - Peraltes y Remate): 30s de Quick Feet a máxima velocidad."
                         },
                         "stretch": [
@@ -2534,28 +2267,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Vital para evitar dolores lumbares en ciclistas."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado boca arriba, rodilla al pecho y cruzar al piso opuesto."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar tobillo sobre rodilla y presionar pecho."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relajar el trapecio tensionado por el casco integral."
                             }
                         ],
@@ -2571,7 +2300,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Liberar tensión lumbar preparatoria para el pump.",
                                 "target": "Espalda Baja"
                             },
@@ -2579,7 +2307,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa isquiotibiales y rodilla.",
                                 "target": "Isquiotibiales"
                             },
@@ -2587,7 +2314,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación coxofemoral profunda.",
                                 "target": "Cadera"
                             },
@@ -2595,7 +2321,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación glútea y apertura torácica.",
                                 "target": "Glúteos"
                             },
@@ -2603,7 +2328,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Cambios de Ritmo",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aceleraciones explosivas del SNC.",
                                 "target": "SNC"
                             }
@@ -2614,7 +2338,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos (3 der, 3 izq)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Absorber el impacto sin que la rodilla colapse hacia adentro (evitar valgo de rodilla).",
                                 "target": "Absorción y Control de Rodilla"
                             },
@@ -2623,7 +2346,6 @@ const TRAINING_DB = {
                                 "sets": "4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "De rodillas en el piso; a la señal, llevar pie al frente explosivo, pararse y skipping alto a máxima velocidad por 6 segundos.",
                                 "target": "Salida Explosiva de Partidor"
                             }
@@ -2634,7 +2356,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 4-1-1-1 (Bajar en 4s sintiendo el estiramiento del isquiotibial)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control total del equilibrio innegociable.",
                                 "target": "Cadena Posterior"
                             },
@@ -2643,7 +2364,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 2-1-X-0 (Paso atrás en 2s, pausa 1s, subida explosiva)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Empujar explosivamente con la pierna delantera.",
                                 "target": "Potencia Cuádriceps"
                             },
@@ -2652,7 +2372,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 segundos",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Piernas y hombros elevados a 10 cm del suelo, zona lumbar aplastada contra el piso.",
                                 "target": "Core Gimnástico"
                             },
@@ -2661,7 +2380,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 por lado",
                                 "tempo": "Tempo controlado",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar cadera suave y subir fuerte.",
                                 "target": "Oblicuos"
                             }
@@ -2670,7 +2388,6 @@ const TRAINING_DB = {
                             "name": "BMX Track EMOM (Every Minute on the Minute)",
                             "format": "EMOM 8 Minutos • El tiempo sobrante es descanso",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares (1, 3, 5, 7 - Rectas y Saltos): 12 Tuck Jumps al pecho. Minutos Pares (2, 4, 6, 8 - Peraltes y Remate): 30s de Quick Feet a máxima velocidad."
                         },
                         "stretch": [
@@ -2678,28 +2395,24 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Caballero",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Vital para evitar dolores lumbares en ciclistas."
                             },
                             {
                                 "name": "Torsión Espinal Supina",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado boca arriba, rodilla al pecho y cruzar al piso opuesto."
                             },
                             {
                                 "name": "Estiramiento de Glúteo Sentado (Figura 4)",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar tobillo sobre rodilla y presionar pecho."
                             },
                             {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "20s",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relajar el trapecio tensionado por el casco integral."
                             }
                         ],
@@ -2728,7 +2441,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Crucial para liberar la espalda media para halar el manubrio.",
                                 "target": "Espalda Media"
                             },
@@ -2736,7 +2448,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abrir y cerrar brazos extendidos al frente (no arriba).",
                                 "target": "Hombros"
                             },
@@ -2744,7 +2455,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo movilizando aductores.",
                                 "target": "Aductores"
                             },
@@ -2752,7 +2462,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Articulaciones de contacto crítico (pedales y puños).",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -2760,7 +2469,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios suaves de dirección.",
                                 "target": "Cambio de Dirección"
                             }
@@ -2771,7 +2479,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 30 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar con pies juntos adelante y atrás sobre una línea imaginaria lo más rápido posible.",
                                 "target": "Stiffness Tobillo"
                             }
@@ -2782,7 +2489,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 pasos",
                                 "tempo": "Asistido",
                                 "video": "https://www.youtube.com/embed/umtTnKXkqc8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "El adulto sostiene las piernas; desarrolla fuerza fundamental en muñecas y hombros.",
                                 "target": "Hombros y Muñecas"
                             },
@@ -2791,7 +2497,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 5 repeticiones",
                                 "tempo": "Rápido y creativo",
                                 "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostarse y pararse lo más rápido posible usando creatividad motriz.",
                                 "target": "Agilidad"
                             }
@@ -2800,7 +2505,6 @@ const TRAINING_DB = {
                             "name": "Carrera de Relevos de Juguetes",
                             "format": "3 rondas de 2 minutos",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "5 juguetes en un extremo. Correr, agarrar uno, volver y depositarlo. Descanso hasta recuperar aliento."
                         },
                         "stretch": [
@@ -2808,35 +2512,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene el Arm Pump (antebrazos de piedra)."
                             },
                             {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Arquear y hundir espalda en cuadrupedia."
                             },
                             {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Plantas juntas, presionar rodillas al suelo."
                             },
                             {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexionando rodilla de pierna trasera para estirar cerca al tendón de Aquiles."
                             },
                             {
                                 "name": "Apertura de Pecho / Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos entrelazadas detrás de la espalda, sacar pecho y elevar brazos."
                             }
                         ],
@@ -2852,7 +2551,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media permitiendo movimiento fluido.",
                                 "target": "Espalda Media"
                             },
@@ -2860,7 +2558,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazos paralelos al suelo para calentar deltoides.",
                                 "target": "Hombros"
                             },
@@ -2868,7 +2565,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo movilizando aductores.",
                                 "target": "Aductores"
                             },
@@ -2876,7 +2572,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Puntos de contacto directo con la bicicleta.",
                                 "target": "Tobillos y Muñecas"
                             },
@@ -2884,7 +2579,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular.",
                                 "target": "Agilidad"
                             }
@@ -2895,7 +2589,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar verticalmente utilizando solo gemelos y tobillos, rodillas casi bloqueadas.",
                                 "target": "Efecto Resorte"
                             },
@@ -2904,7 +2597,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos explosivos cruzando un tenis o cono.",
                                 "target": "Potencia Lateral"
                             }
@@ -2915,7 +2607,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 2-1-1-0 (Control de bajada en 2s)",
                                 "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desarrolla la fuerza para empujar la bicicleta hacia abajo en saltos.",
                                 "target": "Tríceps y Empuje"
                             },
@@ -2924,7 +2615,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 (alternando piernas)",
                                 "tempo": "Explosivo continuo",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza explosiva individual de pedaleo.",
                                 "target": "Potencia de Piernas"
                             },
@@ -2933,7 +2623,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 segundos",
                                 "tempo": "Continuo",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fortalece la cadena anterior del brazo y el core estabilizador.",
                                 "target": "Hombros y Core"
                             }
@@ -2942,7 +2631,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 30/30 Tolerancia Láctica",
                             "format": "8 rondas (8 min total) • 30s trabajo x 30s descanso",
                             "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares: Rodillas al Pecho en el sitio / High Knees. Rondas Pares: Patinadores Rápidos / Speed Skaters."
                         },
                         "stretch": [
@@ -2950,35 +2638,30 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Evita el endurecimiento del antebrazo (arm pump)."
                             },
                             {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Arquear y curvar espalda en cuadrupedia."
                             },
                             {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Presionar rodillas al suelo con los codos."
                             },
                             {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexionando rodilla trasera para estirar cerca al tendón de Aquiles."
                             },
                             {
                                 "name": "Apertura de Pecho / Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos entrelazadas detrás de la espalda, sacar pecho y elevar brazos."
                             }
                         ],
@@ -2994,7 +2677,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad escapular y torácica.",
                                 "target": "Espalda Media"
                             },
@@ -3002,7 +2684,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abrir y cerrar brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Deltoides y Pectoral"
                             },
@@ -3010,7 +2691,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo movilizando aductores.",
                                 "target": "Aductores"
                             },
@@ -3018,7 +2698,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Preparación de puntos de contacto crítico (pedales y puños).",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -3026,7 +2705,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios suaves de dirección.",
                                 "target": "Cardio"
                             }
@@ -3037,7 +2715,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 a 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.",
                                 "target": "Reflejo Miotático & Potencia Vertical"
                             },
@@ -3046,7 +2723,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.",
                                 "target": "Stiffness Tobillo & Potencia Reactiva"
                             }
@@ -3057,7 +2733,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 3-1-1-0 (Bajar coronilla en 3s formando triángulo con manos)",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aísla deltoides anteriores, cruciales para el tirón de la llanta delantera en Manuals.",
                                 "target": "Fuerza de Manuals"
                             },
@@ -3066,7 +2741,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 16 reps (8 por pierna)",
                                 "tempo": "Fase de vuelo máxima, amortiguación inmediata y rebote sin pausa",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Capacidad de aplicar fuerza en piernas quemadas.",
                                 "target": "Potencia y Ácido Láctico"
                             },
@@ -3075,7 +2749,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 reps por pierna",
                                 "tempo": "Tempo 3-1-X-1 (Bajar lento en 3s, estirar 1s, subir explosivo, apretar 1s)",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En escalón. Transmisión de potencia directa al pedal.",
                                 "target": "Gemelo y Sóleo"
                             },
@@ -3084,7 +2757,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En plancha, arrastrar maleta pesada por debajo del cuerpo de un lado al otro sin mover la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -3093,7 +2765,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20 - Umbral de Dolor)",
                             "format": "6 rondas (6 min total) • 40s esfuerzo máximo sostenido x 20s descanso total",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "¡Aquí se define la carrera! Rondas 1 y 4: Sprawls (tirarse a plancha y pararse rápido). Rondas 2 y 5: Abdominales de Bicicleta Rápidos. Rondas 3 y 6: Sentadillas con Salto Rápido."
                         },
                         "stretch": [
@@ -3101,7 +2772,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo estirado al frente, jalar dedos atrás y abajo. Evita el Arm Pump.",
                                 "target": "Antebrazo"
                             },
@@ -3109,7 +2779,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones lentas",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión torácica.",
                                 "target": "Columna"
                             },
@@ -3117,7 +2786,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Plantas juntas, presionar rodillas al suelo.",
                                 "target": "Cadera"
                             },
@@ -3125,7 +2793,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexionando rodilla de la pierna trasera para estirar cerca al tendón de Aquiles.",
                                 "target": "Sóleo"
                             },
@@ -3133,7 +2800,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho y Hombro / Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos entrelazadas detrás de la espalda, sacar pecho y elevar brazos.",
                                 "target": "Pectoral"
                             }
@@ -3150,7 +2816,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad escapular y torácica.",
                                 "target": "Espalda Media"
                             },
@@ -3158,7 +2823,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abrir y cerrar brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Deltoides y Pectoral"
                             },
@@ -3166,7 +2830,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo movilizando aductores.",
                                 "target": "Aductores"
                             },
@@ -3174,7 +2837,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillo y Muñecas",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Preparación de puntos de contacto crítico (pedales y puños).",
                                 "target": "Muñecas y Tobillos"
                             },
@@ -3182,7 +2844,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios suaves de dirección.",
                                 "target": "Cardio"
                             }
@@ -3193,7 +2854,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 a 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subirse a un escalón bajo o silla muy firme, dejarse caer (sin saltar), y al tocar el suelo explotar inmediatamente hacia arriba. Clave biomecánica: No dejar hundir los talones al tocar el piso para desarrollar rigidez tendinosa.",
                                 "target": "Reflejo Miotático & Potencia Vertical"
                             },
@@ -3202,7 +2862,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "4 series de 20 saltos buscando mínimo tiempo de contacto con el suelo. Saltar verticalmente utilizando solo los gemelos y tobillos, manteniendo las rodillas casi extendidas (como un resorte). En el BMX, un tobillo firme transfiere mejor la potencia al pedal.",
                                 "target": "Stiffness Tobillo & Potencia Reactiva"
                             }
@@ -3213,7 +2872,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 a 10 reps",
                                 "tempo": "Tempo 3-1-1-0 (Bajar coronilla en 3s formando triángulo con manos)",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aísla deltoides anteriores, cruciales para el tirón de la llanta delantera en Manuals.",
                                 "target": "Fuerza de Manuals"
                             },
@@ -3222,7 +2880,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 16 reps (8 por pierna)",
                                 "tempo": "Fase de vuelo máxima, amortiguación inmediata y rebote sin pausa",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Capacidad de aplicar fuerza en piernas quemadas.",
                                 "target": "Potencia y Ácido Láctico"
                             },
@@ -3231,7 +2888,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 reps por pierna",
                                 "tempo": "Tempo 3-1-X-1 (Bajar lento en 3s, estirar 1s, subir explosivo, apretar 1s)",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En escalón. Transmisión de potencia directa al pedal.",
                                 "target": "Gemelo y Sóleo"
                             },
@@ -3240,7 +2896,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Anti-rotación estricta",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En plancha, arrastrar maleta pesada por debajo del cuerpo de un lado al otro sin mover la cadera.",
                                 "target": "Core Antirrotacional"
                             }
@@ -3249,7 +2904,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20 - Umbral de Dolor)",
                             "format": "6 rondas (6 min total) • 40s esfuerzo máximo sostenido x 20s descanso total",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "¡Aquí se define la carrera! Rondas 1 y 4: Sprawls (tirarse a plancha y pararse rápido). Rondas 2 y 5: Abdominales de Bicicleta Rápidos. Rondas 3 y 6: Sentadillas con Salto Rápido."
                         },
                         "stretch": [
@@ -3257,7 +2911,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo estirado al frente, jalar dedos atrás y abajo. Evita el Arm Pump.",
                                 "target": "Antebrazo"
                             },
@@ -3265,7 +2918,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "10 transiciones lentas",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descompresión torácica.",
                                 "target": "Columna"
                             },
@@ -3273,7 +2925,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Aductores (Mariposa)",
                                 "duration": "45s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Plantas juntas, presionar rodillas al suelo.",
                                 "target": "Cadera"
                             },
@@ -3281,7 +2932,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexionando rodilla de la pierna trasera para estirar cerca al tendón de Aquiles.",
                                 "target": "Sóleo"
                             },
@@ -3289,7 +2939,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho y Hombro / Chest Opener",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos entrelazadas detrás de la espalda, sacar pecho y elevar brazos.",
                                 "target": "Pectoral"
                             }
@@ -3344,7 +2993,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Sitio con Rodillas Altas / High Knees",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal y activa el psoas ilíaco de manera fluida.",
                                 "target": "Psoas y Temperatura"
                             },
@@ -3352,7 +3000,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad articular de hombros, clave para el pull o tirón del manubrio.",
                                 "target": "Manguito Rotador"
                             },
@@ -3360,7 +3007,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desde de pie, caminar con las manos al suelo hasta plancha y volver. Alarga isquiotibiales y activa el core.",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -3368,7 +3014,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación óculo-pédica y ritmo cardíaco. Conecta el sistema nervioso central.",
                                 "target": "Coordinación y SNC"
                             },
@@ -3376,7 +3021,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -3387,7 +3031,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Colocar marcas en el suelo (hojas o juguetes) para saltar de una a otra imitando ranas con alegría y control básico.",
                                 "target": "Potencia de Piernas Lúdica"
                             }
@@ -3398,7 +3041,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 segundos",
                                 "tempo": "Continuo asistido",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodillas a 5 cm del suelo sin tocarlo, espalda plana. Fortalece hombros y faja abdominal.",
                                 "target": "Fuerza Tren Superior y Core"
                             },
@@ -3407,7 +3049,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Natural",
                                 "video": "https://www.youtube.com/embed/2aMn_J6Lip0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar el piso con las manos entre las piernas y ponerse de pie con extensión completa.",
                                 "target": "Cuádriceps y Glúteos"
                             }
@@ -3416,7 +3057,6 @@ const TRAINING_DB = {
                             "name": "Semáforo Loco / Traffic Light Game",
                             "format": "5 minutos continuos de juego interactivo",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Verde = correr rápido en el sitio; Amarillo = caminar lento; Rojo = estatua congelada. Estimula atención, frenado y aceleración."
                         },
                         "stretch": [
@@ -3424,7 +3064,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas, pelvis ligeramente hacia adelante. Libera la tensión del pedaleo constante.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -3432,7 +3071,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Posición de 'V' invertida empujando talones hacia el suelo para alargar gemelos e isquiotibiales.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -3440,7 +3078,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodillas al piso, glúteos a los talones, brazos estirados al frente. Libera tensión lumbar y dorsal.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -3448,7 +3085,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apoyar la mano en la pared y rotar el torso hacia el lado opuesto para contrarrestar la postura encorvada.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -3465,7 +3101,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Sitio con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura central y activa el psoas ilíaco.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -3473,7 +3108,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador, clave para el tirón de salida en el partidor.",
                                 "target": "Manguito Rotador"
                             },
@@ -3481,7 +3115,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -3489,7 +3122,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y mejora la coordinación general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -3497,7 +3129,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -3508,7 +3139,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar hacia adelante buscando distancia, aterrizando en semisentadilla profunda sin hacer ruido ('como un gato').",
                                 "target": "Amortiguación Silenciosa y Potencia"
                             },
@@ -3517,7 +3147,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos (5 por pierna)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilizar el tobillo y la rodilla en cada apoyo lateral monopodal.",
                                 "target": "Estabilidad Monopodal y Rodilla"
                             }
@@ -3528,7 +3157,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (Bajan en 2s, pausa 1s abajo, suben en 1s. Talones fijos)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control excéntrico estricto con pecho erguido y talones firmes contra el piso.",
                                 "target": "Cuádriceps y Glúteos"
                             },
@@ -3537,7 +3165,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (2s bajando, pausa 1s, suben en 1s)",
                                 "video": "https://www.youtube.com/embed/jWxvty2KROs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pecho al centro de las manos, codos a 45 grados del torso.",
                                 "target": "Pectoral y Tríceps"
                             },
@@ -3546,7 +3173,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones (sostener 2s arriba)",
                                 "tempo": "Isometría 2s",
                                 "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevar pecho y piernas simultáneamente, fortaleciendo espalda baja y cadena posterior.",
                                 "target": "Cadena Posterior y Zona Lumbar"
                             }
@@ -3555,7 +3181,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 20/20 - Escaladores Rápidos / Mountain Climbers",
                             "format": "8 rondas (Total: 5 min 20 s) • 20s esfuerzo máximo x 20s recuperación total",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Escaladores Rápidos a ritmo constante sin colapsar la cadera ni elevar los glúteos excesivamente."
                         },
                         "stretch": [
@@ -3563,7 +3188,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas alineadas, pelvis neutra. Libera la tensión del pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -3571,7 +3195,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Posición en 'V' invertida empujando talones al suelo para alargar gemelos e isquiotibiales.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -3579,7 +3202,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Glúteos a los talones, brazos al frente. Descarga la zona lumbar castigada por la postura en bici.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -3587,7 +3209,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Brazo a 90° en la pared y rotar torso hacia afuera para contrarrestar hombros encorvados.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -3604,7 +3225,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Sitio con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura central y activa profundamente el psoas ilíaco.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -3612,7 +3232,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador, clave para el tirón de salida en el partidor.",
                                 "target": "Manguito Rotador"
                             },
@@ -3620,7 +3239,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -3628,7 +3246,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y eleva el ritmo cardíaco.",
                                 "target": "Coordinación y SNC"
                             },
@@ -3636,7 +3253,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -3647,7 +3263,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima explosividad hacia arriba, extensión completa de cadera y aterrizaje suave con rodillas flexionadas.",
                                 "target": "Potencia Vertical y Partidor"
                             },
@@ -3656,7 +3271,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos rápidos con rodillas casi bloqueadas (efecto resorte puro). Mínimo tiempo de contacto con el suelo.",
                                 "target": "Stiffness y Rebote Elástico"
                             }
@@ -3667,7 +3281,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (Bajar en 3s controlados, pausa 1s abajo, subir explosivo, pausa 1s arriba)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral imprescindible para la potencia y simetría del primer pedalazo.",
                                 "target": "Fuerza Unilateral de Empuje"
                             },
@@ -3676,7 +3289,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 a 12 repeticiones",
                                 "tempo": "Tempo 3-1-X-0 (Fase excéntrica ultra lenta de 3s para construir fuerza de empuje, subir fuerte)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza y estabilidad escapular para halar y empujar el manubrio.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -3685,7 +3297,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques a hombros",
                                 "tempo": "Isometría y control",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar hombros alternadamente evitando rotar la pelvis y balancear la cadera.",
                                 "target": "Core Anti-Rotación"
                             }
@@ -3694,7 +3305,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30/15 BMX - Sprawls & Sprints",
                             "format": "8 rondas (Total: 6 min) • 30s alta intensidad x 15s descanso total",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares (1,3,5,7): Sprawls (lanzar los pies atrás a plancha y volver a pararse con salto corto). Rondas Pares (2,4,6,8): Sprints en el Sitio / Fast Feet (alta cadencia simulando pedaleo a fondo)."
                         },
                         "stretch": [
@@ -3702,7 +3312,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas, pelvis ligeramente hacia adelante. Libera la tensión del pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -3710,7 +3319,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Posición de 'V' invertida, empujando talones hacia el suelo para alargar gemelos e isquiotibiales tras la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -3718,7 +3326,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodillas al piso, glúteos a los talones, brazos estirados al frente. Libera tensión lumbar y dorsal.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -3726,7 +3333,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Apoyar la mano en la pared y rotar el torso hacia el lado opuesto para contrarrestar la postura encorvada.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -3743,7 +3349,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Sitio con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal central y activa el psoas ilíaco.",
                                 "target": "Psoas y Temperatura"
                             },
@@ -3751,7 +3356,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador y alivia la rigidez en hombros.",
                                 "target": "Manguito Rotador"
                             },
@@ -3759,7 +3363,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -3767,7 +3370,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación y reactivación cardiovascular general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -3775,7 +3377,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -3786,7 +3387,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos suaves",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltos suaves enfocados en la rigidez del tendón de Aquiles (stiffness) sin sobrecargar las rodillas.",
                                 "target": "Stiffness y Protección Articular"
                             },
@@ -3795,7 +3395,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Sostener la caída 2 segundos por lado para máximo control y estabilidad lateral de rodilla y cadera.",
                                 "target": "Estabilidad Lateral de Cadera"
                             }
@@ -3806,7 +3405,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 3-1-1-1 (Bajar lento controlando cadera profunda, pausa abajo, subir fluido)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera profunda y control postural absoluto.",
                                 "target": "Movilidad Profunda y Cuádriceps"
                             },
@@ -3815,7 +3413,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 a 12 repeticiones",
                                 "tempo": "Tempo 3-1-1-0 (3s bajando controlado, pausa 1s)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mayor participación pectoral y estabilidad escapular.",
                                 "target": "Pectoral y Escápulas"
                             },
@@ -3824,7 +3421,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 45 segundos",
                                 "tempo": "Isometría máxima",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contracción isométrica máxima apretando abdomen y glúteos simultáneamente.",
                                 "target": "Estabilidad Lumbo-Pélvica"
                             }
@@ -3833,7 +3429,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30/15 - Sprawls & Sprints Rápidos",
                             "format": "8 rondas (Total: 6 min) • 30s alta intensidad x 15s descanso total",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rondas Impares: Sprawls (lanzar los pies atrás a plancha y volver a pararse con salto corto, versión segura del burpee). Rondas Pares: Sprints en el Sitio / Fast Feet (pies rapidísimos simulando alta cadencia de pedaleo)."
                         },
                         "stretch": [
@@ -3841,7 +3436,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas, pelvis neutra. Libera la tensión del pedaleo y postura sentada.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -3849,7 +3443,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga la cadena posterior completa y descarga tensión en tendones de Aquiles.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -3857,7 +3450,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga profunda de la zona lumbar.",
                                 "target": "Espalda Baja"
                             },
@@ -3865,7 +3457,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta el acortamiento de pectorales y hombros adelantados.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -3895,7 +3486,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa el psoas y eleva la temperatura central de forma entretenida.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -3903,7 +3493,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador para el tirón de salida en el partidor.",
                                 "target": "Manguito Rotador"
                             },
@@ -3911,7 +3500,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -3919,7 +3507,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y mejora la coordinación general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -3927,7 +3514,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -3938,7 +3524,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar entre marcas en el suelo con alegría y control básico.",
                                 "target": "Pliometría Lúdica"
                             }
@@ -3949,7 +3534,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 segundos",
                                 "tempo": "Continuo asistido",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rodillas a 5 cm del suelo sin tocarlo, espalda plana.",
                                 "target": "Tren Superior y Core"
                             },
@@ -3958,7 +3542,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "tempo": "Natural",
                                 "video": "https://www.youtube.com/embed/2aMn_J6Lip0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Manos al piso entre las piernas y extensión de rodillas completa.",
                                 "target": "Cuádriceps y Glúteos"
                             }
@@ -3967,7 +3550,6 @@ const TRAINING_DB = {
                             "name": "Semáforo Loco / Traffic Light Game",
                             "format": "5 minutos continuos (Juego libre dirigido)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Verde: trote rápido; Amarillo: caminar; Rojo: estatua congelada."
                         },
                         "stretch": [
@@ -3975,7 +3557,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -3983,7 +3564,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga la cadena posterior tras la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -3991,7 +3571,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -3999,7 +3578,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -4016,7 +3594,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura central y activa el psoas ilíaco.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -4024,7 +3601,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador, clave para el tirón de salida.",
                                 "target": "Manguito Rotador"
                             },
@@ -4032,7 +3608,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -4040,7 +3615,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y mejora la coordinación general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -4048,7 +3622,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -4059,7 +3632,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aterrizar en semisentadilla profunda sin hacer ruido ('como un gato').",
                                 "target": "Amortiguación Silenciosa"
                             },
@@ -4068,7 +3640,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos (5 por pierna)",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilizar el tobillo y la rodilla en cada apoyo lateral.",
                                 "target": "Estabilidad Monopodal"
                             }
@@ -4079,7 +3650,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (Bajar en 2s, pausa de 1s abajo, subir en 1s. Talones fijos)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza base con postura erguida y talones firmes.",
                                 "target": "Cuádriceps y Glúteos"
                             },
@@ -4088,7 +3658,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (Pecho al centro de las manos, codos a 45 grados del torso)",
                                 "video": "https://www.youtube.com/embed/jWxvty2KROs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control de empuje para controlar el manubrio.",
                                 "target": "Pectoral y Tríceps"
                             },
@@ -4097,7 +3666,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones (sostener 2s)",
                                 "tempo": "Isometría 2s",
                                 "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevar pecho y piernas simultáneamente, fortaleciendo espalda baja.",
                                 "target": "Cadena Posterior"
                             }
@@ -4106,7 +3674,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 20s trabajo / 20s descanso - Escaladores Rápidos / Mountain Climbers",
                             "format": "8 rondas (Total: 5 min 20 s) • 20s esfuerzo máximo x 20s descanso",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Escaladores Rápidos a ritmo constante sin colapsar la cadera."
                         },
                         "stretch": [
@@ -4114,7 +3681,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Talón al glúteo, rodillas juntas. Libera la tensión del pedaleo constante.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -4122,7 +3688,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga la cadena posterior tras la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -4130,7 +3695,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -4138,7 +3702,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -4155,7 +3718,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura central y activa el psoas ilíaco.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -4163,7 +3725,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador (clave para el tirón de salida).",
                                 "target": "Manguito Rotador"
                             },
@@ -4171,7 +3732,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -4179,7 +3739,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y mejora la coordinación general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -4187,7 +3746,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -4198,7 +3756,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Extensión completa de cadera y máxima potencia de salida vertical.",
                                 "target": "Potencia Vertical y Partidor"
                             },
@@ -4207,7 +3764,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mínimo tiempo de contacto en el suelo (efecto resorte puro).",
                                 "target": "Stiffness y Rebote Elástico"
                             }
@@ -4218,7 +3774,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (Bajar en 3s controlados, pausa abajo, subir explosivo)",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral de alto impacto motriz.",
                                 "target": "Fuerza Unilateral de Empuje"
                             },
@@ -4227,7 +3782,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 3-1-X-0 (Fase excéntrica ultra lenta para construir fuerza de empuje)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza de empuje para controlar el manubrio de la bicicleta.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -4236,7 +3790,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar hombros alternadamente evitando rotar la pelvis.",
                                 "target": "Core Anti-Rotación"
                             }
@@ -4245,7 +3798,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30s trabajo / 15s descanso - Sprawls & Fast Feet",
                             "format": "8 rondas (Total: 6 min) • 30s trabajo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (burpees sin flexión) y Sprints en el Sitio (Fast Feet) intercalados por ronda."
                         },
                         "stretch": [
@@ -4253,7 +3805,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión del pedaleo constante.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -4261,7 +3812,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga la cadena posterior tras la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -4269,7 +3819,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -4277,7 +3826,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -4294,7 +3842,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura central y activa el psoas ilíaco.",
                                 "target": "Psoas Ilíaco"
                             },
@@ -4302,7 +3849,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador, clave para el tirón de salida.",
                                 "target": "Manguito Rotador"
                             },
@@ -4310,7 +3856,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga isquiotibiales y activa la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -4318,7 +3863,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso y mejora la coordinación general.",
                                 "target": "Coordinación y SNC"
                             },
@@ -4326,7 +3870,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes Dinámicos con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica.",
                                 "target": "Cadera y Tronco"
                             }
@@ -4337,7 +3880,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Trabajo de stiffness (rigidez de tendón de Aquiles) de bajo impacto.",
                                 "target": "Stiffness y Tendón de Aquiles"
                             },
@@ -4346,7 +3888,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control de estabilidad lateral de rodilla y cadera sosteniendo 2 segundos por lado.",
                                 "target": "Estabilidad Lateral"
                             }
@@ -4357,7 +3898,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 3-1-1-1 (Movilidad de cadera profunda y control postural absoluto)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar controlado respetando la articulación de la cadera.",
                                 "target": "Movilidad Profunda"
                             },
@@ -4366,7 +3906,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Tempo 3-1-1-0",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mayor participación pectoral y estabilidad escapular.",
                                 "target": "Pectoral y Escápulas"
                             },
@@ -4375,7 +3914,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 45 segundos",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contracción simultánea de abdomen, glúteos y cuádriceps.",
                                 "target": "Core y Glúteos"
                             }
@@ -4384,7 +3922,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30s trabajo / 15s descanso - Sprawls & Fast Feet",
                             "format": "8 rondas (Total: 6 min) • 30s trabajo x 15s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (burpees sin flexión) y Sprints en el Sitio (Fast Feet) intercalados por ronda."
                         },
                         "stretch": [
@@ -4392,7 +3929,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión del pedaleo constante.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -4400,7 +3936,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga la cadena posterior tras la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -4408,7 +3943,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -4416,7 +3950,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -4446,7 +3979,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media (crucial para el gesto de halar el manubrio).",
                                 "target": "Espalda Media"
                             },
@@ -4454,7 +3986,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos al frente para calentar pectorales y deltoides.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -4462,7 +3993,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores (peraltes).",
                                 "target": "Aductores"
                             },
@@ -4470,7 +4000,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta.",
                                 "target": "Puntos de Contacto Crítico"
                             },
@@ -4478,7 +4007,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardio y Agilidad"
                             }
@@ -4489,7 +4017,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 30 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar con pies juntos hacia adelante y atrás sobre una línea con alegría y ritmo.",
                                 "target": "Stiffness Lúdico y Coordinación"
                             }
@@ -4500,7 +4027,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 pasos",
                                 "tempo": "Asistido",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caminar con las manos mientras un adulto sostiene las piernas.",
                                 "target": "Fuerza de Empuje Asistida"
                             },
@@ -4509,7 +4035,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 5 repeticiones",
                                 "tempo": "Natural",
                                 "video": "https://www.youtube.com/embed/2aMn_J6Lip0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostarse boca arriba y pararse rápido con creatividad motriz.",
                                 "target": "Agilidad y Levantamiento"
                             }
@@ -4518,7 +4043,6 @@ const TRAINING_DB = {
                             "name": "Carrera de Relevos con Objetos / Toy Relay Race",
                             "format": "3 rondas de 2 minutos (Juego continuo)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr a buscar juguetes u objetos y llevarlos al punto inicial uno a uno sin parar."
                         },
                         "stretch": [
@@ -4526,7 +4050,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexores y extensores. Previene el Arm Pump (antebrazos rígidos por el manubrio).",
                                 "target": "Antebrazos"
                             },
@@ -4534,7 +4057,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la tensión de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -4542,7 +4064,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "30s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -4550,7 +4071,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo de stiffness.",
                                 "target": "Sóleo y Tendón de Aquiles"
                             }
@@ -4567,7 +4087,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media (crucial para el gesto de halar el manubrio).",
                                 "target": "Espalda Media"
                             },
@@ -4575,7 +4094,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos al frente para calentar pectorales y deltoides.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -4583,7 +4101,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores (peraltes).",
                                 "target": "Aductores"
                             },
@@ -4591,7 +4108,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta.",
                                 "target": "Puntos de Contacto Crítico"
                             },
@@ -4599,7 +4115,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardio y Agilidad"
                             }
@@ -4610,7 +4125,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rebote vertical usando solo gemelos y tobillos (rodillas casi bloqueadas para efecto resorte).",
                                 "target": "Stiffness de Tobillo"
                             },
@@ -4619,7 +4133,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar un objeto bajo de lado a lado con agilidad y control.",
                                 "target": "Agilidad y Control de Rodilla"
                             }
@@ -4630,7 +4143,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Tempo 2-1-1-0 (Bajar controlado en 2s, pausa 1s, subir en 1s)",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza de empuje de tríceps y hombros.",
                                 "target": "Fuerza de Empuje Tríceps"
                             },
@@ -4639,7 +4151,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Dinámico",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Zancadas alternas con salto corto para potencia de piernas.",
                                 "target": "Potencia de Piernas"
                             },
@@ -4648,7 +4159,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 segundos",
                                 "tempo": "Controlado",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fortalece cadena anterior de brazos y hombros.",
                                 "target": "Cadena Anterior y Hombros"
                             }
@@ -4657,7 +4167,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 30s trabajo / 30s descanso - Rodillas al Pecho & Patinadores",
                             "format": "8 rondas (8 min total) • 30s trabajo x 30s descanso",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rodillas al Pecho / High Knees alternado con Patinadores / Speed Skaters a ritmo vivo."
                         },
                         "stretch": [
@@ -4665,7 +4174,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexores y extensores. Previene el Arm Pump (antebrazos rígidos por el manubrio).",
                                 "target": "Flexores y Extensores"
                             },
@@ -4673,7 +4181,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la columna vertebral completa tras la tensión de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -4681,7 +4188,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -4689,7 +4195,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo de stiffness.",
                                 "target": "Sóleo y Tendón de Aquiles"
                             }
@@ -4706,7 +4211,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media (crucial para el gesto de halar el manubrio).",
                                 "target": "Espalda Media"
                             },
@@ -4714,7 +4218,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos al frente para calentar pectorales y deltoides.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -4722,7 +4225,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores (peraltes).",
                                 "target": "Aductores"
                             },
@@ -4730,7 +4232,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta.",
                                 "target": "Puntos de Contacto Crítico"
                             },
@@ -4738,7 +4239,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardio y Agilidad"
                             }
@@ -4749,7 +4249,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Dejarse caer de un escalón bajo o silla firme y explotar verticalmente al tocar el suelo (mínimo tiempo de contacto).",
                                 "target": "Reflejo Miotático y Potencia"
                             },
@@ -4758,7 +4257,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima rigidez de tobillo unilateral para transferir potencia pura al pedal.",
                                 "target": "Stiffness Unilateral de Tobillo"
                             }
@@ -4769,7 +4267,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Tempo 3-1-1-0 (Bajar coronilla formando triángulo con manos)",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Aísla deltoides anteriores para fuerza en Manuals y control de manubrio.",
                                 "target": "Deltoides y Manuals"
                             },
@@ -4778,7 +4275,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 por pierna",
                                 "tempo": "Tempo 3-1-X-1 (Bajar talón lento, pausa estirando, subir explosivo)",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En escalón. Transmisión directa de potencia al pedalazo de salida.",
                                 "target": "Sóleo y Gemelo"
                             },
@@ -4787,7 +4283,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Isometría anti-rotacional",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mover un peso lateralmente en plancha sin rotar la pelvis.",
                                 "target": "Core Antirrotacional"
                             }
@@ -4796,7 +4291,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 40s esfuerzo máximo / 20s descanso - Sprawls & Jump Squats",
                             "format": "6 rondas (6 min total) • 40s máximo esfuerzo x 20s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats. Tolerancia ácida máxima para la última recta."
                         },
                         "stretch": [
@@ -4804,7 +4298,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexores y extensores. Previene el Arm Pump por fatiga del manubrio.",
                                 "target": "Flexores y Extensores"
                             },
@@ -4812,7 +4305,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la columna vertebral completa tras la tensión de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -4820,7 +4312,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -4828,7 +4319,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo de stiffness.",
                                 "target": "Sóleo y Tendón de Aquiles"
                             }
@@ -4845,7 +4335,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media (crucial para el gesto de halar el manubrio).",
                                 "target": "Espalda Media"
                             },
@@ -4853,7 +4342,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos al frente para calentar pectorales y deltoides.",
                                 "target": "Pectoral y Deltoides"
                             },
@@ -4861,7 +4349,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores (peraltes).",
                                 "target": "Aductores"
                             },
@@ -4869,7 +4356,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta.",
                                 "target": "Puntos de Contacto Crítico"
                             },
@@ -4877,7 +4363,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardio y Agilidad"
                             }
@@ -4888,7 +4373,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Trabajo de stiffness de bajo impacto articular en tendón de Aquiles.",
                                 "target": "Stiffness Articular"
                             },
@@ -4897,7 +4381,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caída suave desde altura mínima con absorción óptima de rodilla.",
                                 "target": "Absorción y Protección de Rodilla"
                             }
@@ -4908,7 +4391,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Tempo 3-1-1-0",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control absoluto del tronco y activación escapular.",
                                 "target": "Control de Tronco y Escápulas"
                             },
@@ -4917,7 +4399,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 por pierna",
                                 "tempo": "Tempo 3-1-X-1",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral profunda y estabilidad de cadera.",
                                 "target": "Fuerza Unilateral de Cadera"
                             },
@@ -4926,7 +4407,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40s por lado",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad lateral del tronco y los oblicuos.",
                                 "target": "Oblicuos y Tronco"
                             }
@@ -4935,7 +4415,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 40s esfuerzo máximo / 20s descanso - Sprawls & Jump Squats",
                             "format": "6 rondas (6 min total) • 40s esfuerzo x 20s descanso",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats."
                         },
                         "stretch": [
@@ -4943,7 +4422,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "30-40s por lado",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Flexores y extensores. Previene el Arm Pump.",
                                 "target": "Flexores y Extensores"
                             },
@@ -4951,7 +4429,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la tensión de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -4959,7 +4436,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "30-40s",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -4967,7 +4443,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "30-40s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo de stiffness.",
                                 "target": "Sóleo y Tendón de Aquiles"
                             }
@@ -5024,7 +4499,6 @@ const TRAINING_DB = {
                             "name": "Trote con Rodillas Altas / High Knees",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
                             "target": "Temperatura y Psoas Ilíaco"
                         },
@@ -5032,7 +4506,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Brazos / Arm Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
                             "target": "Manguito Rotador y Hombros"
                         },
@@ -5040,7 +4513,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga / Inchworms",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
                             "target": "Isquiotibiales y Core"
                         },
@@ -5048,7 +4520,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera / Jumping Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
                             "target": "Coordinación Rítmica"
                         },
@@ -5056,7 +4527,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
                             "target": "Flexores de Cadera y Tronco"
                         }
@@ -5067,7 +4537,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Colocar marcas en el suelo (hojas o tiza). Pies juntos, saltando de una a otra con aterrizaje suave y silencioso.",
                             "target": "Amortiguación y Coordinación"
                         }
@@ -5078,7 +4547,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 pasos",
                             "tempo": "Controlado",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "A cuatro patas con rodillas despegadas del suelo 5 cm. Intentar tocar suavemente la espalda de papá o mamá.",
                             "target": "Hombros, Muñecas y Core"
                         },
@@ -5087,7 +4555,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "Libre lúdico",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Llevar manos al pecho, bajar como canguro y subir manteniendo la espalda recta.",
                             "target": "Cuádriceps y Glúteos"
                         },
@@ -5096,7 +4563,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "Sostener 2s arriba",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Acostados boca arriba con rodillas dobladas, elevar la pelvis apretando glúteos y contar hasta 2.",
                             "target": "Cadena Posterior"
                         }
@@ -5105,7 +4571,6 @@ const TRAINING_DB = {
                         "name": "El Juego de las Estatuas / Musical Statues",
                         "format": "5 minutos continuos de juego interactivo",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Trotar o bailar al ritmo; cuando la música para, congelarse como estatua en posición de bombeo (pump) de BMX. Estimula frenado y control neuromuscular."
                     },
                     "stretch": [
@@ -5113,7 +4578,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sujetarse del hombro de un padre, llevar el talón al glúteo manteniendo rodillas juntas.",
                             "target": "Cuádriceps y Psoas"
                         },
@@ -5121,7 +4585,6 @@ const TRAINING_DB = {
                             "name": "Perro Boca Abajo / Downward Dog",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Formar una 'V' invertida con el cuerpo empujando talones hacia el suelo.",
                             "target": "Gemelos e Isquiotibiales"
                         },
@@ -5129,7 +4592,6 @@ const TRAINING_DB = {
                             "name": "Postura del Niño / Child's Pose",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sentarse sobre los talones y estirar los brazos al frente descargando la columna lumbar.",
                             "target": "Espalda Baja y Dorsales"
                         }
@@ -5146,7 +4608,6 @@ const TRAINING_DB = {
                             "name": "Trote con Rodillas Altas / High Knees",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
                             "target": "Temperatura y Psoas Ilíaco"
                         },
@@ -5154,7 +4615,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Brazos / Arm Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
                             "target": "Manguito Rotador y Hombros"
                         },
@@ -5162,7 +4622,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga / Inchworms",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
                             "target": "Isquiotibiales y Core"
                         },
@@ -5170,7 +4629,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera / Jumping Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
                             "target": "Coordinación Rítmica"
                         },
@@ -5178,7 +4636,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
                             "target": "Flexores de Cadera y Tronco"
                         }
@@ -5189,7 +4646,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 5 repeticiones",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto horizontal buscando máxima distancia con despegue explosivo y caída en semisentadilla silenciosa ('caer como un felino').",
                             "target": "Potencia Horizontal y Amortiguación"
                         }
@@ -5200,7 +4656,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 repeticiones",
                             "tempo": "2-1-1-0 (Bajar 2s, pausa 1s abajo, subir 1s)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pecho erguido, rodillas siguiendo la línea de los pies y talones bien anclados al piso.",
                             "target": "Cuádriceps y Glúteos"
                         },
@@ -5209,7 +4664,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cuerpo en línea recta desde las rodillas hasta la cabeza. Codos a 45 grados del torso.",
                             "target": "Pectorales, Tríceps y Core"
                         },
@@ -5218,7 +4672,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones por pierna",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cadera cuadrada, pierna trasera extendida como una bisagra. Foco en equilibrio y cadena posterior.",
                             "target": "Isquiotibiales y Estabilidad Lumbar"
                         },
@@ -5227,7 +4680,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 25 segundos",
                             "tempo": "Isometría estricta",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Antebrazos apoyados, abdomen y glúteos contraídos para proteger la zona lumbar.",
                             "target": "Core y Anti-Extensión Lumbar"
                         }
@@ -5236,7 +4688,6 @@ const TRAINING_DB = {
                         "name": "Escaladores de Montaña / Mountain Climbers",
                         "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s trabajo x 20s descanso",
                         "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "En posición de flexión, alternar rodillas al pecho a máxima velocidad sin elevar la cadera ni botar los hombros hacia atrás."
                     },
                     "stretch": [
@@ -5244,7 +4695,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Talón al glúteo, pelvis neutra y rodillas alineadas.",
                             "target": "Cuádriceps y Psoas"
                         },
@@ -5252,7 +4702,6 @@ const TRAINING_DB = {
                             "name": "Perro Boca Abajo / Downward Dog",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga gemelos, sóleos e isquiotibiales tras el esfuerzo pliométrico.",
                             "target": "Gemelos e Isquiotibiales"
                         },
@@ -5260,7 +4709,6 @@ const TRAINING_DB = {
                             "name": "Postura del Niño / Child's Pose",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Brazos extendidos al frente para relajar dorsales y zona sacrolumbar.",
                             "target": "Espalda Baja y Dorsales"
                         },
@@ -5268,7 +4716,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                             "duration": "30s por brazo",
                             "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Brazo apoyado a 90 grados contra la pared con rotación suave del torso.",
                             "target": "Pectoral Mayor y Menor"
                         }
@@ -5285,7 +4732,6 @@ const TRAINING_DB = {
                             "name": "Trote con Rodillas Altas / High Knees",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
                             "target": "Temperatura y Psoas Ilíaco"
                         },
@@ -5293,7 +4739,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Brazos / Arm Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
                             "target": "Manguito Rotador y Hombros"
                         },
@@ -5301,7 +4746,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga / Inchworms",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
                             "target": "Isquiotibiales y Core"
                         },
@@ -5309,7 +4753,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera / Jumping Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
                             "target": "Coordinación Rítmica"
                         },
@@ -5317,7 +4760,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
                             "target": "Flexores de Cadera y Tronco"
                         }
@@ -5328,7 +4770,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 6 repeticiones",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto vertical explosivo a cajón o escalón firme (40-50 cm). Aterrizar con ambos pies amortiguando suavemente. Bajar caminando.",
                             "target": "Potencia Vertical y Absorción de Impacto"
                         }
@@ -5339,7 +4780,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones por pierna",
                             "tempo": "3-1-1-0 (3s bajada, 1s pausa abajo, subida explosiva)",
                             "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pie trasero elevado en banco o silla. Bajar verticalmente manteniendo la rodilla delantera estable sin colapso en valgo.",
                             "target": "Potencia Unilateral y Glúteo Medio"
                         },
@@ -5348,7 +4788,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "3-0-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cuerpo rígido en una sola pieza. Pecho toca el suelo a 2 cm y sube con potencia. Fuerza para el pull del partidor.",
                             "target": "Pectorales, Tríceps y Core Anterior"
                         },
@@ -5357,7 +4796,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones por pierna",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Una pierna en el aire y la otra empuja el suelo con el talón. Sostener 1s arriba contrayendo glúteo e isquiotibial.",
                             "target": "Cadena Posterior y Estabilidad Pélvica"
                         },
@@ -5366,7 +4804,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 25 segundos",
                             "tempo": "Isometría estricta",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Espalda baja pegada milimétricamente al piso, brazos y piernas extendidos en el aire. Tensión máxima en todo el core.",
                             "target": "Core Global y Fuerza Gimnástica"
                         }
@@ -5375,7 +4812,6 @@ const TRAINING_DB = {
                         "name": "Burpees Modificados / Sprawls",
                         "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
                         "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "De pie, lanzar pies atrás a posición de plancha alta y regresar rápidamente de pie sin flexión de pecho. Simula la aceleración máxima saliendo de peraltes."
                     },
                     "stretch": [
@@ -5383,7 +4819,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alinear rodillas, pelvis en retroversión para profundizar en el recto femoral.",
                             "target": "Cuádriceps y Recto Femoral"
                         },
@@ -5391,7 +4826,6 @@ const TRAINING_DB = {
                             "name": "Perro Boca Abajo / Downward Dog",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Foco en elongar gemelos y fascia plantar tras los saltos de potencia.",
                             "target": "Gemelos e Isquiotibiales"
                         },
@@ -5399,7 +4833,6 @@ const TRAINING_DB = {
                             "name": "Postura del Niño / Child's Pose",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descompresión lumbosacra con respiraciones profundas.",
                             "target": "Espalda Baja y Dorsales"
                         },
@@ -5407,7 +4840,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la cintura escapular tras las flexiones y el agarre firme.",
                             "target": "Pectoral y Hombros"
                         }
@@ -5424,7 +4856,6 @@ const TRAINING_DB = {
                             "name": "Trote con Rodillas Altas / High Knees",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Eleva la temperatura central y activa el psoas ilíaco de forma dinámica.",
                             "target": "Temperatura y Psoas Ilíaco"
                         },
@@ -5432,7 +4863,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Brazos / Arm Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica el manguito rotador, clave para el tirón de salida (pull) en el partidor.",
                             "target": "Manguito Rotador y Hombros"
                         },
@@ -5440,7 +4870,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga / Inchworms",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga los isquiotibiales y activa la faja abdominal (core) en cuadrupedia.",
                             "target": "Isquiotibiales y Core"
                         },
@@ -5448,7 +4877,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera / Jumping Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Conecta el sistema nervioso y mejora la coordinación general rítmica.",
                             "target": "Coordinación Rítmica"
                         },
@@ -5456,7 +4884,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Giro / Walking Lunges with Torso Twist",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad de cadera en extensión y activación rotacional del tronco.",
                             "target": "Flexores de Cadera y Tronco"
                         }
@@ -5467,7 +4894,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 20 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Saltos verticales cortos usando solo tobillos con rodillas semiflexionadas. Mantener rigidez elástica en tendones sin impacto brusco.",
                             "target": "Stiffness de Tobillo y Protección Tendinosa"
                         }
@@ -5478,7 +4904,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "3-1-1-0 (3s bajada controlada, tocar silla y subir)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Bajar lentamente hasta rozar el asiento de una silla sin sentarse por completo. Protege rodillas y activa glúteos.",
                             "target": "Cuádriceps, Glúteos y Rodillas Seguras"
                         },
@@ -5487,7 +4912,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Manos apoyadas en banco o pared para reducir carga articular en hombros y muñecas sin perder tono pectoral.",
                             "target": "Pectorales y Protección de Muñeca"
                         },
@@ -5496,7 +4920,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 repeticiones",
                             "tempo": "2-2-1-0 (Sostener 2s arriba)",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elevar la pelvis apretando glúteos al máximo. Descomprime la espalda baja tras largas horas de oficina.",
                             "target": "Glúteos y Descompresión Lumbar"
                         },
@@ -5505,7 +4928,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 30 segundos",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alineación de columna neutra sin hundir la cadera. Respiración diafragmática continua.",
                             "target": "Faja Abdominal y Estabilidad Lumbar"
                         }
@@ -5514,7 +4936,6 @@ const TRAINING_DB = {
                         "name": "Paso del Soldado con Elevación de Rodillas / Marching High Knees",
                         "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
                         "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Marcha dinámica en el sitio con rodillas altas y braceo vigoroso sin impacto articular en las fases de caída."
                     },
                     "stretch": [
@@ -5522,7 +4943,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sujetándose de una pared o poste. Rodillas juntas, pelvis alineada.",
                             "target": "Cuádriceps y Psoas"
                         },
@@ -5530,7 +4950,6 @@ const TRAINING_DB = {
                             "name": "Perro Boca Abajo / Downward Dog",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descompresión de columna lumbar e isquiotibiales acortados.",
                             "target": "Cadena Posterior y Columna"
                         },
@@ -5538,7 +4957,6 @@ const TRAINING_DB = {
                             "name": "Postura del Niño / Child's Pose",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia la tensión acumulada en espalda baja y hombros.",
                             "target": "Espalda Baja y Movilidad de Cadera"
                         },
@@ -5546,7 +4964,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Contrarresta la postura cifótica del trabajo de oficina y manubrio de bicicleta.",
                             "target": "Pectoral y Cintura Escapular"
                         }
@@ -5576,7 +4993,6 @@ const TRAINING_DB = {
                             "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
                             "target": "Columna Torácica y Tobillos"
                         },
@@ -5584,7 +5000,6 @@ const TRAINING_DB = {
                             "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
                             "target": "Cadera y Aductores"
                         },
@@ -5592,7 +5007,6 @@ const TRAINING_DB = {
                             "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
                             "target": "Tibiales y Gemelos"
                         },
@@ -5600,7 +5014,6 @@ const TRAINING_DB = {
                             "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
                             "target": "Glúteo Medio"
                         },
@@ -5608,7 +5021,6 @@ const TRAINING_DB = {
                             "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
                             "target": "Pectorales, Tríceps e Isquiotibiales"
                         }
@@ -5619,7 +5031,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 1 minuto",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Comandos auditivos rápidos del adulto: ¡Salto de cohete!, ¡Al suelo!, ¡Estatua en un pie! Estimula la reacción inmediata.",
                             "target": "Tiempo de Reacción y Agilidad"
                         }
@@ -5630,7 +5041,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "Controlado",
                             "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Acostados boca arriba, mover brazos y piernas alternadamente imitando un insecto invertido sin despegar la espalda baja.",
                             "target": "Core Cruzado y Coordinación"
                         },
@@ -5639,7 +5049,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 pasos",
                             "tempo": "Lento y estable",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Gateo muy lento y controlado transportando un juguete pequeño en la espalda sin que se caiga.",
                             "target": "Estabilidad Escapular y Lumbar"
                         },
@@ -5648,7 +5057,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "Sostener 2s",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elevar la cadera todos al mismo tiempo contando juntos en voz alta.",
                             "target": "Glúteo Mayor"
                         }
@@ -5657,7 +5065,6 @@ const TRAINING_DB = {
                         "name": "El Semáforo BMX / BMX Traffic Light",
                         "format": "5 minutos continuos de juego interactivo",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Verde: pedalear rápido en el aire acostados; Amarillo: pedalear suave; Rojo: congelarse con piernas arriba. Desarrolla velocidad y control del core."
                     },
                     "stretch": [
@@ -5665,7 +5072,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "En posición de caballero, empujar suavemente la pelvis hacia adelante para elongar flexores.",
                             "target": "Psoas Ilíaco"
                         },
@@ -5673,7 +5079,6 @@ const TRAINING_DB = {
                             "name": "Torsión Espinal Supina / Lying Spinal Twist",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Acostados boca arriba, cruzar una rodilla flexionada sobre el cuerpo girando suavemente.",
                             "target": "Columna Lumbar y Dorsal"
                         },
@@ -5681,7 +5086,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Postura de 'figura 4' sentados para descargar glúteos y piramidales.",
                             "target": "Glúteo y Piramidal"
                         },
@@ -5689,7 +5093,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello / Neck Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Inclinación suave de la cabeza hacia el hombro relajando trapecios.",
                             "target": "Trapecio Superior y Cuello"
                         }
@@ -5706,7 +5109,6 @@ const TRAINING_DB = {
                             "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
                             "target": "Columna Torácica y Tobillos"
                         },
@@ -5714,7 +5116,6 @@ const TRAINING_DB = {
                             "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
                             "target": "Cadera y Aductores"
                         },
@@ -5722,7 +5123,6 @@ const TRAINING_DB = {
                             "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
                             "target": "Tibiales y Gemelos"
                         },
@@ -5730,7 +5130,6 @@ const TRAINING_DB = {
                             "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
                             "target": "Glúteo Medio"
                         },
@@ -5738,7 +5137,6 @@ const TRAINING_DB = {
                             "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
                             "target": "Pectorales, Tríceps e Isquiotibiales"
                         }
@@ -5749,7 +5147,6 @@ const TRAINING_DB = {
                             "sets": "4 repeticiones",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Iniciar acostados boca abajo. Al aplauso o señal de voz, ponerse de pie en máxima explosión y hacer sprint en el sitio por 5 segundos.",
                             "target": "Tiempo de Reacción de Partidor"
                         },
@@ -5758,7 +5155,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto lateral de un pie al otro sosteniendo el aterrizaje 1 segundo en equilibrio sin mover el pie de apoyo.",
                             "target": "Potencia Lateral y Estabilidad Unipodal"
                         }
@@ -5769,7 +5165,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 35 segundos",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Espalda recta como una tabla, apretando glúteos y abdomen para blindar la zona lumbar.",
                             "target": "Faja Abdominal y Resistencia de Core"
                         },
@@ -5778,7 +5173,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 por pierna",
                             "tempo": "2-2-1-0",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Una pierna en el aire y la otra empuja el talón sosteniendo 2s arriba. Evita la caída de la pelvis.",
                             "target": "Glúteo Mayor y Cadena Posterior"
                         },
@@ -5787,7 +5181,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Paso amplio atrás, rodilla delantera alineada a 90 grados. Menor estrés rotuliano que el desplante frontal.",
                             "target": "Cuádriceps y Estabilidad de Rodilla"
                         },
@@ -5796,7 +5189,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 segundos por lado",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cuerpo en línea recta sobre un antebrazo. Fuerza antilateral para soportar fuerzas centrífugas en peraltes.",
                             "target": "Oblicuos y Cuadrado Lumbar"
                         }
@@ -5805,7 +5197,6 @@ const TRAINING_DB = {
                         "name": "Saltos de Cuerda Imaginarios / Invisible Jump Rope",
                         "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s máxima cadencia x 20s recuperación",
                         "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Simular salto de cuerda con giros de muñeca y rebote rápido sobre las puntas de pie a cadencia de pedaleo de sprint."
                     },
                     "stretch": [
@@ -5813,7 +5204,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Desbloquea los flexores de cadera tras horas sentado y pedaleo enérgico.",
                             "target": "Psoas Ilíaco"
                         },
@@ -5821,7 +5211,6 @@ const TRAINING_DB = {
                             "name": "Torsión Espinal Supina / Lying Spinal Twist",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la tensión en las vértebras lumbares.",
                             "target": "Columna Lumbar"
                         },
@@ -5829,7 +5218,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cruzar tobillo sobre rodilla contraria y acercar el pecho con espalda recta.",
                             "target": "Glúteo y Piramidal"
                         },
@@ -5837,7 +5225,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello / Neck Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relaja la tensión cervical acumulada por el uso del casco de BMX.",
                             "target": "Trapecio y Cuello"
                         }
@@ -5854,7 +5241,6 @@ const TRAINING_DB = {
                             "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
                             "target": "Columna Torácica y Tobillos"
                         },
@@ -5862,7 +5248,6 @@ const TRAINING_DB = {
                             "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
                             "target": "Cadera y Aductores"
                         },
@@ -5870,7 +5255,6 @@ const TRAINING_DB = {
                             "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
                             "target": "Tibiales y Gemelos"
                         },
@@ -5878,7 +5262,6 @@ const TRAINING_DB = {
                             "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
                             "target": "Glúteo Medio"
                         },
@@ -5886,7 +5269,6 @@ const TRAINING_DB = {
                             "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
                             "target": "Pectorales, Tríceps e Isquiotibiales"
                         }
@@ -5897,7 +5279,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 4 repeticiones",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto horizontal amplio e inmediatamente al tocar el suelo encadenar un sprint explosivo de 3 pasos hacia adelante. Simula la salida de la reja.",
                             "target": "Transferencia de Potencia Horizontal y Aceleración"
                         },
@@ -5906,7 +5287,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por lado",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Saltos laterales de máxima distancia con carga en tobillo y glúteo medio sin perder balance.",
                             "target": "Potencia Lateral y Resistencia al Valgo"
                         }
@@ -5917,7 +5297,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 por pierna",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Bajar en 3s controlando la bisagra de cadera. Fortalece isquiotibiales y previene desbalances entre piernas.",
                             "target": "Cadena Posterior y Estabilidad Unipodal"
                         },
@@ -5926,7 +5305,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 16 toques",
                             "tempo": "2-0-1-0",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Posición de plancha alta; alternar mano al hombro contrario manteniendo la pelvis inmóvil.",
                             "target": "Antirotación de Core y Estabilidad Escapular"
                         },
@@ -5935,7 +5313,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "3-2-X-0 (3s bajada, 2s pausa abajo, subida explosiva)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pausa isométrica profunda de 2s abajo antes de estallar hacia arriba. Genera reclutamiento de fibras tipo IIb.",
                             "target": "Fuerza Reactiva de Cuádriceps"
                         },
@@ -5944,7 +5321,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 segundos por lado",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Plancha lateral con pierna superior apoyada en banco y pierna inferior suspendida. Fortalece aductores para el agarre de la bicicleta.",
                             "target": "Aductores y Core Lateral"
                         }
@@ -5953,7 +5329,6 @@ const TRAINING_DB = {
                         "name": "Salto en Sentadilla + Sprawl / Squat Jump to Sprawl",
                         "format": "Protocolo 15/30 • 6 rondas (Total: 4 min 30s) • 15s esfuerzo máximo x 30s recuperación",
                         "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Salto vertical explosivo con recepción suave, inmediatamente bajar a sprawl y volver a saltar. Exigencia anaeróbica pura."
                     },
                     "stretch": [
@@ -5961,7 +5336,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elonga psoas y recto anterior con retroversión pélvica.",
                             "target": "Psoas Ilíaco"
                         },
@@ -5969,7 +5343,6 @@ const TRAINING_DB = {
                             "name": "Torsión Espinal Supina / Lying Spinal Twist",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descompresión rotacional de la columna tras el trabajo de core.",
                             "target": "Columna Vertebral"
                         },
@@ -5977,7 +5350,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia el piramidal para evitar compresiones del nervio ciático.",
                             "target": "Glúteos y Piramidal"
                         },
@@ -5985,7 +5357,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello / Neck Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relaja la musculatura occipital y trapecios.",
                             "target": "Cervicales y Trapecios"
                         }
@@ -6002,7 +5373,6 @@ const TRAINING_DB = {
                             "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Desbloquea la rotación torácica y activa el pivote de pies.",
                             "target": "Columna Torácica y Tobillos"
                         },
@@ -6010,7 +5380,6 @@ const TRAINING_DB = {
                             "name": "Balanceo de Piernas Frontal y Lateral / Leg Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movilidad dinámica de cadera en flexión, extensión y abducción.",
                             "target": "Cadera y Aductores"
                         },
@@ -6018,7 +5387,6 @@ const TRAINING_DB = {
                             "name": "Caminata en Talones y Puntas de Pie / Heel and Toe Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fortalecimiento de tibia anterior y gemelos preparando el apoyo en pedales.",
                             "target": "Tibiales y Gemelos"
                         },
@@ -6026,7 +5394,6 @@ const TRAINING_DB = {
                             "name": "Desplazamiento Lateral en Sentadilla / Lateral Squat Walk",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activación profunda de glúteo medio para estabilidad en peraltes.",
                             "target": "Glúteo Medio"
                         },
@@ -6034,7 +5401,6 @@ const TRAINING_DB = {
                             "name": "Gusano con Flexión de Brazos / Inchworm into Push-Up",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fuerza de empuje combinada con flexibilidad de cadena posterior.",
                             "target": "Pectorales, Tríceps e Isquiotibiales"
                         }
@@ -6045,7 +5411,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 15 por pierna",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Subir a un escalón firme con ritmo ágil empujando desde el talón sin salto de impacto.",
                             "target": "Potencia de Extensión de Cadera y Rodilla"
                         },
@@ -6054,7 +5419,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 por lado",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Paso lateral amplio con flexión de rodilla tocando suavemente el pie de apoyo atrás.",
                             "target": "Glúteo Medio y Balance"
                         }
@@ -6065,7 +5429,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "tempo": "3-1-1-1",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Estabilidad de cadera y fortalecimiento de la cadena posterior adulta sin carga externa.",
                             "target": "Isquiotibiales y Glúteos"
                         },
@@ -6074,7 +5437,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 por lado",
                             "tempo": "2-1-1-1",
                             "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descenso controlado de la cadera y elevación fuerte activando oblicuos y cuadrado lumbar.",
                             "target": "Oblicuos y Estabilidad Lumbar"
                         },
@@ -6083,7 +5445,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 por pierna",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Paso atrás amplio protegiendo la rótula con rango de movimiento completo.",
                             "target": "Cuádriceps y Estabilidad de Cadera"
                         }
@@ -6092,7 +5453,6 @@ const TRAINING_DB = {
                         "name": "Escalador Controlado / Slow Mountain Climbers",
                         "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico x 15s descanso",
                         "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Ritmo moderado y constante acercando rodillas al pecho sin colapsar la zona lumbar."
                     },
                     "stretch": [
@@ -6100,7 +5460,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la tensión en caderas por horas prolongadas sentado.",
                             "target": "Psoas Ilíaco"
                         },
@@ -6108,7 +5467,6 @@ const TRAINING_DB = {
                             "name": "Torsión Espinal Supina / Lying Spinal Twist",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia rigidez lumbar.",
                             "target": "Columna Vertebral"
                         },
@@ -6116,7 +5474,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descarga de cadera y pelvis.",
                             "target": "Glúteos"
                         },
@@ -6124,7 +5481,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello / Neck Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relaja la tensión cervical de pantalla y conducción.",
                             "target": "Cuello"
                         }
@@ -6154,7 +5510,6 @@ const TRAINING_DB = {
                             "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la espalda media y facilita el control del manubrio.",
                             "target": "Columna Torácica"
                         },
@@ -6162,7 +5517,6 @@ const TRAINING_DB = {
                             "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
                             "target": "Muñecas y Antebrazos"
                         },
@@ -6170,7 +5524,6 @@ const TRAINING_DB = {
                             "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
                             "target": "Core y Hombros"
                         },
@@ -6178,7 +5531,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura de la cadena anterior completa.",
                             "target": "Cadera y Hombros"
                         },
@@ -6186,7 +5538,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera Cruzados / Crossover Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
                             "target": "Coordinación Neuromuscular"
                         }
@@ -6197,7 +5548,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 30 segundos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pies juntos, saltando adelante y atrás sobre una línea en el suelo con ritmo divertido.",
                             "target": "Stiffness de Tobillo y Agilidad"
                         }
@@ -6208,7 +5558,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 pasos",
                             "tempo": "Asistido",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Caminar con las manos mientras un adulto sostiene los muslos del niño. Fortalece hombros para los saltos.",
                             "target": "Hombros, Tríceps y Core"
                         },
@@ -6217,7 +5566,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 segundos",
                             "tempo": "Continuo",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Caminar boca arriba en cuatro patas transportando un peluche sobre la barriga sin que caiga.",
                             "target": "Cadena Posterior y Tríceps"
                         },
@@ -6226,7 +5574,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 repeticiones",
                             "tempo": "Controlado",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Empujar el piso desde posición de cuatro patas imitando un mono juguetón.",
                             "target": "Pectorales y Hombros"
                         }
@@ -6235,7 +5582,6 @@ const TRAINING_DB = {
                         "name": "La Carrera de Relevos / Relay Tag",
                         "format": "5 minutos de juego familiar interactivo",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Correr a tocar una pared o cono y volver a chocar las manos con papá o mamá. Estimula velocidad pura y aceleración."
                     },
                     "stretch": [
@@ -6243,7 +5589,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Antebrazos / Forearm Stretch",
                             "duration": "30s por brazo",
                             "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Palma hacia adelante jalando suavemente los dedos hacia atrás para liberar flexores.",
                             "target": "Antebrazos y Muñecas"
                         },
@@ -6251,7 +5596,6 @@ const TRAINING_DB = {
                             "name": "Gato-Camello / Cat-Cow Stretch",
                             "duration": "40s fluido",
                             "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Moviliza la columna vertebral completa alternando flexión y extensión.",
                             "target": "Columna Vertebral"
                         },
@@ -6259,7 +5603,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento en Mariposa / Butterfly Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Plantas de los pies juntas, bajando suavemente las rodillas hacia el piso.",
                             "target": "Aductores e Ingle"
                         },
@@ -6267,7 +5610,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Sóleo / Soleus Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Talón apoyado contra la pared con rodilla ligeramente flexionada para relajar el tendón de Aquiles.",
                             "target": "Sóleo y Tendón de Aquiles"
                         }
@@ -6284,7 +5626,6 @@ const TRAINING_DB = {
                             "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la espalda media y facilita el control del manubrio.",
                             "target": "Columna Torácica"
                         },
@@ -6292,7 +5633,6 @@ const TRAINING_DB = {
                             "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
                             "target": "Muñecas y Antebrazos"
                         },
@@ -6300,7 +5640,6 @@ const TRAINING_DB = {
                             "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
                             "target": "Core y Hombros"
                         },
@@ -6308,7 +5647,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura de la cadena anterior completa.",
                             "target": "Cadera y Hombros"
                         },
@@ -6316,7 +5654,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera Cruzados / Crossover Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
                             "target": "Coordinación Neuromuscular"
                         }
@@ -6327,7 +5664,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 15 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rebote vertical usando exclusivamente la fuerza reactiva de gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
                             "target": "Rigidez Articular (Stiffness) y Tendón de Aquiles"
                         },
@@ -6336,7 +5672,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Cruzar un objeto bajo de lado a lado con agilidad y mínimo tiempo de contacto en el suelo.",
                             "target": "Potencia Reactiva Lateral"
                         }
@@ -6347,7 +5682,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Bajar controlado en 2s flexionando codos y subir en 1s. Fuerza de empuje clave para absorber caídas de saltos.",
                             "target": "Tríceps y Hombros"
                         },
@@ -6356,7 +5690,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 repeticiones",
                             "tempo": "Dinámico",
                             "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Zancadas alternas con salto corto para potencia independiente en cada pierna.",
                             "target": "Potencia Unilateral de Piernas"
                         },
@@ -6365,7 +5698,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "2-0-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pecho al suelo manteniendo abdomen firme sin arqueo lumbar.",
                             "target": "Pectorales y Core"
                         },
@@ -6374,7 +5706,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 repeticiones",
                             "tempo": "Controlado",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sostener puente de glúteos arriba y alternar elevación de rodillas sin que la pelvis oscile.",
                             "target": "Glúteos y Estabilidad Pélvica"
                         }
@@ -6383,7 +5714,6 @@ const TRAINING_DB = {
                         "name": "Sprint en el Sitio con Resistencia / Resisted High Knee Sprints",
                         "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
                         "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Sprint estático a máxima cadencia imaginando empujar la bicicleta en la última recta de la pista."
                     },
                     "stretch": [
@@ -6391,7 +5721,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Antebrazos / Forearm Stretch",
                             "duration": "30s por brazo",
                             "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
                             "target": "Flexores y Extensores de Muñeca"
                         },
@@ -6399,7 +5728,6 @@ const TRAINING_DB = {
                             "name": "Gato-Camello / Cat-Cow Stretch",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
                             "target": "Columna Vertebral"
                         },
@@ -6407,7 +5735,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento en Mariposa / Butterfly Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                             "target": "Aductores e Ingle"
                         },
@@ -6415,7 +5742,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Sóleo / Soleus Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
                             "target": "Sóleo y Tendón de Aquiles"
                         }
@@ -6432,7 +5758,6 @@ const TRAINING_DB = {
                             "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la espalda media y facilita el control del manubrio.",
                             "target": "Columna Torácica"
                         },
@@ -6440,7 +5765,6 @@ const TRAINING_DB = {
                             "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
                             "target": "Muñecas y Antebrazos"
                         },
@@ -6448,7 +5772,6 @@ const TRAINING_DB = {
                             "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
                             "target": "Core y Hombros"
                         },
@@ -6456,7 +5779,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura de la cadena anterior completa.",
                             "target": "Cadera y Hombros"
                         },
@@ -6464,7 +5786,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera Cruzados / Crossover Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
                             "target": "Coordinación Neuromuscular"
                         }
@@ -6475,7 +5796,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rebote vertical sobre una sola pierna con rodilla semiflexionada rígida como un resorte de acero. Transfiere la fuerza al pedal.",
                             "target": "Stiffness Reactivo Unipodal"
                         },
@@ -6484,7 +5804,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto vertical de máxima altura llevando rodillas al pecho y extendiendo rápido para aterrizar con control.",
                             "target": "Potencia de Flexión de Cadera y Despegue"
                         }
@@ -6495,7 +5814,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Manos juntas formando un triángulo. Fortalece tríceps para resistir las compresiones en los saltos dobles de BMX.",
                             "target": "Tríceps y Hombros Anteriores"
                         },
@@ -6504,7 +5822,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "2-1-1-1",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Acostados bajo una mesa firme, agarrar el borde y tirar del pecho hacia la mesa. Desarrolla la tracción de espalda para el gate pull.",
                             "target": "Dorsales, Romboides y Bíceps"
                         },
@@ -6513,7 +5830,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 por pierna",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sentadilla completa a una pierna sujetándose de un marco o poste. Fuerza máxima unilateral.",
                             "target": "Fuerza Unilateral Extrema de Piernas"
                         },
@@ -6522,7 +5838,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 40 segundos",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sostener botellones de agua a los lados con espalda erguida y agarre al 100%. Blindaje contra el arm pump.",
                             "target": "Fuerza de Agarre y Trapecios"
                         }
@@ -6531,7 +5846,6 @@ const TRAINING_DB = {
                         "name": "Thrusters sin Peso o con Mochila / Bodyweight Thrusters",
                         "format": "Protocolo Tabata • 8 rondas (Total: 4 min) • 20s esfuerzo máximo x 10s descanso",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Sentadilla profunda e impulso vertical extendiendo los brazos arriba sin pausa. Simulación extrema de fatiga láctica en la última recta."
                     },
                     "stretch": [
@@ -6539,7 +5853,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Antebrazos / Forearm Stretch",
                             "duration": "30s por brazo",
                             "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia flexores y extensores tras el farmer's hold y las flexiones.",
                             "target": "Antebrazos"
                         },
@@ -6547,7 +5860,6 @@ const TRAINING_DB = {
                             "name": "Gato-Camello / Cat-Cow Stretch",
                             "duration": "40s sostenido",
                             "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descomprime discos vertebrales.",
                             "target": "Columna Vertebral"
                         },
@@ -6555,7 +5867,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento en Mariposa / Butterfly Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia aductores tras las sentadillas unilaterales.",
                             "target": "Aductores"
                         },
@@ -6563,7 +5874,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Sóleo / Soleus Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descarga profunda del tendón de Aquiles.",
                             "target": "Sóleo"
                         }
@@ -6580,7 +5890,6 @@ const TRAINING_DB = {
                             "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la espalda media y facilita el control del manubrio.",
                             "target": "Columna Torácica"
                         },
@@ -6588,7 +5897,6 @@ const TRAINING_DB = {
                             "name": "Movilidad de Muñecas en Suelo / Wrist Mobility Drills",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Calentamiento y fortalecimiento articular para prevenir el Arm Pump.",
                             "target": "Muñecas y Antebrazos"
                         },
@@ -6596,7 +5904,6 @@ const TRAINING_DB = {
                             "name": "Pasos de Oso con Toque de Puntera / Bear Crawl to Toe Tap",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación cruzada y flexibilidad dinámica de isquiotibiales.",
                             "target": "Core y Hombros"
                         },
@@ -6604,7 +5911,6 @@ const TRAINING_DB = {
                             "name": "Desplantes con Alcance al Techo / Lunges with Overhead Reach",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura de la cadena anterior completa.",
                             "target": "Cadera y Hombros"
                         },
@@ -6612,7 +5918,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera Cruzados / Crossover Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Mejora la coordinación motriz cruzando brazos y piernas rítmicamente.",
                             "target": "Coordinación Neuromuscular"
                         }
@@ -6623,7 +5928,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 25 saltos",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rebotes rítmicos controlados estimulando la elasticidad del tendón sin impacto articular severo.",
                             "target": "Elasticidad y Salud Tendinosa"
                         },
@@ -6632,7 +5936,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 repeticiones",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura lateral de piernas sin salto brusco, manteniendo ritmo cardiovascular constante.",
                             "target": "Capacidad Aeróbica y Coordinación"
                         }
@@ -6643,7 +5946,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "tempo": "3-1-X-1",
                             "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Fuerza unilateral profunda y estabilidad avanzada de cadera sin compresión espinal.",
                             "target": "Glúteos y Cuádriceps"
                         },
@@ -6652,7 +5954,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 40 segundos por lado",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Estabilidad lateral del tronco y los oblicuos para proteger la zona lumbar.",
                             "target": "Core Lateral"
                         },
@@ -6661,7 +5962,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 repeticiones",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexiones con inclinación que reducen la carga en muñecas y hombros manteniendo tono pectoral.",
                             "target": "Pectorales y Tríceps"
                         }
@@ -6670,7 +5970,6 @@ const TRAINING_DB = {
                         "name": "Sombra de Pedaleo Rápido / Shadow Pedaling",
                         "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s ritmo intenso x 15s recuperación",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "De pie en posición de ataque de BMX simulando pedaleo de alta frecuencia y empuje en manubrio."
                     },
                     "stretch": [
@@ -6678,7 +5977,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Antebrazos / Forearm Stretch",
                             "duration": "30s por brazo",
                             "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia muñecas y codos.",
                             "target": "Antebrazos"
                         },
@@ -6686,7 +5984,6 @@ const TRAINING_DB = {
                             "name": "Gato-Camello / Cat-Cow Stretch",
                             "duration": "40s fluido",
                             "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descompresión de columna lumbar.",
                             "target": "Espalda"
                         },
@@ -6694,7 +5991,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento en Mariposa / Butterfly Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexibilidad de cadera y pelvis.",
                             "target": "Aductores"
                         },
@@ -6702,7 +5998,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Sóleo / Soleus Stretch",
                             "duration": "30s por pierna",
                             "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relajación del tendón de Aquiles.",
                             "target": "Sóleo"
                         }
@@ -6732,7 +6027,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Cadera / Hip Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                             "target": "Cadera y Pelvis"
                         },
@@ -6740,7 +6034,6 @@ const TRAINING_DB = {
                             "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activa la parte superior de la espalda y hombros.",
                             "target": "Pectorales y Espalda Alta"
                         },
@@ -6748,7 +6041,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
                             "target": "Isquiotibiales y Tronco"
                         },
@@ -6756,7 +6048,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera en Cruz / Cross Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
                             "target": "Coordinación Rítmica"
                         },
@@ -6764,7 +6055,6 @@ const TRAINING_DB = {
                             "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
                             "target": "Aductores y Movilidad de Tobillo"
                         }
@@ -6775,7 +6065,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 1 minuto",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Bailar o trotar al ritmo de la música en familia; al pausar, congelarse en una postura de equilibrio de BMX.",
                             "target": "Equilibrio y Control Vestibular"
                         }
@@ -6786,7 +6075,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 30 segundos",
                             "tempo": "Dinámico",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Caminar en posición de cangrejo transportando un peluche sobre el abdomen.",
                             "target": "Hombros, Tríceps y Glúteos"
                         },
@@ -6795,7 +6083,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 segundos",
                             "tempo": "Sostenido",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sostener el puente de glúteos arriba mientras un familiar hace pasar un juguete rodando por debajo.",
                             "target": "Glúteos e Isquiotibiales"
                         },
@@ -6804,7 +6091,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 saltos",
                             "tempo": "Lúdico",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Saltitos cortos y suaves desde posición de rana sin hacer ruido.",
                             "target": "Potencia Suave de Piernas"
                         }
@@ -6813,7 +6099,6 @@ const TRAINING_DB = {
                         "name": "Circuito de Obstáculos Domésticos / Living Room Obstacle Course",
                         "format": "5 minutos continuos de juego interactivo",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Sortear cojines en zigzag, pasar por debajo de una mesa y saltar una toalla doblada simulando la pista completa de bicicross."
                     },
                     "stretch": [
@@ -6821,7 +6106,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sentados con piernas juntas extendidas, alcanzar las puntas de los pies con suavidad.",
                             "target": "Isquiotibiales y Espalda Baja"
                         },
@@ -6829,7 +6113,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Manos apoyadas en la pared con cadera atrás para elongar dorsales.",
                             "target": "Dorsales y Hombros"
                         },
@@ -6837,7 +6120,6 @@ const TRAINING_DB = {
                             "name": "Postura de la Cobra / Cobra Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Acostados boca abajo, elevar suavemente el torso estirando el abdomen.",
                             "target": "Abdomen y Flexores de Cadera"
                         },
@@ -6845,7 +6127,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movimientos suaves de cabeza y relajación de la mandíbula apretada durante los esfuerzos.",
                             "target": "Trapecios y Mandíbula"
                         }
@@ -6862,7 +6143,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Cadera / Hip Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                             "target": "Cadera y Pelvis"
                         },
@@ -6870,7 +6150,6 @@ const TRAINING_DB = {
                             "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activa la parte superior de la espalda y hombros.",
                             "target": "Pectorales y Espalda Alta"
                         },
@@ -6878,7 +6157,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
                             "target": "Isquiotibiales y Tronco"
                         },
@@ -6886,7 +6164,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera en Cruz / Cross Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
                             "target": "Coordinación Rítmica"
                         },
@@ -6894,7 +6171,6 @@ const TRAINING_DB = {
                             "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
                             "target": "Aductores y Movilidad de Tobillo"
                         }
@@ -6905,7 +6181,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 20 segundos",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Movimiento lateral cruzando pies por delante y por detrás con máxima agilidad y disociación de tronco.",
                             "target": "Agilidad Rotacional y Coordinación de Pies"
                         },
@@ -6914,7 +6189,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Saltar en diagonal de lado a lado imaginando conos en el suelo, frenando y acelerando en cada vértice.",
                             "target": "Cambio de Dirección y Desaceleración"
                         }
@@ -6925,7 +6199,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 16 toques",
                             "tempo": "2-0-1-0",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Mantener la cadera completamente quieta mientras se alterna el toque de hombros. Antirotación pura.",
                             "target": "Estabilidad de Core y Hombros"
                         },
@@ -6934,7 +6207,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 por lado",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descenso lateral profundo sobre una pierna manteniendo el talón opuesto apoyado. Sujetándose de una mesa o poste.",
                             "target": "Aductores y Movilidad de Cadera"
                         },
@@ -6943,7 +6215,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 repeticiones",
                             "tempo": "2-1-1-0",
                             "video": "https://www.youtube.com/embed/4XLEnwUr1d8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Control neuromuscular estricto coordinando brazo y pierna opuesta con espalda baja anclada.",
                             "target": "Core Profundo y Coordinación"
                         },
@@ -6952,7 +6223,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 repeticiones",
                             "tempo": "Explosivo",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Empuje potente desde el suelo buscando despegar las manos del piso.",
                             "target": "Potencia Pectoral de Empuje"
                         }
@@ -6961,7 +6231,6 @@ const TRAINING_DB = {
                         "name": "Sprint de Patinador + Burpee / Skater Sprint to Burpee",
                         "format": "Protocolo 20/20 • 8 rondas (Total: 5 min 20s) • 20s esfuerzo máximo x 20s descanso",
                         "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "3 saltos de patinador laterales seguidos de un burpee rápido. Simula adelantamientos y aceleraciones en curvas de pista."
                     },
                     "stretch": [
@@ -6969,7 +6238,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza.",
                             "target": "Isquiotibiales y Espalda Baja"
                         },
@@ -6977,7 +6245,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera los músculos encargados de halar el manubrio.",
                             "target": "Dorsales y Hombros"
                         },
@@ -6985,7 +6252,6 @@ const TRAINING_DB = {
                             "name": "Postura de la Cobra / Cobra Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Apertura de la faja abdominal.",
                             "target": "Abdomen"
                         },
@@ -6993,7 +6259,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relaja trapecios y cuello.",
                             "target": "Cuello"
                         }
@@ -7010,7 +6275,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Cadera / Hip Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                             "target": "Cadera y Pelvis"
                         },
@@ -7018,7 +6282,6 @@ const TRAINING_DB = {
                             "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activa la parte superior de la espalda y hombros.",
                             "target": "Pectorales y Espalda Alta"
                         },
@@ -7026,7 +6289,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
                             "target": "Isquiotibiales y Tronco"
                         },
@@ -7034,7 +6296,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera en Cruz / Cross Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
                             "target": "Coordinación Rítmica"
                         },
@@ -7042,7 +6303,6 @@ const TRAINING_DB = {
                             "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
                             "target": "Aductores y Movilidad de Tobillo"
                         }
@@ -7053,7 +6313,6 @@ const TRAINING_DB = {
                             "sets": "4 series de 8 saltos",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Saltar dibujando una 'X' imaginaria en el suelo con despegues y frenadas multidireccionales explosivas.",
                             "target": "Agilidad Multidireccional y Tobillos"
                         },
@@ -7062,7 +6321,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 saltos por lado",
                             "rest": "Descanso 60s",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Salto vertical girando 90 grados en el aire y aterrizando en perfecta semisentadilla firme simulando el cambio de ángulo en peraltes.",
                             "target": "Potencia Rotacional y Control Aéreo"
                         }
@@ -7073,7 +6331,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/wrwwXE_x-pQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Paso cruzado atrás por detrás de la pierna delantera. Fortalece glúteo medio y estabiliza rodillas ante fuerzas en torsión.",
                             "target": "Glúteo Medio y Cadera Rotacional"
                         },
@@ -7082,7 +6339,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 25 segundos por lado",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Plancha lateral en estrella elevando la pierna superior en el aire. Exigencia extrema en abductores y core.",
                             "target": "Core Lateral y Abductores"
                         },
@@ -7091,7 +6347,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 repeticiones",
                             "tempo": "3-0-1-0",
                             "video": "https://www.youtube.com/embed/5kZcT6Q7Bw4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Al bajar el pecho, llevar una rodilla por fuera hasta tocar el codo. Fuerza de empuje con máxima compresión de oblicuos.",
                             "target": "Pectorales, Tríceps y Oblicuos"
                         },
@@ -7100,7 +6355,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 6 repeticiones",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sujetándose de una base fija o poste, elevar las piernas y bajar el cuerpo rígido en una sola línea en 3s controlando con el abdomen.",
                             "target": "Fuerza Abdominal Extrema"
                         }
@@ -7109,7 +6363,6 @@ const TRAINING_DB = {
                         "name": "Batería BMX All-Out: Sprint en Partidor + Salto + Sprawl",
                         "format": "Protocolo 15/45 • 5 rondas (Total: 5 min) • 15s esfuerzo máximo x 45s recuperación",
                         "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Simulación idéntica a una manga oficial de BMX: 5 segundos de sprint en sitio, 2 saltos al cajón y 1 sprawl inmediato a máxima potencia."
                     },
                     "stretch": [
@@ -7117,7 +6370,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elonga isquiotibiales y fascia toracolumbar.",
                             "target": "Isquiotibiales y Espalda Baja"
                         },
@@ -7125,7 +6377,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Libera la tensión de hombros y dorsales.",
                             "target": "Dorsales y Hombros"
                         },
@@ -7133,7 +6384,6 @@ const TRAINING_DB = {
                             "name": "Postura de la Cobra / Cobra Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descarga de flexores de cadera y pared abdominal.",
                             "target": "Abdomen"
                         },
@@ -7141,7 +6391,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relajación cervical y de músculos masticatorios.",
                             "target": "Cuello y Mandíbula"
                         }
@@ -7158,7 +6407,6 @@ const TRAINING_DB = {
                             "name": "Círculos de Cadera / Hip Circles",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                             "target": "Cadera y Pelvis"
                         },
@@ -7166,7 +6414,6 @@ const TRAINING_DB = {
                             "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Activa la parte superior de la espalda y hombros.",
                             "target": "Pectorales y Espalda Alta"
                         },
@@ -7174,7 +6421,6 @@ const TRAINING_DB = {
                             "name": "Caminata de Oruga con Rotación / Inchworm with Rotation",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elongación dinámica de isquiotibiales con rotación de columna.",
                             "target": "Isquiotibiales y Tronco"
                         },
@@ -7182,7 +6428,6 @@ const TRAINING_DB = {
                             "name": "Saltos de Tijera en Cruz / Cross Jacks",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Coordinación multidireccional con cruce alternado de pies y brazos.",
                             "target": "Coordinación Rítmica"
                         },
@@ -7190,7 +6435,6 @@ const TRAINING_DB = {
                             "name": "Sentadilla Cosaco Dinámica / Dynamic Cossack Squats",
                             "duration": "45s trabajo x 15s transición (2 rondas)",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Flexibilidad lateral de cadera y tobillos para estabilidad en curvas.",
                             "target": "Aductores y Movilidad de Tobillo"
                         }
@@ -7201,7 +6445,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 16 repeticiones",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Paso lateral dinámico rebotando suavemente en metatarsos sin cargar rodillas.",
                             "target": "Elasticidad Lateral de Tobillos"
                         },
@@ -7210,7 +6453,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 12 por lado",
                             "rest": "Descanso 45s",
                             "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Pivote de pies y rotación suave de hombros manteniendo postura erguida.",
                             "target": "Movilidad de Cadera y Tronco"
                         }
@@ -7221,7 +6463,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 8 por lado",
                             "tempo": "3-1-1-0",
                             "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descenso profundo sobre una pierna manteniendo el talón contrario apoyado o elevado según movilidad.",
                             "target": "Movilidad de Cadera y Aductores"
                         },
@@ -7230,7 +6471,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 50 segundos",
                             "tempo": "Isometría",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alineación perfecta de hombros, cadera y talones con contracción total.",
                             "target": "Fuerza Lumbo-Abdominal"
                         },
@@ -7239,7 +6479,6 @@ const TRAINING_DB = {
                             "sets": "3 series de 10 por pierna",
                             "tempo": "2-1-1-1",
                             "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Estabilidad de pelvis y fuerza en la cadena posterior adulta.",
                             "target": "Cadena Posterior y Glúteos"
                         }
@@ -7248,7 +6487,6 @@ const TRAINING_DB = {
                         "name": "Intervalo de Recuperación Activa: Sombra de Carrera / Active Shadow Stride",
                         "format": "Protocolo 30/15 • 6 rondas (Total: 4 min 30s) • 30s trabajo aeróbico fluido x 15s recuperación",
                         "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                        "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                         "desc": "Trote suave y braceo en el sitio simulando fluidez y respiración controlada."
                     },
                     "stretch": [
@@ -7256,7 +6494,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Alivia tensión lumbar e isquiotibial.",
                             "target": "Cadena Posterior"
                         },
@@ -7264,7 +6501,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                             "duration": "30s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Elonga espalda superior y hombros.",
                             "target": "Dorsales"
                         },
@@ -7272,7 +6508,6 @@ const TRAINING_DB = {
                             "name": "Postura de la Cobra / Cobra Stretch",
                             "duration": "30s sostenido",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Descompresión anterior.",
                             "target": "Abdomen"
                         },
@@ -7280,7 +6515,6 @@ const TRAINING_DB = {
                             "name": "Estiramiento de Cuello y Mandíbula / Cervical and Jaw Release",
                             "duration": "20s por lado",
                             "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Relajación cervical profunda.",
                             "target": "Cuello"
                         }
@@ -7336,7 +6570,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal central y activa el psoas ilíaco.",
                                 "target": "Temperatura y Psoas Ilíaco"
                             },
@@ -7344,7 +6577,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador (clave para el tirón de salida o pull del manubrio).",
                                 "target": "Manguito Rotador y Pull"
                             },
@@ -7352,7 +6584,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -7360,7 +6591,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica.",
                                 "target": "SNC y Coordinación"
                             },
@@ -7368,7 +6598,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica para el control postural.",
                                 "target": "Cadera y Rotación Torácica"
                             }
@@ -7379,7 +6608,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Los padres o hermanos actúan de 'charcos seguros' y el niño salta de uno a otro imitando ranas con control, aterrizaje silencioso y diversión.",
                                 "target": "Potencia Lúdica y Amortiguación"
                             }
@@ -7390,7 +6618,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 s",
                                 "tempo": "Dinámico",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Gatear imitando osos intentando tocarse las zapatillas suavemente en un espacio seguro.",
                                 "target": "Hombros, Core y Coordinación"
                             }
@@ -7399,7 +6626,6 @@ const TRAINING_DB = {
                             "name": "Semáforo Loco Familiar / Traffic Light Game",
                             "format": "5 minutos continuos (Juego libre dirigido con familia)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Verde: trote rápido en el sitio; Amarillo: caminar; Rojo: estatua estática. Simula esfuerzos intermitentes y control de frenado."
                         },
                         "stretch": [
@@ -7407,7 +6633,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -7415,7 +6640,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -7423,7 +6647,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "40s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura aerodinámica en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -7431,7 +6654,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia natural al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -7448,7 +6670,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal central y activa el psoas ilíaco.",
                                 "target": "Temperatura y Psoas Ilíaco"
                             },
@@ -7456,7 +6677,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador (clave para el tirón de salida o pull del manubrio).",
                                 "target": "Manguito Rotador y Pull"
                             },
@@ -7464,7 +6684,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -7472,7 +6691,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica.",
                                 "target": "SNC y Coordinación"
                             },
@@ -7480,7 +6698,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica para el control postural.",
                                 "target": "Cadera y Rotación Torácica"
                             }
@@ -7491,7 +6708,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar hacia adelante buscando distancia, aterrizando en semisentadilla profunda silenciosa ('como un gato').",
                                 "target": "Potencia Horizontal y Amortiguación"
                             },
@@ -7500,7 +6716,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilizar el tobillo y la rodilla en cada apoyo lateral sin colapsar hacia adentro.",
                                 "target": "Estabilidad Lateral de Tobillo y Rodilla"
                             }
@@ -7511,7 +6726,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "2-1-1-0",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar en 2s, pausa de 1s abajo, subir en 1s. Mantener talones totalmente fijos al piso.",
                                 "target": "Cuádriceps y Glúteos"
                             },
@@ -7520,7 +6734,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "2-1-1-0",
                                 "video": "https://www.youtube.com/embed/jWxvty2KROs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pecho al centro de las manos, codos formando un ángulo de 45 grados respecto al torso.",
                                 "target": "Pectorales y Tríceps"
                             },
@@ -7529,7 +6742,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "Sostener 2s",
                                 "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevar pecho y piernas simultáneamente del suelo, fortaleciendo la cadena posterior.",
                                 "target": "Cadena Posterior y Zona Lumbar"
                             }
@@ -7538,7 +6750,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 20/20 - Escaladores Rápidos / Mountain Climbers",
                             "format": "Protocolo 20s trabajo / 20s descanso (8 rondas / 5 min 20s)",
                             "video": "https://www.youtube.com/embed/kLh-uczlPLg",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Escaladores rápidos a ritmo constante sin colapsar la cadera hacia abajo, simulando los esfuerzos intermitentes de una manga en pista de BMX."
                         },
                         "stretch": [
@@ -7546,7 +6757,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -7554,7 +6764,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -7562,7 +6771,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "40s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura aerodinámica en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -7570,7 +6778,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia natural al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -7587,7 +6794,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal central y activa el psoas ilíaco.",
                                 "target": "Temperatura y Psoas Ilíaco"
                             },
@@ -7595,7 +6801,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador (clave para el tirón de salida o pull del manubrio).",
                                 "target": "Manguito Rotador y Pull"
                             },
@@ -7603,7 +6808,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -7611,7 +6815,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica.",
                                 "target": "SNC y Coordinación"
                             },
@@ -7619,7 +6822,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica para el control postural.",
                                 "target": "Cadera y Rotación Torácica"
                             }
@@ -7630,7 +6832,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/hxldG9FX4j4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima explosividad vertical con extensión completa de cadera en la fase de vuelo y aterrizaje silencioso.",
                                 "target": "Explosividad Vertical y Extensión de Cadera"
                             },
@@ -7639,7 +6840,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 15 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mínimo tiempo de contacto en el suelo (efecto resorte puro para rigidez de tendón de Aquiles).",
                                 "target": "Stiffness Reactivo de Tobillo"
                             }
@@ -7650,7 +6850,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "3-1-X-1",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar en 3s controlados, pausa abajo, subir de forma explosiva, pausa arriba.",
                                 "target": "Potencia Unilateral de Piernas"
                             },
@@ -7659,7 +6858,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "3-1-X-0",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fase excéntrica ultra lenta para construir fuerza estructural de empuje.",
                                 "target": "Pectorales, Tríceps y Core"
                             },
@@ -7668,7 +6866,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 toques",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Tocar hombros alternadamente intentando evitar cualquier rotación de la pelvis.",
                                 "target": "Core Anti-Rotacional"
                             }
@@ -7677,7 +6874,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30/15 - Sprawls & Fast Feet",
                             "format": "Protocolo Tabata Modificado 30s trabajo / 15s descanso (8 rondas / 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (Burpees sin flexión) & Sprints en el Sitio (Fast Feet) intercalados por ronda para simular la intensidad de una manga completa."
                         },
                         "stretch": [
@@ -7685,7 +6881,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -7693,7 +6888,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -7701,7 +6895,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "40s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura aerodinámica en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -7709,7 +6902,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia natural al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -7726,7 +6918,6 @@ const TRAINING_DB = {
                                 "name": "Trote con Rodillas Altas / High Knees",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Eleva la temperatura corporal central y activa el psoas ilíaco.",
                                 "target": "Temperatura y Psoas Ilíaco"
                             },
@@ -7734,7 +6925,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Brazos / Arm Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica el manguito rotador (clave para el tirón de salida o pull del manubrio).",
                                 "target": "Manguito Rotador y Pull"
                             },
@@ -7742,7 +6932,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga / Inchworms",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
                                 "target": "Isquiotibiales y Core"
                             },
@@ -7750,7 +6939,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Tijera / Jumping Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica.",
                                 "target": "SNC y Coordinación"
                             },
@@ -7758,7 +6946,6 @@ const TRAINING_DB = {
                                 "name": "Desplantes con Giro / Walking Lunges with Trunk Twist",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad activa de cadera y rotación torácica para el control postural.",
                                 "target": "Cadera y Rotación Torácica"
                             }
@@ -7769,7 +6956,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Trabajo de stiffness de bajo impacto para proteger las estructuras articulares adultas.",
                                 "target": "Stiffness de Bajo Impacto"
                             },
@@ -7778,7 +6964,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control de estabilidad lateral de rodilla y cadera para el paso por peraltes.",
                                 "target": "Estabilidad Lateral en Peraltes"
                             }
@@ -7789,7 +6974,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "3-1-1-1",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de cadera profunda y control postural absoluto bajo carga corporal.",
                                 "target": "Movilidad de Cadera y Cuádriceps"
                             },
@@ -7798,7 +6982,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mayor reclutamiento pectoral y estabilidad escapular avanzada.",
                                 "target": "Pectorales y Estabilidad Escapular"
                             },
@@ -7807,7 +6990,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 45 segundos",
                                 "tempo": "45 segundos (Isometría)",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contracción isométrica simultánea de abdomen, glúteos y cuádriceps.",
                                 "target": "Core Global y Protección Lumbar"
                             }
@@ -7816,7 +6998,6 @@ const TRAINING_DB = {
                             "name": "Protocolo Tabata Modificado 30/15 - Sprawls & Fast Feet",
                             "format": "Protocolo Tabata Modificado 30s trabajo / 15s descanso (8 rondas / 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (Burpees sin flexión) & Sprints en el Sitio (Fast Feet) intercalados por ronda."
                         },
                         "stretch": [
@@ -7824,7 +7005,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuádriceps / Standing Quad Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aNXGOpP37CY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
                                 "target": "Cuádriceps y Psoas"
                             },
@@ -7832,7 +7012,6 @@ const TRAINING_DB = {
                                 "name": "Perro Boca Abajo / Downward Dog",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
                                 "target": "Gemelos e Isquiotibiales"
                             },
@@ -7840,7 +7019,6 @@ const TRAINING_DB = {
                                 "name": "Postura del Niño / Child's Pose",
                                 "duration": "40s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descarga la zona lumbar castigada por la postura aerodinámica en la bicicleta.",
                                 "target": "Espalda Baja y Dorsales"
                             },
@@ -7848,7 +7026,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Contrarresta la tendencia natural al encorvamiento de hombros.",
                                 "target": "Pectorales y Deltoides"
                             }
@@ -7878,7 +7055,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
                                 "target": "Columna Lumbar y Pump"
                             },
@@ -7886,7 +7062,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
                                 "target": "Isquiotibiales y Rodilla"
                             },
@@ -7894,7 +7069,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
                                 "target": "Articulación Coxofemoral"
                             },
@@ -7902,7 +7076,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida / Crab Walk",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos, cadena posterior y apertura de hombros.",
                                 "target": "Glúteos y Apertura de Hombros"
                             },
@@ -7910,7 +7083,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/v7rjHmZRs28",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s rápido, 5s suave. Despierta de inmediato el sistema nervioso central.",
                                 "target": "Activación del SNC"
                             }
@@ -7921,7 +7093,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 1 minuto",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "El adulto o hermano mayor da comandos divertidos: '¡Salto de cohete!', '¡Al suelo!', '¡Estatua en un pie!'.",
                                 "target": "Tiempo de Reacción y Equilibrio"
                             }
@@ -7932,7 +7103,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 reps",
                                 "tempo": "Controlado",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Boca arriba, mover brazos y piernas al aire imitando un insecto invertido en familia.",
                                 "target": "Core y Coordinación Cruzada"
                             }
@@ -7941,7 +7111,6 @@ const TRAINING_DB = {
                             "name": "Pista de Obstáculos Imaginaria / Imaginary Track Obstacles",
                             "format": "3 rondas de 2 minutos (Juego continuo guiado)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr, saltar obstáculos imaginarios y agacharse al grito del adulto simulando repechos y la zona rítmica de la pista."
                         },
                         "stretch": [
@@ -7949,7 +7118,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
                                 "target": "Flexores de Cadera"
                             },
@@ -7957,7 +7125,6 @@ const TRAINING_DB = {
                                 "name": "Torsión Espinal Supina / Lying Spinal Twist",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
                                 "target": "Columna Lumbar y Dorsal"
                             },
@@ -7965,7 +7132,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
                                 "target": "Glúteo y Piramidal"
                             },
@@ -7973,7 +7139,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
                                 "target": "Trapecio Superior y Cuello"
                             }
@@ -7990,7 +7155,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
                                 "target": "Columna Lumbar y Pump"
                             },
@@ -7998,7 +7162,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
                                 "target": "Isquiotibiales y Rodilla"
                             },
@@ -8006,7 +7169,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
                                 "target": "Articulación Coxofemoral"
                             },
@@ -8014,7 +7176,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida / Crab Walk",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos, cadena posterior y apertura de hombros.",
                                 "target": "Glúteos y Apertura de Hombros"
                             },
@@ -8022,7 +7183,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/v7rjHmZRs28",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s rápido, 5s suave. Despierta de inmediato el sistema nervioso central.",
                                 "target": "Activación del SNC"
                             }
@@ -8033,7 +7193,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Iniciar acostados boca abajo. Al aplauso, levantarse explosivamente y hacer sprint en el sitio por 5 segundos.",
                                 "target": "Velocidad de Reacción y Aceleración"
                             },
@@ -8042,7 +7201,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar lateralmente de un pie al otro, manteniendo el equilibrio 1 segundo absoluto al aterrizar.",
                                 "target": "Equilibrio Dinámico y Estabilidad Lateral"
                             }
@@ -8053,7 +7211,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 35 s",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Espalda recta como tabla, apretando glúteos para proteger firmemente la zona lumbar.",
                                 "target": "Core y Estabilidad Lumbar"
                             },
@@ -8062,7 +7219,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8/pierna",
                                 "tempo": "2-2-1-0",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subir normal, sostener 2 segundos arriba apretando fuerte, bajar en 2s.",
                                 "target": "Glúteos e Isquiotibiales Unilaterales"
                             },
@@ -8071,7 +7227,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8/lado",
                                 "tempo": "2-1-1-0",
                                 "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral controlado para fortalecer aductores y control en curvas.",
                                 "target": "Aductores y Control en Curvas"
                             }
@@ -8080,7 +7235,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 15/30 - Medios Burpees / Half Burpees",
                             "format": "Protocolo 15s trabajo / 30s descanso (10 rondas / 7.5 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sin flexión de pecho, volver rápido a posición de pie buscando máxima velocidad de piernas para simular repechos y la zona rítmica."
                         },
                         "stretch": [
@@ -8088,7 +7242,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
                                 "target": "Flexores de Cadera"
                             },
@@ -8096,7 +7249,6 @@ const TRAINING_DB = {
                                 "name": "Torsión Espinal Supina / Lying Spinal Twist",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
                                 "target": "Columna Lumbar y Dorsal"
                             },
@@ -8104,7 +7256,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
                                 "target": "Glúteo y Piramidal"
                             },
@@ -8112,7 +7263,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
                                 "target": "Trapecio Superior y Cuello"
                             }
@@ -8129,7 +7279,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
                                 "target": "Columna Lumbar y Pump"
                             },
@@ -8137,7 +7286,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
                                 "target": "Isquiotibiales y Rodilla"
                             },
@@ -8145,7 +7293,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
                                 "target": "Articulación Coxofemoral"
                             },
@@ -8153,7 +7300,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida / Crab Walk",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos, cadena posterior y apertura de hombros.",
                                 "target": "Glúteos y Apertura de Hombros"
                             },
@@ -8161,7 +7307,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/v7rjHmZRs28",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s rápido, 5s suave. Despierta de inmediato el sistema nervioso central.",
                                 "target": "Activación del SNC"
                             }
@@ -8172,7 +7317,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 6 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/mKbYaSu1FA8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Absorber el impacto frontal sin que la rodilla colapse hacia adentro (control estricto del valgo).",
                                 "target": "Absorción Unipodal y Control del Valgo"
                             },
@@ -8181,7 +7325,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "De rodillas, a la señal llevar un pie al frente de forma explosiva, pararse y correr en máxima frecuencia.",
                                 "target": "Reacción y Explosividad en Partidor"
                             }
@@ -8192,7 +7335,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "4-1-1-1",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar el torso en 4s sintiendo el estiramiento del isquiotibial con control de equilibrio total.",
                                 "target": "Isquiotibiales y Equilibrio Unipodal"
                             },
@@ -8201,7 +7343,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "2-1-X-0",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Dar paso atrás en 2s, pausa de 1s, subir empujando con máxima potencia de la pierna delantera.",
                                 "target": "Potencia de Empuje Unilateral"
                             },
@@ -8210,7 +7351,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 s",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Acostado, piernas y hombros elevados a 10 cm del suelo, zona lumbar aplastada contra el piso.",
                                 "target": "Core Profundo y Transmisión de Potencia"
                             }
@@ -8219,7 +7359,6 @@ const TRAINING_DB = {
                             "name": "BMX Track EMOM 8 Minutos - Tuck Jumps & Quick Feet",
                             "format": "EMOM de 8 Minutos (Every Minute on the Minute)",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares: 12 Saltos con Rodillas al Pecho / Tuck Jumps. Minutos Pares: 30 s de Skipping Bajo a Máxima Velocidad / Quick Feet."
                         },
                         "stretch": [
@@ -8227,7 +7366,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
                                 "target": "Flexores de Cadera"
                             },
@@ -8235,7 +7373,6 @@ const TRAINING_DB = {
                                 "name": "Torsión Espinal Supina / Lying Spinal Twist",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
                                 "target": "Columna Lumbar y Dorsal"
                             },
@@ -8243,7 +7380,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
                                 "target": "Glúteo y Piramidal"
                             },
@@ -8251,7 +7387,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
                                 "target": "Trapecio Superior y Cuello"
                             }
@@ -8268,7 +7403,6 @@ const TRAINING_DB = {
                                 "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/h6XyzlM8m24",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
                                 "target": "Columna Lumbar y Pump"
                             },
@@ -8276,7 +7410,6 @@ const TRAINING_DB = {
                                 "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
                                 "target": "Isquiotibiales y Rodilla"
                             },
@@ -8284,7 +7417,6 @@ const TRAINING_DB = {
                                 "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/naW8u72lOzI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
                                 "target": "Articulación Coxofemoral"
                             },
@@ -8292,7 +7424,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Cangrejo Invertida / Crab Walk",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación de glúteos, cadena posterior y apertura de hombros.",
                                 "target": "Glúteos y Apertura de Hombros"
                             },
@@ -8300,7 +7431,6 @@ const TRAINING_DB = {
                                 "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/v7rjHmZRs28",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "3s rápido, 5s suave. Despierta de inmediato el sistema nervioso central.",
                                 "target": "Activación del SNC"
                             }
@@ -8311,7 +7441,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control de estabilidad lateral para la toma segura de curvas y peraltes.",
                                 "target": "Estabilidad en Curvas y Peraltes"
                             },
@@ -8320,7 +7449,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 4 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/OatchVmdl3s",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Competencia lúdica de reacción rápida desde posición de arrancada estática en familia.",
                                 "target": "Reacción de Salida en Familia"
                             }
@@ -8331,7 +7459,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "3-1-1-1",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad de cadera y fortalecimiento de la cadena posterior adulta.",
                                 "target": "Cadena Posterior y Estabilidad de Cadera"
                             },
@@ -8340,7 +7467,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12/lado",
                                 "tempo": "2-1-1-1",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descenso controlado de la cadera y elevación fuerte para oblicuos.",
                                 "target": "Oblicuos y Estabilidad Lateral"
                             },
@@ -8349,7 +7475,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12/pierna",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Protección articular de rodilla con rango de movimiento completo.",
                                 "target": "Cuádriceps, Glúteos y Protección de Rodilla"
                             }
@@ -8358,7 +7483,6 @@ const TRAINING_DB = {
                             "name": "BMX Track EMOM 8 Minutos - Tuck Jumps & Quick Feet",
                             "format": "EMOM de 8 Minutos (Every Minute on the Minute)",
                             "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Minutos Impares: 12 Saltos con Rodillas al Pecho / Tuck Jumps. Minutos Pares: 30 s de Skipping Bajo a Máxima Velocidad / Quick Feet."
                         },
                         "stretch": [
@@ -8366,7 +7490,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/71hUv90g5E4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
                                 "target": "Flexores de Cadera"
                             },
@@ -8374,7 +7497,6 @@ const TRAINING_DB = {
                                 "name": "Torsión Espinal Supina / Lying Spinal Twist",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
                                 "target": "Columna Lumbar y Dorsal"
                             },
@@ -8382,7 +7504,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
                                 "target": "Glúteo y Piramidal"
                             },
@@ -8390,7 +7511,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cuello / Neck Release",
                                 "duration": "30s por lado",
                                 "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
                                 "target": "Trapecio Superior y Cuello"
                             }
@@ -8420,7 +7540,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
                                 "target": "Espalda Media y Rotación Torácica"
                             },
@@ -8428,7 +7547,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Pectorales y Deltoides"
                             },
@@ -8436,7 +7554,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
                                 "target": "Aductores y Peraltes"
                             },
@@ -8444,7 +7561,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
                                 "target": "Tobillos y Muñecas"
                             },
@@ -8452,7 +7568,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardiovascular y Cambios de Dirección"
                             }
@@ -8463,7 +7578,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 30 s",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pies juntos, saltando hacia adelante y atrás sobre una línea en familia de forma divertida.",
                                 "target": "Rebote Reactivo y Coordinación"
                             }
@@ -8474,7 +7588,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 pasos",
                                 "tempo": "Asistido",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caminar con las manos mientras un adulto sostiene los muslos del niño.",
                                 "target": "Hombros, Brazos y Core"
                             }
@@ -8483,7 +7596,6 @@ const TRAINING_DB = {
                             "name": "Carrera de Relevos con Juguetes / Toy Relay Race",
                             "format": "3 rondas de 2 minutos (Juego continuo)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr a buscar juguetes dispersos y llevarlos al punto inicial en familia."
                         },
                         "stretch": [
@@ -8491,7 +7603,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
                                 "target": "Flexores y Extensores"
                             },
@@ -8499,7 +7610,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "40s continuos",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -8507,7 +7617,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -8515,7 +7624,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
                                 "target": "Pantorrilla Profunda"
                             }
@@ -8532,7 +7640,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
                                 "target": "Espalda Media y Rotación Torácica"
                             },
@@ -8540,7 +7647,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Pectorales y Deltoides"
                             },
@@ -8548,7 +7654,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
                                 "target": "Aductores y Peraltes"
                             },
@@ -8556,7 +7661,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
                                 "target": "Tobillos y Muñecas"
                             },
@@ -8564,7 +7668,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardiovascular y Cambios de Dirección"
                             }
@@ -8575,7 +7678,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Rebote vertical usando solo gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
                                 "target": "Stiffness de Tobillo y Gemelos"
                             },
@@ -8584,7 +7686,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cruzar un objeto bajo de lado a lado con agilidad, ritmo y control postural.",
                                 "target": "Agilidad Lateral y Ritmo"
                             }
@@ -8595,7 +7696,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "2-1-1-0",
                                 "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar controlado en 2s, pausa de 1s, subir en 1s (fuerza de empuje para saltos).",
                                 "target": "Tríceps y Empuje de Manubrio"
                             },
@@ -8604,7 +7704,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Dinámico",
                                 "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Zancadas alternas con salto corto para potencia independiente de piernas.",
                                 "target": "Potencia Independiente de Piernas"
                             },
@@ -8613,7 +7712,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 s",
                                 "tempo": "Controlado",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fortalece la cadena anterior de los brazos y hombros.",
                                 "target": "Hombros, Muñecas y Core"
                             }
@@ -8622,7 +7720,6 @@ const TRAINING_DB = {
                             "name": "Protocolo 30/30 - Rodillas al Pecho / High Knees & Patinadores / Speed Skaters",
                             "format": "Protocolo 30s trabajo / 30s descanso (8 rondas / 8 min)",
                             "video": "https://www.youtube.com/embed/qM5jviFhw9U",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Rodillas al Pecho / High Knees alternado con Patinadores / Speed Skaters para sostener la velocidad en la última recta."
                         },
                         "stretch": [
@@ -8630,7 +7727,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
                                 "target": "Flexores y Extensores"
                             },
@@ -8638,7 +7734,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "40s continuos",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -8646,7 +7741,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -8654,7 +7748,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
                                 "target": "Pantorrilla Profunda"
                             }
@@ -8671,7 +7764,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
                                 "target": "Espalda Media y Rotación Torácica"
                             },
@@ -8679,7 +7771,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Pectorales y Deltoides"
                             },
@@ -8687,7 +7778,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
                                 "target": "Aductores y Peraltes"
                             },
@@ -8695,7 +7785,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
                                 "target": "Tobillos y Muñecas"
                             },
@@ -8703,7 +7792,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardiovascular y Cambios de Dirección"
                             }
@@ -8714,7 +7802,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 5 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Dejarse caer de un escalón firme y explotar verticalmente al tocar el suelo (mínimo tiempo de contacto).",
                                 "target": "Pliometría Reactiva y Ciclo Estiramiento-Acortamiento"
                             },
@@ -8723,7 +7810,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Máxima rigidez de tobillo unilateral para transferencia de potencia pura al pedal.",
                                 "target": "Stiffness Unilateral de Tobillo"
                             }
@@ -8734,7 +7820,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 repeticiones",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/89-8waE2XKI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar coronilla formando triángulo con manos (aísla deltoides para manuales).",
                                 "target": "Deltoides y Control en Manuales"
                             },
@@ -8743,7 +7828,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 15/pierna",
                                 "tempo": "3-1-X-1",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bajar talón lento, pausa estirando, subir explosivo.",
                                 "target": "Tríceps Sural y Transferencia al Pedal"
                             },
@@ -8752,7 +7836,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mover un objeto pesado lateralmente en plancha sin rotar la pelvis.",
                                 "target": "Core Anti-Rotacional y Estabilidad Escapular"
                             }
@@ -8761,7 +7844,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20) - Sprawls & Jump Squats",
                             "format": "Protocolo 40s esfuerzo máximo / 20s descanso (6 rondas / 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats."
                         },
                         "stretch": [
@@ -8769,7 +7851,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
                                 "target": "Flexores y Extensores"
                             },
@@ -8777,7 +7858,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "40s continuos",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -8785,7 +7865,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -8793,7 +7872,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
                                 "target": "Pantorrilla Profunda"
                             }
@@ -8810,7 +7888,6 @@ const TRAINING_DB = {
                                 "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
                                 "target": "Espalda Media y Rotación Torácica"
                             },
@@ -8818,7 +7895,6 @@ const TRAINING_DB = {
                                 "name": "Saltos de Foca / Seal Jacks",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
                                 "target": "Pectorales y Deltoides"
                             },
@@ -8826,7 +7902,6 @@ const TRAINING_DB = {
                                 "name": "Sentadilla del Cosaco / Cossack Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
                                 "target": "Aductores y Peraltes"
                             },
@@ -8834,7 +7909,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
                                 "target": "Tobillos y Muñecas"
                             },
@@ -8842,7 +7916,6 @@ const TRAINING_DB = {
                                 "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activación cardiovascular con cambios sutiles de dirección.",
                                 "target": "Cardiovascular y Cambios de Dirección"
                             }
@@ -8853,7 +7926,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Trabajo de stiffness de bajo impacto para proteger las articulaciones adultas.",
                                 "target": "Stiffness de Bajo Impacto"
                             },
@@ -8862,7 +7934,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 6 repeticiones",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caída suave desde altura mínima con absorción óptima de rodilla.",
                                 "target": "Absorción Óptima de Rodilla"
                             }
@@ -8873,7 +7944,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 repeticiones",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/IODxDxX7oi4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Control absoluto del tronco y activación escapular profunda.",
                                 "target": "Pectorales y Estabilidad Escapular"
                             },
@@ -8882,7 +7952,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "3-1-X-1",
                                 "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Fuerza unilateral profunda y estabilidad avanzada de cadera.",
                                 "target": "Fuerza Unilateral y Estabilidad de Cadera"
                             },
@@ -8891,7 +7960,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 40 s/lado",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad lateral del tronco y los oblicuos.",
                                 "target": "Oblicuos y Estabilidad Lateral"
                             }
@@ -8900,7 +7968,6 @@ const TRAINING_DB = {
                             "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20) - Sprawls & Jump Squats",
                             "format": "Protocolo 40s esfuerzo máximo / 20s descanso (6 rondas / 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats."
                         },
                         "stretch": [
@@ -8908,7 +7975,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Antebrazos / Forearm Stretch",
                                 "duration": "35s por brazo",
                                 "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
                                 "target": "Flexores y Extensores"
                             },
@@ -8916,7 +7982,6 @@ const TRAINING_DB = {
                                 "name": "Gato-Camello / Cat-Cow Stretch",
                                 "duration": "40s continuos",
                                 "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
                                 "target": "Columna Vertebral"
                             },
@@ -8924,7 +7989,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento en Mariposa / Butterfly Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
                                 "target": "Aductores e Ingle"
                             },
@@ -8932,7 +7996,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Sóleo / Soleus Stretch",
                                 "duration": "35s por pierna",
                                 "video": "https://www.youtube.com/embed/qPd73snQfUs",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
                                 "target": "Pantorrilla Profunda"
                             }
@@ -8962,7 +8025,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Cadera / Hip Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                                 "target": "Articulación Coxofemoral y Peraltes"
                             },
@@ -8970,7 +8032,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
                                 "target": "Espalda Superior y Hombros"
                             },
@@ -8978,7 +8039,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
                                 "target": "Columna Torácica y Cadena Posterior"
                             },
@@ -8986,7 +8046,6 @@ const TRAINING_DB = {
                                 "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
                                 "target": "Rodillas y Cuádriceps"
                             },
@@ -8994,7 +8053,6 @@ const TRAINING_DB = {
                                 "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
                                 "target": "SNC y Agilidad Espacial"
                             }
@@ -9005,7 +8063,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 1 minuto",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Bailar o trotar al ritmo de la música en familia; al pausar, congelarse en una postura de equilibrio de BMX.",
                                 "target": "Equilibrio y Frenado Reactivo"
                             }
@@ -9016,7 +8073,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 s",
                                 "tempo": "Dinámico",
                                 "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Caminar en posición de cangrejo transportando un peluche sobre el abdomen en equipo.",
                                 "target": "Estabilidad de Core y Hombros"
                             }
@@ -9025,7 +8081,6 @@ const TRAINING_DB = {
                             "name": "Juego de las Sillas Musicales Activas / Active Musical Chairs Game",
                             "format": "3 rondas de 2 minutos (Juego continuo)",
                             "video": "https://www.youtube.com/embed/HWCHautmxrU",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Correr alrededor de cojines y sentarse al parar la música en familia."
                         },
                         "stretch": [
@@ -9033,7 +8088,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
                                 "target": "Isquiotibiales y Espalda Baja"
                             },
@@ -9041,7 +8095,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
                                 "target": "Dorsales y Hombros"
                             },
@@ -9049,7 +8102,6 @@ const TRAINING_DB = {
                                 "name": "Postura de la Cobra / Cobra Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
                                 "target": "Abdominales y Psoas"
                             },
@@ -9057,7 +8109,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
                                 "target": "Glúteos y Piriforme"
                             }
@@ -9074,7 +8125,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Cadera / Hip Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                                 "target": "Articulación Coxofemoral y Peraltes"
                             },
@@ -9082,7 +8132,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
                                 "target": "Espalda Superior y Hombros"
                             },
@@ -9090,7 +8139,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
                                 "target": "Columna Torácica y Cadena Posterior"
                             },
@@ -9098,7 +8146,6 @@ const TRAINING_DB = {
                                 "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
                                 "target": "Rodillas y Cuádriceps"
                             },
@@ -9106,7 +8153,6 @@ const TRAINING_DB = {
                                 "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
                                 "target": "SNC y Agilidad Espacial"
                             }
@@ -9117,7 +8163,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 20 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movimiento lateral cruzando pies por delante y por detrás con máxima agilidad de pies.",
                                 "target": "Coordinación Multiplanar y Juego de Pies"
                             },
@@ -9126,7 +8171,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar de lado a lado imaginando marcas en el suelo con aterrizaje suave y controlado.",
                                 "target": "Agilidad Lateral y Absorción"
                             }
@@ -9137,7 +8181,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 16 toques",
                                 "tempo": "2-0-1-0",
                                 "video": "https://www.youtube.com/embed/eyeuugrpLYA",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Mantener la cadera completamente quieta mientras se alterna el toque de los hombros.",
                                 "target": "Core Anti-Rotacional"
                             },
@@ -9146,7 +8189,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 reps",
                                 "tempo": "2-1-1-1",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Subir cadera, apretar glúteos 1 segundo arriba, bajar de forma controlada.",
                                 "target": "Glúteos y Cadena Posterior"
                             },
@@ -9155,7 +8197,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 12 reps",
                                 "tempo": "2-1-1-0",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Pies más abiertos que los hombros para trabajar aductores y estabilidad de rodilla.",
                                 "target": "Aductores y Estabilidad de Rodilla"
                             }
@@ -9164,7 +8205,6 @@ const TRAINING_DB = {
                             "name": "Protocolo de Simulación de Manga 20/40 - Fast Feet & Jumping Jacks",
                             "format": "Protocolo de Simulación de Manga (20s a tope / 40s descanso activo x 6 rondas)",
                             "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Sprints en el Sitio / Fast Feet alternados con Jumping Jacks simulando las mangas clasificatorias."
                         },
                         "stretch": [
@@ -9172,7 +8212,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
                                 "target": "Isquiotibiales y Espalda Baja"
                             },
@@ -9180,7 +8219,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
                                 "target": "Dorsales y Hombros"
                             },
@@ -9188,7 +8226,6 @@ const TRAINING_DB = {
                                 "name": "Postura de la Cobra / Cobra Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
                                 "target": "Abdominales y Psoas"
                             },
@@ -9196,7 +8233,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
                                 "target": "Glúteos y Piriforme"
                             }
@@ -9213,7 +8249,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Cadera / Hip Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                                 "target": "Articulación Coxofemoral y Peraltes"
                             },
@@ -9221,7 +8256,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
                                 "target": "Espalda Superior y Hombros"
                             },
@@ -9229,7 +8263,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
                                 "target": "Columna Torácica y Cadena Posterior"
                             },
@@ -9237,7 +8270,6 @@ const TRAINING_DB = {
                                 "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
                                 "target": "Rodillas y Cuádriceps"
                             },
@@ -9245,7 +8277,6 @@ const TRAINING_DB = {
                                 "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
                                 "target": "SNC y Agilidad Espacial"
                             }
@@ -9256,7 +8287,6 @@ const TRAINING_DB = {
                                 "sets": "4 series de 20 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Cambios de dirección explosivos simulando la trazada cerrada en una curva de peralte.",
                                 "target": "Agilidad Multidireccional en Peralte"
                             },
@@ -9265,7 +8295,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8 saltos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Saltar girando medio cuerpo en el aire y aterrizar con control absoluto de estabilidad.",
                                 "target": "Agilidad Rotacional y Estabilidad de Aterrizaje"
                             }
@@ -9276,7 +8305,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8/lado",
                                 "tempo": "3-1-1-1",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "En plancha lateral, pasar el brazo por debajo del torso con rotación torácica controlada.",
                                 "target": "Oblicuos y Control Rotacional Torácico"
                             },
@@ -9285,7 +8313,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/lado",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Desplazamiento lateral profundo, pausa de 1s abajo y empuje fuerte de regreso.",
                                 "target": "Aductores, Glúteo Medio y Potencia Lateral"
                             },
@@ -9294,7 +8321,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10 reps",
                                 "tempo": "2-0-X-0",
                                 "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Elevación simultánea de piernas y torso formando una 'V' (máxima activación del core).",
                                 "target": "Core Anterior Explosivo"
                             }
@@ -9303,7 +8329,6 @@ const TRAINING_DB = {
                             "name": "Protocolo de Competencia Intermitente 30/30 - Full Burpees & High Knees",
                             "format": "Protocolo de Competencia Intermitente (30s esfuerzo de alta intensidad / 30s recuperación x 6 rondas / Total: 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Burpees completos / Full Burpees alternados con Skipping Alto / High Knees simulando mangas clasificatorias bajo fatiga."
                         },
                         "stretch": [
@@ -9311,7 +8336,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
                                 "target": "Isquiotibiales y Espalda Baja"
                             },
@@ -9319,7 +8343,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
                                 "target": "Dorsales y Hombros"
                             },
@@ -9327,7 +8350,6 @@ const TRAINING_DB = {
                                 "name": "Postura de la Cobra / Cobra Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
                                 "target": "Abdominales y Psoas"
                             },
@@ -9335,7 +8357,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
                                 "target": "Glúteos y Piriforme"
                             }
@@ -9352,7 +8373,6 @@ const TRAINING_DB = {
                                 "name": "Círculos de Cadera / Hip Circles",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
                                 "target": "Articulación Coxofemoral y Peraltes"
                             },
@@ -9360,7 +8380,6 @@ const TRAINING_DB = {
                                 "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
                                 "target": "Espalda Superior y Hombros"
                             },
@@ -9368,7 +8387,6 @@ const TRAINING_DB = {
                                 "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/7jeW4v_oaes",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
                                 "target": "Columna Torácica y Cadena Posterior"
                             },
@@ -9376,7 +8394,6 @@ const TRAINING_DB = {
                                 "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/aclHkVaku9U",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
                                 "target": "Rodillas y Cuádriceps"
                             },
@@ -9384,7 +8401,6 @@ const TRAINING_DB = {
                                 "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
                                 "duration": "45s trabajo x 15s transición (2 rondas)",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
                                 "target": "SNC y Agilidad Espacial"
                             }
@@ -9395,7 +8411,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 30 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Coordinación de extremidades opuestas para estabilidad profunda de hombros y caderas.",
                                 "target": "Estabilidad Profunda de Hombros y Caderas"
                             },
@@ -9404,7 +8419,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 45 segundos",
                                 "rest": "Descanso 60s",
                                 "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Recorrido lúdico integrando saltos, giros y cambios de ritmo supervisados en casa.",
                                 "target": "Coordinación Familiar y Cambios de Ritmo"
                             }
@@ -9415,7 +8429,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 8/lado",
                                 "tempo": "3-1-1-0",
                                 "video": "https://www.youtube.com/embed/tpczTeSkHz0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Descenso profundo sobre una pierna manteniendo el talón contrario apoyado o elevado.",
                                 "target": "Movilidad de Cadera y Fuerza Lateral"
                             },
@@ -9424,7 +8437,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 50 s",
                                 "tempo": "Isometría",
                                 "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alineación perfecta de hombros, cadera y talones con contracción corporal total.",
                                 "target": "Resistencia Isométrica del Core"
                             },
@@ -9433,7 +8445,6 @@ const TRAINING_DB = {
                                 "sets": "3 series de 10/pierna",
                                 "tempo": "2-1-1-1",
                                 "video": "https://www.youtube.com/embed/wPM8icPu6H8",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Estabilidad estricta de pelvis y fuerza en la cadena posterior adulta.",
                                 "target": "Estabilidad Pélvica y Cadena Posterior"
                             }
@@ -9442,7 +8453,6 @@ const TRAINING_DB = {
                             "name": "Protocolo de Competencia Intermitente 30/30 - Full Burpees & High Knees",
                             "format": "Protocolo de Competencia Intermitente (30s esfuerzo de alta intensidad / 30s recuperación x 6 rondas / Total: 6 min)",
                             "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
-                            "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                             "desc": "Burpees completos / Full Burpees alternados con Skipping Alto / High Knees simulando mangas clasificatorias."
                         },
                         "stretch": [
@@ -9450,7 +8460,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
                                 "target": "Isquiotibiales y Espalda Baja"
                             },
@@ -9458,7 +8467,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/crnw1IKWNZY",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
                                 "target": "Dorsales y Hombros"
                             },
@@ -9466,7 +8474,6 @@ const TRAINING_DB = {
                                 "name": "Postura de la Cobra / Cobra Stretch",
                                 "duration": "35s sostenido",
                                 "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
                                 "target": "Abdominales y Psoas"
                             },
@@ -9474,7 +8481,6 @@ const TRAINING_DB = {
                                 "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
                                 "duration": "35s por lado",
                                 "video": "https://www.youtube.com/embed/aJvfeuu71gw",
-                                "instagram": "https://www.instagram.com/pipearenas.fit/reels/",
                                 "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
                                 "target": "Glúteos y Piriforme"
                             }
@@ -9482,6 +8488,1986 @@ const TRAINING_DB = {
                         "recovery": {
                             "name": "Protocolo de Regulación del Sistema Nervioso (Respiración Coherente Familiar 5-5)",
                             "desc": "Todos los participantes se sientan en círculo o recostados cómodamente. Inhalar profundamente por la nariz inflando el abdomen durante 5 segundos y exhalar de forma suave y continua por la boca durante 5 segundos. Sincroniza la frecuencia cardíaca familiar, disipa el estrés acumulado de la semana y deja el cuerpo listo para el descanso y la pista del fin de semana."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "6": {
+        "name": "Semana 6 - Ciclo Superior: Potencia de Salida (Gate Acceleration), Reactividad y Baterías",
+        "introBanner": {
+            "title": "Bienvenidos a una Nueva Semana de Crecimiento con ACTIVERZA • Ciclo Superior",
+            "subtitle": "¡Familia y equipo, hemos arrancado una nueva semana de evolución! El BMX Racing no es solo lo que pasa los fines de semana en la pista; se construye, se pule y se gana en casa, en cada entrenamiento diario y en las pequeñas decisiones que tomamos todos los días.",
+            "goldenRule": "La regla de oro para estos 4 días: La perfección no se busca en el primer intento, se construye equivocándose y volviéndolo a intentar con técnica y control. Recuerden que el verdadero entrenamiento y el crecimiento muscular ocurren cuando descansamos bien, nos alimentamos con propósito y apagamos las pantallas a tiempo para recuperar el cuerpo."
+        },
+        "closingMessage": {
+            "title": "¡Qué gran cierre de semana, equipo ACTIVERZA!",
+            "paragraphs": [
+                "Queremos tomarnos un momento para felicitar de corazón a cada uno de nuestros atletas —niños, jóvenes y adultos— y de manera muy especial a los padres y familiares que estuvieron ahí, paso a paso, apoyando, guiando y contagiando esa energía inigualable durante estos 4 días de entrenamiento superior de BMX Racing.",
+                "Completar este macrociclo no fue fácil: exigió disciplina, sudor, concentración en los ejercicios de reacción, resistencia en las piernas y mucha actitud en cada bloque de trabajo. Demostraron que el verdadero rendimiento no solo se construye en la pista, sino también en la constancia diaria dentro de casa.",
+                "Gracias por confiar en este sistema, por entregarlo todo en cada repetición y por recordarnos que cuando la familia se une en torno al deporte, el crecimiento es imparable.",
+                "¡A descansar, recuperar esos músculos y celebrar este gran logro con orgullo! Nos vemos pronto en la pista."
+            ]
+        },
+        "dailyTips": {
+            "1": [
+                "Prioriza la Calidad sobre la Cantidad: En este nuevo ciclo evolutivo, recuerda que un movimiento ejecutado con el tempo exacto vale el doble que uno hecho con prisa. La disciplina técnica previene lesiones y acelera el desarrollo neuromuscular.",
+                "Involucramiento Familiar Positivo: El deporte en edades tempranas se consolida a través del disfrute compartido. Valora la actitud y el esfuerzo por encima de la perfección en los menores de 6 años.",
+                "Nutrición de Cierre: No olvides ofrecer el agua y la fruta fresca inmediatamente al terminar la sesión para asegurar una recuperación óptima y preparar el cuerpo para el Día 2."
+            ],
+            "2": [
+                "Ergonomía Diaria: Los niños pasan horas sentados en el colegio y los adultos frente al computador, lo cual acorta el psoas ilíaco e impide bombear bien en la bicicleta. Recomienda hacer una pausa de 1 minuto para estirar la cadera cada hora durante el día.",
+                "Tolerancia a la Frustración en el Equilibrio: En los ejercicios unipodales (como el peso muerto a una pierna), es normal perder el equilibrio. Recuérdales que 'el equilibrio no se tiene, se construye equivocándose; el cerebro está creando nuevas rutas neuronales'.",
+                "Calidad del Sueño y Pantallas: Apagar pantallas y dispositivos electrónicos 1 hora antes de dormir. Tras un trabajo intenso del sistema nervioso y de reacción como el de hoy, el sueño profundo es el único momento donde el atleta realmente se vuelve más rápido y coordinado."
+            ],
+            "3": [
+                "Prevención del Arm Pump: Recuerda que el agarre del manubrio no debe ser de tensión al 100% de manera estática. Enseñarles a relajar mínimamente las manos en los momentos de vuelo durante los saltos permite que la sangre vuelva a irrigar los antebrazos.",
+                "Autonomía y Mantenimiento: Aprovecha el cierre de esta sesión para fomentar que cada deportista revise el estado general de su bicicleta (presión de neumáticos, cadena y tornillería) de cara a la práctica en pista.",
+                "El Descanso es Clave: Recuérdales que el crecimiento muscular y la ganancia real de velocidad ocurren durante el sueño y el descanso."
+            ],
+            "4": [
+                "Cierre de Ciclo con Éxito: Al completar este cuarto día, felicita a todo tu equipo familiar y semillero. La disciplina constante compartida es lo que convierte a un deportista común en un competidor imparable.",
+                "Disfrute en la Pista: Si el fin de semana hay práctica o competencia oficial, recuerda a los atletas aplicar la técnica de respiración y visualización antes de subir al partidor. ¡A rodar con seguridad, técnica y mucha diversión!"
+            ]
+        },
+        "days": {
+            "1": {
+                "focus": "Potencia Base de Salida (Gate Acceleration), Estabilidad Profunda del Core y Pliometría Reactiva Inicial",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Menores de 6 años: Frutas enteras coloridas (arándanos, banano), yogur griego natural sin azúcares añadidos y huevos enteros para mielinización cerebral. 7 a 17 años: Carbohidratos complejos de absorción sostenida (avena, quinua, papa, camote/batata) para llenar depósitos de glucógeno en sprints máximos de 5 a 10s.",
+                    "protein": "7 a 17 años: Proteínas magras (pollo, pescado, carnes blancas). Adultos y Padres (18+): Fuentes de Omega-3 (salmón, atún, semillas de chía o linaza) y vegetales de hoja verde oscuros (espinaca, brócoli) como antiinflamatorios naturales para proteger el cartílago.",
+                    "hydration": "Hidratación Estratégica Familiar: Agua pura como base indiscutible. Para los bloques de alta intensidad, suero casero isotónico (agua, unas gotas de limón y una pizca de sal marina) para mantener el equilibrio electrolítico celular.",
+                    "snacks": "Post-sesión inmediata: Agua fresca y fruta entera (banano, arándanos o naranja) con yogur griego natural para acelerar la recuperación tisular y preparar el Día 2."
+                },
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Densidad Neuromotora y Juego en Familia: Participación activa junto a padres o hermanos como referencias visuales, consolidando el hábito deportivo a través del disfrute compartido y el aterrizaje silencioso.",
+                        "warmup": [
+                            {
+                                "name": "Trote Suave con Rodillas al Pecho / Light Jog with High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura corporal central y activa la flexión de cadera (psoas).",
+                                "target": "Temperatura Central y Psoas"
+                            },
+                            {
+                                "name": "Círculos de Brazos hacia Adelante y Atrás / Forward and Backward Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador y prepara los hombros para el tirón del manubrio.",
+                                "target": "Manguito Rotador y Tirón de Manubrio"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
+                                "target": "Isquiotibiales y Faja Abdominal"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica general.",
+                                "target": "SNC y Coordinación Óculo-Pédica"
+                            },
+                            {
+                                "name": "Desplantes en Movimiento con Rotación / Walking Lunges with Trunk Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Movilidad activa de cadera y rotación torácica para el control postural en curva.",
+                                "target": "Movilidad de Cadera y Control en Curva"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Canguro en Pareja / Family Kangaroo Jumps",
+                                "sets": "4 series de 6 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Los padres o hermanos actúan de referencias visuales y el niño salta hacia adelante con dos pies juntos de forma lúdica y aterrizaje silencioso ('pie de gato').",
+                                "target": "Impulso Bipodal y Recepción Silenciosa"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Caminata de Oso en Familia / Family Bear Crawl Race",
+                                "sets": "3 series de 30 s",
+                                "tempo": "Dinámico",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Gatear imitando osos en un espacio seguro, manteniendo las rodillas elevadas del suelo a modo de juego interactivo.",
+                                "target": "Estabilidad de Hombros y Core"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Semáforo Loco Familiar / Traffic Light Game",
+                            "format": "5 minutos continuos (Juego libre dirigido con familia)",
+                            "video": "https://www.youtube.com/embed/HWCHautmxrU",
+                            "desc": "Verde: trote rápido en el sitio; Amarillo: caminar lento; Rojo: estatua estática inmediata. Simula aceleración y frenado reactivo."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Postura del Perro Boca Abajo / Downward-Facing Dog",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Descarga por completo la zona lumbar castigada por la postura aerodinámica.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Contrarresta la tendencia natural al encorvamiento de los hombros.",
+                                "target": "Pectorales y Deltoides"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática Profunda (4-4-6)",
+                            "desc": "Todos los atletas se recuestan boca arriba en el suelo con los ojos cerrados. Inhalación nasal profunda inflando el abdomen (4 segundos), apnea controlada sosteniendo el aire en los pulmones (4 segundos) y exhalación bucal muy pausada y fluida (6 segundos). Desconecta de inmediato el sistema nervioso simpático y activa el parasimpático para iniciar la supercompensación y reparación tisular."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Potencia Horizontal desde Detenido, Control del Valgo Dinámico y Tempo Estricto: Impulso coordinado de brazos y piernas, aterrizaje en semisentadilla estable ('pie de gato') y control excéntrico 2-1-1-0.",
+                        "warmup": [
+                            {
+                                "name": "Trote Suave con Rodillas al Pecho / Light Jog with High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura corporal central y activa la flexión de cadera (psoas).",
+                                "target": "Temperatura Central y Psoas"
+                            },
+                            {
+                                "name": "Círculos de Brazos hacia Adelante y Atrás / Forward and Backward Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador y prepara los hombros para el tirón del manubrio.",
+                                "target": "Manguito Rotador y Tirón de Manubrio"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
+                                "target": "Isquiotibiales y Faja Abdominal"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica general.",
+                                "target": "SNC y Coordinación Óculo-Pédica"
+                            },
+                            {
+                                "name": "Desplantes en Movimiento con Rotación / Walking Lunges with Trunk Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Movilidad activa de cadera y rotación torácica para el control postural en curva.",
+                                "target": "Movilidad de Cadera y Control en Curva"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Longitud desde Detenido / Standing Broad Jumps",
+                                "sets": "4 series de 5 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/7Du1KbwCdUk",
+                                "desc": "Impulso potente de brazos y piernas, buscando distancia y un aterrizaje en semisentadilla profunda totalmente estable.",
+                                "target": "Potencia de Salida y Absorción Estable"
+                            },
+                            {
+                                "name": "Saltos Laterales de Patinador / Lateral Skater Hops",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Estabilizar el tobillo y la rodilla en cada apoyo lateral sin colapsar hacia adentro (control del valgo dinámico).",
+                                "target": "Control del Valgo Dinámico y Tobillo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadillas Libres / Air Squats",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Bajar en 2 segundos, pausa de 1 segundo abajo, subir en 1 segundo. Talones totalmente pegados al piso.",
+                                "target": "Cuádriceps y Glúteos"
+                            },
+                            {
+                                "name": "Flexiones con Apoyo de Rodillas / Knee Push-ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/jWxvty2KROs",
+                                "desc": "Pecho al centro de las manos, codos formando un ángulo aproximado de 45 grados respecto al torso.",
+                                "target": "Pectorales y Empuje de Brazos"
+                            },
+                            {
+                                "name": "Elevación de Tronco Posterior / Superman Holds",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "Sostener 2s",
+                                "video": "https://www.youtube.com/embed/cc6UVRS7PW4",
+                                "desc": "Elevar pecho y piernas de forma simultánea del suelo para fortalecer la cadena posterior y lumbar.",
+                                "target": "Cadena Posterior y Zona Lumbar"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo 20/20 - Escaladores Rápidos / Mountain Climbers",
+                            "format": "Protocolo 20s trabajo / 20s descanso (8 rondas / 5 min 20s)",
+                            "video": "https://www.youtube.com/embed/kLh-uczlPLg",
+                            "desc": "Escaladores rápidos a ritmo constante y dinámico sin dejar caer la cadera, simulando esfuerzos explosivos de manga clasificatoria."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Postura del Perro Boca Abajo / Downward-Facing Dog",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Descarga por completo la zona lumbar castigada por la postura aerodinámica.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Contrarresta la tendencia natural al encorvamiento de los hombros.",
+                                "target": "Pectorales y Deltoides"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática Profunda (4-4-6)",
+                            "desc": "Todos los atletas se recuestan boca arriba en el suelo con los ojos cerrados. Inhalación nasal profunda inflando el abdomen (4 segundos), apnea controlada sosteniendo el aire en los pulmones (4 segundos) y exhalación bucal muy pausada y fluida (6 segundos). Desconecta de inmediato el sistema nervioso simpático y activa el parasimpático para iniciar la supercompensación y reparación tisular."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Gate Acceleration, Rigidez del Tendón de Aquiles y Densidad Muscular Excéntrica: Saltos explosivos al cajón, pogos reactivos rápidos de mínimo contacto y tempo 3-1-X-1 para máxima transferencia al partidor.",
+                        "warmup": [
+                            {
+                                "name": "Trote Suave con Rodillas al Pecho / Light Jog with High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura corporal central y activa la flexión de cadera (psoas).",
+                                "target": "Temperatura Central y Psoas"
+                            },
+                            {
+                                "name": "Círculos de Brazos hacia Adelante y Atrás / Forward and Backward Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador y prepara los hombros para el tirón del manubrio.",
+                                "target": "Manguito Rotador y Tirón de Manubrio"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
+                                "target": "Isquiotibiales y Faja Abdominal"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica general.",
+                                "target": "SNC y Coordinación Óculo-Pédica"
+                            },
+                            {
+                                "name": "Desplantes en Movimiento con Rotación / Walking Lunges with Trunk Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Movilidad activa de cadera y rotación torácica para el control postural en curva.",
+                                "target": "Movilidad de Cadera y Control en Curva"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos Explosivos al Cajón / Box Jumps",
+                                "sets": "4 series de 6 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/hxldG9FX4j4",
+                                "desc": "Máxima explosividad vertical con extensión completa de cadera en la fase de vuelo y recepción suave.",
+                                "target": "Explosividad Vertical y Extensión de Cadera"
+                            },
+                            {
+                                "name": "Pogos Reactivos Rápidos / Reactive Pogo Jumps",
+                                "sets": "4 series de 15 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Mínimo tiempo de contacto en el suelo (efecto resorte puro para desarrollar la rigidez del tendón de Aquiles).",
+                                "target": "Stiffness Reactivo del Tendón de Aquiles"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Búlgara / Bulgarian Split Squat",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "3-1-X-1",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Bajar en 3 segundos controlados, pausa abajo, subir de forma explosiva ('X'), pausa arriba.",
+                                "target": "Potencia Unilateral de Salida"
+                            },
+                            {
+                                "name": "Flexiones Estrictas de Pecho / Strict Push-ups",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "3-1-X-0",
+                                "video": "https://www.youtube.com/embed/IODxDxX7oi4",
+                                "desc": "Fase excéntrica ultra lenta para construir densidad muscular y fuerza de empuje en los brazos.",
+                                "target": "Pectorales, Tríceps y Empuje"
+                            },
+                            {
+                                "name": "Plancha Dinámica con Toques / Plank Shoulder Taps",
+                                "sets": "3 series de 20 toques",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/eyeuugrpLYA",
+                                "desc": "Tocar los hombros alternadamente intentando evitar cualquier rotación o caída de la pelvis.",
+                                "target": "Core Anti-Rotacional Profundo"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo Tabata Modificado 30/15 - Sprawls & Fast Feet",
+                            "format": "Protocolo Tabata Modificado 30s trabajo / 15s descanso (8 rondas / 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Sprawls (Burpees sin flexión de pecho) & Sprints en el Sitio (Fast Feet) intercalados de forma alternada por ronda."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Postura del Perro Boca Abajo / Downward-Facing Dog",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Descarga por completo la zona lumbar castigada por la postura aerodinámica.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Contrarresta la tendencia natural al encorvamiento de los hombros.",
+                                "target": "Pectorales y Deltoides"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática Profunda (4-4-6)",
+                            "desc": "Todos los atletas se recuestan boca arriba en el suelo con los ojos cerrados. Inhalación nasal profunda inflando el abdomen (4 segundos), apnea controlada sosteniendo el aire en los pulmones (4 segundos) y exhalación bucal muy pausada y fluida (6 segundos). Desconecta de inmediato el sistema nervioso simpático y activa el parasimpático para iniciar la supercompensación y reparación tisular."
+                        }
+                    },
+                    "18plus": {
+                        "methodology": "Stiffness Adaptado de Bajo Impacto, Estabilidad en Peraltes y Salud Articular Cruiser: Protección de estructuras articulares adultas manteniendo reactividad, control postural profundo e isometría sin arquear la espalda.",
+                        "warmup": [
+                            {
+                                "name": "Trote Suave con Rodillas al Pecho / Light Jog with High Knees",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/zDMUQ63YdbE",
+                                "desc": "Eleva la temperatura corporal central y activa la flexión de cadera (psoas).",
+                                "target": "Temperatura Central y Psoas"
+                            },
+                            {
+                                "name": "Círculos de Brazos hacia Adelante y Atrás / Forward and Backward Arm Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica el manguito rotador y prepara los hombros para el tirón del manubrio.",
+                                "target": "Manguito Rotador y Tirón de Manubrio"
+                            },
+                            {
+                                "name": "Caminata de Oruga / Inchworms",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Alarga los isquiotibiales y activa de forma temprana la faja abdominal (core).",
+                                "target": "Isquiotibiales y Faja Abdominal"
+                            },
+                            {
+                                "name": "Saltos de Tijera / Jumping Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Conecta el sistema nervioso central y mejora la coordinación óculo-pédica general.",
+                                "target": "SNC y Coordinación Óculo-Pédica"
+                            },
+                            {
+                                "name": "Desplantes en Movimiento con Rotación / Walking Lunges with Trunk Twist",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Movilidad activa de cadera y rotación torácica para el control postural en curva.",
+                                "target": "Movilidad de Cadera y Control en Curva"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogos Controlados de Bajo Impacto / Controlled Low Pogo Jumps",
+                                "sets": "4 series de 20 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Trabajo de stiffness adaptado para proteger las estructuras articulares adultas manteniendo la reactividad.",
+                                "target": "Stiffness de Bajo Impacto y Protección Articular"
+                            },
+                            {
+                                "name": "Salto Lateral con Sostenimiento / Lateral Bound & Hold",
+                                "sets": "3 series de 8 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Control estricto de estabilidad lateral de rodilla y cadera para el paso seguro por peraltes.",
+                                "target": "Estabilidad Lateral en Peraltes"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadillas Profundas / Deep Air Squats",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "3-1-1-1",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Movilidad de cadera profunda y control postural absoluto bajo carga corporal estricta.",
+                                "target": "Movilidad de Cadera y Cuádriceps"
+                            },
+                            {
+                                "name": "Flexiones Abiertas / Wide Push-ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/IODxDxX7oi4",
+                                "desc": "Mayor reclutamiento de pectoral y estabilidad escapular avanzada para adultos.",
+                                "target": "Pectorales y Estabilidad Escapular"
+                            },
+                            {
+                                "name": "Plancha Frontal sobre Antebrazos / Forearm Front Plank",
+                                "sets": "3 series de 45 segundos",
+                                "tempo": "45 segundos (Isometría)",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Contracción isométrica simultánea de abdomen, glúteos y cuádriceps sin arquear la espalda.",
+                                "target": "Core Global y Protección Lumbar"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo Tabata Modificado 30/15 - Sprawls & Fast Feet",
+                            "format": "Protocolo Tabata Modificado 30s trabajo / 15s descanso (8 rondas / 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Sprawls (Burpees sin flexión de pecho) & Sprints en el Sitio (Fast Feet) intercalados de forma alternada por ronda."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cuádriceps de Pie / Standing Quad Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aNXGOpP37CY",
+                                "desc": "Libera la tensión acumulada en la parte frontal del muslo por el pedaleo.",
+                                "target": "Cuádriceps y Psoas"
+                            },
+                            {
+                                "name": "Postura del Perro Boca Abajo / Downward-Facing Dog",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Alarga toda la cadena posterior tras los impactos de la pliometría.",
+                                "target": "Gemelos e Isquiotibiales"
+                            },
+                            {
+                                "name": "Postura del Niño / Child's Pose",
+                                "duration": "40s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Descarga por completo la zona lumbar castigada por la postura aerodinámica.",
+                                "target": "Espalda Baja y Dorsales"
+                            },
+                            {
+                                "name": "Estiramiento Pectoral en Pared / Wall Chest Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Contrarresta la tendencia natural al encorvamiento de los hombros.",
+                                "target": "Pectorales y Deltoides"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Respiración Diafragmática Profunda (4-4-6)",
+                            "desc": "Todos los atletas se recuestan boca arriba en el suelo con los ojos cerrados. Inhalación nasal profunda inflando el abdomen (4 segundos), apnea controlada sosteniendo el aire en los pulmones (4 segundos) y exhalación bucal muy pausada y fluida (6 segundos). Desconecta de inmediato el sistema nervioso simpático y activa el parasimpático para iniciar la supercompensación y reparación tisular."
+                        }
+                    }
+                }
+            },
+            "2": {
+                "focus": "Estabilidad Profunda del Core, Tiempo de Reacción (Simulación de Partidor / Gate Start) y Equilibrio Dinámico",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Adultos y Padres (18+): Carbohidratos complejos de bajo índice glucémico (avena, quinua, papa) y cacao puro o té verde en porciones moderadas para mantener la agilidad mental y el enfoque sin picos de azúcar.",
+                    "protein": "Infantiles y Juveniles (7 a 17 años): Fuentes ricas en hierro (carnes rojas magras, lentejas, espinacas) acompañadas de jugo de naranja o limón natural (vitamina C) para triplicar su absorción intestinal y oxigenar los músculos en los sprints explosivos.",
+                    "hydration": "Hidratación Estratégica: Consumo de agua natural constante con un toque de electrolitos caseros para prevenir la fatiga neuromuscular temprana en los bloques de reacción.",
+                    "snacks": "Menores de 6 años (Mielinización y Reflejos): Aguacate, aceite de oliva virgen extra, frutos secos triturados y leche entera o alternativas fortificadas para formar conexiones neuronales rápidas."
+                },
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Mielinización, Reflejos Lúdicos y Control Cruzado: Comandos explosivos en familia para afinar el tiempo de reacción, equilibrio estático en un pie y coordinación con el bicho muerto.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
+                                "target": "Columna Lumbar y Pump"
+                            },
+                            {
+                                "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
+                                "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
+                                "target": "Isquiotibiales y Rodilla"
+                            },
+                            {
+                                "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/naW8u72lOzI",
+                                "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
+                                "target": "Articulación Coxofemoral"
+                            },
+                            {
+                                "name": "Caminata de Cangrejo Invertida / Crab Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Activación temprana de glúteos, cadena posterior y apertura de hombros.",
+                                "target": "Glúteos y Apertura de Hombros"
+                            },
+                            {
+                                "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/v7rjHmZRs28",
+                                "desc": "3 segundos rápido, 5 segundos suave. Despierta de inmediato el sistema nervioso central.",
+                                "target": "Activación Inmediata del SNC"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Juego 'Simón Dice Explosivo' / Simon Says Jumps",
+                                "sets": "4 series de 1 minuto",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "El adulto o hermano mayor da comandos divertidos: '¡Salto de cohete!', '¡Al suelo!', '¡Estatua en un pie!'.",
+                                "target": "Tiempo de Reacción y Equilibrio"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "El Bicho Muerto / Dead Bug",
+                                "sets": "3 series de 10 reps",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
+                                "desc": "Boca arriba, mover brazos y piernas al aire imitando un insecto invertido en familia.",
+                                "target": "Core y Coordinación Cruzada"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Pista de Obstáculos Imaginaria / Imaginary Track Obstacles",
+                            "format": "3 rondas de 2 minutos (Juego continuo guiado)",
+                            "video": "https://www.youtube.com/embed/HWCHautmxrU",
+                            "desc": "Correr, saltar obstáculos imaginarios y agacharse al grito del adulto simulando repechos y la zona rítmica de la pista."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
+                                "target": "Flexores de Cadera"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
+                                "target": "Columna Lumbar y Dorsal"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
+                                "target": "Trapecio Superior y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery Neuromuscular)",
+                            "desc": "Todos los participantes se sientan o recuestan cómodamente con los ojos cerrados. Fase 1 (1 min): Respiración nasal lenta para estabilizar las pulsaciones cardíacas. Fase 2 (3 min): Visualizarse mentalmente en el partidor de su pista, escuchar los comandos oficiales, sentir la caída del partidor, visualizar la primera pedalada perfecta y el paso fluido por el primer obstáculo."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Reacción Milimétrica de Partidor y Puente de Core: Piques auditivos desde el suelo, equilibrio de 1 segundo absoluto en saltos de patinador y protocolo 15/30 de alta exigencia.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
+                                "target": "Columna Lumbar y Pump"
+                            },
+                            {
+                                "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
+                                "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
+                                "target": "Isquiotibiales y Rodilla"
+                            },
+                            {
+                                "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/naW8u72lOzI",
+                                "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
+                                "target": "Articulación Coxofemoral"
+                            },
+                            {
+                                "name": "Caminata de Cangrejo Invertida / Crab Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Activación temprana de glúteos, cadena posterior y apertura de hombros.",
+                                "target": "Glúteos y Apertura de Hombros"
+                            },
+                            {
+                                "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/v7rjHmZRs28",
+                                "desc": "3 segundos rápido, 5 segundos suave. Despierta de inmediato el sistema nervioso central.",
+                                "target": "Activación Inmediata del SNC"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Piques de Reacción Auditiva / Reaction Sprints",
+                                "sets": "4 series de 4 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "Iniciar acostados boca abajo. Al aplauso, levantarse explosivamente y hacer sprint en el sitio por 5 segundos.",
+                                "target": "Reacción Auditiva y Sprint Inicial"
+                            },
+                            {
+                                "name": "Saltos Laterales del Patinador / Lateral Skater Hops",
+                                "sets": "3 series de 12 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Saltar lateralmente de un pie al otro, manteniendo el equilibrio 1 segundo absoluto al aterrizar.",
+                                "target": "Equilibrio Dinámico en Curva"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Plancha Frontal / Forearm Plank",
+                                "sets": "3 series de 35 s",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Espalda recta como tabla, apretando glúteos para proteger firmemente la zona lumbar.",
+                                "target": "Core de Acero y Zona Lumbar"
+                            },
+                            {
+                                "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
+                                "sets": "3 series de 8/pierna",
+                                "tempo": "2-2-1-0",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Subir normal, sostener 2 segundos arriba apretando fuerte, bajar en 2 segundos controlados.",
+                                "target": "Glúteos y Estabilidad Pélvica"
+                            },
+                            {
+                                "name": "Sentadilla Lateral / Side Lunges",
+                                "sets": "3 series de 8/lado",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
+                                "desc": "Desplazamiento lateral controlado para fortalecer aductores y control en curvas.",
+                                "target": "Aductores y Control Lateral"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo 15/30 - Medios Burpees / Half Burpees",
+                            "format": "Protocolo 15s trabajo / 30s descanso (10 rondas / 7.5 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Sin flexión de pecho, volver rápido a posición de pie buscando máxima velocidad de piernas para simular repechos y la zona rítmica."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
+                                "target": "Flexores de Cadera"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
+                                "target": "Columna Lumbar y Dorsal"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
+                                "target": "Trapecio Superior y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery Neuromuscular)",
+                            "desc": "Todos los participantes se sientan o recuestan cómodamente con los ojos cerrados. Fase 1 (1 min): Respiración nasal lenta para estabilizar las pulsaciones cardíacas. Fase 2 (3 min): Visualizarse mentalmente en el partidor de su pista, escuchar los comandos oficiales, sentir la caída del partidor, visualizar la primera pedalada perfecta y el paso fluido por el primer obstáculo."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Recepción Unipodal sin Valgo, Salidas desde Rodillas (Gate Start) y EMOM de 8 Minutos: Máxima transmisión de potencia de las piernas al manubrio con core rígido (Hollow Body Hold) y RDL de 4 segundos excéntricos.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
+                                "target": "Columna Lumbar y Pump"
+                            },
+                            {
+                                "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
+                                "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
+                                "target": "Isquiotibiales y Rodilla"
+                            },
+                            {
+                                "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/naW8u72lOzI",
+                                "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
+                                "target": "Articulación Coxofemoral"
+                            },
+                            {
+                                "name": "Caminata de Cangrejo Invertida / Crab Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Activación temprana de glúteos, cadena posterior y apertura de hombros.",
+                                "target": "Glúteos y Apertura de Hombros"
+                            },
+                            {
+                                "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/v7rjHmZRs28",
+                                "desc": "3 segundos rápido, 5 segundos suave. Despierta de inmediato el sistema nervioso central.",
+                                "target": "Activación Inmediata del SNC"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Salto de Longitud a Caída Estable / Broad Jump to Single-Leg Stick",
+                                "sets": "4 series de 6 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/mKbYaSu1FA8",
+                                "desc": "Absorber el impacto frontal sin que la rodilla colapse hacia adentro (control estricto del valgo).",
+                                "target": "Absorción Unipodal y Control Estricto del Valgo"
+                            },
+                            {
+                                "name": "Salidas desde Rodillas / Kneeling Sprints (Gate Start)",
+                                "sets": "4 series de 4 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "De rodillas, a la señal llevar un pie al frente de forma explosiva, pararse y correr en máxima frecuencia.",
+                                "target": "Explosividad en Partidor (Gate Start)"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Peso Muerto Rumano a Una Pierna / Single-Leg RDL (Bodyweight)",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "4-1-1-1",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Bajar el torso en 4s sintiendo el estiramiento del isquiotibial con control de equilibrio total.",
+                                "target": "Isquiotibiales y Equilibrio Unipodal"
+                            },
+                            {
+                                "name": "Desplantes Inversos Explosivos / Explosive Reverse Lunges",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "2-1-X-0",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Dar paso atrás en 2s, pausa de 1s, subir empujando con máxima potencia de la pierna delantera.",
+                                "target": "Potencia de Empuje Unilateral"
+                            },
+                            {
+                                "name": "Isometría Abdominal / Hollow Body Hold",
+                                "sets": "3 series de 40 s",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
+                                "desc": "Acostado, piernas y hombros elevados a 10 cm del suelo, zona lumbar aplastada contra el piso.",
+                                "target": "Core Profundo y Puente de Fuerza"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "BMX Track EMOM 8 Minutos - Tuck Jumps & Quick Feet",
+                            "format": "EMOM de 8 Minutos (Every Minute on the Minute)",
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "Minutos Impares: 12 Saltos con Rodillas al Pecho / Tuck Jumps. Minutos Pares: 30 s de Skipping Bajo a Máxima Velocidad / Quick Feet."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
+                                "target": "Flexores de Cadera"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
+                                "target": "Columna Lumbar y Dorsal"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
+                                "target": "Trapecio Superior y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery Neuromuscular)",
+                            "desc": "Todos los participantes se sientan o recuestan cómodamente con los ojos cerrados. Fase 1 (1 min): Respiración nasal lenta para estabilizar las pulsaciones cardíacas. Fase 2 (3 min): Visualizarse mentalmente en el partidor de su pista, escuchar los comandos oficiales, sentir la caída del partidor, visualizar la primera pedalada perfecta y el paso fluido por el primer obstáculo."
+                        }
+                    },
+                    "18plus": {
+                        "methodology": "Estabilidad Avanzada de Cadera, Control de Peraltes y Salidas Explosivas en Familia: Fortalecimiento unilateral de la cadena posterior adulta, oblicuos y reacción rápida en posición de arrancada.",
+                        "warmup": [
+                            {
+                                "name": "Giro de Tronco con Pivote / Torso Twists with Pivot",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/h6XyzlM8m24",
+                                "desc": "Libera la tensión lumbar preparatoria para el movimiento de pump (bombeo).",
+                                "target": "Columna Lumbar y Pump"
+                            },
+                            {
+                                "name": "Toque de Punta de Pie Alterno / Frankenstein Kicks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/4rkvMQUtJ9U",
+                                "desc": "Activa los isquiotibiales y prepara la extensión dinámica de la rodilla.",
+                                "target": "Isquiotibiales y Rodilla"
+                            },
+                            {
+                                "name": "Balanceo de Pierna Adelante y Atrás / Leg Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/naW8u72lOzI",
+                                "desc": "Lubricación profunda de la articulación coxofemoral (cadera).",
+                                "target": "Articulación Coxofemoral"
+                            },
+                            {
+                                "name": "Caminata de Cangrejo Invertida / Crab Walk",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Activación temprana de glúteos, cadena posterior y apertura de hombros.",
+                                "target": "Glúteos y Apertura de Hombros"
+                            },
+                            {
+                                "name": "Trote en el Puesto con Cambios de Ritmo / Jog in Place with Sprints",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/v7rjHmZRs28",
+                                "desc": "3 segundos rápido, 5 segundos suave. Despierta de inmediato el sistema nervioso central.",
+                                "target": "Activación Inmediata del SNC"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Desplazamientos Laterales y Sostenimiento / Lateral Bounds",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Control de estabilidad lateral para la toma segura de curvas y peraltes.",
+                                "target": "Estabilidad Lateral en Curvas y Peraltes"
+                            },
+                            {
+                                "name": "Salidas Explosivas Familiares / Family Gate Starts",
+                                "sets": "4 series de 4 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/OatchVmdl3s",
+                                "desc": "Competencia lúdica de reacción rápida desde posición de arrancada estática en familia.",
+                                "target": "Reacción de Salida en Familia"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Peso Muerto Unilateral / Bodyweight Single-Leg RDL",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "3-1-1-1",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Estabilidad avanzada de cadera y fortalecimiento de la cadena posterior adulta.",
+                                "target": "Cadena Posterior y Estabilidad de Cadera"
+                            },
+                            {
+                                "name": "Plancha Lateral con Elevación / Side Plank Dips",
+                                "sets": "3 series de 12/lado",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Descenso controlado de la cadera y elevación fuerte para oblicuos.",
+                                "target": "Oblicuos y Estabilidad Lateral"
+                            },
+                            {
+                                "name": "Desplantes Inversos / Reverse Lunges",
+                                "sets": "3 series de 12/pierna",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/tHE4oh0U0ik",
+                                "desc": "Protección articular de rodilla con rango de movimiento completo.",
+                                "target": "Cuádriceps, Glúteos y Protección de Rodilla"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "BMX Track EMOM 8 Minutos - Tuck Jumps & Quick Feet",
+                            "format": "EMOM de 8 Minutos (Every Minute on the Minute)",
+                            "video": "https://www.youtube.com/embed/YHVrLfVjgwQ",
+                            "desc": "Minutos Impares: 12 Saltos con Rodillas al Pecho / Tuck Jumps. Minutos Pares: 30 s de Skipping Bajo a Máxima Velocidad / Quick Feet."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento del Psoas Ilíaco / Kneeling Hip Flexor Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/71hUv90g5E4",
+                                "desc": "Desbloquea la cadera rígida por la posición sentada o de pedaleo prolongado.",
+                                "target": "Flexores de Cadera"
+                            },
+                            {
+                                "name": "Torsión Espinal Supina / Lying Spinal Twist",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/ktgtEWGhFd8",
+                                "desc": "Libera la tensión rotacional acumulada en la columna vertebral.",
+                                "target": "Columna Lumbar y Dorsal"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteo Sentado / Seated Glute Stretch (Figura 4)",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la sobrecarga pélvica post-fuerza y equilibra la pelvis.",
+                                "target": "Glúteo y Piramidal"
+                            },
+                            {
+                                "name": "Estiramiento de Cuello / Neck Release",
+                                "duration": "30s por lado",
+                                "video": "https://www.youtube.com/embed/6Tr3GLfySYo",
+                                "desc": "Relaja la tensión cervical acumulada por el uso del casco y la atención visual en pista.",
+                                "target": "Trapecio Superior y Cuello"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Visualización Guiada (Imagery Neuromuscular)",
+                            "desc": "Todos los participantes se sientan o recuestan cómodamente con los ojos cerrados. Fase 1 (1 min): Respiración nasal lenta para estabilizar las pulsaciones cardíacas. Fase 2 (3 min): Visualizarse mentalmente en el partidor de su pista, escuchar los comandos oficiales, sentir la caída del partidor, visualizar la primera pedalada perfecta y el paso fluido por el primer obstáculo."
+                        }
+                    }
+                }
+            },
+            "3": {
+                "focus": "Tolerancia Láctica (La Última Recta), Fuerza del Tren Superior y Stiffness del Tobillo",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Infantiles y Juveniles (7 a 17 años): Alimentos ricos en calcio, magnesio y carbohidratos complejos de carga (papa, pasta integral, arroz, plátano) en la cena previa para fortalecer el chasis óseo y asegurar depósitos de glucógeno al 100%.",
+                    "protein": "Menores de 6 años (Calcio y Estructura Ósea Base): Lácteos enteros de calidad, yogurt natural, brócoli bien cocido y frutos secos molidos, acompañados de exposición solar moderada para síntesis de vitamina D.",
+                    "hydration": "Hidratación Estratégica: Consumo de agua constante añadiendo electrolitos en entrenamientos exigentes para evitar calambres musculares en la última recta.",
+                    "snacks": "Adultos y Padres (18+ - Control Antiinflamatorio): Fuentes ricas en Omega-3 (salmón, atún, semillas de chía o linaza) y antioxidantes naturales (frutos rojos) para acelerar la recuperación tendinosa."
+                },
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Rebote Elástico Familiar y Tracción Asistida: Saltos de conejo rápidos sobre línea, fuerza de tren superior con la carretilla familiar y relevos continuos con juguetes.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
+                                "target": "Espalda Media y Rotación Torácica"
+                            },
+                            {
+                                "name": "Saltos de Foca / Seal Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
+                                "target": "Pectorales y Deltoides"
+                            },
+                            {
+                                "name": "Sentadilla del Cosaco / Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tpczTeSkHz0",
+                                "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
+                                "target": "Aductores y Peraltes"
+                            },
+                            {
+                                "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
+                                "target": "Tobillos y Muñecas"
+                            },
+                            {
+                                "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Activación cardiovascular con cambios sutiles de dirección.",
+                                "target": "Cardiovascular y Cambios de Dirección"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Conejo Rápidos / Quick Bunny Hops",
+                                "sets": "4 series de 30 s",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Pies juntos, saltando hacia adelante y atrás sobre una línea en familia de forma divertida.",
+                                "target": "Rebote Reactivo y Coordinación"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "La Carretilla Familiar / Family Wheelbarrow Walk",
+                                "sets": "3 series de 8 pasos",
+                                "tempo": "Asistido",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Caminar con las manos mientras un adulto sostiene los muslos del niño.",
+                                "target": "Hombros, Brazos y Core"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Carrera de Relevos con Juguetes / Toy Relay Race",
+                            "format": "3 rondas de 2 minutos (Juego continuo)",
+                            "video": "https://www.youtube.com/embed/HWCHautmxrU",
+                            "desc": "Correr a buscar juguetes dispersos y llevarlos al punto inicial en familia."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
+                                "target": "Flexores y Extensores"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s continuos",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
+                                "target": "Pantorrilla Profunda"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo Miofascial y Respiratorio Familiar",
+                            "desc": "Fase 1 (2 min): Todos los participantes se sientan cómodamente en el suelo y utilizan sus propios pulgares para realizar un automasaje circular en la planta de los pies (fascia plantar) y un suave amasamiento en los gemelos. Fase 2 (2 min): Ojos cerrados, respiración nasal pausada con exhalación larga (inhalar en 4s, exhalar en 6s) para cerrar con el sistema nervioso regulado."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Stiffness de Tobillo como Resorte, Fuerza de Empuje y Tolerancia Láctica 30/30: Tobillo firme para transferir el 100% de la potencia al pedal, fondos en silla para tríceps y resistencia para la última recta.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
+                                "target": "Espalda Media y Rotación Torácica"
+                            },
+                            {
+                                "name": "Saltos de Foca / Seal Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
+                                "target": "Pectorales y Deltoides"
+                            },
+                            {
+                                "name": "Sentadilla del Cosaco / Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tpczTeSkHz0",
+                                "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
+                                "target": "Aductores y Peraltes"
+                            },
+                            {
+                                "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
+                                "target": "Tobillos y Muñecas"
+                            },
+                            {
+                                "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Activación cardiovascular con cambios sutiles de dirección.",
+                                "target": "Cardiovascular y Cambios de Dirección"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Saltos de Pogo / Pogo Jumps",
+                                "sets": "3 series de 15 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Rebote vertical usando solo gemelos y tobillos, manteniendo rodillas casi bloqueadas (efecto resorte).",
+                                "target": "Stiffness de Tobillo y Gemelos"
+                            },
+                            {
+                                "name": "Saltos Laterales sobre Objeto / Lateral Hurdle Hops",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                                "desc": "Cruzar un objeto bajo de lado a lado con agilidad, ritmo y control postural.",
+                                "target": "Agilidad Lateral y Ritmo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Fondos en Silla para Tríceps / Chair Dips",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/4ua3MzaU0QU",
+                                "desc": "Bajar controlado en 2s, pausa de 1s, subir en 1s (fuerza de empuje para saltos).",
+                                "target": "Tríceps y Empuje de Manubrio"
+                            },
+                            {
+                                "name": "Tijeras Pliométricas / Jumping Lunges",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "Dinámico",
+                                "video": "https://www.youtube.com/embed/MrCJtyLTucI?start=42",
+                                "desc": "Zancadas alternas con salto corto para potencia independiente de piernas.",
+                                "target": "Potencia Independiente de Piernas"
+                            },
+                            {
+                                "name": "Caminata de Oso Inversa / Reverse Bear Crawl",
+                                "sets": "3 series de 20 s",
+                                "tempo": "Controlado",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Fortalece la cadena anterior de los brazos y hombros.",
+                                "target": "Hombros, Muñecas y Core"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo 30/30 - Rodillas al Pecho / High Knees & Patinadores / Speed Skaters",
+                            "format": "Protocolo 30s trabajo / 30s descanso (8 rondas / 8 min)",
+                            "video": "https://www.youtube.com/embed/qM5jviFhw9U",
+                            "desc": "Rodillas al Pecho / High Knees alternado con Patinadores / Speed Skaters."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
+                                "target": "Flexores y Extensores"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s continuos",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
+                                "target": "Pantorrilla Profunda"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo Miofascial y Respiratorio Familiar",
+                            "desc": "Fase 1 (2 min): Todos los participantes se sientan cómodamente en el suelo y utilizan sus propios pulgares para realizar un automasaje circular en la planta de los pies (fascia plantar) y un suave amasamiento en los gemelos. Fase 2 (2 min): Ojos cerrados, respiración nasal pausada con exhalación larga (inhalar en 4s, exhalar en 6s) para cerrar con el sistema nervioso regulado."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Drop to Jump Reactivo, Aislamiento de Deltoides para Manuales y Tolerancia Láctica 40/20: Mínimo tiempo de contacto en el suelo, pogos unilaterales y resistencia anaeróbica extrema donde las piernas queman.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
+                                "target": "Espalda Media y Rotación Torácica"
+                            },
+                            {
+                                "name": "Saltos de Foca / Seal Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
+                                "target": "Pectorales y Deltoides"
+                            },
+                            {
+                                "name": "Sentadilla del Cosaco / Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tpczTeSkHz0",
+                                "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
+                                "target": "Aductores y Peraltes"
+                            },
+                            {
+                                "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
+                                "target": "Tobillos y Muñecas"
+                            },
+                            {
+                                "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Activación cardiovascular con cambios sutiles de dirección.",
+                                "target": "Cardiovascular y Cambios de Dirección"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Salto desde Caída / Drop to Jump",
+                                "sets": "4 series de 5 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
+                                "desc": "Dejarse caer de un escalón firme y explotar verticalmente al tocar el suelo (mínimo tiempo de contacto).",
+                                "target": "Pliometría Reactiva y Ciclo Estiramiento-Acortamiento"
+                            },
+                            {
+                                "name": "Pogos Reactivos a una Pierna / Single-leg Pogo Jumps",
+                                "sets": "3 series de 10/pierna",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Máxima rigidez de tobillo unilateral para transferencia de potencia pura.",
+                                "target": "Stiffness Unilateral de Tobillo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Flexiones en V (Pica) / Pike Push-ups",
+                                "sets": "3 series de 10 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/89-8waE2XKI",
+                                "desc": "Bajar coronilla formando triángulo con manos (aísla deltoides para manuales).",
+                                "target": "Deltoides y Control en Manuales"
+                            },
+                            {
+                                "name": "Pantorrillas a Una Pierna / Single-leg Calf Raises",
+                                "sets": "3 series de 15/pierna",
+                                "tempo": "3-1-X-1",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Bajar talón lento, pausa estirando, subir explosivo.",
+                                "target": "Tríceps Sural y Transferencia al Pedal"
+                            },
+                            {
+                                "name": "Plancha con Arrastre de Peso / Plank Pull-Through",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Mover un objeto pesado lateralmente en plancha sin rotar la pelvis.",
+                                "target": "Core Anti-Rotacional y Estabilidad Escapular"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20) - Sprawls & Jump Squats",
+                            "format": "Protocolo 40s esfuerzo máximo / 20s descanso (6 rondas / 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
+                                "target": "Flexores y Extensores"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s continuos",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
+                                "target": "Pantorrilla Profunda"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo Miofascial y Respiratorio Familiar",
+                            "desc": "Fase 1 (2 min): Todos los participantes se sientan cómodamente en el suelo y utilizan sus propios pulgares para realizar un automasaje circular en la planta de los pies (fascia plantar) y un suave amasamiento en los gemelos. Fase 2 (2 min): Ojos cerrados, respiración nasal pausada con exhalación larga (inhalar en 4s, exhalar en 6s) para cerrar con el sistema nervioso regulado."
+                        }
+                    },
+                    "18plus": {
+                        "methodology": "Stiffness de Bajo Impacto, Drop Jumps Modificados y Fuerza Unilateral Profunda: Protección articular adulta con absorción óptima de rodilla, sentadilla búlgara 3-1-X-1 y tolerancia láctica 40/20.",
+                        "warmup": [
+                            {
+                                "name": "Rotación Torácica en Cuadrupedia / T-Spine Rotations",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Libera la espalda media, crucial para el gesto de halar el manubrio.",
+                                "target": "Espalda Media y Rotación Torácica"
+                            },
+                            {
+                                "name": "Saltos de Foca / Seal Jacks",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                                "desc": "Abre y cierra brazos paralelos al suelo para calentar pectorales y deltoides.",
+                                "target": "Pectorales y Deltoides"
+                            },
+                            {
+                                "name": "Sentadilla del Cosaco / Cossack Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/tpczTeSkHz0",
+                                "desc": "Desplazamiento lateral profundo para movilizar aductores y peraltes.",
+                                "target": "Aductores y Peraltes"
+                            },
+                            {
+                                "name": "Círculos de Tobillos y Muñecas / Ankle and Wrist Rolls",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Prepara las articulaciones de contacto crítico con la bicicleta (pedales y puños).",
+                                "target": "Tobillos y Muñecas"
+                            },
+                            {
+                                "name": "Trote en Zig-Zag Imaginario / Zig-Zag Jog",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Activación cardiovascular con cambios sutiles de dirección.",
+                                "target": "Cardiovascular y Cambios de Dirección"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Pogos Controlados / Controlled Pogo Jumps",
+                                "sets": "4 series de 20 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/1eSXxyBJYXY",
+                                "desc": "Trabajo de stiffness de bajo impacto para proteger las articulaciones adultas.",
+                                "target": "Stiffness de Bajo Impacto"
+                            },
+                            {
+                                "name": "Drop Jumps Modificados / Low Drop Jumps",
+                                "sets": "3 series de 6 repeticiones",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/jNXXwTbFo-Q",
+                                "desc": "Caída suave desde altura mínima con absorción óptima de rodilla.",
+                                "target": "Absorción Óptima de Rodilla"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Flexiones de Pecho / Strict Push-ups",
+                                "sets": "3 series de 12 repeticiones",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/IODxDxX7oi4",
+                                "desc": "Control absoluto del tronco y activación escapular profunda.",
+                                "target": "Pectorales y Estabilidad Escapular"
+                            },
+                            {
+                                "name": "Sentadilla Búlgara / Bulgarian Split Squat",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "3-1-X-1",
+                                "video": "https://www.youtube.com/embed/2C-uNgKwPLE",
+                                "desc": "Fuerza unilateral profunda y estabilidad avanzada de cadera.",
+                                "target": "Fuerza Unilateral y Estabilidad de Cadera"
+                            },
+                            {
+                                "name": "Plancha Lateral / Side Plank",
+                                "sets": "3 series de 40 s/lado",
+                                "tempo": "Isometría",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Estabilidad lateral del tronco y los oblicuos.",
+                                "target": "Oblicuos y Estabilidad Lateral"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Tolerancia Láctica 'La Última Recta' (Protocolo 40/20) - Sprawls & Jump Squats",
+                            "format": "Protocolo 40s esfuerzo máximo / 20s descanso (6 rondas / 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Sprawls (lanzarse a plancha y levantarse velozmente) alternados con Sentadillas con Salto / Jump Squats."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Antebrazos / Forearm Stretch",
+                                "duration": "35s por brazo",
+                                "video": "https://www.youtube.com/embed/W9dGaNQ5uzQ",
+                                "desc": "Previene el Arm Pump (antebrazos rígidos por la tensión del manubrio).",
+                                "target": "Flexores y Extensores"
+                            },
+                            {
+                                "name": "Gato-Camello / Cat-Cow Stretch",
+                                "duration": "40s continuos",
+                                "video": "https://www.youtube.com/embed/LIVJZZyZ2qM",
+                                "desc": "Moviliza la espalda completa tras la exigencia de fuerza.",
+                                "target": "Columna Vertebral"
+                            },
+                            {
+                                "name": "Estiramiento en Mariposa / Butterfly Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/cfJcO7gi3zw",
+                                "desc": "Alivia la tensión en la pelvis derivada del pedaleo y los peraltes.",
+                                "target": "Aductores e Ingle"
+                            },
+                            {
+                                "name": "Estiramiento del Sóleo / Soleus Stretch",
+                                "duration": "35s por pierna",
+                                "video": "https://www.youtube.com/embed/qPd73snQfUs",
+                                "desc": "Relaja el tendón de Aquiles tras el trabajo intenso de stiffness.",
+                                "target": "Pantorrilla Profunda"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo Miofascial y Respiratorio Familiar",
+                            "desc": "Fase 1 (2 min): Todos los participantes se sientan cómodamente en el suelo y utilizan sus propios pulgares para realizar un automasaje circular en la planta de los pies (fascia plantar) y un suave amasamiento en los gemelos. Fase 2 (2 min): Ojos cerrados, respiración nasal pausada con exhalación larga (inhalar en 4s, exhalar en 6s) para cerrar con el sistema nervioso regulado."
+                        }
+                    }
+                }
+            },
+            "4": {
+                "focus": "Movilidad Multiplanar, Agilidad Rotacional y Resistencia Coordinativa (Simulación de Baterías Múltiples de Carrera)",
+                "duration": "60 Minutos Máximo",
+                "structure": "Calentamiento (10 min) + Bloque Principal (38 min) + Estiramiento (8 min) + Recuperación (4 min)",
+                "nutrition": {
+                    "energy": "Infantiles y Juveniles (7 a 17 años - Electrolitos y Reparación Tisular): Alimentos ricos en potasio y magnesio (plátano, aguacate, espinacas) y carbohidratos de bajo índice glucémico (camote/batata, quinua) para reponer sales minerales tras 4 días de esfuerzo.",
+                    "protein": "Adultos y Padres (18+ - Antioxidantes y Drenaje Articular): Alimentos ricos en antioxidantes (arándanos, frutos rojos, té verde o infusiones de jengibre) y proteína magra para reducir la inflamación sistémica acumulada y preparar el tejido conectivo para el fin de semana.",
+                    "hydration": "Menores de 6 años (Hidratación y Hábitos Naturales): Frutas frescas con alto contenido de agua natural (sandía, melón, naranja) y agua pura constante, más suero casero ligero si la intensidad lo demanda.",
+                    "snacks": "Celebración y recuperación de cierre de ciclo: Frutas hidratantes (sandía, melón, frutos rojos) con frutos secos y agua fresca para llegar al 100% a la pista."
+                },
+                "ageGroups": {
+                    "sub6": {
+                        "methodology": "Agilidad Musical, Transporte en Equipo y Cierre Coherente del Macrociclo: Estatuas musicales en postura de equilibrio BMX, cangrejo viajero con peluche y respiración coherente familiar 5-5.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Articulación Coxofemoral y Peraltes"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
+                                "target": "Espalda Superior y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
+                                "target": "Columna Torácica y Cadena Posterior"
+                            },
+                            {
+                                "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
+                                "target": "Rodillas y Cuádriceps"
+                            },
+                            {
+                                "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
+                                "target": "SNC y Agilidad Espacial"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Juego de Estatuas Musicales / Family Musical Statues",
+                                "sets": "4 series de 1 minuto",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Bailar o trotar al ritmo de la música en familia; al pausar, congelarse en una postura de equilibrio de BMX.",
+                                "target": "Equilibrio y Frenado Reactivo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "El Cangrejo Viajero / Traveling Crab Walk",
+                                "sets": "3 series de 30 s",
+                                "tempo": "Dinámico",
+                                "video": "https://www.youtube.com/embed/ZodvhSMy6rk",
+                                "desc": "Caminar en posición de cangrejo transportando un peluche sobre el abdomen en equipo.",
+                                "target": "Estabilidad de Core y Hombros"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Juego de las Sillas Musicales Activas / Active Musical Chairs Game",
+                            "format": "3 rondas de 2 minutos (Juego continuo)",
+                            "video": "https://www.youtube.com/embed/HWCHautmxrU",
+                            "desc": "Correr alrededor de cojines y sentarse al parar la música en familia."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
+                                "target": "Abdominales y Psoas"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
+                                "target": "Glúteos y Piriforme"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Regulación del Sistema Nervioso (Respiración Coherente Familiar 5-5)",
+                            "desc": "Todos los participantes se sientan en círculo o recostados cómodamente. Inhalar profundamente por la nariz inflando el abdomen durante 5 segundos, y exhalar de forma suave y continua por la boca durante 5 segundos. Sincroniza la frecuencia cardíaca familiar, disipa el estrés acumulado de la semana y marca el cierre perfecto del ciclo de 4 días de entrenamiento ACTIVERZA."
+                        }
+                    },
+                    "7to12": {
+                        "methodology": "Agilidad de Pies Multiplanar (Carioca & Z-Pattern) y Simulación de Baterías 20/40: Fluidez de movimiento para sortear trazadas complejas en pista bajo fatiga acumulada.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Articulación Coxofemoral y Peraltes"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
+                                "target": "Espalda Superior y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
+                                "target": "Columna Torácica y Cadena Posterior"
+                            },
+                            {
+                                "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
+                                "target": "Rodillas y Cuádriceps"
+                            },
+                            {
+                                "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
+                                "target": "SNC y Agilidad Espacial"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Desplazamientos Laterales Cruzados / Carioca Steps",
+                                "sets": "3 series de 20 segundos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Movimiento lateral cruzando pies por delante y por detrás con agilidad de pies.",
+                                "target": "Coordinación Multiplanar y Juego de Pies"
+                            },
+                            {
+                                "name": "Saltos en Zig-Zag / Z-Pattern Jumps",
+                                "sets": "3 series de 10 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Saltar de lado a lado imaginando marcas en el suelo con aterrizaje suave y controlado.",
+                                "target": "Agilidad Lateral y Absorción"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Plancha con Toque de Hombros / Plank Shoulder Taps",
+                                "sets": "3 series de 16 toques",
+                                "tempo": "2-0-1-0",
+                                "video": "https://www.youtube.com/embed/eyeuugrpLYA",
+                                "desc": "Mantener la cadera completamente quieta mientras se alterna el toque de los hombros.",
+                                "target": "Core Anti-Rotacional"
+                            },
+                            {
+                                "name": "Puente de Glúteo Dinámico / Dynamic Glute Bridge",
+                                "sets": "3 series de 12 reps",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Subir cadera, apretar glúteos 1 segundo arriba, bajar de forma controlada.",
+                                "target": "Glúteos y Cadena Posterior"
+                            },
+                            {
+                                "name": "Sentadilla Sumo / Sumo Squats",
+                                "sets": "3 series de 12 reps",
+                                "tempo": "2-1-1-0",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Pies más abiertos que los hombros para trabajar aductores y estabilidad de rodilla.",
+                                "target": "Aductores y Estabilidad de Rodilla"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo de Simulación de Manga 20/40 - Fast Feet & Jumping Jacks",
+                            "format": "Protocolo de Simulación de Manga (20s a tope / 40s descanso activo x 6 rondas)",
+                            "video": "https://www.youtube.com/embed/c4DAnQ6DtF8",
+                            "desc": "Sprints en el Sitio / Fast Feet alternados con Jumping Jacks simulando mangas clasificatorias."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
+                                "target": "Abdominales y Psoas"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
+                                "target": "Glúteos y Piriforme"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Regulación del Sistema Nervioso (Respiración Coherente Familiar 5-5)",
+                            "desc": "Todos los participantes se sientan en círculo o recostados cómodamente. Inhalar profundamente por la nariz inflando el abdomen durante 5 segundos, y exhalar de forma suave y continua por la boca durante 5 segundos. Sincroniza la frecuencia cardíaca familiar, disipa el estrés acumulado de la semana y marca el cierre perfecto del ciclo de 4 días de entrenamiento ACTIVERZA."
+                        }
+                    },
+                    "13to17": {
+                        "methodology": "Agilidad Rotacional 180°, Patrón en 'X' y Baterías Múltiples de Carrera (30/30): Mantener la fluidez técnica bajo fatiga acumulada simulando varias mangas con descansos cortos.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Articulación Coxofemoral y Peraltes"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
+                                "target": "Espalda Superior y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
+                                "target": "Columna Torácica y Cadena Posterior"
+                            },
+                            {
+                                "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
+                                "target": "Rodillas y Cuádriceps"
+                            },
+                            {
+                                "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
+                                "target": "SNC y Agilidad Espacial"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Desplazamientos Dinámicos en 'X' / X-Pattern Agility Drills",
+                                "sets": "4 series de 20 segundos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Cambios de dirección explosivos simulando la trazada cerrada en una curva de peralte.",
+                                "target": "Agilidad Multidireccional en Peralte"
+                            },
+                            {
+                                "name": "Saltos 180° Controlados / 180-Degree Rotational Jumps",
+                                "sets": "3 series de 8 saltos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Brkz-7w8gsY",
+                                "desc": "Saltar girando medio cuerpo en el aire y aterrizar con control absoluto de estabilidad.",
+                                "target": "Agilidad Rotacional y Estabilidad de Aterrizaje"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Plancha Lateral con Rotación / Side Plank with Thread-the-Needle",
+                                "sets": "3 series de 8/lado",
+                                "tempo": "3-1-1-1",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "En plancha lateral, pasar el brazo por debajo del torso con rotación torácica controlada.",
+                                "target": "Oblicuos y Rotación Torácica"
+                            },
+                            {
+                                "name": "Zancadas Laterales con Pausa / Side Lunges with Pause",
+                                "sets": "3 series de 10/lado",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/rvqLVxYqEvo",
+                                "desc": "Desplazamiento lateral profundo, pausa de 1s abajo y empuje fuerte de regreso.",
+                                "target": "Aductores, Glúteo Medio y Potencia Lateral"
+                            },
+                            {
+                                "name": "V-Ups Abdominales / V-Ups",
+                                "sets": "3 series de 10 reps",
+                                "tempo": "2-0-X-0",
+                                "video": "https://www.youtube.com/embed/DqLL45uk2Tk",
+                                "desc": "Elevación simultánea de piernas y torso formando una 'V' (máxima activación del core).",
+                                "target": "Core Anterior Explosivo"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo de Competencia Intermitente 30/30 - Full Burpees & High Knees",
+                            "format": "Protocolo de Competencia Intermitente (30s esfuerzo de alta intensidad / 30s recuperación x 6 rondas / Total: 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Burpees completos / Full Burpees alternados con Skipping Alto / High Knees simulando mangas clasificatorias."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
+                                "target": "Abdominales y Psoas"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
+                                "target": "Glúteos y Piriforme"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Regulación del Sistema Nervioso (Respiración Coherente Familiar 5-5)",
+                            "desc": "Todos los participantes se sientan en círculo o recostados cómodamente. Inhalar profundamente por la nariz inflando el abdomen durante 5 segundos, y exhalar de forma suave y continua por la boca durante 5 segundos. Sincroniza la frecuencia cardíaca familiar, disipa el estrés acumulado de la semana y marca el cierre perfecto del ciclo de 4 días de entrenamiento ACTIVERZA."
+                        }
+                    },
+                    "18plus": {
+                        "methodology": "Agilidad en Cuadrupedia Cruzada, Sentadilla Cosaco Controlada y Baterías Cruiser 30/30: Coordinación de extremidades opuestas para estabilidad profunda de hombros y caderas, coronando la semana en familia.",
+                        "warmup": [
+                            {
+                                "name": "Círculos de Cadera / Hip Circles",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/lzR7tzI1JUI",
+                                "desc": "Lubrica la articulación coxofemoral para los movimientos laterales en peraltes.",
+                                "target": "Articulación Coxofemoral y Peraltes"
+                            },
+                            {
+                                "name": "Apertura de Pecho con Brazos / Chest Openers with Arm Swings",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Activa la parte superior de la espalda y los hombros de forma dinámica.",
+                                "target": "Espalda Superior y Hombros"
+                            },
+                            {
+                                "name": "Caminata de Oruga con Rotación / Inchworms with T-Spine Rotation",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/7jeW4v_oaes",
+                                "desc": "Movilidad de columna torácica y estiramiento activo de cadena posterior.",
+                                "target": "Columna Torácica y Cadena Posterior"
+                            },
+                            {
+                                "name": "Sentadillas Libres Suaves / Gentle Bodyweight Squats",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/aclHkVaku9U",
+                                "desc": "Prepara las rodillas y cuádriceps sin generar fatiga previa.",
+                                "target": "Rodillas y Cuádriceps"
+                            },
+                            {
+                                "name": "Trote Suave con Cambios de Dirección / Light Jog with Direction Changes",
+                                "duration": "45s trabajo x 15s transición (2 rondas)",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Conecta el sistema nervioso con patrones de cambio espacial y agilidad.",
+                                "target": "SNC y Agilidad Espacial"
+                            }
+                        ],
+                        "plyo": [
+                            {
+                                "name": "Agilidad en Cuadrupedia Cruzada / Quadruped Crawl Variations",
+                                "sets": "3 series de 30 segundos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/Ee1BQNI6zN4",
+                                "desc": "Coordinación de extremidades opuestas para estabilidad profunda de hombros y caderas.",
+                                "target": "Estabilidad Profunda de Hombros y Caderas"
+                            },
+                            {
+                                "name": "Circuito de Coordinación en Familia / Family Agility Course",
+                                "sets": "3 series de 45 segundos",
+                                "rest": "Descanso 60s",
+                                "video": "https://www.youtube.com/embed/PdSEGR2KuEk",
+                                "desc": "Recorrido lúdico integrando saltos, giros y cambios de ritmo supervisados en casa.",
+                                "target": "Coordinación Familiar y Cambios de Ritmo"
+                            }
+                        ],
+                        "strength": [
+                            {
+                                "name": "Sentadilla Cosaco Controlada / Controlled Cossack Squat",
+                                "sets": "3 series de 8/lado",
+                                "tempo": "3-1-1-0",
+                                "video": "https://www.youtube.com/embed/tpczTeSkHz0",
+                                "desc": "Descenso profundo sobre una pierna manteniendo el talón contrario apoyado o elevado.",
+                                "target": "Movilidad de Cadera y Fuerza Lateral"
+                            },
+                            {
+                                "name": "Plancha Abdominal sobre Antebrazos / Forearm Plank",
+                                "sets": "3 series de 50 s",
+                                "tempo": "50 segundos (Isometría)",
+                                "video": "https://www.youtube.com/embed/ASdvN_XEl_c",
+                                "desc": "Alineación perfecta de hombros, cadera y talones con contracción corporal total.",
+                                "target": "Resistencia Isométrica del Core"
+                            },
+                            {
+                                "name": "Puente de Glúteo a Una Pierna / Single-Leg Glute Bridge",
+                                "sets": "3 series de 10/pierna",
+                                "tempo": "2-1-1-1",
+                                "video": "https://www.youtube.com/embed/wPM8icPu6H8",
+                                "desc": "Estabilidad estricta de pelvis y fuerza en la cadena posterior adulta.",
+                                "target": "Estabilidad Pélvica y Cadena Posterior"
+                            }
+                        ],
+                        "cardio": {
+                            "name": "Protocolo de Competencia Intermitente 30/30 - Full Burpees & High Knees",
+                            "format": "Protocolo de Competencia Intermitente (30s esfuerzo de alta intensidad / 30s recuperación x 6 rondas / Total: 6 min)",
+                            "video": "https://www.youtube.com/embed/dZgVxmf6jkA",
+                            "desc": "Burpees completos / Full Burpees alternados con Skipping Alto / High Knees simulando mangas clasificatorias."
+                        },
+                        "stretch": [
+                            {
+                                "name": "Estiramiento de Cadena Posterior Sentado / Seated Forward Fold",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alarga toda la parte trasera del cuerpo tras el trabajo de fuerza multiplanar.",
+                                "target": "Isquiotibiales y Espalda Baja"
+                            },
+                            {
+                                "name": "Estiramiento del Dorsal Ancho / Lat Stretch en Pared",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/crnw1IKWNZY",
+                                "desc": "Libera los músculos encargados de halar y controlar el manubrio.",
+                                "target": "Dorsales y Hombros"
+                            },
+                            {
+                                "name": "Postura de la Cobra / Cobra Stretch",
+                                "duration": "35s sostenido",
+                                "video": "https://www.youtube.com/embed/2MJGg-dUKh0",
+                                "desc": "Abre la parte frontal del cuerpo contrarrestando la postura aerodinámica.",
+                                "target": "Abdominales y Psoas"
+                            },
+                            {
+                                "name": "Estiramiento de Glúteos Cruzado / Crossed Glute Stretch",
+                                "duration": "35s por lado",
+                                "video": "https://www.youtube.com/embed/aJvfeuu71gw",
+                                "desc": "Alivia la tensión profunda acumulada en la cadera y la pelvis.",
+                                "target": "Glúteos y Piriforme"
+                            }
+                        ],
+                        "recovery": {
+                            "name": "Protocolo de Regulación del Sistema Nervioso (Respiración Coherente Familiar 5-5)",
+                            "desc": "Todos los participantes se sientan en círculo o recostados cómodamente. Inhalar profundamente por la nariz inflando el abdomen durante 5 segundos, y exhalar de forma suave y continua por la boca durante 5 segundos. Sincroniza la frecuencia cardíaca familiar, disipa el estrés acumulado de la semana y marca el cierre perfecto del ciclo de 4 días de entrenamiento ACTIVERZA."
                         }
                     }
                 }

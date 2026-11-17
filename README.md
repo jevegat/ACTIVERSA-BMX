@@ -8,6 +8,7 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 * **Semana 3**: Integración Familiar, Rigor Biomecánico y Tolerancia Láctica.
 * **Semana 4**: Movilidad Activa, Rigor Técnico, Agilidad Rotacional y Simulación de Motos (4 Días Semanales).
 * **Semana 5**: Fuerza Estricta, Agilidad Multiplanar y Simulación de Baterías en Familia (4 Días Semanales).
+* **Semana 6**: Ciclo Superior: Potencia Base de Salida (*Gate Acceleration*), Reactividad y Baterías Múltiples (4 Días Semanales).
 
 ---
 
@@ -44,7 +45,6 @@ Desarrollada sobre la base técnica oficial de los microciclos de entrenamiento:
 ### 2. 🎥 Videoteca Técnica Biomecánica Verificada
 * 45 ejercicios auditados con videos demostrativos embebidos al 100% (sin caídas ni errores de disponibilidad).
 * Claves biomecánicas para la rigidez articular (*stiffness*), control excéntrico y transferencia al primer pedalazo en el partidor (*gate start*).
-* Reconocimiento y enlace oficial a la preparación física y asesoría técnica de [@pipearenas.fit](https://www.instagram.com/pipearenas.fit/).
 
 ### 3. 👤 Perfiles de Deportistas, Fotos y Gamificación
 * Gestión multiatleta: creación de perfiles, alternancia y eliminación segura.
@@ -115,5 +115,4 @@ Arquitectura modular en Vanilla JavaScript (ES6+), HTML5 semántico y CSS3 con T
 
 ## 🚴‍♂️ Metodología & Créditos
 * Metodología de entrenamiento deportivo adaptado para Semilleros de BMX Racing.
-* Preparación física y técnica orientada por [@pipearenas.fit](https://www.instagram.com/pipearenas.fit/).
 * Plataforma desarrollada para BMX Racing • *Unleash Your Power*.

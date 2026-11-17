@@ -29,6 +29,185 @@ function parseSetsCount(setsStr, defaultSets = 3) {
 /**
  * Extrae la duración de descanso desde la cadena (ej. "Descanso 60s" -> 60)
  */
+/**
+ * Analiza la configuración de repeticiones y Tempo [Bajada - Pausa abajo - Subida - Pausa arriba]
+ * Si el ejercicio tiene nomenclatura de 4 fases (ej. "3-1-1-0" o "3-1-X-1"), construye una línea
+ * de tiempo segundo a segundo para todas las repeticiones (incluyendo 10s de transición si es por pierna/lado).
+ */
+function buildStrengthTempoMeta(setsStr, tempoStr) {
+    const rawSets = setsStr || '';
+    const rawTempo = tempoStr || '';
+
+    // Extraer texto después de "X series de"
+    const afterSeries = rawSets.replace(/^\s*\d+\s*series\s*(de\s*)?/i, '').trim();
+    const isUnilateral = /(\/\s*pierna|por\s+pierna|cada\s+pierna|una\s+pierna|unipodal|unilateral|\/\s*lado|por\s+lado|cada\s+lado)/i.test(rawSets);
+    const sideLabel = /lado/i.test(rawSets) ? 'Lado' : 'Pierna';
+    const transitionSec = isUnilateral ? 10 : 0;
+
+    // Detectar si existe patrón de Tempo A-B-C-D (ej. 3-1-1-0, 3-1-X-1, 2-0-X-0)
+    const tempoMatch = rawTempo.match(/(\d+|X)\s*-\s*(\d+|X)\s*-\s*(\d+|X)\s*-\s*(\d+|X)/i);
+
+    if (tempoMatch) {
+        const tokens = [tempoMatch[1], tempoMatch[2], tempoMatch[3], tempoMatch[4]].map(t => t.toUpperCase());
+        const toSec = (tok) => (tok === 'X' ? 1 : (parseInt(tok, 10) || 0));
+
+        const phaseDefs = [
+            {
+                index: 0,
+                code: 'down',
+                raw: tokens[0],
+                sec: toSec(tokens[0]),
+                shortTitle: '1. Bajada',
+                badgeText: `⬇ BAJADA (${toSec(tokens[0])}s)`,
+                actionDesc: 'Fase excéntrica controlada (bajada)',
+                beepFreq: 440
+            },
+            {
+                index: 1,
+                code: 'hold_bottom',
+                raw: tokens[1],
+                sec: toSec(tokens[1]),
+                shortTitle: '2. Pausa Abajo',
+                badgeText: `⏸ PAUSA ABAJO (${toSec(tokens[1])}s)`,
+                actionDesc: 'Mantén isometría firme abajo',
+                beepFreq: 587
+            },
+            {
+                index: 2,
+                code: 'up',
+                raw: tokens[2],
+                sec: toSec(tokens[2]),
+                shortTitle: tokens[2] === 'X' ? '3. Subida Explosiva' : '3. Subida',
+                badgeText: tokens[2] === 'X' ? '⚡ SUBIDA EXPLOSIVA (1s)' : `⬆ SUBIDA (${toSec(tokens[2])}s)`,
+                actionDesc: tokens[2] === 'X' ? '¡Empuje concéntrico a máxima potencia!' : 'Fase concéntrica de subida',
+                beepFreq: 880
+            },
+            {
+                index: 3,
+                code: 'hold_top',
+                raw: tokens[3],
+                sec: toSec(tokens[3]),
+                shortTitle: '4. Pausa Arriba',
+                badgeText: `⏸ PAUSA ARRIBA (${toSec(tokens[3])}s)`,
+                actionDesc: 'Estabiliza postura arriba',
+                beepFreq: 659
+            }
+        ];
+
+        const activePhases = phaseDefs.filter(p => p.sec > 0);
+        const repDurationSec = activePhases.reduce((acc, p) => acc + p.sec, 0);
+
+        if (repDurationSec > 0) {
+            // Extraer cantidad de repeticiones por serie (o por pierna/lado)
+            let repsPerSide = 10;
+            const rangeMatch = afterSeries.match(/(\d+)\s*a\s*(\d+)/i);
+            const singleMatch = afterSeries.match(/(\d+)/);
+            if (rangeMatch) {
+                repsPerSide = parseInt(rangeMatch[2], 10);
+            } else if (singleMatch) {
+                repsPerSide = parseInt(singleMatch[1], 10);
+            }
+            if (isNaN(repsPerSide) || repsPerSide <= 0) repsPerSide = 10;
+
+            const totalReps = isUnilateral ? repsPerSide * 2 : repsPerSide;
+            const timeline = [];
+
+            const pushSideReps = (sideIdx, startGlobalRep) => {
+                for (let r = 1; r <= repsPerSide; r++) {
+                    const globalRep = startGlobalRep + r;
+                    activePhases.forEach(p => {
+                        for (let s = 0; s < p.sec; s++) {
+                            timeline.push({
+                                kind: 'rep',
+                                globalRep: globalRep,
+                                totalReps: totalReps,
+                                sideIndex: sideIdx, // 0 = bilateral, 1 = Lado/Pierna 1, 2 = Lado/Pierna 2
+                                sideLabel: isUnilateral ? `${sideLabel} ${sideIdx}` : null,
+                                sideRep: r,
+                                repsPerSide: repsPerSide,
+                                phaseIndex: p.index,
+                                phaseCode: p.code,
+                                phaseBadge: p.badgeText,
+                                phaseAction: p.actionDesc,
+                                phaseSecLeft: p.sec - s,
+                                phaseTotalSec: p.sec,
+                                isPhaseStart: s === 0,
+                                beepFreq: p.beepFreq
+                            });
+                        }
+                    });
+                }
+            };
+
+            if (isUnilateral) {
+                pushSideReps(1, 0);
+                // 10 segundos de transición entre Pierna/Lado 1 y Pierna/Lado 2
+                for (let t = 0; t < transitionSec; t++) {
+                    timeline.push({
+                        kind: 'transition',
+                        globalRep: repsPerSide,
+                        totalReps: totalReps,
+                        sideIndex: 0,
+                        sideLabel: `Cambio a ${sideLabel} 2`,
+                        sideRep: repsPerSide,
+                        repsPerSide: repsPerSide,
+                        phaseIndex: -1,
+                        phaseCode: 'switch_side',
+                        phaseBadge: `🔄 CAMBIO A ${sideLabel.toUpperCase()} 2 (${transitionSec - t}s)`,
+                        phaseAction: `Cambia de posición y prepárate para iniciar ${sideLabel} 2`,
+                        phaseSecLeft: transitionSec - t,
+                        phaseTotalSec: transitionSec,
+                        isPhaseStart: t === 0,
+                        beepFreq: 700
+                    });
+                }
+                pushSideReps(2, repsPerSide);
+            } else {
+                pushSideReps(0, 0);
+            }
+
+            return {
+                hasTempo: true,
+                tempoCode: `${tokens[0]}-${tokens[1]}-${tokens[2]}-${tokens[3]}`,
+                phaseDefs: phaseDefs,
+                repDurationSec: repDurationSec,
+                isUnilateral: isUnilateral,
+                sideLabel: sideLabel,
+                repsPerSide: repsPerSide,
+                totalReps: totalReps,
+                transitionSec: transitionSec,
+                totalDurationSec: timeline.length,
+                timeline: timeline
+            };
+        }
+    }
+
+    // Si no tiene tempo A-B-C-D pero especifica duración en segundos (ej. "3 series de 45 segundos" o "3 series de 40 s/lado")
+    const secMatch = afterSeries.match(/(\d+)\s*(?:a\s*(\d+)\s*)?(?:s|seg|segundos)\b/i) || rawTempo.match(/(\d+)\s*(?:s|seg|segundos)\b/i);
+    if (secMatch) {
+        const holdSec = parseInt(secMatch[2] || secMatch[1], 10);
+        if (!isNaN(holdSec) && holdSec >= 10) {
+            const totalDurationSec = isUnilateral ? (holdSec * 2 + transitionSec) : holdSec;
+            return {
+                hasTempo: false,
+                isTimedHold: true,
+                isUnilateral: isUnilateral,
+                sideLabel: sideLabel,
+                holdSec: holdSec,
+                transitionSec: transitionSec,
+                totalDurationSec: totalDurationSec
+            };
+        }
+    }
+
+    return {
+        hasTempo: false,
+        isTimedHold: false,
+        isUnilateral: isUnilateral,
+        totalDurationSec: 45
+    };
+}
+
 function parseRestSeconds(restStr, defaultRest = 60) {
     if (!restStr) return defaultRest;
     const match = restStr.match(/(\d+)\s*s/i);
@@ -45,6 +224,8 @@ function parseRestSeconds(restStr, defaultRest = 60) {
 function calculateSessionSummary(week, day, ageGroup) {
     const steps = buildWorkoutPlan(week, day, ageGroup);
     let totalSec = 0;
+    let warmupRounds = 2;
+    let cardioRounds = 8;
     const blocksSec = {
         warmup: 0,
         plyo: 0,
@@ -56,17 +237,35 @@ function calculateSessionSummary(week, day, ageGroup) {
 
     steps.forEach(s => {
         totalSec += s.duration;
-        if (s.blockIndex === 0) blocksSec.warmup += s.duration;
-        else if (s.blockIndex === 1) blocksSec.plyo += s.duration;
-        else if (s.blockIndex === 2) blocksSec.strength += s.duration;
-        else if (s.blockIndex === 3) blocksSec.cardio += s.duration;
-        else if (s.blockIndex === 4) blocksSec.stretch += s.duration;
-        else if (s.blockIndex === 5) blocksSec.recovery += s.duration;
+        if (s.blockIndex === 0) {
+            blocksSec.warmup += s.duration;
+            if (s.totalSets) warmupRounds = s.totalSets;
+        } else if (s.blockIndex === 1) {
+            blocksSec.plyo += s.duration;
+        } else if (s.blockIndex === 2) {
+            blocksSec.strength += s.duration;
+        } else if (s.blockIndex === 3) {
+            blocksSec.cardio += s.duration;
+            if (s.totalSets) cardioRounds = s.totalSets;
+        } else if (s.blockIndex === 4) {
+            blocksSec.stretch += s.duration;
+        } else if (s.blockIndex === 5) {
+            blocksSec.recovery += s.duration;
+        }
     });
 
+    const totalMin = Math.round(totalSec / 60);
+    const mins = Math.floor(totalSec / 60);
+    const secs = totalSec % 60;
+    const formattedTotal = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+
     return {
-        totalMinutes: Math.round(totalSec / 60),
+        totalMin: totalMin,
+        totalMinutes: totalMin,
         totalSeconds: totalSec,
+        formattedTotal: formattedTotal,
+        warmupRounds: warmupRounds,
+        cardioRounds: cardioRounds,
         blocks: {
             warmup: Math.round(blocksSec.warmup / 60),
             plyo: Math.round(blocksSec.plyo / 60),
@@ -215,6 +414,17 @@ function buildWorkoutPlan(week, day, ageGroup) {
             const exKey = `w${week}_d${day}_${ageGroup}_str_${idx}`;
             const setsCount = parseSetsCount(ex.sets, 3);
             const restSeconds = parseRestSeconds(ex.rest, 60);
+            const tempoMeta = buildStrengthTempoMeta(ex.sets, ex.tempo);
+
+            const stepDuration = tempoMeta.totalDurationSec || 45;
+            let execSummary = ex.sets ? `${ex.sets}` : `Serie de fuerza`;
+            if (tempoMeta.hasTempo) {
+                if (tempoMeta.isUnilateral) {
+                    execSummary = `${ex.sets} → ${tempoMeta.totalReps} reps totales (${tempoMeta.repsPerSide} ${tempoMeta.sideLabel} 1 + 10s cambio + ${tempoMeta.repsPerSide} ${tempoMeta.sideLabel} 2) • Tempo ${tempoMeta.tempoCode} (${tempoMeta.repDurationSec}s/rep)`;
+                } else {
+                    execSummary = `${ex.sets} → ${tempoMeta.totalReps} repeticiones guiadas • Tempo ${tempoMeta.tempoCode} (${tempoMeta.repDurationSec}s/rep)`;
+                }
+            }
 
             for (let s = 1; s <= setsCount; s++) {
                 steps.push({
@@ -223,18 +433,19 @@ function buildWorkoutPlan(week, day, ageGroup) {
                     blockTotalSec: 900,
                     name: ex.name,
                     type: "work",
-                    phaseName: "SERIE DE FUERZA",
-                    duration: 45,
+                    phaseName: tempoMeta.hasTempo ? `TEMPO ${tempoMeta.tempoCode}` : "SERIE DE FUERZA",
+                    duration: stepDuration,
                     setIndex: s,
                     totalSets: setsCount,
                     restDuration: restSeconds,
                     setLabel: `Serie ${s} de ${setsCount}`,
-                    executionInfo: ex.sets ? `${ex.sets}` : `Serie ${s} de ${setsCount}`,
+                    executionInfo: execSummary,
                     blockInsight: strengthInsight,
                     video: ex.video,
                     desc: ex.desc,
                     target: ex.target || "Fuerza Muscular y Tendinosa",
-                    tempo: ex.tempo ? `Tempo ${ex.tempo} [Bajada / Pausa / Subida / Pausa]` : "Tempo controlado 3-0-1-0",
+                    tempo: ex.tempo ? `Tempo ${ex.tempo} [Bajada / Pausa / Subida / Pausa]` : "Tempo controlado",
+                    tempoMeta: tempoMeta.hasTempo ? tempoMeta : null,
                     exerciseKey: s === setsCount ? exKey : null
                 });
 
@@ -467,8 +678,15 @@ function startWorkoutInterval() {
 
         if (stepSecondsLeft > 0) {
             stepSecondsLeft--;
-            // Beep de anticipación en los últimos 3 segundos
-            if (stepSecondsLeft <= 3 && stepSecondsLeft > 0 && !isWorkoutMuted) {
+            const curStep = workoutSteps[currentStepIndex];
+            if (curStep && curStep.tempoMeta && curStep.tempoMeta.hasTempo && stepSecondsLeft > 0) {
+                const elapsed = curStep.duration - stepSecondsLeft;
+                const tick = curStep.tempoMeta.timeline[elapsed];
+                if (tick && tick.isPhaseStart && !isWorkoutMuted && typeof playBeep === 'function') {
+                    playBeep(tick.beepFreq || 600, tick.phaseCode === 'up' ? 0.16 : 0.09);
+                }
+            } else if (stepSecondsLeft <= 3 && stepSecondsLeft > 0 && !isWorkoutMuted) {
+                // Beep de anticipación en los últimos 3 segundos
                 if (typeof playBeep === 'function') playBeep(520, 0.1);
             }
             updateWorkoutUI();
@@ -596,14 +814,88 @@ function updateWorkoutUI() {
     const setCounter = document.getElementById('gwSetCounter');
 
     if (exTimer) exTimer.innerText = formatTime(stepSecondsLeft);
-    if (setCounter) setCounter.innerText = curStep.setLabel;
 
-    if (phaseBadge) {
-        phaseBadge.innerText = curStep.phaseName;
-        if (curStep.type === 'work') {
-            phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-red-600/20 text-red-400 border border-red-500/30 animate-pulse";
-        } else {
-            phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-cyan-600/20 text-cyan-400 border border-cyan-500/30";
+    const tempoPanel = document.getElementById('gwTempoLivePanel');
+    if (curStep.tempoMeta && curStep.tempoMeta.hasTempo && curStep.type === 'work') {
+        const meta = curStep.tempoMeta;
+        const elapsed = Math.min(Math.max(curStep.duration - stepSecondsLeft, 0), meta.timeline.length - 1);
+        const tick = meta.timeline[elapsed];
+
+        if (setCounter && tick) {
+            const sideInfo = tick.sideLabel ? ` • ${tick.sideLabel} (${tick.sideRep}/${tick.repsPerSide})` : '';
+            setCounter.innerText = `${curStep.setLabel} • Rep ${tick.globalRep}/${tick.totalReps}${sideInfo}`;
+        }
+
+        if (phaseBadge && tick) {
+            phaseBadge.innerText = tick.phaseBadge;
+            if (tick.phaseCode === 'down') {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40";
+            } else if (tick.phaseCode === 'up') {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-emerald-500/25 text-emerald-300 border border-emerald-400/50 animate-pulse";
+            } else if (tick.phaseCode === 'switch_side') {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-orange-500/25 text-orange-300 border border-orange-400/50 animate-bounce";
+            } else {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-purple-500/25 text-purple-300 border border-purple-400/50";
+            }
+        }
+
+        if (tempoPanel && tick) {
+            tempoPanel.classList.remove('hidden');
+            const repProgressPct = Math.min(Math.round((tick.globalRep / tick.totalReps) * 100), 100);
+            const boxesHtml = meta.phaseDefs.map(p => {
+                const isActive = (tick.kind === 'rep' && tick.phaseIndex === p.index);
+                const isZero = p.sec === 0;
+                const boxClass = isActive
+                    ? "bg-gradient-to-br from-red-600/40 to-amber-600/30 border-2 border-amber-400 text-white shadow-lg shadow-amber-500/20 scale-[1.02]"
+                    : (isZero
+                        ? "bg-slate-900/40 border border-slate-800/60 text-slate-600 opacity-50"
+                        : "bg-slate-900/80 border border-slate-700/70 text-slate-300");
+                const displaySec = isActive ? `${tick.phaseSecLeft}s` : (p.raw === 'X' ? 'X (1s)' : `${p.sec}s`);
+                return `
+                    <div class="p-2.5 rounded-xl transition-all duration-150 text-center ${boxClass}">
+                        <span class="text-[10px] font-extrabold uppercase tracking-wider block truncate">${p.shortTitle}</span>
+                        <strong class="text-base sm:text-lg font-black font-mono block mt-0.5">${displaySec}</strong>
+                    </div>
+                `;
+            }).join('');
+
+            tempoPanel.innerHTML = `
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-2.5 py-1 rounded-lg text-[11px] font-black uppercase bg-purple-600/30 text-purple-200 border border-purple-500/40 font-mono">
+                            TEMPO ${meta.tempoCode}
+                        </span>
+                        <span class="text-xs sm:text-sm font-black text-white">
+                            ${tick.kind === 'transition'
+                                ? `🔄 ${tick.sideLabel}: Prepárate (${tick.phaseSecLeft}s)`
+                                : `Repetición ${tick.globalRep} de ${tick.totalReps}${tick.sideLabel ? ` • ${tick.sideLabel} (Rep ${tick.sideRep} de ${tick.repsPerSide})` : ''}`}
+                        </span>
+                    </div>
+                    <span class="text-xs font-extrabold text-amber-300 bg-amber-950/60 px-3 py-1 rounded-lg border border-amber-500/30">
+                        ${tick.phaseBadge} — ${tick.phaseAction}
+                    </span>
+                </div>
+                <div class="grid grid-cols-4 gap-2">
+                    ${boxesHtml}
+                </div>
+                <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-800">
+                    <div class="h-full bg-gradient-to-r from-purple-500 via-red-500 to-amber-400 rounded-full transition-all duration-300" style="width: ${repProgressPct}%"></div>
+                </div>
+            `;
+        }
+    } else {
+        if (tempoPanel) {
+            tempoPanel.classList.add('hidden');
+            tempoPanel.innerHTML = '';
+        }
+        if (setCounter) setCounter.innerText = curStep.setLabel;
+        if (phaseBadge) {
+            phaseBadge.innerText = curStep.phaseName;
+            if (curStep.type === 'work') {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-red-600/20 text-red-400 border border-red-500/30 animate-pulse";
+            } else {
+                phaseBadge.className = "px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-cyan-600/20 text-cyan-400 border border-cyan-500/30";
+            }
         }
     }
 
@@ -762,12 +1054,81 @@ function finishGuidedWorkout() {
     if (typeof saveStateToStorage === 'function') saveStateToStorage();
     if (typeof renderCalendarSchedule === 'function') renderCalendarSchedule();
 
+    const finishAthleteEl = document.getElementById('gwFinishAthleteName');
+    if (finishAthleteEl) finishAthleteEl.innerText = athlete;
+    const finishDetailEl = document.getElementById('gwFinishSessionDetail');
+    if (finishDetailEl) {
+        finishDetailEl.innerText = `Semana ${state.activeWeek} • Día ${state.activeDay} completado con éxito.`;
+    }
+
+    renderMacrocycleCongratsBox(state.activeWeek, state.activeDay);
+
     const trackerView = document.getElementById('gwTrackerView');
     const finishView = document.getElementById('gwFinishedView');
     if (trackerView) trackerView.classList.add('hidden');
     if (finishView) finishView.classList.remove('hidden');
 
     if (typeof triggerConfetti === 'function') triggerConfetti();
+    if (window.confetti) {
+        window.confetti({ particleCount: 100, spread: 80, origin: { y: 0.6 } });
+    }
+}
+
+/**
+ * Renderiza el mensaje especial de felicitación al finalizar el Día 4 del ciclo
+ */
+function renderMacrocycleCongratsBox(week, day) {
+    const congratsEl = document.getElementById('gwMacrocycleCongrats');
+    if (!congratsEl) return;
+
+    const wData = (typeof TRAINING_DB !== 'undefined' && TRAINING_DB[week]) ? TRAINING_DB[week] : null;
+    const defaultClosing = (typeof TRAINING_DB !== 'undefined' && TRAINING_DB[6] && TRAINING_DB[6].closingMessage)
+        ? TRAINING_DB[6].closingMessage
+        : null;
+    const closing = (wData && wData.closingMessage) ? wData.closingMessage : (Number(day) === 4 ? defaultClosing : null);
+
+    if (Number(day) === 4 && closing) {
+        congratsEl.innerHTML = `
+            <div class="flex items-center gap-2.5 text-amber-400 font-black text-sm sm:text-base font-heading border-b border-amber-500/30 pb-2">
+                <i class="fa-solid fa-crown text-lg"></i>
+                <span>${closing.title}</span>
+            </div>
+            <div class="space-y-2 text-xs text-slate-200 leading-relaxed">
+                ${closing.paragraphs.map(p => `<p>${p}</p>`).join('')}
+            </div>
+        `;
+        congratsEl.classList.remove('hidden');
+    } else {
+        congratsEl.innerHTML = '';
+        congratsEl.classList.add('hidden');
+    }
+}
+
+/**
+ * Muestra el modal de celebración con el mensaje de felicitación de fin de ciclo (Día 4)
+ */
+function showMacrocycleCompletionModal(week, day) {
+    const modal = document.getElementById('guidedWorkoutModal');
+    const trackerView = document.getElementById('gwTrackerView');
+    const finishView = document.getElementById('gwFinishedView');
+    if (!modal || !finishView) return;
+
+    const finishAthleteEl = document.getElementById('gwFinishAthleteName');
+    if (finishAthleteEl && typeof state !== 'undefined') finishAthleteEl.innerText = state.currentAthlete;
+    const finishDetailEl = document.getElementById('gwFinishSessionDetail');
+    if (finishDetailEl) {
+        finishDetailEl.innerText = `¡Semana ${week} • Día ${day} (Cierre de Ciclo) completado con éxito!`;
+    }
+
+    renderMacrocycleCongratsBox(week, day);
+
+    if (trackerView) trackerView.classList.add('hidden');
+    finishView.classList.remove('hidden');
+    modal.classList.remove('hidden');
+
+    if (window.confetti) {
+        window.confetti({ particleCount: 120, spread: 90, origin: { y: 0.6 } });
+    }
 }
 
 /**

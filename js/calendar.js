@@ -172,13 +172,14 @@ function renderCalendarSchedule() {
 
     let html = '';
 
-    [1, 2, 3, 4, 5].forEach(w => {
+    [1, 2, 3, 4, 5, 6].forEach(w => {
         const weekTitles = {
             1: 'Fundamentos & Fuerza Base',
             2: 'Potencia Dirigida & Pista',
             3: 'Integración Familiar & Tolerancia Láctica',
             4: 'Movilidad Activa, Rigor Técnico & Simulación Motos',
-            5: 'Fuerza Estricta, Agilidad Multiplanar & Baterías'
+            5: 'Fuerza Estricta, Agilidad Multiplanar & Baterías',
+            6: 'Ciclo Superior: Gate Acceleration & Baterías'
         };
         html += `
             <div class="bg-slate-850 bg-slate-800/40 p-5 rounded-2xl border border-slate-700/80 space-y-4">
@@ -191,7 +192,7 @@ function renderCalendarSchedule() {
                 <div class="space-y-3">
         `;
 
-        const daysForWeek = (w === 4 || w === 5) ? [1, 2, 3, 4] : [1, 2, 3];
+        const daysForWeek = (w >= 4) ? [1, 2, 3, 4] : [1, 2, 3];
         daysForWeek.forEach(d => {
             const dateStr = getScheduledDateForSession(w, d) || `Sesión ${d}`;
             const athlete = state.currentAthlete;

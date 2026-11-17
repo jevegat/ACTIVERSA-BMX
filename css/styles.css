@@ -52,3 +52,47 @@ h1, h2, h3, h4, .font-heading {
 .exercise-card:hover {
     transform: translateY(-2px);
 }
+
+/* Semáforo UCI BMX Gate Start Pro */
+.gate-semaforo {
+    background-color: #141824;
+    border: 4px solid #334155;
+    border-radius: 22px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(255, 255, 255, 0.04);
+    width: 110px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.gate-luz {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #1e293b;
+    border: 2px solid #0f172a;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.75);
+    transition: background-color 0.04s ease, box-shadow 0.04s ease, transform 0.04s ease;
+}
+
+.gate-luz.roja.activa {
+    background-color: #ff3333;
+    box-shadow: 0 0 24px #ff3333, 0 0 45px rgba(255, 51, 51, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.04);
+}
+
+.gate-luz.amarilla.activa {
+    background-color: #ffcc00;
+    box-shadow: 0 0 24px #ffcc00, 0 0 45px rgba(255, 204, 0, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.04);
+}
+
+.gate-luz.verde.activa {
+    background-color: #00cc44;
+    box-shadow: 0 0 24px #00cc44, 0 0 45px rgba(0, 204, 68, 0.6), inset 0 2px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.04);
+}

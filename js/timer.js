@@ -93,6 +93,9 @@ function launchPresetForCardio(cardioName) {
     if (typeof switchMainTab === 'function') {
         switchMainTab('timer');
     }
+    if (typeof switchToolSubTab === 'function') {
+        switchToolSubTab('timer');
+    }
     if (cardioName.includes('20/20')) setTimerPreset('interval20_20');
     else if (cardioName.includes('15/30')) setTimerPreset('interval15_30');
     else if (cardioName.includes('30/15')) setTimerPreset('tabata30_15');

@@ -203,6 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof setWeek === 'function') {
         setWeek(state.activeWeek || 1);
     }
+    if (typeof renderToolsDropdownMenus === 'function') {
+        renderToolsDropdownMenus();
+    }
     if (typeof setupCalendarInputs === 'function') {
         setupCalendarInputs();
     }
@@ -276,6 +279,72 @@ function applyTheme(theme) {
 /* ==========================================================================
    NAVEGACIÓN ENTRE VISTAS PRINCIPALES
    ========================================================================== */
+
+// Registro extensible de herramientas BMX (agregar nuevas herramientas aquí para que aparezcan en el menú)
+const TOOLS_MENU_ITEMS = [
+    {
+        id: 'gate',
+        label: 'BMX Gate Start Pro Practice',
+        description: 'Simulador oficial de partidor UCI y reacción',
+        icon: 'fa-solid fa-traffic-light text-amber-400'
+    },
+    {
+        id: 'timer',
+        label: 'Cronómetro',
+        description: 'Intervalos HIIT, Tabata, EMOM y descansos',
+        icon: 'fa-solid fa-stopwatch text-red-400'
+    }
+];
+
+let activeToolId = 'gate';
+
+function renderToolsDropdownMenus() {
+    const desktopMenu = document.getElementById('toolsDropdownMenu');
+    const mobileMenu = document.getElementById('mobileToolsDropdownMenu');
+
+    const buildItemsHtml = (isMobile) => TOOLS_MENU_ITEMS.map(item => {
+        const isActive = (state.activeTab === 'timer' && activeToolId === item.id);
+        const activeClasses = isActive
+            ? 'bg-red-600/20 border-red-500/50 text-white'
+            : 'bg-slate-800/40 hover:bg-slate-800 border-transparent text-slate-200 hover:text-white';
+        return `
+            <button type="button" onclick="openTool('${item.id}')" class="w-full text-left px-3 py-2.5 rounded-xl border transition flex items-start gap-3 cursor-pointer ${activeClasses}">
+                <div class="w-8 h-8 rounded-lg bg-slate-950 border border-slate-700/80 flex items-center justify-center flex-shrink-0 mt-0.5 text-sm">
+                    <i class="${item.icon}"></i>
+                </div>
+                <div class="min-w-0 flex-1">
+                    <span class="block text-xs font-black leading-tight">${item.label}</span>
+                    <span class="block text-[10px] text-slate-400 mt-0.5 leading-snug">${item.description}</span>
+                </div>
+                ${isMobile ? '<i class="fa-solid fa-chevron-right text-[10px] text-slate-500 self-center"></i>' : ''}
+            </button>
+        `;
+    }).join('');
+
+    if (desktopMenu) desktopMenu.innerHTML = buildItemsHtml(false);
+    if (mobileMenu) mobileMenu.innerHTML = buildItemsHtml(true);
+}
+
+function openTool(toolId) {
+    activeToolId = toolId;
+    switchMainTab('timer');
+    if (typeof switchToolSubTab === 'function') {
+        switchToolSubTab(toolId);
+    }
+    toggleMobileToolsMenu(false);
+    renderToolsDropdownMenus();
+}
+
+function toggleMobileToolsMenu(forceState) {
+    const mobileMenu = document.getElementById('mobileToolsDropdownMenu');
+    if (!mobileMenu) return;
+    if (typeof forceState === 'boolean') {
+        mobileMenu.classList.toggle('hidden', !forceState);
+    } else {
+        mobileMenu.classList.toggle('hidden');
+    }
+}
+
 function switchMainTab(tab) {
     state.activeTab = tab;
     const views = {
@@ -328,6 +397,13 @@ function switchMainTab(tab) {
     if (tab === 'calendar' && typeof renderCalendarSchedule === 'function') {
         renderCalendarSchedule();
     }
+    if (tab !== 'timer') {
+        toggleMobileToolsMenu(false);
+    }
+    if (tab === 'timer' && typeof syncGateAthleteUI === 'function') {
+        syncGateAthleteUI();
+    }
+    renderToolsDropdownMenus();
 }
 
 /* ==========================================================================
@@ -335,7 +411,11 @@ function switchMainTab(tab) {
    ========================================================================== */
 function setWeek(w) {
     state.activeWeek = Number(w);
-    [1, 2, 3, 4, 5].forEach(num => {
+    const selectWeek = document.getElementById('selectWeek');
+    if (selectWeek) {
+        selectWeek.value = String(state.activeWeek);
+    }
+    [1, 2, 3, 4, 5, 6].forEach(num => {
         const btn = document.getElementById(`btnWeek${num}`);
         if (btn) {
             btn.className = num === state.activeWeek 
@@ -344,7 +424,7 @@ function setWeek(w) {
         }
     });
 
-    const isFourDayWeek = (state.activeWeek === 4 || state.activeWeek === 5);
+    const isFourDayWeek = (state.activeWeek >= 4);
     const day4Btn = document.getElementById('btnDay4');
     const dayContainer = document.getElementById('dayButtonsContainer');
     const txtSessionDays = document.getElementById('txtSessionDays');
@@ -464,6 +544,28 @@ function renderActiveView() {
         heroDurationElem.innerText = `${sessionSummary.totalMin}'`;
     }
 
+    // 0. BANNER DE BIENVENIDA Y REGLA DE ORO (CICLO SUPERIOR - SEMANA 6)
+    if (weekData.introBanner) {
+        html += `
+            <div class="bg-gradient-to-r from-red-950/60 via-slate-900 to-amber-950/50 border border-red-500/40 rounded-3xl p-5 shadow-xl space-y-2.5">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <span class="text-[10px] font-black uppercase tracking-widest bg-red-600 text-white px-2.5 py-1 rounded-full shadow flex items-center gap-1.5">
+                        <i class="fa-solid fa-bolt"></i> ${weekData.name}
+                    </span>
+                    <span class="text-[11px] font-bold text-amber-300 flex items-center gap-1">
+                        <i class="fa-solid fa-medal text-amber-400"></i> Evolución Semillero & Familia
+                    </span>
+                </div>
+                <h3 class="text-base sm:text-lg font-black text-white font-heading">${weekData.introBanner.title}</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">${weekData.introBanner.subtitle}</p>
+                <div class="bg-amber-950/40 border border-amber-500/40 rounded-2xl p-3 text-xs text-amber-200 flex items-start gap-2.5">
+                    <i class="fa-solid fa-crown text-amber-400 mt-0.5 text-sm shrink-0"></i>
+                    <span>${weekData.introBanner.goldenRule}</span>
+                </div>
+            </div>
+        `;
+    }
+
     // 1. TARJETA DE CONSEJOS CLÍNICOS, NUTRICIÓN Y RESUMEN ESTRUCTURAL COMPLETO
     html += `
         <div class="bg-gradient-to-r from-amber-950/40 to-slate-900 border-l-4 border-amber-500 p-5 rounded-3xl border border-amber-900/40 shadow-lg space-y-4">
@@ -545,14 +647,8 @@ function renderActiveView() {
                 </div>
             </div>
 
-            <!-- Single Official Instagram Link & Guided Workout Launch Banner -->
-            <div class="pt-3 border-t border-amber-900/40 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                <a href="https://www.instagram.com/pipearenas.fit/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs text-pink-400 hover:text-white font-bold bg-pink-950/60 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 border border-pink-700/40 px-3.5 py-1.5 rounded-xl transition shadow-sm cursor-pointer group">
-                    <i class="fa-brands fa-instagram text-pink-400 group-hover:text-white text-sm"></i>
-                    <span>Preparación física y técnica oficial: <strong>@pipearenas.fit</strong></span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[9px] opacity-75"></i>
-                </a>
-
+            <!-- Guided Workout Launch Banner -->
+            <div class="pt-3 border-t border-amber-900/40 flex flex-col sm:flex-row justify-end items-stretch sm:items-center gap-3">
                 <button onclick="startGuidedWorkout()" class="w-full sm:w-auto bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-black text-xs px-5 py-2.5 rounded-xl shadow-lg shadow-red-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 group">
                     <i class="fa-solid fa-play text-xs p-1 bg-white/20 rounded-md group-hover:scale-110 transition-transform"></i>
                     <span>INICIAR SESIÓN GUIADA (WOD TRACKER)</span>
@@ -769,6 +865,31 @@ function renderActiveView() {
 
     html += `</div></section>`;
 
+    // TARJETA ESPECIAL DE CIERRE DE MACROCICLO EN EL DÍA 4
+    if (Number(d) === 4 && weekData.closingMessage) {
+        html += `
+            <section class="bg-gradient-to-br from-amber-950/60 via-slate-900 to-red-950/50 border-2 border-amber-500/50 rounded-3xl p-6 shadow-2xl space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-3 border-b border-amber-500/30 pb-3">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 border border-amber-500/40 flex items-center justify-center text-lg shadow">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block">Cierre de Macrociclo • Día 4</span>
+                            <h3 class="text-lg sm:text-xl font-black text-white font-heading">${weekData.closingMessage.title}</h3>
+                        </div>
+                    </div>
+                    <button type="button" onclick="if (typeof showMacrocycleCompletionModal === 'function') showMacrocycleCompletionModal(${w}, ${d});" class="bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-400 hover:to-red-500 text-white font-black text-xs px-4 py-2.5 rounded-xl shadow-lg shadow-amber-600/20 transition flex items-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-award"></i> Ver Felicitación de Cierre
+                    </button>
+                </div>
+                <div class="space-y-2 text-xs sm:text-sm text-slate-200 leading-relaxed">
+                    ${weekData.closingMessage.paragraphs.map(p => `<p>${p}</p>`).join('')}
+                </div>
+            </section>
+        `;
+    }
+
     const container = document.getElementById('routineContainer');
     if (container) container.innerHTML = html;
 
@@ -908,6 +1029,10 @@ function checkSessionCompletion() {
 
         if (typeof renderCalendarSchedule === 'function') {
             renderCalendarSchedule();
+        }
+
+        if (Number(d) === 4 && typeof showMacrocycleCompletionModal === 'function') {
+            showMacrocycleCompletionModal(w, d);
         }
     }
 }
